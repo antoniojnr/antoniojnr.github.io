@@ -1,2 +1,1 @@
-# Professor - IFPB @ Picuí
 ## Disciplinas
