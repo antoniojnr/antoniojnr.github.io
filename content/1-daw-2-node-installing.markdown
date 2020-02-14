@@ -5,6 +5,7 @@ nav_exclude: true
 ---
 ## Instalando o Node.js (Windows)
 **Autores:** Ana Laura Barros, Antonio Júnior
+**Guia em vídeo** por Thiago Dantas [disponível aqui](https://www.youtube.com/watch?v=amk65MDsLNw&feature=youtu.be).
 
 ### Baixando a versão correta
 
