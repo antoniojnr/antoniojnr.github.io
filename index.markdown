@@ -4,4 +4,8 @@
 
 layout: home
 ---
-Welcome!
+Seja bem vindo!
+
+Navegue ao lado para encontrar o conteúdo relativo à sua disciplina.
+
+O material encontrado nesta página está protegido por direitos autorais. Não use, nem modifique sem autorização prévia.
