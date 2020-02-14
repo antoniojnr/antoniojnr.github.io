@@ -2,7 +2,7 @@
 layout: page
 permalink: /1-daw-2-node-getting-started.markdown/
 ---
-## Iniciando com Node.js
+Iniciando com Node.js
 
 Node.js é um ambiente de execução que permite executar código JavaScript fora do navegador. É o que utilizaremos para desenvolver o lado servidor (*backend*). Esta seção explica sobre a estrutura de um projeto Node.js.
 
