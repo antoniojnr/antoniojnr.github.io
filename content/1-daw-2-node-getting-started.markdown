@@ -1,12 +1,23 @@
 ---
-layout: page
-permalink: /1-daw-2-node-getting-started.markdown/
+layout: default
+title: Iniciando com Node.js
+nav_exclude: true
 ---
 ## Iniciando com Node.js
 
-Node.js é um ambiente de execução que permite executar código JavaScript fora do navegador. É o que utilizaremos para desenvolver o lado servidor (*backend*). Esta seção explica sobre a estrutura de um projeto Node.js.
+Node.js é um ambiente de execução que permite executar código JavaScript fora do navegador. É o que utilizaremos para desenvolver o lado servidor (*backend*). Esta seção aborda a criação de seu primeiro projeto Node.js.
 
 ### Estrutura do diretório
 
+Antes de iniciar, vejamos como um projeto Node.js é normalmente estruturado.
 
-Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a "JavaScript everywhere" paradigm,[6] unifying web-application development around a single programming language, rather than different languages for server- and client-side scripts.
+    RAIZ DO PROJETO
+     |- package.json
+     |- src
+         |- index.js
+    
+Na raiz do seu projeto (o diretório onde estarão guardados os arquivos do seu projeto), deverão existir um diretório **src** (*source*) e um arquivo **package.json**. No diretório **src**, ficarão todos os arquivos de código que criarmos, separados em subdiretórios, se necessário. O arquivo **package.json** guarda informações do seu projeto, como detalhado a seguir.
+
+#### O arquivo **package.json**
+
+O arquivo
