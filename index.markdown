@@ -4,7 +4,7 @@
 
 layout: home
 ---
-Seja bem vindo!
+Seja bem vindo à página de disciplinas do professor Antonio Júnior.
 
 Navegue ao lado para encontrar o conteúdo relativo à sua disciplina.
 
