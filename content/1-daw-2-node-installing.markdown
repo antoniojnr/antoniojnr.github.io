@@ -11,7 +11,7 @@ nav_exclude: true
 
 ### Baixando a versão correta
 
-Abra o endereço https://nodejs.org/en/download/ no seu navegador. Na página aberta, selecione a versão LTS mais recente de acordo com seu sistema operacional e tipo de processador (32 ou 64-bit).
+Abra o endereço [https://nodejs.org/en/download/](https://nodejs.org/en/download/) no seu navegador. Na página aberta, selecione a versão LTS mais recente de acordo com seu sistema operacional e tipo de processador (32 ou 64-bit).
 
 ![Selecione a versão para o seu sistema operacional](/content/images/1-install-1.jpeg "Selecione a versão para o seu sistema operacional")
 
