@@ -110,11 +110,31 @@ No início do código escrito no passo 4, carregamos uma dependência chamada "e
 
 ### Passo 6: Execute
 
-Para ver a sua primeira aplicação em execução, insira o comando `npm start` no terminal. No navegador, insira o endereço `localhost:3000` e aperte Enter.
+Para ver a sua primeira aplicação em execução, insira o comando `node src/index.js` no terminal. No navegador, insira o endereço `localhost:3000` e aperte Enter.
 
 No terminal, você verá o texto "Rodando na porta 3000" e, no navegador, o texto "Hello world!".
 
-Pronto, você criou sua primeira aplicação em Node.js.
+### Passo 7: Criando um script
+
+Em vez de digitar o comando `node src/index.js` toda vez no terminal, você pode criar um script para chamar esse comando. Abra o arquivo **package.json**
+
+No atributo `scripts`, você verá o seguinte.
+
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+
+O script `test` não é necessário no momento. O comando que ele executa apenas imprime na tela (é isso o que o `echo` faz) a mensagem que não foi especificado nenhum teste ("no test specified"). No terminal, insira `npm test` para ver isso acontecer.
+
+Vamos substituí-lo pelo script `start`, que chamará `node src/index.js`. Assim, o atributo `scripts` deverá ficar assim:
+
+    "scripts": {
+      "start": "node src/index.js"
+    },
+
+Agora você pode iniciar sua aplicação com `npm start`. Também pode iniciar com `node src/index.js`, mas `npm start` é bem menor para escrever.
+
+Pronto, você finalizou sua primeira aplicação em Node.js.
 
 ### Fontes
 
