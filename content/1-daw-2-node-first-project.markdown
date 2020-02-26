@@ -90,7 +90,7 @@ app.get('/', function(req, res) {
 })
 ```
 
-No trecho de código acima, estamos definindo que, quando o lado servidor receber uma requisição GET na rota "/", este responderá com o texto "Hello World!". Em termos práticos, se a sua aplicação estivesse rodando em "www.meuprojeto.com" e se você digitasse essa URL na barra de endereços do navegador e apertasse Enter, veria o texto "Hello world!". No navegador, tanto faz digitar "www.meuprojeto.com" e "www.meuprojeto.com/". A "/" significa que você está requisitando o ponto de entrada da aplicação ou site rodando naquele servidor.
+No trecho de código acima, estamos definindo que, quando o lado servidor receber uma requisição GET no caminho "/", este responderá com o texto "Hello World!". Em termos práticos, se a sua aplicação estivesse rodando em "www.meuprojeto.com" e se você digitasse essa URL na barra de endereços do navegador e apertasse Enter, veria o texto "Hello world!". No navegador, tanto faz digitar "www.meuprojeto.com" e "www.meuprojeto.com/". A "/" significa que você está requisitando o ponto de entrada da aplicação ou site rodando naquele servidor.
 
 Agora, para especificar como a nossa aplicação irá rodar, usamos o código a seguir.
 
