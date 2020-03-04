@@ -18,12 +18,15 @@ app.get('/', function(req, res) {
 
 Uma rota determina como a aplicação responderá a uma requisição do cliente para um *endpoint*, que é um caminho e um método HTTP específico(GET ou POST, por exemplo).
 
+1. TOC
+{:toc}
+
 ### Criando novas rotas
 
 Em Express, a definição de uma rota tem o seguinte formato:
 
 ```javascript
-app.MÉTODO(CAMINHO, HANDLER)
+app.METODO(CAMINHO, HANDLER)
 ```
 
 - `app` é uma instância do Express (variável onde você guardou o retorno da chamada `express()`).
@@ -124,3 +127,15 @@ app.listen(port, function() {
   console.log(`Rodando na porta ${port}`)
 })
 ```
+
+### Outro código exemplo
+
+Revise o código a seguir para ver na prática conceitos aprendidos nessa seção.
+
+<iframe
+  src="https://codesandbox.io/embed/xenodochial-rosalind-5b6nh?fontsize=14&theme=dark&view=editor"
+  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  title="usando-rotas"
+  allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
