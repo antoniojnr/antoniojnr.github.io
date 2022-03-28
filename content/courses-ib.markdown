@@ -32,12 +32,12 @@ Compreender a utilidade de um computador, ter noções de seu funcionamento e 
 
 - **Contato através do Classroom:** preste atenção ao mural da disciplina e a comentários deixados nas atividades
 - **Tolerância zero para plágio:** exercícios de dois ou mais alunos com respostas semelhantes ou exercícios com respostas plagiadas de quaisquer fontes serão automaticamente zerados
-
+ 
 ### Conteúdo Programático
 
 #### Unidade I
 
-- Dados e sua representação
+- [Dados e sua representação](/content/ib/1-dados.html)
 - Componentes de um sistema computacional
 - Processamento de dados
 - Sistemas de numeração
