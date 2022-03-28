@@ -4,6 +4,7 @@ title: Informática Básica e Introdução à Programação
 parent: Disciplinas
 nav_order: 5
 ---
+{: .no_toc }
 ## Informática Básica e Introdução à Programação
 
 ### Objetivo Geral da Disciplina
