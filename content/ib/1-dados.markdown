@@ -39,9 +39,15 @@ A partir destas informações, pode-se derivar novas informações. Sendo a Tabe
 
 ## 3. Representação Digital
 
-Dispositivos digitais são aqueles que operam sobre dados discretos ou dígitos. Podemos citar telefones celulares, computadores e televisores como exemplos de dispositivos digitais. Por outro lado, dispositivos analógicos operam sobre dados contínuos. 
+Dispositivos digitais são aqueles que operam sobre dados discretos ou dígitos. Podemos citar telefones celulares, computadores e televisores como exemplos de dispositivos digitais. Por outro lado, dispositivos analógicos operam sobre dados contínuos. Na Figura 1 são mostrados exemplos dispositivos analógicos na parte superior e digitais na parte inferior. 
 
-O nome analógico vem de "análogo" ao processo físico. Computadores são capazes de representar dados analógicos provenientes de um processo físico. Para tal, esses dados precisam passar por uma conversão de analógico para digital. Essa é uma conversão com perdas, uma vez que os valores representados são apenas uma aproximação. Com precisão suficiente utilizada nessa conversão, as perdas tornam-se imperceptíveis. Isso ocorre na aquisição de dados a partir de sensores como microfones, câmeras ou termômetros.
+![Dispositivos analógicos e digitais](/content/images/digital-and-analog.png "Dispositivos analógicos e digitais")
+**Figura 1.** Dispositivos analógicos e digitais.
+
+O nome analógico vem de "análogo" ao processo físico. Computadores são capazes de representar dados analógicos provenientes de um processo físico. Para tal, esses dados precisam passar por uma conversão de analógico para digital. Essa é uma conversão com perdas, uma vez que os valores representados são apenas uma aproximação. Com precisão suficiente utilizada nessa conversão, as perdas tornam-se imperceptíveis. Isso ocorre na aquisição de dados a partir de sensores como microfones, câmeras ou termômetros. A Figura 2 mostra um exemplo de sinal analógico e um exemplo de sinal digital. Perceba como o sinal analógico é contínuo e fluido, enquanto o digital é representado através de valores discretos – por isso os "degraus" no gráfico.
+
+![Sinal analógico e sinal digital](/content/images/digital-vs-analog.webp "Sinal analógico e sinal digital")
+**Figura 2.** Sinal analógico e sinal digital.
 
 Os computadores operam sobre dados binários, que por sua vez são discretos e digitais. Como já vimos, o bit é a menor unidade de informação representável por um computador, podendo assumir os valores 0 ou 1. Em computadores, a eletricidade é usada para armazenar, transmitir e processar dados. O valor 0 é geralmente associado a uma voltagem baixa, enquanto o valor 1 é associado a uma voltagem alta.
 
