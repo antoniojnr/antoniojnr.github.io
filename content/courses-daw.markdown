@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Desenvolvimento de Aplicações para a Web
-parent: Disciplinas
+parent: none
 nav_order: 3
 ---
 {: .no_toc }

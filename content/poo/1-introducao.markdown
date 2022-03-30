@@ -57,8 +57,9 @@ Perceba que todos os estudantes que tiverem seu formato de dados conforme descri
 
 Os métodos são os comportamentos e ações de um objeto, sendo responsáveis por alterar o estado ou fornecer informações sobre um objeto. São análogos a funções ou procedimentos em programação estruturada.
 
-Considere a classe Funcionario representada a seguir:
+Considere a classe `Funcionario` representada no Código 1.
 
+**Código 1.** A classe `Funcionario`.
 ```javascript
 class Funcionario {
   constructor(nome, cpf, salarioBase) {
@@ -72,15 +73,79 @@ class Funcionario {
 
 O comportamento de um objeto é definido pelas necessidades do sistema. Uma classe `Funcionario` em um sistema que gerencia funcionários de uma indústria pode ter comportamentos diferentes de uma classe `Funcionario` em um sistema de escritório ou supermercado, por exemplo.
 
-Criaremos os seguintes métodos na nossa classe `Funcionario`:
-1. `adicionarHorasExtra(quantidade)`: adiciona ao banco de horas um número de horas extra correspondente a `quantidade`.
-2. `getSalario()`: calcula o salário, levando em consideração a quantidade de horas extra e o salário base.
+Criaremos o seguinte método na nossa classe `Funcionario`:
+1. `getSalario()`: calcula o salário, levando em consideração a quantidade de horas extra e o salário base.
 
-Além disso, para cada um dos atributos, definiremos um par de métodos `get` e `set`, chamados de *getters* e *setters*, respectivamente. Esses métodos são definidos para que 
+Definiremos também, para cada um dos atributos (exceto alguns - ver Código 3), definiremos um par de métodos `get` e `set`, chamados de *getters* e *setters*, respectivamente. Esses métodos são definidos para acessar os valores dos atributos, que não devem ser acessados diretamente. Isso se dá porque os atributos podem ser usados e alterados internamente por outras funções e, ao acessá-los diretamente, você pode estar acessando um valor inconsistente.
 
-## 3. Exercícios
+Além disso, repare no método especial chamado `constructor`. Este método é usado para criar um objeto de uma determinada classe. Ele é chamado quando instanciamos a classe usando o operador `new`. No código a seguir, foi criado um novo objeto `Funcionario` com os seguintes parâmetros `"Antonio Dias"` (*nome*), `"11111111111"` (*cpf*) e `5000.0` (*salario*). O objeto foi guardado na variável `func1` e está acessível a partir dela.
 
-1. Represente a classe `Disciplina` descrita na *seção 2.1*.
+**Código 2.** Instanciando a classe `Funcionario`.
+```javascript
+class Funcionario {
+  constructor(nome, cpf, salarioBase) {
+    this.nome = nome
+    this.cpf = cpf
+    this.salarioBase = salarioBase
+    this.horasExtra = 0
+  }
+}
+
+var func1 = new Funcionario("Antonio Dias", "11111111111", 5000.0)
+```
+
+A classe `Funcionario` com o construtor, método `getSalario()`, além dos *getters* e *setters*m fica conforme mostrado no Código 3.
+
+**Código 3.** A classe `Funcionario` com os métodos já definidos.
+```javascript
+class Funcionario {
+  constructor(nome, cpf, salarioBase) {
+    this.nome = nome
+    this.cpf = cpf
+    this.salarioBase = salarioBase
+    this.horasExtra = 0
+  }
+
+  getHorasExtra() {
+    return this.horasExtra
+  }
+
+  setHorasExtra(horasExtra) {
+    this.horasExtra = horasExtra
+  }
+
+  getSalarioBase() {
+    return this.salarioBase
+  }
+
+  setSalarioBase(salarioBase) {
+    this.salarioBase = salarioBase
+  }
+
+  getSalario() {
+    // Considerando que o valor hipotético da hora extra é R$20
+    return this.salarioBase + 20 * this.horasExtra
+  }
+
+  getNome() {
+    return this.nome
+  }
+
+  setNome(nome) {
+    this.nome = nome
+  }
+
+  getCPF() {
+    return this.cpf
+  }
+
+  setCPF(cpf) {
+    this.cpf = cpf
+  }
+}
+```
+
+No próximo capítulo, vamos ver sobre encapsulamento e sua importância no projeto de sistemas utilizando orientação a objetos.
 
 ## 4. Referências
 
