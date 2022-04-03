@@ -10,13 +10,13 @@ Provavelmente, o paradigma de programação utilizado e aprendido no curso por v
 
 Conforme você aprendeu novos recursos de programação, pode ter percebido que códigos mais extensos eram menos compreensíveis e gerenciáveis. A partir desse ponto, surge a necessidade de uma metodologia – ou paradigma – de programação que permita dividir o programa em partes menos complexas para formar uma parte maior e mais complexa.
 
-## 2. Programação Orientada a Objetos
+### 1.2. Programação Orientada a Objetos
 
 A programação orientada a objetos surgiu para suprir limitações existentes em outros paradigmas que a precederam. Em programas complexos, o número de instruções é enorme e, conforme cresce o número de instruções, também cresce a complexidade, a possibilidade de aparecerem erros e a necessidade de otimizar o uso de recursos computacionais (memória e CPU).
 
 Através da orientação a objetos, temos uma ferramenta que nos permite representar computacionalmente alguns conceitos do mundo físico. Com isso, o código é escrito em partes simples e reusáveis, chamadas de **classes**. Essas partes são como diagramas usados para criar instâncias de **objetos**.
 
-### 2.1. Classes e Objetos
+### 1.3. Classes e Objetos
 
 **Classe** é um conceito abstrato usado para representar entidades do mundo real, chamadas de **objetos**. Classes definem abstrações de dados que descrevem o conteúdo das entidades – chamados de *atributos* – e funções, que determinam o comportamento das entidades, chamadas de *métodos*.
 
@@ -24,9 +24,7 @@ Através da orientação a objetos, temos uma ferramenta que nos permite represe
 
 Classes geralmente representam categorias amplas de entidades usadas em sistemas. Por exemplo, `Estudante`, `Disciplina`, `Professor` e `Turma` podem ser classes de um sistema de gerenciamento escolar.
 
-### 2.2. Elementos da Classe
-
-#### 2.2.1. Atributos
+### 1.4. Atributos
 
 Os atributos, também chamados de *campos*, *membros* ou *propriedades*, guardam as informações características dos objetos, representando seu estado. 
 
@@ -53,7 +51,7 @@ class Estudante {
 
 Perceba que todos os estudantes que tiverem seu formato de dados conforme descrito pela classe `Estudante` terão os mesmos atributos. Ao instanciar uma classe, temos um objeto que, por sua vez, possuem atributos que definem seu estado. Assim, para cada objeto representará estudantes diferentes, portanto, com dados diferentes para `nome`, `matrícula`, `série` e `curso`. Esse conjunto de valores guardados nesses atributos representam o estado do objeto.
 
-#### 2.2.2. Métodos
+### 1.5. Métodos
 
 Os métodos são os comportamentos e ações de um objeto, sendo responsáveis por alterar o estado ou fornecer informações sobre um objeto. São análogos a funções ou procedimentos em programação estruturada.
 
@@ -147,7 +145,7 @@ class Funcionario {
 
 No próximo capítulo, vamos ver sobre encapsulamento e sua importância no projeto de sistemas utilizando orientação a objetos.
 
-## 4. Referências
+## 1.6. Referências
 
 1. FILHO, Antonio Mendes da Silva. Introdução à programação orientada a objetos com C++. Brazil, Elsevier, 2010.
 2. EDUCATIVE. What is object-oriented programming? OOP explained in depth <https://www.educative.io/blog/object-oriented-programming> Acesso em 25 de março de 2022.

@@ -19,7 +19,8 @@ Dados, informação e conhecimento seguem uma hierarquia que sugere que dados, e
 
 Na base da hierarquia estão os **dados**, que podem ser provenientes de observações do mundo físico. Dados são uma coleção de valores que, por si só, não têm um significado. Podem ser texto, números, sons ou imagens. Para serem representados e processados pelo computador, precisam estar codificados digitalmente. A Tabela 1 reúne uma coleção de dados.
 
-**Tabela 1.** Exemplo de dados
+**Tabela 1.** Exemplo de dados.
+
 | Valor |
 | ----------- |
 | 5 |
@@ -28,7 +29,8 @@ Na base da hierarquia estão os **dados**, que podem ser provenientes de observa
 
 Uma **informação** surge a partir da interpretação dos dados. É quando os dados são relacionados entre si ou com outros dados para que sejam úteis. A Tabela 2 a seguir atribui um significado aos dados da Tabela 1.
 
-**Tabela 2.** Exemplo de informações
+**Tabela 2.** Exemplo de informações.
+
 | Produto | Quantidade |
 | ----------- | ----------- |
 | Picanha | 5 |

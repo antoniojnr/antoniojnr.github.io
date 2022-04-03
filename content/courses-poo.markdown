@@ -8,3 +8,4 @@ nav_order: 4
 
 ### Conteúdo
 1. [Introdução](/content/poo/1-introducao.html)
+2. [Encapsulamento](/content/poo/2-encapsulamento.html)

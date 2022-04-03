@@ -3,39 +3,55 @@ layout: default
 title: Encapsulamento
 nav_exclude: true
 ---
-## 1. Introdução
+## 2. Encapsulamento
 {: .no_toc }
 
-What does encapsulation mean: In object-oriented computer programming (OOP) languages, the notion of encapsulation (or OOP Encapsulation) refers to the bundling of data, along with the methods that operate on that data, into a single unit. Many programming languages use encapsulation frequently in the form of classes. A class is a program-code-template that allows developers to create an object that has both variables (data) and behaviors (functions or methods). A class is an example of encapsulation in computer science in that it consists of data and methods that have been bundled into a single unit.
+Em linguagens de programação orientadas a objetos, **encapsulamento** é o empacotamento de dados em uma única unidade, junto com os métodos que operam nestes dados. Essas unidades de dados e métodos são representadas por **classes** na maioria das linguagens de programação. Ao encapsular dados, também restringe-se alguns atributos e métodos de uma classe, de forma que usuários – programadores, neste caso – não possam acessar todos os elementos da classe.
 
-Encapsulation may also refer to a mechanism of restricting the direct access to some components of an object, such that users cannot access state values for all of the variables of a particular object. Encapsulation can be used to hide both data members and data functions or methods associated with an instantiated class or object.
+Usar encapsulamento ao programar traz uma série de benefícios:
 
-Benefits of Encapsulation Programming
+- **Reúso:** é fácil mudar a implementação e adaptá-la a novos requisitos. Uma vez que a implementação fica escondida e o usuário somente tem acesso aos métodos expostos, é mais simples disponibilizar a classe sem se preocupar sobre o impacto de mudanças em código já existente.
+- **Flexibilidade:** dados podem facilmente ser definidos como somente leitura ou somente escrita, ao disponibilizar somente métodos de leitura (**getters**) ou escrita (**setters**).
+- **Ocultação de informação:** usuários não saberão detalhes sobre a implementação das classes. Todo seu conhecimento estará restrito aos métodos e atributos expostos.
 
-Encapsulation in programming has a few key benefits. These include:
+O Código 1 contém a classe `Televisao`, que encapsula o funcionamento de uma televisão hipotética, que pode ser ligada, desligada e ter seu volume alterado. Os métodos expostos da classe são `setLigado(ligado)`, que permite definir se a televisão está ligada ou desligada, `isLigado()`, que retorna se a televisão está ligada ou desligada, `setVolume(novoValor)`, que permite definir o volume da televisão e `getVolume()`, que retorna o valor do volume atual da televisão.
 
-Hiding Data: Users will have no idea how classes are being implemented or stored. All that users will know is that values are being passed and initialized.
-More Flexibility: Enables you to set variables as red or write-only. Examples include: setName(), setAge() or to set variables as write-only then you only need to omit the get methods like getName(), getAge() etc. 
-Easy to Reuse: With encapsulation it's easy to change and adapt to new requirements. 
-Encapsulation in Java
+Perceba que, no método `setVolume(novoValor)`, somente é permitido alterar o valor do volume se a televisão estiver ligada e este valor deve ser entre 0 e 100. Uma vez que a implementação está encapsulada na classe, um usuário desta somente terá conhecimento do método `setVolume(novoValor)` e que deve ser passado um valor como parâmetro.
 
-Object oriented programming is one of the key pillars of Java. The concepts here refer to object oriented programming as a whole and Java development. To be come a Java developer it is essential to understand the concepts of encapsulation, inheritance, abstraction, and polymorphism.
+**Código 1.** Classe `Televisao`.
+```javascript
+class Televisao {
+  constructor() {
+    this.ligado = false
+    this.volume = 0
+  }
 
-JANSSEN 
+  setLigado(ligado) {
+    this.ligado = ligado
+  }
 
-By definition, encapsulation describes the idea of bundling data and methods that work on that data within one unit, like a class in Java. This concept is also often used to hide the internal representation, or state of an object from the outside. This is called information hiding.
+  isLigado() { 
+    return this.ligado
+  }
 
-The general idea of this mechanism is simple. For example, you have an attribute that is not visible from the outside of an object. You bundle it with methods that provide read or write access. Encapsulation allows you to hide specific information and control access to the internal state of the object.
+  setVolume(novoValor) {
+    if (this.ligado === false) {
+      throw new Error("Impossível alterar volume com televisão desligada.");
+    }
 
-wikipedia 
+    if (novoValor >= 0 && novoValor <= 100) {
+      this.volume = novoValor
+    } else {
+      throw new Error("Valor inválido para volume: " + novoValor);
+    }
+  }
 
-Encapsulamento é um conceito de programação orientada a objetos que liga os atributos e métodos,sem que haja interferência direta entre eles. Isto é, uma classe pode utilizar recursos de outra classe sem a necessidade de conhecer o código fonte destes recursos, mesmo reimplementando-os. As entradas, os processamentos e as saídas de um objeto não influenciam os dos outros, pois os seus relacionamentos são apenas referenciados.
+  getVolume() {
+    return this.volume
+  }
+}
+```
 
-Livro
-
-Em linguagens de POO, os dados e funções são encapsulados em uma única entidade – o objeto. O encapsulamento de dados e a ocultação de dados (ou data hiding) são as- pectos importantes na descrição de linguagens orientada a objetos. O que isso implica?
-Considere a situação em que você quer modificar o(s) dado(s) de um objeto; é preciso saber exatamente quais funções interagem com esse objeto (isto é, as funções-membros do objeto). Outras funções não podem ter acesso ao(s) dado(s). Isso evita alterações indevidas, além de simplificar a elaboração, a depuração e a manutenção do programa.
-Tipicamente, um programa C++ consiste em muitos objetos, os quais se co- municam entre si através da chamada às funções-membros do(s) outro(s) objeto(s). Aqui, chamar a função-membro de um objeto pode ser entendido como enviar uma mensagem para o objeto. A Figura 1.4 mostra a organização de um programa C++.
 
 ## Referências
 
