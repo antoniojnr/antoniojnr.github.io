@@ -104,6 +104,8 @@ Os valores binários acima representam os valores decimais de 0 a 10, como mostr
 
 Entretanto, não seria nada prático precisar contar até um valor muito alto para saber sua representação em binário. Por isso, vamos ver como fazer a conversão.
 
+### 1.6. Conversão de Binário para Decimal
+
 Como já foi dito, o sistema binário, assim como o decimal, é um sistema de numeração posicional. Vamos, primeiramente, ver como isso funciona no sistema decimal, antes de passarmos para o binário. Considere o valor 7492. Em suas respectivas posições, os algarismos possuem os valores mostrados a seguir:
 
 | Posição | 1000 | 100 | 10 | 1 | 
@@ -111,9 +113,9 @@ Como já foi dito, o sistema binário, assim como o decimal, é um sistema de nu
 | Algarismo | 7 | 4 | 9 | 2 |
 | Valor | 7000 | 400 | 90 | 2 |
 
-Para compor o valor total, multiplicamos os algorismos pelos valores das posições correspondentes: milhares (1000), centenas (100), dezenas (10) e unidades (1): 7 * 1000 + 4 * 100 + 9 * 10 + 2 * 1, que totaliza 7492. Perceba que, começando da posição mais à direita (1), os valores das próximas posições são o **valor anterior * 10**. Esse processo é natural para nós, que o realizamos sem nos dar conta.
+Para compor o valor total, multiplicamos os algorismos pelos valores das posições correspondentes: milhares (1000), centenas (100), dezenas (10) e unidades (1): 7 &#215; 1000 + 4 &#215; 100 + 9 &#215; 10 + 2 &#215; 1, que totaliza 7492. Perceba que, começando da posição mais à direita (1), os valores das próximas posições são o **valor anterior * 10**. Esse processo é natural para nós, que o realizamos sem nos dar conta.
 
-Agora considere o valor binário 10110~2~ (Usa se o 2 subscrito — ~2~ — para indicar que aquele valor é de base 2. A mesma coisa acontece para a base decimal — 10 — ou outras que estudaremos adiante). 
+Agora considere o valor binário 10110~2~ (Usa se o 2 subscrito — <sub>2</sub> — para indicar que aquele valor é de base 2. A mesma coisa acontece para a base decimal — 10 — ou outras que estudaremos adiante). 
 
 Podemos construir a mesma tabela para descobrir o valor decimal correspondente a esse número binário. Entretanto, na tabela para binário, os valores das posições, a partir da 1, são o **valor anterior * 2**.
 
@@ -122,20 +124,40 @@ Podemos construir a mesma tabela para descobrir o valor decimal correspondente a
 | Algarismo | 1 | 0 | 1 | 1 | 0 |
 | Valor | 16 | 0 | 4 | 2 | 0 |
 
-Para compor o valor total, multiplicamos os algarismos pelos valores das posições correspondentes: 16, 8, 4, 2 e 1: 1 * 16 + 0 * 8 + 1 * 4 + 1 * 2 + 1 * 1, que totaliza 22.
+Para compor o valor total, multiplicamos os algarismos pelos valores das posições correspondentes: 16, 8, 4, 2 e 1: 1 &#215; 16 + 0 &#215; 8 + 1 &#215; 4 + 1 &#215; 2 + 1 &#215; 1, que totaliza 22.
 
 Veja mais exemplos a seguir:
 
-1101001~2~
+1101001<sub>2</sub>
 
 | Posição | 64 | 32 | 16 | 8 | 4 | 2 | 1 | 
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Algarismo | 1 | 1 | 0 | 1 | 0 | 0 | 1 |
 | Valor | 64 | 32 | 0 | 8 | 0 | 0 | 1 |
 
+Logo, o resultado é 1 &#215; 64 + 1 &#215; 32 + 0 &#215; 16 + 1 &#215; 8 + 0 &#215; 4 + 0 &#215; 2 + 1 &#215; 1 = **105**.
 
+---
 
-### 1.6. Referências
+1001111<sub>2</sub>
+
+| Posição | 64 | 32 | 16 | 8 | 4 | 2 | 1 | 
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Algarismo | 1 | 0 | 0 | 1 | 1 | 1 | 1 |
+| Valor | 64 | 0 | 0 | 8 | 4 | 2 | 1 |
+
+Logo, o resultado é 1 &#215; 64 + 0 &#215; 32 + 0 &#215; 16 + 1 &#215; 8 + 1 &#215; 4 + 1 &#215; 2 + 1 &#215; 1 = **79**.
+
+### 1.7. Conversão de Decimal para Binário
+
+Para converter da base 10 (decimal) para a base 2 (binário), utiliza-se o método das **divisões consecutivas**. Divide-se o valor decimal consecutivamente por 2 até que o resultado da divisão seja 1 e não seja mais possível continuar dividindo. Depois, a partir do resultado da última divisão, que será 1, utiliza-se os valores dos restos, de trás pra frente como é mostrado na Figura 4 (veja a seta vermelha)
+
+Veja, a seguir, como funciona o método das divisões consecutivas na conversão do valor 158 para binário. O resultado é 10011110
+
+![Conversão do valor decimal 158 para binário](/content/images/conversao-158-10-2.png "Conversão do valor decimal 158 para binário")
+**Figura 4.** Conversão do valor decimal 158 para binário.
+
+### 1.8. Referências
 
 1. CARVALHO, A. C. P. L. F. de; LORENA, A. C. Introdução à computação - Hardware, software e dados. LTC, 2017. 
-2. 
+2. WIKIPÉDIA. Sistema de Numeração Binário. <https://pt.wikipedia.org/wiki/Sistema_de_numeração_binário> Acesso em 04 de abril de 2022.
