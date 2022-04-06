@@ -53,7 +53,7 @@ class Televisao {
 ```
 
 
-## Referências
+## 2.1. Referências
 
 1. WIKIPÉDIA. Programação orientada a objetos - Encapsulamento. <https://pt.wikipedia.org/wiki/Programação_orientada_a_objetos> Acesso em 30 de março de 2022.
 2. FILHO, Antonio Mendes da Silva. Introdução à programação orientada a objetos com C++. Brazil, Elsevier, 2010.
