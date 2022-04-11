@@ -39,7 +39,7 @@ Compreender a utilidade de um computador, ter noções de seu funcionamento e 
 #### Unidade I
 
 - [Dados e sua representação](/content/ib/1-dados.html)
-- Componentes de um sistema computacional
+- [Componentes de um sistema computacional](/content/ib/2-componentes.html)
 - Processamento de dados
 - Sistemas de numeração
 - Software

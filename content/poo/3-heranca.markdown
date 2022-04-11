@@ -36,4 +36,18 @@ var av1 = new Aviao();
 console.log(car.getOdometro());
 console.log(av1.getOdometro());
 ```
+## 3.1. Exercícios
 
+**Exercício 1.** Crie as classes `Pessoa`, `Estudante` e `Funcionario`. Siga os passos abaixo para completar esse exercício. Desenvolva qualquer código necessário para o código funcionar completamente.
+1. `Estudante` e `Funcionario` devem herdar de `Pessoa`
+2. `Pessoa` possui os atributos: `nome` e `endereco`.
+3. `Estudante` possui os atributos: `curso` e `ano`.
+4. `Funcionario` possui os atributos `funcao` e `salario`.
+5. Desenvolva os construtores de `Pessoa`, `Estudante` e `Funcionario` de forma que qualquer uma das classes seja instanciada com todas as informações necessárias. Por exemplo, `Pessoa` só necessita de `nome` e `endereco` para ser instanciada. Mas `Estudante` necessita de `curso`, `ano`, além de `nome` e `endereco`, uma vez que é uma subclasse de `Pessoa`.
+
+**Exercício 2.** Desenvolva o código para as classes mostradas na figura seguinte.
+
+![Diagrama 1](/content/images/diag1.svg "Diagrama 1")
+
+**Exercício 3.** Desenvolva o código para as classes mostradas na figura seguinte.
+![Diagrama 2](/content/images/diag2.svg "Diagrama 2")
