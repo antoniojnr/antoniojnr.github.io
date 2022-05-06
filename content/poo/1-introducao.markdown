@@ -142,11 +142,55 @@ class Funcionario {
   }
 }
 ```
+### 1.6. Composição
+
+Composição é mais um conceito fundamental em programação orientada a objetos. Descreve uma classe que referencia um ou mais objetos de outras classes em seus atributos. Isso permite modelar uma associação de posse entre objetos. Por exemplo: um celular *possui* uma tela ou um carro *possui* um motor.
+
+No Código 4, `Produto` possui um `Fabricante`. Logo, temos uma referência a um objeto do tipo `Fabricante` e podemos acessar seus métodos, como é mostrado no método `getEnderecoFabricante()`.
+
+**Código 4.** Classes `Produto` e `Fabricante`.
+```javascript
+class Produto {
+  constructor(nome, preco fabricante) {
+    this.nome = nome
+    this.preco = preco
+    this.fabricante = fabricante
+  }
+
+  // get/setNome, get/setPreco e get/setFabricante omitidos 
+  // para economizar espaço
+
+  getEnderecoFabricante() {
+    return this.getFabricante().getEndereco()
+  }
+}
+
+class Fabricante {
+  constructor(nome, endereco) {
+    this.nome = nome
+    this.endereco = endereco
+  }
+
+  // get/setNome e get/setEndereco omitidos 
+  // para economizar espaço
+}
+```
 
 No próximo capítulo, vamos ver sobre encapsulamento e sua importância no projeto de sistemas utilizando orientação a objetos.
 
-## 1.6. Referências
+### 1.7. Exercícios
+
+**Exercício 1.** Desenvolva o código para a classe mostrada na figura seguinte.
+
+![Diagrama 1](/content/images/classe1.svg "Diagrama 1")
+
+**Exercício 2.** Desenvolva o código para a classe mostrada na figura seguinte.
+
+![Diagrama 2](/content/images/classe2.svg "Diagrama 2")
+
+### 1.8. Referências
 
 1. FILHO, Antonio Mendes da Silva. Introdução à programação orientada a objetos com C++. Brazil, Elsevier, 2010.
 2. EDUCATIVE. What is object-oriented programming? OOP explained in depth <https://www.educative.io/blog/object-oriented-programming> Acesso em 25 de março de 2022.
 3. WIKIPÉDIA. Classe (Programação) <https://pt.wikipedia.org/wiki/Classe_(programação)> Acesso em 28 de março de 2022.
+4. JANSSEN, Thorben. OOP Concepts for Beginners: What is Composition? <https://stackify.com/oop-concepts-composition/> Acesso em 06 de maio de 2022.
