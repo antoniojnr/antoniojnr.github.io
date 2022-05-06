@@ -188,6 +188,10 @@ No próximo capítulo, vamos ver sobre encapsulamento e sua importância no proj
 
 ![Diagrama 2](/content/images/classe2.svg "Diagrama 2")
 
+**Exercício 3.** O diagrama a seguir representa uma composição, onde `Livro` possui um `Autor`.Desenvolva o código para as classes mostradas.
+
+![Diagrama 3](/content/images/classe3.svg "Diagrama 3")
+
 ### 1.8. Referências
 
 1. FILHO, Antonio Mendes da Silva. Introdução à programação orientada a objetos com C++. Brazil, Elsevier, 2010.
