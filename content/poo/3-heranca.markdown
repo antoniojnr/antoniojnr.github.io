@@ -51,3 +51,6 @@ console.log(av1.getOdometro());
 
 **Exercício 3.** Desenvolva o código para as classes mostradas na figura seguinte.
 ![Diagrama 2](/content/images/diag2.svg "Diagrama 2")
+
+**Exercício 4.** Desenvolva o código para as classes mostradas na figura seguinte.
+![Diagrama 3](/content/images/classe4.svg "Diagrama 3")
