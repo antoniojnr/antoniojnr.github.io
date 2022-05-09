@@ -192,7 +192,7 @@ No próximo capítulo, vamos ver sobre encapsulamento e sua importância no proj
 
 ![Diagrama 3](/content/images/classe3.svg "Diagrama 3")
 
-**Exercício 3.** O diagrama a seguir representa uma composição, onde `Linha` possui dois `Ponto`s. Desenvolva o código para as classes mostradas.
+**Exercício 4.** O diagrama a seguir representa uma composição, onde `Linha` possui dois `Ponto`s. Desenvolva o código para as classes mostradas.
 
 ![Diagrama 4](/content/images/classe5.svg "Diagrama 4")
 
