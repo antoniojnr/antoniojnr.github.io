@@ -39,7 +39,7 @@
 <text style='font-size:10px; font-family:Verdana;' text-anchor='middle' transform='translate(0,0)' x='61' y='-55.3'>+setInicio(ponto)</text>
 <text style='font-size:10px; font-family:Verdana;' text-anchor='middle' transform='translate(0,0)' x='61' y='-40.3'>+getFim()</text>
 <text style='font-size:10px; font-family:Verdana;' text-anchor='middle' transform='translate(0,0)' x='61' y='-25.3'>+setFim(ponto)</text>
-<text style='font-size:10px; font-family:Verdana;' text-anchor='middle' transform='translate(0,0)' x='61' y='-10.3'>getComprimento()</text>
+<text style='font-size:10px; font-family:Verdana;' text-anchor='middle' transform='translate(0,0)' x='61' y='-10.3'>+getComprimento()</text>
 </g><g class='node' id='node2'><title>Ponto</title>
 <polygon fill='lightgrey' filter='url(#shadow)' points='212.5,0.5 212.5,-176.5 299.5,-176.5 299.5,0.5 212.5,0.5' stroke='black' style='fill: black; stroke: none; fill-opacity:0.2'/><polygon fill='lightgrey' points='212.5,0.5 212.5,-176.5 299.5,-176.5 299.5,0.5 212.5,0.5' stroke='black' style='fill:url(#lightgrey);stroke:black;'/>
 <text style='font-size:10px; font-family:Verdana;' text-anchor='middle' transform='translate(0,0)' x='256' y='-158.3'>Ponto</text>
