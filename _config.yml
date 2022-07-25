@@ -2,9 +2,9 @@ title: Disciplinas
 email: antonio.dias@ifpb.edu.br
 description: >- # this means to ignore newlines until "baseurl:"
   Site das disciplinas ministradas pelo professor Antonio Júnior
-  no IFPB, campus Picuí.
+  no IFPB, campus Esperança.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://antoniodias.me" 
+url: "https://antoniojnr.github.io" 
 
 twitter_username: addsjunior
 github_username:  antoniojnr
