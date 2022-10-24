@@ -163,24 +163,24 @@ No Código 4, `Produto` possui um `Fabricante`. Logo, temos uma referência a um
 
 ```javascript
 class Produto {
-  constructor(nome, preco fabricante) {
-    this.nome = nome
-    this.preco = preco
-    this.fabricante = fabricante
+  constructor(nome, preco, fabricante) {
+    this.nome = nome;
+    this.preco = preco;
+    this.fabricante = fabricante;
   }
 
   // get/setNome, get/setPreco e get/setFabricante omitidos
   // para economizar espaço
 
   getEnderecoFabricante() {
-    return this.getFabricante().getEndereco()
+    return this.getFabricante().getEndereco();
   }
 }
 
 class Fabricante {
   constructor(nome, endereco) {
-    this.nome = nome
-    this.endereco = endereco
+    this.nome = nome;
+    this.endereco = endereco;
   }
 
   // get/setNome e get/setEndereco omitidos
