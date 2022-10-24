@@ -145,7 +145,7 @@ class Pessoa {
 
 Agora, no Código 5, acessamos ou modificamos o atributo `idade` como faríamos com um atributo normal.
 
-**Código 5.** _Getter_ e _setter_ para `idade` classe `Pessoa`.
+**Código 5.** Exemplo de uso do _getter_ e _setter_ para `idade` classe `Pessoa`.
 
 ```javascript
 let p = new Pessoa(1990);
