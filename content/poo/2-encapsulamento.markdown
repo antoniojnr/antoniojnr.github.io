@@ -157,7 +157,11 @@ console.log(p.getAnoDeNascimento()); // imprime 2002
 
 ## 2.1. Exercícios
 
-**Exercício 1.** Desenvolva o código para a classe mostrada na figura seguinte.
+**Exercício 1.** Desenvolva o código para a classe mostrada na figura seguinte, de acordo com as seguintes especificações:
+
+- A conta inicia com saldo zero
+- `depositar(valor)` e `sacar(valor)` acrescentam e subtraem `valor` de saldo, respectivamente
+- Faça as validações necessárias nos métodos `depositar(valor)` e `sacar(valor)`
 
 ![Diagrama 1](/content/images/classe6.svg "Diagrama 1")
 
