@@ -155,7 +155,13 @@ p.idade = 20;
 console.log(p.getAnoDeNascimento()); // imprime 2002
 ```
 
-## 2.1. Referências
+## 2.1. Exercícios
+
+**Exercício 1.** Desenvolva o código para a classe mostrada na figura seguinte.
+
+![Diagrama 1](/content/images/classe6.svg "Diagrama 1")
+
+## 2.2. Referências
 
 1. WIKIPÉDIA. Programação orientada a objetos - Encapsulamento. <https://pt.wikipedia.org/wiki/Programação_orientada_a_objetos> Acesso em 30 de março de 2022.
 2. FILHO, Antonio Mendes da Silva. Introdução à programação orientada a objetos com C++. Brazil, Elsevier, 2010.
