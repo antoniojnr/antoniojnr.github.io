@@ -4,7 +4,9 @@ title: Informática Básica e Introdução à Programação
 parent: Disciplinas
 nav_order: 5
 ---
+
 {: .no_toc }
+
 ## Informática Básica e Introdução à Programação
 
 ### Objetivo Geral da Disciplina
@@ -33,7 +35,7 @@ Compreender a utilidade de um computador, ter noções de seu funcionamento e 
 
 - **Contato através do Classroom:** preste atenção ao mural da disciplina e a comentários deixados nas atividades
 - **Tolerância zero para plágio:** exercícios de dois ou mais alunos com respostas semelhantes ou exercícios com respostas plagiadas de quaisquer fontes serão automaticamente zerados
- 
+
 ### Conteúdo Programático
 
 #### Unidade I
@@ -54,8 +56,8 @@ Compreender a utilidade de um computador, ter noções de seu funcionamento e 
 
 #### Unidade III
 
-- Introdução à Linguagem C
-  - Tipos de dados
+- [Introdução à Linguagem C](/content/ib/8-linguagem-c.html)
+  - [Tipos de dados](/content/ib/8-1-tipos.html)
   - Expressões
   - Variáveis e identificadores
   - Operações de atribuição
