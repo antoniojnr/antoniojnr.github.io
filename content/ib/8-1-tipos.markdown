@@ -6,53 +6,95 @@ nav_exclude: true
 
 ## 8.1. Tipos de dados
 
-C é uma linguagem de programação inicialmente desenvolvida por Dennis Ritchie em 1972 para ser usada como uma linguagem de programação para a escrita de um sistema operacional. Os principais recursos da linguagem C incluem acesso de baixo nível à memória, um conjunto simples de palavras-chave e um estilo de código limpo. Muitas linguagens desenvolvidas posteriormente reutilizaram a sintaxe e recursos de C, direta ou indiretamente. Java, PHP, JavaScript, entre outras são baseadas na linguagem C.
+Um tipo de dados, ou simplesmente _tipo_, é o conjunto de possíveis valores e operações aplicáveis a estes. Um tipo de dados determina como um dado será usado ou armazenado, seu significado e quais valores uma expressão, variável ou função podem receber. A linguagem C suporta diversos tipos de dados: números inteiros, decimais, caracteres, dados textuais (chamados de _strings_), entre outros.
 
-## 8.1. Estrutura de um programa em C
+Os principais tipos de dados que iremos utilizar são listados na Tabela 1 a seguir. Outros tipos serão apresentados conforme formos avançando.
 
-Em C ou em qualquer linguagem de programação, os programas precisam ser escritos em uma estrutura seguindo regras estritas de sintaxe. Isso significa que não respeitar essa sintaxe levará a **erros de compilação**, o que significa que seu código não pode ser transformado em uma aplicação executável. A estrutura de um programa em C é mostrada no Código 1.
+**Tabela 1.** Principais tipos de dados que utilizaremos.
 
-A função de cada linha é indicada em um comentário e detalhada logo abaixo do código. Comentários são precedidos por `//` e são trechos no código que não são interpretados pelo compilador, ou seja, não são efetivamente código. C também ignora linhas em branco. Essas são usadas para organizar o código e torná-lo mais legível.
+| Tipo     | Descrição                                                                                             |
+| -------- | ----------------------------------------------------------------------------------------------------- |
+| `char`   | Um único caractere                                                                                    |
+| `int`    | Um número inteiro                                                                                     |
+| `float`  | Um número decimal de precisão simples                                                                 |
+| `double` | Um número decimal de precisão dupla (armazena um número com precisão duas vezes maior que um `float`) |
 
-**Código 1.** Programa C básico.
+Cada tipo de dado é detalhado nas seções a seguir.
+
+## 8.2. O tipo `char`
+
+Representa um único caractere. Em C, uma variável do tipo `char` guarda um valor ASCII (um valor inteiro entre 0 e 127), em vez do próprio caractere. Esse valor inteiro é o código ASCII do caractere. Na tabela ASCII mostrada na Figura 1, os caracteres são exibidos ao lado de seus respectivos valores inteiros. O Código 1 mostra a declaração e inicialização de uma variável do tipo caractere. Observe que caracteres são representados entre aspas simples (`''`), nunca entre aspas duplas (`""`).
+
+**Código 1.** Declaração e inicialização de uma variável do tipo `char`.
 
 ```c
-#include <stdio.h>  // Cabeçalho
+char c = 'f';
+```
 
-int main(void) {  // Declaração da função principal
-  printf("Ola, mundo!");  // Corpo da função
+**Figura 1.** Tabela ASCII.
 
-  return 0;  // Comando de retorno
+![Figura 1](/content/images/ascii.png "ASCII table")
+
+Um dado do tipo `char` ocupa 1 byte na memória.
+
+Por exemplo, o valor ASCII de `'A'` ('A' maiúsculo) é 65. Isso significa que se você atribuir `'A'` a uma variável do tipo `char`, o valor 65 é armazenado em vez do valor `'A'`. Assim, esse valor seria na memória como é mostrado na Figura 2.
+
+**Figura 2.** Representação interna do caractere `'A'`.
+
+![Figura 2](/content/images/char_memory.svg "Char A")
+
+Uma vez que, internamente, o valor inteiro é o que fica armazenado na memória, também podemos usar `char` para guardar valores inteiros na faixa de -128 a 127, como mostrado no Código 2 a seguir.
+
+**Código 2.** Armazenando valores inteiros em uma variável `char`.
+
+```c
+char meuNumero = -128;
+```
+
+## 8.3. O tipo `int`
+
+É usado para armazenar valores inteiros, ou seja, sem casas decimais. Pode guardar valores em octal, hexadecimal ou decimal. O tamanho de um `int` geralmente é de 4 bytes (32 bits), podendo armazenar valores inteiros de -2.147.483.648 até 2.147.483.647.
+
+**Código 3.** Declaração e inicialização de uma variável do tipo `int`.
+
+```c
+int meuInt = 128547;
+```
+
+Valores octais e hexadecimais também podem ser passados para uma variável da forma descrita no Código 4. Use o sufixo `0x` antes de um número em hexadecimal para representá-lo no código e `0` antes de um número octal. Por padrão, o valores são impressos em decimal, mesmo que tenham sido declarados como hexadecimal ou octal. Execute o Código 4 para constatar isso.
+
+**Código 4.** Declaração e inicialização de uma variável do tipo `int` com valores octais e hexadecimais.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+  int meuIntHex = 0xF5; // hexadecimais são representados precedendo o número com o sufixo 0x
+  int meuIntOct = 073; // octais são representados precedendo o número com um 0 (zero)
+
+  printf("0xF5 corresponde ao decimal %d e 073 corresponde ao decimal %d", meuIntHex, meuIntOct);
+
+  return 0;
 }
 ```
 
-### Cabeçalho
+## 8.4. Os tipos `float` e `double`
 
-Arquivos declarados no cabeçalho adicionam funcionalidade aos programas em C. A declaração `#include <stdio.h>` na primeira linha é uma biblioteca que nos permite trabalhar com funções de entrada e saída, como o `printf()` usado na linha 4. Não se preocupe se você não entender essa linha agora, pense nela como algo que você sempre precisará incluir em seus programas para poder usar funções.
+`float` e `double` são usados para guardar números reais. A diferença entre esses dois tipos está no tamanho e precisão em que os dados são armazenados. Enquanto com `float` tem tamanho de 4 bytes e permite armazenar valores com 6-7 dígitos de significância, antes ou depois da vírgula, `double` tem tamanho de 8 bytes e suporta 16 a 17 dígitos.
 
-### Declaração da função principal
+Uma variável `float` ou `double` pode ser inicializada com a representação do número decimal ou em notação científica. Veja exemplos no código a seguir:
 
-A função principal é `main()`. Esta sempre aparecerá em um programa C e é a primeira função a ser chamada quando o programa é executado.
-
-> Você viu que a declaração da função `main()` tem o seguinte formato: `int main(void) { ... }`.
->
-> Nesse momento, não se preocupe em entender tudo que está escrito aí. Mas, para você saber o que isso significa: `int` é o tipo de retorno da função `main`, isto é, essa função retorna um número inteiro; `void`, entre parênteses, `()`, significa que a função `main` não recebe parâmetros, ou seja, valores sobre os quais vai trabalhar.
-> O código que aparece dentro das chaves, `{}`, é o _corpo da função_. Essa parte é executada quando a função é chamada.
-
-### Corpo da função
-
-O corpo da função é todo o código que será executado quando a função (`main`, neste caso) for chamada. No nosso exemplo, existem apenas dois comandos no corpo da função:
+**Código 5.** Usando `float` e `double`.
 
 ```c
-printf("Ola, mundo!");
+#include <stdio.h>
 
-return 0;
+int main(void) {
+  float meuFloat1 = 5.47261; // Usa-se ponto (.) em vez de vírgula (,)
+  float meuFloat2 = 3.9e3; // Notação científica: 3.9 x 10^3
+  double meuDouble1 = 7.38172937172636192;
+  double meuDouble2 = 0.5e-7 // Notação científica: 0.5 x 10^-7
+
+  return 0;
+}
 ```
-
-O comando `printf("Ola, mundo!");` imprime o texto "Ola, mundo" na saída padrão e o `return 0;` é explicado a seguir.
-
-### Comando de retorno
-
-Logo acima, você viu que na declaração da função `main` (`int main(void) { ... }`), `int` é o tipo de retorno da função. Isso significa que, ao fim da função, um valor deve ser retornado. Em outras situações, esse valor retornado pode ou não ser usado no código. Veremos mais sobre isso quando estudarmos sobre funções.
-
-O comando de retorno presente no exemplo é `return 0;`. O valor `0` é retornado na função `main`, nesse caso, para indicar que o programa foi executado e terminou com sucesso.

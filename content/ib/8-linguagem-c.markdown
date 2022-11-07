@@ -51,8 +51,18 @@ return 0;
 
 O comando `printf("Ola, mundo!");` imprime o texto "Ola, mundo" na saída padrão e o `return 0;` é explicado a seguir.
 
+Inicialmente, nos nossos programas, raramente você precisará escrever código fora do corpo da função `main`.
+
 ### Comando de retorno
 
 Logo acima, você viu que na declaração da função `main` (`int main(void) { ... }`), `int` é o tipo de retorno da função. Isso significa que, ao fim da função, um valor deve ser retornado. Em outras situações, esse valor retornado pode ou não ser usado no código. Veremos mais sobre isso quando estudarmos sobre funções.
 
 O comando de retorno presente no exemplo é `return 0;`. O valor `0` é retornado na função `main`, nesse caso, para indicar que o programa foi executado e terminou com sucesso.
+
+Nunca escreva código dentro de um corpo de função `{}` após um comando `return`. O `return`, quando declarado, deve ser o último comando do corpo da função e nada após ele é executado.
+
+## Exercícios
+
+### Exercício 1
+
+Com base no que você aprendeu neste capítulo, escreva um programa para imprimir o seu nome na tela.
