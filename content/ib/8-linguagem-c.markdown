@@ -4,11 +4,11 @@ title: Introdução à Linguagem C
 nav_exclude: true
 ---
 
-## 8. Introdução à Linguagem C
+## 8.0. Introdução à Linguagem C
 
 C é uma linguagem de programação inicialmente desenvolvida por Dennis Ritchie em 1972 para ser usada como uma linguagem de programação para a escrita de um sistema operacional. Os principais recursos da linguagem C incluem acesso de baixo nível à memória, um conjunto simples de palavras-chave e um estilo de código limpo. Muitas linguagens desenvolvidas posteriormente reutilizaram a sintaxe e recursos de C, direta ou indiretamente. Java, PHP, JavaScript, entre outras são baseadas na linguagem C.
 
-## 8.1. Estrutura de um programa em C
+## 8.0.1. Estrutura de um programa em C
 
 Em C ou em qualquer linguagem de programação, os programas precisam ser escritos em uma estrutura seguindo regras estritas de sintaxe. Isso significa que não respeitar essa sintaxe levará a **erros de compilação**, o que significa que seu código não pode ser transformado em uma aplicação executável. A estrutura de um programa em C é mostrada no Código 1.
 
@@ -61,7 +61,7 @@ O comando de retorno presente no exemplo é `return 0;`. O valor `0` é retornad
 
 Nunca escreva código dentro de um corpo de função `{}` após um comando `return`. O `return`, quando declarado, deve ser o último comando do corpo da função e nada após ele é executado.
 
-## Exercícios
+## 8.0.2. Exercícios
 
 ### Exercício 1
 

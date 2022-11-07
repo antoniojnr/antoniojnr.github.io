@@ -21,7 +21,7 @@ Os principais tipos de dados que iremos utilizar são listados na Tabela 1 a seg
 
 Cada tipo de dado é detalhado nas seções a seguir.
 
-## 8.2. O tipo `char`
+## 8.1.1. O tipo `char`
 
 Representa um único caractere. Em C, uma variável do tipo `char` guarda um valor ASCII (um valor inteiro entre 0 e 127), em vez do próprio caractere. Esse valor inteiro é o código ASCII do caractere. Na tabela ASCII mostrada na Figura 1, os caracteres são exibidos ao lado de seus respectivos valores inteiros. O Código 1 mostra a declaração e inicialização de uma variável do tipo caractere. Observe que caracteres são representados entre aspas simples (`''`), nunca entre aspas duplas (`""`).
 
@@ -51,7 +51,7 @@ Uma vez que, internamente, o valor inteiro é o que fica armazenado na memória,
 char meuNumero = -128;
 ```
 
-## 8.3. O tipo `int`
+## 8.1.2. O tipo `int`
 
 É usado para armazenar valores inteiros, ou seja, sem casas decimais. Pode guardar valores em octal, hexadecimal ou decimal. O tamanho de um `int` geralmente é de 4 bytes (32 bits), podendo armazenar valores inteiros de -2.147.483.648 até 2.147.483.647.
 
@@ -78,7 +78,7 @@ int main(void) {
 }
 ```
 
-## 8.4. Os tipos `float` e `double`
+## 8.1.3. Os tipos `float` e `double`
 
 `float` e `double` são usados para guardar números reais. A diferença entre esses dois tipos está no tamanho e precisão em que os dados são armazenados. Enquanto com `float` tem tamanho de 4 bytes e permite armazenar valores com 6-7 dígitos de significância, antes ou depois da vírgula, `double` tem tamanho de 8 bytes e suporta 16 a 17 dígitos.
 
