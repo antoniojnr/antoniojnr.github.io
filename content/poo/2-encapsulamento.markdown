@@ -165,6 +165,17 @@ console.log(p.getAnoDeNascimento()); // imprime 2002
 
 ![Diagrama 1](/content/images/classe6.svg "Diagrama 1")
 
+**Exercício 2.** Desenvolva o código para a classe `Televisao`, de acordo com as seguintes especificações:
+
+- `Televisao` possui os atributos: `volume` (`number`), `ligada` (`boolean`)
+- `Televisao` possui os métodos:
+  - `ligar()` e `desligar()` - alteram o estado de `ligado`--os nomes dos métodos são autoexplicativos
+  - `isLigado()` - lê o estado de `ligado`
+  - `setVolume(volume)` - altera o estado de `volume`
+  - `getVolume()` - lê o estado de `volume`
+- A `Televisao` não pode ter o volume alterado se estiver desligada - lance o erro "TV desligada" caso o usuário tente alterar o volume com a TV desligada
+- Os valores mínimo e máximo para `volume` são, respectivamente, 0 e 100 - lance o erro "Volume mínimo atingido" ou "Volume máximo atingido" nas situações em que se tente mudar o `volume` para valores fora da faixa
+
 ## 2.2. Referências
 
 1. WIKIPÉDIA. Programação orientada a objetos - Encapsulamento. <https://pt.wikipedia.org/wiki/Programação_orientada_a_objetos> Acesso em 30 de março de 2022.
