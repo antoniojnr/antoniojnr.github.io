@@ -43,3 +43,13 @@ int numero = 5;      // variável int
 numero = 5.5;        // erro
 double numero;       // erro
 ```
+
+## 8.2.2. Exercícios
+
+**Exercício 1.** Declare 3 variáveis para armazenar os valores listados a seguir e utilize a função apropriada para imprimir os valores das variáveis.
+
+- `"Introducao a programacao"`
+- `'g'`
+- `37.674`
+
+**Exercício 2.** O que acontece se você atribuir a string `"teste"` a uma variável do tipo `int`? Explique o que e porque acontece.
