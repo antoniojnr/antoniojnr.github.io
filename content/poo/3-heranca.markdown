@@ -25,7 +25,7 @@ class Veiculo {
   }
 }
 
-class Aviao {}
+class Motocicleta extends Veiculo {}
 
 class Carro extends Veiculo {}
 
