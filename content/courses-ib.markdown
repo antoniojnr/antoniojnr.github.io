@@ -59,7 +59,7 @@ Compreender a utilidade de um computador, ter noções de seu funcionamento e 
 - [Introdução à Linguagem C](/content/ib/8-linguagem-c.html)
   - [Tipos de dados](/content/ib/8-1-tipos.html)
   - [Variáveis e identificadores](/content/ib/8-2-variaveis.html)
-  - Expressões
+  - [Expressões](/content/ib/8-3-expressoes.html)
   - Operações de atribuição
   - Operações de entrada e saída
 
