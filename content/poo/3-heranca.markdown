@@ -16,6 +16,33 @@ Observe, no Código 1 a seguir, as classes `Veiculo`, `Aviao` e `Carro`. Observe
 
 ```javascript
 class Veiculo {
+  constructor(odo) {
+    this.odometro = odo;
+  }
+
+  getOdometro() {
+    return this.odometro;
+  }
+}
+
+class Aviao {}
+
+class Carro extends Veiculo {}
+
+var car = new Carro();
+var av1 = new Aviao();
+console.log(car.getOdometro());
+console.log(av1.getOdometro());
+```
+
+O método `getOdometro()` está disponível na classe `Carro`, mesmo sem esta implementar o método, porque `Carro` herda de `Veiculo`. Mas `Aviao` não herda e, por isso, não possui esse método.
+
+Agora, vamos criar uma nova classe, `Motocicleta`. Esta classe herdará de `Veiculo` e, portanto, terá acesso ao método `getOdometro()` e atributos `odometro`. Além disso, vamos criar o atributo `airbagsDisparados` em `Carro`, que informa se os airbags do carro já foram disparados alguma vez. Se formos escrever algum código no construtor da classe `Carro`, precisaremos chamar também o construtor de sua classe base, `Veiculo`. Isso é feito através da chamada `super()`.
+
+Nesse caso, estamos passando os valores `odo` (odômetro) e `airbags` (que indica se os airbags foram disparados) para o construtor de `Carro`. Usando `super()`, chamamos o construtor de `Veiculo`, passando o valor de `odo`. A chamada para `super()` deve ser a primeira do construtor. Depois do `super()`, podemos escrever o restante do código do construtor.
+
+```javascript
+class Veiculo {
   constructor() {
     this.odometro = 0;
   }
@@ -25,14 +52,16 @@ class Veiculo {
   }
 }
 
+class Aviao {}
+
+class Carro extends Veiculo {
+  constructor(odo, airbags) {
+    super(odo);
+    this.airbagsDisparados = airbags;
+  }
+}
+
 class Motocicleta extends Veiculo {}
-
-class Carro extends Veiculo {}
-
-var car = new Carro();
-var moto = new Motocicleta();
-console.log(car.getOdometro());
-console.log(moto.getOdometro());
 ```
 
 ## 3.1. Exercícios
