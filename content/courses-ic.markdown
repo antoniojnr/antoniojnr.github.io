@@ -2,7 +2,7 @@
 layout: default
 title: Introdução à Computação
 parent: Disciplinas
-nav_order: 5
+nav_order: 1
 ---
 
 {: .no_toc }

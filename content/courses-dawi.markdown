@@ -2,9 +2,11 @@
 layout: default
 title: Desenvolvimento de Aplicações para a Web I
 parent: Disciplinas
-nav_order: 2
+nav_order: 3
 ---
+
 {: .no_toc }
+
 ## Desenvolvimento de Aplicações para a Web I
 
 ### Conteúdo
@@ -41,5 +43,5 @@ nav_order: 2
    4. Geolocalização
    5. Web Sockets
    6. Representação Gráfica (SVG/Canvas)
-7.  Bibliotecas e Frameworks JavaScript
-    1. Conceitos básicos e aplicação
+7. Bibliotecas e Frameworks JavaScript
+   1. Conceitos básicos e aplicação

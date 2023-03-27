@@ -2,7 +2,7 @@
 layout: default
 title: Informática Básica e Introdução à Programação
 parent: Disciplinas
-nav_order: 5
+nav_order: 4
 ---
 
 {: .no_toc }
