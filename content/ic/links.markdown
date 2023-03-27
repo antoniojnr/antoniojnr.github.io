@@ -10,12 +10,9 @@ Nesta página, reuno todas as coisas sobre as quais falo em aula para vocês, ma
 
 ## 2023
 
-### Março
-
 <table>
   <tr>
-    <th>Dia</th>
-    <th></th>
+    <th colspan="2">Março</th>
   </tr>
   <tr>
     <td>20</td>
