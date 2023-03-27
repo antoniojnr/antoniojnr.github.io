@@ -10,12 +10,33 @@ nav_exclude: true
 
 ### Março
 
-| Dia | Conteúdo                                                                                                                |
-| --- | ----------------------------------------------------------------------------------------------------------------------- |
-| 20  | <ul><li>Apresentação da disciplina</li><li>Origem do computador</li><li>Histórico e evolução dos computadores</li></ul> |
-| 27  | <ul><li>Histórico e evolução dos computadores</li></ul>                                                                 |
-
-Acumulado (carga horária): 8h
+<table>
+  <tr>
+    <th>Dia</th>
+    <th>Conteúdo</th>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>
+      <ul>
+        <li>Apresentação da disciplina</li>
+        <li>Origem do computador</li>
+        <li>Histórico e evolução dos computadores</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>
+      <ul>
+        <li>Histórico e evolução dos computadores</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">Acumulado (carga horária): <strong>8h</strong></td>
+  </tr>
+</table>
 
 ### Abril
 
