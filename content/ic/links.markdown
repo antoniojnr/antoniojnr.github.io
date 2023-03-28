@@ -29,6 +29,7 @@ Nesta página, reuno todas as coisas sobre as quais falo em aula para vocês, ma
     <td>
       <ul>
         <li>Vídeo detalhando o funcionamento do Colossus disponível <a href="https://www.britannica.com/technology/computer/images-videos#/media/1/130429/214516" target="_blank">aqui</a></li>
+        <li>Reportagem sobre o envolvimento de big techs com o garimpo de ouro ilegal <a href="https://outraspalavras.net/outrasmidias/amazonia-as-conexoes-entre-big-tech-e-o-garimpo-ilegal/">aqui</a></li>
       </ul>
     </td>
   </tr>
