@@ -42,13 +42,21 @@ nav_exclude: true
   <tr>
     <td>10</td>
     <td>
-      <ul><li>Sistemas de numeração (base 2, base 8, base 10 e base 16)</li><li>Conversão de um sistema para outro</li><li>Representação de números binários com sinal</li></ul>
+      <ul>
+        <li>Sistemas de numeração (base 2, base 8, base 10 e base 16)</li>
+        <li>Conversão de um sistema para outro</li>
+        <li>Representação de números binários com sinal</li>
+      </ul>
     </td>
   </tr>
   <tr>
     <td>17</td>
     <td>
-      <ul><li>Aritmética de inteiros</li><li>Aritmética de ponto flutuante</li><ul><li>Portas lógicas</li></ul>
+      <ul>
+        <li>Aritmética de inteiros</li>
+        <li>Aritmética de ponto flutuante</li>
+        <li>Portas lógicas</li>
+      </ul>
     </td>
   </tr>
   <tr>
