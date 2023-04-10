@@ -36,16 +36,15 @@ nav_exclude: true
   <tr>
     <td>03</td>
     <td>
-      <ul><li>Hardware</li><li>Software</li><li>Classificação dos sistemas computacionais</li></ul>
+      <ul><li>Hardware</li></ul>
     </td>
   </tr>
   <tr>
     <td>10</td>
     <td>
       <ul>
-        <li>Sistemas de numeração (base 2, base 8, base 10 e base 16)</li>
-        <li>Conversão de um sistema para outro</li>
-        <li>Representação de números binários com sinal</li>
+        <li><em>Mini-teste 1</em></li>
+        <li>Hardware</li>
       </ul>
     </td>
   </tr>
@@ -53,16 +52,22 @@ nav_exclude: true
     <td>17</td>
     <td>
       <ul>
-        <li>Aritmética de inteiros</li>
-        <li>Aritmética de ponto flutuante</li>
-        <li>Portas lógicas</li>
+        <li>Software</li>
+        <li>Classificação dos sistemas computacionais</li>
+        <li>Sistemas de numeração (base 2, base 8, base 10 e base 16)</li>
+        <li>Conversão de um sistema para outro</li>
       </ul>
     </td>
   </tr>
   <tr>
     <td>24</td>
     <td>
-      <ul><li>Álgebra de boole</li><li>Simplificação de circuitos lógicos - Mapa de Karnaugh</li></ul>
+      <ul>
+        <li>Representação de números binários com sinal</li>
+        <li>Aritmética de inteiros</li>
+        <li>Aritmética de ponto flutuante</li>
+        <li>Portas lógicas</li>
+      </ul>
     </td>
   </tr>
   <tr>
@@ -71,13 +76,21 @@ nav_exclude: true
   <tr>
     <td>08</td>
     <td>
-      <ul><li>Circuitos sequenciais</li><li>Resolução de problemas utilizando eletrônica digital</li></ul>
+      <ul>
+        <li>Álgebra de boole</li>
+        <li>Simplificação de circuitos lógicos - Mapa de Karnaugh</li>
+        <li>Circuitos sequenciais</li>
+      </ul>
     </td>
   </tr>
   <tr>
     <td>15</td>
     <td>
-      <ul><li>Computação reconfigurável</li><li>Instruções e linguagem de máquina</li></ul>
+      <ul>
+        <li>Resolução de problemas utilizando eletrônica digital</li>
+        <li>Computação reconfigurável</li>
+        <li>Instruções e linguagem de máquina</li>
+      </ul>
     </td>
   </tr>
   <tr>
