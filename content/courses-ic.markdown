@@ -39,9 +39,9 @@ Identificar e compreender os principais componentes de um computador, o seu func
 
 ### Avaliação
 
-- Três avaliações por bimestre, divididas em:
-  - Listas de exercícios semanais
-  - Mini-testes semanais
+- Três notas por semestre, divididas em:
+  - Listas de exercícios - **5 listas** (Primeira nota)
+  - Mini-testes semanais - **13 mini-testes - pode ser menos, dependendo de motivos quaisquer** (Segunda e terceira notas - a média de todos os mini-testes é repetida na segunda e terceira notas no SUAP)
 
 ### Regras
 
