@@ -33,4 +33,16 @@ Nesta página, reuno todas as coisas sobre as quais falo em aula para vocês, ma
       </ul>
     </td>
   </tr>
+  <tr>
+    <th colspan="2">Abril</th>
+    <tr>
+    <td>17</td>
+    <td>
+      <ul>
+        <li>Aonde vão os arquivos removidos? (<a href="https://www.youtube.com/watch?v=G5s4-Kak49o">Where do deleted files go?</a> - Esse é um vídeo bem filosófico, além de técnico) Ative legendas e tradução automática.</li>
+        <li><a href="https://www.youtube.com/watch?v=3Rgk7-F_DT8">Como remover arquivos permanentemente?</a> - Ative legendas e tradução automática.</li>
+      </ul>
+    </td>
+  </tr>
+  https://www.youtube.com/watch?v=G5s4-Kak49o
 </table>
