@@ -63,9 +63,9 @@ Identificar e compreender os principais componentes de um computador, o seu func
 
 #### **Unidade III - Representação e processamento da informação**
 
-- Sistemas de numeração (base 2, base 8, base 10 e base 16)
+- [Sistemas de numeração (base 2, base 8, base 10 e base 16)](/content/ic/3.1-dados.html)
 - Conversão de um sistema para outro
-- Representação de números binários com sinal
+- [Representação de números binários com sinal](/content/ic/3.3-sinal.html)
 - Aritmética de inteiros
 - Aritmética de ponto flutuante
 

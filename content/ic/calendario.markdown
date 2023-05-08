@@ -55,7 +55,7 @@ nav_exclude: true
         <li>Software</li>
         <li>Classificação dos sistemas computacionais</li>
         <li>Sistemas de numeração (base 2, base 8, base 10 e base 16)</li>
-        <li>Conversão de um sistema para outro</li>
+        <li>Conversão entre binário e decimal</li>
       </ul>
     </td>
   </tr>
@@ -63,6 +63,7 @@ nav_exclude: true
     <td>24</td>
     <td>
       <ul>
+        <li>Conversão entre sistemas de numeração</li>
         <li>Representação de números binários com sinal</li>
         <li>Aritmética de inteiros</li>
         <li>Aritmética de ponto flutuante</li>
