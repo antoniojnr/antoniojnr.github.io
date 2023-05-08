@@ -115,7 +115,7 @@ Como já foi dito, o sistema binário, assim como o decimal, é um sistema de nu
 
 Para compor o valor total, multiplicamos os algorismos pelos valores das posições correspondentes: milhares (1000), centenas (100), dezenas (10) e unidades (1): 7 &#215; 1000 + 4 &#215; 100 + 9 &#215; 10 + 2 &#215; 1, que totaliza 7492. Perceba que, começando da posição mais à direita (1), os valores das próximas posições são o **valor anterior * 10**. Esse processo é natural para nós, que o realizamos sem nos dar conta.
 
-Agora considere o valor binário 10110~2~ (Usa se o 2 subscrito — <sub>2</sub> — para indicar que aquele valor é de base 2. A mesma coisa acontece para a base decimal — 10 — ou outras que estudaremos adiante). 
+Agora considere o valor binário 10110<sub>2</sub> (Usa se o 2 subscrito — <sub>2</sub> — para indicar que aquele valor é de base 2. A mesma coisa acontece para a base decimal — 10 — ou outras que estudaremos adiante). 
 
 Podemos construir a mesma tabela para descobrir o valor decimal correspondente a esse número binário. Entretanto, na tabela para binário, os valores das posições, a partir da 1, são o **valor anterior * 2**.
 
@@ -157,7 +157,32 @@ Veja, a seguir, como funciona o método das divisões consecutivas na conversão
 ![Conversão do valor decimal 158 para binário](/content/images/conversao-158-10-2.png "Conversão do valor decimal 158 para binário")
 **Figura 4.** Conversão do valor decimal 158 para binário.
 
-### 1.8. Referências
+### 1.8. Sistema de numeração octal
+
+O sistema de numeração octal, de base 8, utiliza 8 símbolos para a representação de valores: de 0 a 7.
+
+Foi um sistema bastante utilizado anteriormente como uma alternativa mais compacta que o binário para representar linguagem de máquina. Entretanto, hoje em dia o sistema hexadecimal é mais utilizado para essa finalidade. 
+
+A conversão de octal para os outros sistemas de numeração pode ser feita usando os seguintes métodos:
+- **Para binário:** transforme cada dígito octal em um agrupamento de 3 bits.
+- **Para decimal:** atribua valores às posições de cada dígito–8<sup>0</sup> ao dígito menos significativo, 8<sup>1</sup> ao próximo dígito menos significativo, e assim por diante. Por fim, multiplique cada valor de posição por cada dígito e some todos.
+- **Para hexadecimal:** converta para uma base intermediária antes de converter para hexadecimal.
+
+### 1.9. Sistema de numeração hexadecimal
+
+O sistema de numeração hexadecimal, de base 16, utiliza 16 símbolos para a representação de valores: de 0 a F (0 a 9 e A = 10, B = 11, C = 12, D = 13, E = 14, F = 15).
+
+É bastante utilizado para representar números binários de forma mais compacta, dada a facilidade de conversão de binário para hexadecimal e vice-versa.
+
+A conversão de octal para os outros sistemas de numeração pode ser feita usando os seguintes métodos:
+- **Para binário:** transforme cada dígito hexadecimal em um agrupamento de 4 bits.
+- **Para octal:** converta para uma base intermediária antes de converter para octal.- **Para decimal:** atribua valores às posições de cada dígito–16<sup>0</sup> ao dígito menos significativo, 16<sup>1</sup> ao próximo dígito menos significativo, e assim por diante. Por fim, multiplique cada valor de posição por cada dígito e some todos.
+
+### 2.0. Material extra
+
+Eu compilei, [neste resumo](https://drive.google.com/file/d/1qwVDEzBYo2ie2CVS8_WnAhy7Tk-hvVzE/view?usp=drive_web&authuser=1), todas as formas de conversão entre os sistemas de numeração binário, octal, decimal e hexadecimal.
+
+### 2.1. Referências
 
 1. CARVALHO, A. C. P. L. F. de; LORENA, A. C. Introdução à computação - Hardware, software e dados. LTC, 2017. 
 2. WIKIPÉDIA. Sistema de Numeração Binário. <https://pt.wikipedia.org/wiki/Sistema_de_numeração_binário> Acesso em 04 de abril de 2022.
