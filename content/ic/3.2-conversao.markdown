@@ -73,3 +73,7 @@ A conversão de hexadecimal para os outros sistemas de numeração pode ser feit
 ### 1.5. Material extra
 
 Eu compilei, [neste resumo](https://drive.google.com/file/d/1qwVDEzBYo2ie2CVS8_WnAhy7Tk-hvVzE/view?usp=drive_web&authuser=1), todas as formas de conversão entre os sistemas de numeração binário, octal, decimal e hexadecimal.
+
+Eu também preparei esse vídeo, demonstrando as conversões entre os quatro sistemas de numeração estudados.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mvmeHoLxc9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
