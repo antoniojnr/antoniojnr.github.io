@@ -44,5 +44,15 @@ Nesta página, reuno todas as coisas sobre as quais falo em aula para vocês, ma
       </ul>
     </td>
   </tr>
-  https://www.youtube.com/watch?v=G5s4-Kak49o
+  <tr>
+    <th colspan="2">Maio</th>
+    <tr>
+    <td>22</td>
+    <td>
+      <ul>
+        <li>Simulador de circuitos (<a href="http://www.falstad.com/circuit/">Circuit Simulator Applet</a>)</li>
+        <li>Simplificador de expressões booleanas (Use o WolframAlpha para simplificar expressões booleanas. Veja, por exemplo, como <a href="https://www.wolframalpha.com/input?i=simplify+A+AND+B+OR+A+AND+C">simplificar a expressão <strong>(A and B) or (A and C)</strong></a>)</li>
+      </ul>
+    </td>
+  </tr>
 </table>
