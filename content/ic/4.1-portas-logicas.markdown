@@ -1,0 +1,80 @@
+---
+layout: default
+title: Portas lógicas
+nav_exclude: true
+---
+
+## 1. Introdução
+
+A álgebra de um sistema numérico descreve como executar operações aritméticas usando os operadores daquele sistema sobre as variáveis, que podem receber quaisquer valores dentro daquele sistema. A **álgebra booleana** é o sistema matemático que opera sobre dígitos binários (ou bits), mais especificamente 0s e 1s. Os circuitos digitais com uma ou mais entradas e uma saída capazes de executar operações lógicas são chamados de **portas lógicas** - as mais comuns são AND, OR e NOT.
+
+Essas portas possuem dígitos binários como entradas e saídas e existe uma forma tabular para representar as saídas de uma porta dadas todas as entradas possíveis. Essa forma tabular é chamada de **tabela-verdade**. 
+
+## 2. Porta AND
+
+A porta AND também é chamada de *multiplicação lógica*.
+Todas as combinações de duas entradas e saídas para a porta AND estão espresentadas na Tabela 1. 
+
+A expressão booleana para a porta (ou operação) AND aplicada aos operandos A e B é representada como:
+
+*Z = A.B* ou *Z = AB*, onde (.) representa a multiplicação lógica.
+
+**Tabela 1.** Tabela verdade da porta lógica AND aplicada a duas entradas A e B.
+```
+-------------------
+| A | B | A AND B |
+-------------------
+| 0 | 0 |    0    |
+| 0 | 1 |    0    |
+| 1 | 0 |    0    |
+| 1 | 1 |    1    |
+-------------------
+```
+
+O símbolo padrão da porta AND é mostrado na Figura 1.
+
+![Porta AND](/content/images/and-gate.png "Porta AND")
+**Figura 1.** O símbolo da porta AND.
+
+
+**Tabela 2.** Tabela verdade da porta lógica OR aplicada a duas entradas A e B.
+```
+-------------------
+| A | B | A OR B  |
+-------------------
+| 0 | 0 |    0    |
+| 0 | 1 |    1    |
+| 1 | 0 |    1    |
+| 1 | 1 |    1    |
+-------------------
+```
+
+**Tabela 3.** Tabela verdade da porta lógica NOT aplicada a duas entradas A e B.
+```
+-------------------
+| A | B | A OR B  |
+-------------------
+| 0 | 0 |    0    |
+| 0 | 1 |    1    |
+| 1 | 0 |    1    |
+| 1 | 1 |    1    |
+-------------------
+```
+
+ combination of these logic gates helps to perform various logical and
+arithmetic functions.
+Gates have binary digits as both input and output. The corresponding output is written
+in a tabular format for convenience. Such a table is called the truth table. The bits in the
+truth table are written according to the binary order. The logic gates use only two voltages, high and low. A low voltage corresponds to ‘0’ while ‘1’ correlates to high voltage.
+
+The algebra of a number system basically describes how to perform arithmetic
+using the operators of the system acting upon the system's variables which can
+take any of the allowed values within that system. Boolean algebra describes the
+arithmetic of a two-state system and is therefore the mathematical language of
+digital electronics. The variables in Boolean algebra are represented as symbols
+(e.g. A, B, C, X, Y etc.) which indicate the state (e.g. voltage in a circuit). In this
+book this state will be either 0 or 1. ~ Boolean algebra has only three operators:
+NOT, AND and OR. The symbols representing these operations, their usage and
+how they are used verbally are all shown in Table 1.1. Note that whereas the
+AND 2 and OR operators operate on two or more variables the NOT operator
+works on a single variable. 
