@@ -17,49 +17,59 @@ Todas as combinações de duas entradas e saídas para a porta AND estão espres
 
 A expressão booleana para a porta (ou operação) AND aplicada aos operandos A e B é representada como:
 
-*Z = A.B* ou *Z = AB*, onde (.) representa a multiplicação lógica.
+$Z = A.B$, $Z = AB$, ou ainda $Z = A \wedge B$, onde (.) e ($\wedge$) representam a multiplicação lógica.
 
 **Tabela 1.** Tabela verdade da porta lógica AND aplicada a duas entradas A e B.
-```
--------------------
-| A | B | A AND B |
--------------------
-| 0 | 0 |    0    |
-| 0 | 1 |    0    |
-| 1 | 0 |    0    |
-| 1 | 1 |    1    |
--------------------
-```
+|$A$|$B$|$A \wedge B$|
+--|---|--
+| 0 | 0 | **0** |
+| 0 | 1 | **0** |
+| 1 | 0 | **0** |
+| 1 | 1 | **1** |
 
 O símbolo padrão da porta AND é mostrado na Figura 1.
 
-![Porta AND](/content/images/and-gate.png "Porta AND")
+![Porta AND](/content/images/and-2.png "Porta AND")
 **Figura 1.** O símbolo da porta AND.
 
+## 2. Porta OR
+
+A porta OR também é chamada de *adição lógica*.
+Todas as combinações de duas entradas e saídas para a porta OR estão espresentadas na Tabela 2. 
+
+A expressão booleana para a porta (ou operação) OR aplicada aos operandos A e B é representada como:
+
+$Z = A+B$ ou ainda $Z = A \vee B$, onde (+) e ($\vee$) representam a adição lógica.
 
 **Tabela 2.** Tabela verdade da porta lógica OR aplicada a duas entradas A e B.
-```
--------------------
-| A | B | A OR B  |
--------------------
-| 0 | 0 |    0    |
-| 0 | 1 |    1    |
-| 1 | 0 |    1    |
-| 1 | 1 |    1    |
--------------------
-```
+|$A$|$B$|$A \vee B$|
+--|---|--
+| 0 | 0 | **0** |
+| 0 | 1 | **1** |
+| 1 | 0 | **1** |
+| 1 | 1 | **1** |
 
-**Tabela 3.** Tabela verdade da porta lógica NOT aplicada a duas entradas A e B.
-```
--------------------
-| A | B | A OR B  |
--------------------
-| 0 | 0 |    0    |
-| 0 | 1 |    1    |
-| 1 | 0 |    1    |
-| 1 | 1 |    1    |
--------------------
-```
+O símbolo padrão da porta OR é mostrado na Figura 2.
+
+![Porta OR](/content/images/or-2.png "Porta OR")
+**Figura 1.** O símbolo da porta OR.
+
+## 3. Porta NOT
+
+Uma variável booleana possui dois possíveis valores: 0 ou 1. O complemento de 0 é 1 e vice-versa. A porta NOT, também conhecida como inversor, produz o complemento de uma variável. Dessa forma, se A é a entrada de uma porta NOT, sua saída é representada por *Z = $\neg$ A*.
+
+A porta NOT possui somente um terminal de entrada, diferentemente das portas OR e AND, que possuem mais de uma entrada. A tabela-verdade da porta NOT é mostrada na Tabela 3.
+
+**Tabela 3.** Tabela verdade da porta lógica NOT.
+|$A$|$\neg A$|
+--|--
+| 0 | **1** |
+| 1 | **0** |
+
+O símbolo padrão da porta NOT é mostrado na Figura 3.
+
+![Porta OR](/content/images/not-gate.png "Porta OR")
+**Figura 1.** O símbolo da porta OR.
 
  combination of these logic gates helps to perform various logical and
 arithmetic functions.
