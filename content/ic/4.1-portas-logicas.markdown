@@ -3,6 +3,7 @@ layout: default
 title: Portas lógicas
 nav_exclude: true
 ---
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML"></script>
 
 ## 1. Introdução
 
