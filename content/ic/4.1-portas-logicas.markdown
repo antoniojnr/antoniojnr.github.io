@@ -20,6 +20,7 @@ A expressão booleana para a porta (ou operação) AND aplicada aos operandos A 
 *Z = A.B*, *Z = AB*, ou ainda <img src="https://latex.codecogs.com/svg.image?A&space;\wedge&space;B"/>, onde (.) e (<img src="https://latex.codecogs.com/svg.image?\wedge"/>) representam a multiplicação lógica.
 
 **Tabela 1.** Tabela verdade da porta lógica AND aplicada a duas entradas A e B.
+
 |**A**|**B**|**A.B**|
 |--|---|--|
 | 0 | 0 | **0** |
@@ -42,6 +43,7 @@ A expressão booleana para a porta (ou operação) OR aplicada aos operandos A e
 *Z = A+B* ou ainda <img src="https://latex.codecogs.com/svg.image?A&space;\vee&space;B"/>, onde (+) e (<img src="https://latex.codecogs.com/svg.image?\vee"/>) representam a adição lógica.
 
 **Tabela 2.** Tabela verdade da porta lógica OR aplicada a duas entradas A e B.
+
 |**A**|**B**|**A+B**|
 |--|---|--|
 | 0 | 0 | **0** |
@@ -61,6 +63,7 @@ Uma variável booleana possui dois possíveis valores: 0 ou 1. O complemento de 
 A porta NOT possui somente um terminal de entrada, diferentemente das portas OR e AND, que possuem mais de uma entrada. A tabela-verdade da porta NOT é mostrada na Tabela 3.
 
 **Tabela 3.** Tabela verdade da porta lógica NOT.
+
 |*A*|*'A*|
 --|--
 | 0 | **1** |
