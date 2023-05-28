@@ -72,7 +72,7 @@ Identificar e compreender os principais componentes de um computador, o seu func
 #### **Unidade IV - Introdução à eletrônica digital**
 
 - [Portas lógicas](/content/ic/4.1-portas-logicas.html)
-- Álgebra de boole
+- [Álgebra de Boole](/content/ic/4.2-algebra-de-boole.html)
 - Simplificação de circuitos lógicos - Mapa de Karnaugh
 - Circuitos sequenciais
 - Resolução de problemas utilizando eletrônica digital

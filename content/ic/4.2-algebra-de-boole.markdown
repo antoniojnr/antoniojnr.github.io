@@ -1,0 +1,95 @@
+---
+layout: default
+title: Álgebra de Boole
+nav_exclude: true
+---
+
+## 1. Leis da álgebra booleana
+
+Utilizando as operações básicas vistas na parte anterior, esta parte apresenta regras adicionais e leis da lógica booleana necessárias para analisar e desenvolver expressões lógicas.
+
+### 1.1. Teoremas de uma única variável
+
+Como o título sugere, esta seção detalha as operações de portas lógicas quando somente uma variável está presente.
+
+#### **Leis da idempotência**
+
+Demonstram que uma operação pode se aplicada várias vezes sem alteração do valor do resultado inicial.
+
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?A \wedge A = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \vee A = A"/></div>
+</div>
+
+#### **Propriedade do elemento inverso**
+
+Mostra o efeito de uma operação aplicada a uma variável e o complemento desta.
+
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?A \wedge \overline{A} = 0"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \vee \overline{A} = 1"/></div>
+</div>
+
+#### **Lei da involução**
+
+O complemento do complemento de uma variável é igual à própria variável.
+
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?\overline{\overline{A}} = A"/></div>
+</div>
+
+#### **Identidade**
+
+Apresenta os efeitos de aplicar um operador a uma variável e 0 ou 1.
+
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?A \wedge 0 = 0"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \wedge 1 = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \vee 0 = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \vee 1 = 1"/></div>
+</div>
+
+### 1.2. Teoremas multivariável
+
+Essas regras se aplicam a operações de álgebra booleana que usam mais de uma variável. 
+
+#### **Propriedade comutativa**
+
+Mostra que a saída é a mesma independentemente da ordem das entradas.
+
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?X \wedge Y = Y \wedge X"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?X \vee Y = Y \vee X"/></div>
+</div>
+
+#### **Propriedade associativa**
+
+Mostra que a ordem de executar uma operação não altera o resultado.
+
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?(X \wedge Y) \wedge Z = X \wedge (Y \wedge Z)"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?(X \vee Y) \vee Z = X \vee (Y \vee Z)"/></div>
+</div>
+
+#### **Propriedade distributiva**
+
+Mostra como expandir equações.
+
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?A \wedge (B \vee C) = (A \wedge B) \vee (A \wedge C)"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \vee (B \wedge C) = (A \vee B) \wedge (A \vee C)"/></div>
+</div>
+
+#### **Teorema de De Morgan**
+
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?\overline{(A \vee B)} = \overline{A} \wedge \overline{B}"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?\overline{(A \wedge B)} = \overline{A} \vee \overline{B}"/></div>
+</div>
+
+#### **Leis da absorção**
+
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?A \wedge (A \vee B) = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \vee (A \wedge B) = A"/></div>
+</div>

@@ -1,0 +1,12 @@
+---
+layout: default
+title: Mapa de Karnaugh
+nav_exclude: true
+---
+
+## 1. Mapa de Karnaugh
+
+O mapa de Karnaugh é uma representação visual de uma expressão booleana apresentado em 1953 por Maurice Karnaugh. O mapa de Karnaugh possui exatamente as mesmas informações que a tabela-verdade, entretanto, reduz a complexidade desta e representa a dada expressão booleana na forma de um mapa. O processo de simplificação, descrito na seção anterior utilizando álgebra de Boole, agora pode ser executado visualmente.
+
+O mapa de Karnaugh é organizado de forma que, sempre que possível, produtos de termos logicamente adjacentes também sejam adjacentes na matriz, para serem logicamente combinados. Produtos de termos são conjunções variáveis (A and B) e dois produtos de termos são **logicamente adjacentes** quando eles contém as mesmas variáveis e diferem na forma de exatamente uma variável. Por exemplo, *AB* e *AB'* são logicamente adjacentes, pois entre esses dois produtos de termos, somente a forma de *B* mudou (*B* para *B'*). Já *AB* e *A'B'* não são logicamente adjacentes, uma vez que entre os dois produtos de termos, houve a mudança de *A* para *A'* e *B* para *B'*, quando somente uma variável pode mudar para que eles sejam logicamente adjacentes.
+
