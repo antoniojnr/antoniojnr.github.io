@@ -3,10 +3,6 @@ layout: default
 title: Portas lógicas
 nav_exclude: true
 ---
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML"></script>
 
 ## 1. Introdução
 
@@ -21,10 +17,10 @@ Todas as combinações de duas entradas e saídas para a porta AND estão espres
 
 A expressão booleana para a porta (ou operação) AND aplicada aos operandos A e B é representada como:
 
-$Z = A.B$, $Z = AB$, ou ainda $Z = A \wedge B$, onde (.) e ($\wedge$) representam a multiplicação lógica.
+*Z = A.B*, *Z = AB*, ou ainda <img src="https://latex.codecogs.com/svg.image?A&space;\wedge&space;B"/>, onde (.) e (<img src="https://latex.codecogs.com/svg.image?\wedge"/>) representam a multiplicação lógica.
 
 **Tabela 1.** Tabela verdade da porta lógica AND aplicada a duas entradas A e B.
-|$A$|$B$|$A \wedge B$|
+|**A**|**B**|**A.B**|
 --|---|--
 | 0 | 0 | **0** |
 | 0 | 1 | **0** |
