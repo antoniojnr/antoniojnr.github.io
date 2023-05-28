@@ -4,6 +4,7 @@
 
 layout: home
 ---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 Seja bem vindo à página de disciplinas do professor Antonio Júnior.
 
 Navegue ao lado para encontrar o conteúdo relativo à sua disciplina.
