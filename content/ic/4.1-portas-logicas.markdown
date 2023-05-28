@@ -65,7 +65,7 @@ A porta NOT possui somente um terminal de entrada, diferentemente das portas OR 
 **Tabela 3.** Tabela verdade da porta lógica NOT.
 
 |*A*|*'A*|
---|--
+|--|--|
 | 0 | **1** |
 | 1 | **0** |
 
@@ -136,49 +136,39 @@ Essas regras se aplicam a operações de álgebra booleana que usam mais de uma 
 
 Mostra que a saída é a mesma independentemente da ordem das entradas.
 
-$$
-X \wedge Y = Y \wedge X
-$$
-$$
-X \vee Y = Y \vee X
-$$
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?X \wedge Y = Y \wedge X"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?X \vee Y = Y \vee X"/></div>
+</div>
 
 #### **Propriedade associativa**
 
 Mostra que a ordem de executar uma operação não altera o resultado.
 
-$$
-(X \wedge Y) \wedge Z = X \wedge (Y \wedge Z)
-$$
-$$
-(X \vee Y) \vee Z = X \vee (Y \vee Z)
-$$
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?(X \wedge Y) \wedge Z = X \wedge (Y \wedge Z)"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?(X \vee Y) \vee Z = X \vee (Y \vee Z)"/></div>
+</div>
 
 #### **Propriedade distributiva**
 
 Mostra como expandir equações.
 
-$$
-A \wedge (B \vee C) = (A \wedge B) \vee (A \wedge C)
-$$
-$$
-A \vee (B \wedge C) = (A \vee B) \wedge (A \vee C)
-$$
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?A \wedge (B \vee C) = (A \wedge B) \vee (A \wedge C)"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \vee (B \wedge C) = (A \vee B) \wedge (A \vee C)"/></div>
+</div>
 
 #### **Teorema de De Morgan**
 
-$$
-\neg (A \vee B) = \neg A \wedge \neg B
-$$
-$$
-\neg (A \wedge B) = \neg A \vee \neg B
-$$
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?\overline{(A \vee B)} = \overline{A} \wedge \overline{B}"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?\overline{(A \wedge B)} = \overline{A} \vee \overline{B}"/></div>
+</div>
 
 #### **Leis da absorção**
 
-$$
-A \wedge (A \vee B) = A
-$$
-$$
-A \vee (A \wedge B) = A
-$$
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?A \wedge (A \vee B) = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \vee (A \wedge B) = A"/></div>
+</div>

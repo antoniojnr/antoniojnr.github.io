@@ -24,12 +24,13 @@ nav_exclude: true
 **(1.2)** Qual a expressão booleana para representar essa operação?
 
 **(2)** Represente a seguinte expressão utilizando portas básicas:
-$$
-Z =A \wedge (B \vee C) \vee (E \vee F) \wedge D
-$$
 
-**(3)** Use os teoremas de De Morgan para produzir uma expressão equivalente a $Z = \neg(\neg A \vee (\neg B \wedge C))$ que só requer uma inversão ($\neg$).
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?Z = A \wedge (B \vee C) \vee (E \vee F) \wedge D"/></div>
+</div>
 
-**(4)** Desenhe o circuito, escreva a tabela-verdade para a expressão $Z=(A \vee B) \wedge \neg(A \wedge B)$ e diga a qual porta lógica ela é funcionalmente equivalente. Usando álgebra booleana, mostre essa equivalência.
+**(3)** Use os teoremas de De Morgan para produzir uma expressão equivalente a <img src="https://latex.codecogs.com/svg.image?Z = \overline{\overline{A} \vee (\overline{B} \wedge C)}"/> que só requer uma inversão (complemento).
 
-**(5)** Simplifique a expressão booleana $Z=(\bar{A} \wedge \bar{B} \wedge \bar{C})$
+**(4)** Desenhe o circuito, escreva a tabela-verdade para a expressão <img src="https://latex.codecogs.com/svg.image?Z = (A \vee B) \wedge \overline{A \wedge B}"/> e diga a qual porta lógica ela é funcionalmente equivalente. Usando álgebra booleana, mostre essa equivalência.
+
+**(5)** Implemente o circuito representado pela expressão <img src="https://latex.codecogs.com/svg.image?Z = A \wedge B \vee B \wedge C \vee A \wedge C"/> usando apenas portas NAND.
