@@ -21,7 +21,7 @@ A expressão booleana para a porta (ou operação) AND aplicada aos operandos A 
 
 **Tabela 1.** Tabela verdade da porta lógica AND aplicada a duas entradas A e B.
 |**A**|**B**|**A.B**|
---|---|--
+|--|---|--|
 | 0 | 0 | **0** |
 | 0 | 1 | **0** |
 | 1 | 0 | **0** |
@@ -39,11 +39,11 @@ Todas as combinações de duas entradas e saídas para a porta OR estão esprese
 
 A expressão booleana para a porta (ou operação) OR aplicada aos operandos A e B é representada como:
 
-$Z = A+B$ ou ainda $Z = A \vee B$, onde (+) e ($\vee$) representam a adição lógica.
+*Z = A+B* ou ainda <img src="https://latex.codecogs.com/svg.image?A&space;\vee&space;B"/>, onde (+) e (<img src="https://latex.codecogs.com/svg.image?\vee"/>) representam a adição lógica.
 
 **Tabela 2.** Tabela verdade da porta lógica OR aplicada a duas entradas A e B.
-|$A$|$B$|$A \vee B$|
---|---|--
+|**A**|**B**|**A+B**|
+|--|---|--|
 | 0 | 0 | **0** |
 | 0 | 1 | **1** |
 | 1 | 0 | **1** |
@@ -56,12 +56,12 @@ O símbolo padrão da porta OR é mostrado na Figura 2.
 
 ### 1.3. Porta NOT
 
-Uma variável booleana possui dois possíveis valores: 0 ou 1. O complemento de 0 é 1 e vice-versa. A porta NOT, também conhecida como inversor, produz o complemento de uma variável. Dessa forma, se A é a entrada de uma porta NOT, sua saída é representada por *Z = $\neg$ A*.
+Uma variável booleana possui dois possíveis valores: 0 ou 1. O complemento de 0 é 1 e vice-versa. A porta NOT, também conhecida como inversor, produz o complemento de uma variável. Dessa forma, se A é a entrada de uma porta NOT, sua saída é representada por *Z = 'A* ou <img src="https://latex.codecogs.com/svg.image?Z=\neg&space;A"/>, ou ainda <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}"/>.
 
 A porta NOT possui somente um terminal de entrada, diferentemente das portas OR e AND, que possuem mais de uma entrada. A tabela-verdade da porta NOT é mostrada na Tabela 3.
 
 **Tabela 3.** Tabela verdade da porta lógica NOT.
-|$A$|$\neg A$|
+|*A*|*'A*|
 --|--
 | 0 | **1** |
 | 1 | **0** |
@@ -78,7 +78,7 @@ Há, ainda, a porta OU exclusivo, abreviada como XOR, que tem duas entradas e um
 ![Porta OR](/content/images/xor-gate.png "Porta OR")
 **Figura 3.** O símbolo da porta XOR.
 
-A saída da operação XOR é 1 quando as entradas são diferentes ($A = 0$ e $B = 1$ ou $A = 1$ e $B = 0$) ou 0 quando as entradas são iguais ($A = 0$ e $B = 0$ ou $A = 1$ e $B = 1$).
+A saída da operação XOR é 1 quando as entradas são diferentes (*A = 0* e *B = 1* ou *A = 1* e *B = 0*) ou 0 quando as entradas são iguais (*A = 0* e *B = 0* ou *A = 1* e *B = 1*).
 
 ## 2. Leis da álgebra booleana
 
@@ -92,48 +92,38 @@ Como o título sugere, esta seção detalha as operações de portas lógicas qu
 
 Demonstram que uma operação pode se aplicada várias vezes sem alteração do valor do resultado inicial.
 
-$$
-A \wedge A = A
-$$
-$$
-A \vee A = A
-$$
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?A \wedge A = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \vee A = A"/></div>
+</div>
 
 #### **Propriedade do elemento inverso**
 
 Mostra o efeito de uma operação aplicada a uma variável e o complemento desta.
 
-$$
-A \wedge \neg A = 0
-$$
-$$
-A \vee \neg A = 1
-$$
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?A \wedge \overline{A} = 0"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \vee \overline{A} = 1"/></div>
+</div>
 
 #### **Lei da involução**
 
 O complemento do complemento de uma variável é igual à própria variável.
 
-$$
-\neg \neg A = A
-$$
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?\overline{\overline{A}} = A"/></div>
+</div>
 
 #### **Identidade**
 
 Apresenta os efeitos de aplicar um operador a uma variável e 0 ou 1.
 
-$$
-A \wedge 0 = 0
-$$
-$$
-A \wedge 1 = A
-$$
-$$
-A \vee 0 = A
-$$
-$$
-A \vee 1 = 1
-$$
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?A \wedge 0 = 0"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \wedge 1 = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \vee 0 = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \vee 1 = 1"/></div>
+</div>
 
 ### 2.2. Teoremas multivariável
 
