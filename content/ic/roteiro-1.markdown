@@ -10,7 +10,6 @@ nav_exclude: true
 
 1. Entregue as questões em papel, escritas à mão. 
 2. O trabalho poderá ser realizado individualmente ou em dupla.
-3. 
 
 ## Questões
 

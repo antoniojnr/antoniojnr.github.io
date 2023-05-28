@@ -88,3 +88,7 @@ Identificar e compreender os principais componentes de um computador, o seu func
 - Software, encadeamento e conjunto de instruções
 - Mecanismos de Interrupção
 - Arquiteturas Paralelas e Não-Convencionais
+
+### Roteiros de laboratório
+
+1. [Roteiro 1](/content/ic/roteiro-1.html)
