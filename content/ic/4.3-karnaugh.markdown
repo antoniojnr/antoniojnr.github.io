@@ -91,10 +91,6 @@ Um mapa de três variáveis terá oito células e um exemplo é mostrado na Tabe
 | <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}\overline{B}\overline{C}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B\overline{C}"/> | <img src="https://latex.codecogs.com/svg.image?AB\overline{C}"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}\overline{C}"/> |
 | <img src="https://latex.codecogs.com/svg.image?C"/> |  <img src="https://latex.codecogs.com/svg.image?\overline{A}\overline{B}C"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}BC"/> | <img src="https://latex.codecogs.com/svg.image?ABC"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}C"/> |
 
-A three-variable map will have eight cells and its layout is shown in Table 3.9.
-We will now look at some examples of using three-variable Karnaugh maps for
-minimisation. 
-
 ## 4. Referências
 
 1. CROWE, John; HAYES-GILL, Barrie. Introduction to digital electronics. Elsevier, 1998.
