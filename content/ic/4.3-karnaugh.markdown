@@ -172,13 +172,13 @@ Temos a seguinte tabela-verdade para a função:
 | 1 | 1 | 0 | 1 |
 | 1 | 1 | 1 | 1 |
 
-A expressão tem três variáveis e o mapa de Karnaugh deve conter outo células. As variáveis A e B rotulam as quatro colunas no mapa (com as quatro combinações possíveis dessas duas variáveis, listadas de forma que sejam logicamente adjacentes: <img src="https://latex.codecogs.com/svg.image?\overline{A}\overline{B}"/>, <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/>, <img src="https://latex.codecogs.com/svg.image?AB"/> e <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/>) e a terceira variável, C, rotula as duas linhas: <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> e <img src="https://latex.codecogs.com/svg.image?C"/>, como mostrado a seguir. 
+A expressão tem três variáveis e o mapa de Karnaugh deve conter outo células. As variáveis A e B rotulam as quatro colunas no mapa (com as quatro combinações possíveis dessas duas variáveis, listadas de forma que sejam logicamente adjacentes: <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/>, <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/>, <img src="https://latex.codecogs.com/svg.image?AB"/> e <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/>) e a terceira variável, C, rotula as duas linhas: <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> e <img src="https://latex.codecogs.com/svg.image?C"/>, como mostrado a seguir. 
 
-As informações da tabela-verdade são, então, passadas para o mapa. Por exemplo, na tabela-verdade, para *A = 0*, *B = 0* e *C = 1* o resultado de *Z = 1*. Logo, no mapa de Karnaugh, a célula indexada por <img src="https://latex.codecogs.com/svg.image?\overline{A}\overline{B}"/> e <img src="https://latex.codecogs.com/svg.image?C"/> é 1 (pois <img src="https://latex.codecogs.com/svg.image?\overline{A}=0"/>, <img src="https://latex.codecogs.com/svg.image?\overline{B} = 0"/> e <img src="https://latex.codecogs.com/svg.image?C = 1"/>).
+As informações da tabela-verdade são, então, passadas para o mapa. Por exemplo, na tabela-verdade, para *A = 0*, *B = 0* e *C = 1* o resultado de *Z = 1*. Logo, no mapa de Karnaugh, a célula indexada por <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> e <img src="https://latex.codecogs.com/svg.image?C"/> é 1 (pois <img src="https://latex.codecogs.com/svg.image?\overline{A}=0"/>, <img src="https://latex.codecogs.com/svg.image?\overline{B} = 0"/> e <img src="https://latex.codecogs.com/svg.image?C = 1"/>).
 
 Temos, então, o seguinte mapa de Karnaugh:
 
-| <img src="https://latex.codecogs.com/svg.image?Z"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
+| <img src="https://latex.codecogs.com/svg.image?Z"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
 |--|--|--|--|--|
 | <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 0 | 0 | 1 | 0 |
 | <img src="https://latex.codecogs.com/svg.image?C"/> | 1 | 1 | 1 | 0 |
@@ -187,12 +187,30 @@ Temos, então, o seguinte mapa de Karnaugh:
 
 O mapa para a expressão é mostrado a seguir.
 
-| <img src="https://latex.codecogs.com/svg.image?Z"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
+| <img src="https://latex.codecogs.com/svg.image?Z"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
 |--|--|--|--|--|
 | <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 0 | 1 | 0 | 0 |
 | <img src="https://latex.codecogs.com/svg.image?C"/> | 0 | 0 | 1 | 1 |
 
 O termo <img src="https://latex.codecogs.com/svg.image?\overline{A}B\overline{C}"/> não pode mais ser combinado com nenhum outro produto de termos, então a expressão já está no formato mais simplificado.
+
+3. Faça o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}.\overline{B}.\overline{C}+A.\overline{B}.\overline{C}"/> e use para simplificar a expressão.
+
+À primeira vista, parece que não há produtos de termos fundamentais que possam ser agrupados no mapa de Karnaugh a seguir.
+
+| <img src="https://latex.codecogs.com/svg.image?Z"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
+|--|--|--|--|--|
+| <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 1 | 0 | 0 | 1 |
+| <img src="https://latex.codecogs.com/svg.image?C"/> | 0 | 0 | 0 | 0 |
+
+
+Enquanto em um mapa de duas variáveis todos os produtos logicamente adjacentes estão fisicamente ao lado um do outro, esse não é o caso para mais de duas variáveis.
+
+Para um mapa de três variáveis, apesar de <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> e <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> serem logicamente adjacentes, eles não estão próximos fisicamente no mapa de Karnaugh, uma vez que estão na primeira e na última colunas. 
+
+Entretanto, eles estão conectados como se o mapa estivesse enrolado formando um cilindro, conectando as colunas 1 e 4, como mostrado na figura a seguir. Assim, os termos podem ser agrupados para formar <img src="https://latex.codecogs.com/svg.image?Z=\overline{B}.\overline{C}"/>
+
+![Mapa de Karnaugh](/content/images/karnaugh-2.png "Mapa de Karnaugh")
 
 ## 4. Referências
 
