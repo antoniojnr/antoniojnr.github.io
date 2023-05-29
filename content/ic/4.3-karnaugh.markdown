@@ -155,7 +155,7 @@ Um mapa de três variáveis terá oito células e um exemplo é mostrado na Tabe
 Vejamos alguns exemplos do uso do mapa de Karnaugh para 3 variáveis para simplificação de expressões.
 
 **Exercícios**
-1. Faça a tabela-verdade e o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Y=AB+A\overline{C}"/>
+1. Faça a tabela-verdade e o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=AB+A\overline{C}"/>
 
 *Solução*
 
@@ -178,10 +178,21 @@ As informações da tabela-verdade são, então, passadas para o mapa. Por exemp
 
 Temos, então, o seguinte mapa de Karnaugh:
 
-| <img src="https://latex.codecogs.com/svg.image?Z"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> |
+| <img src="https://latex.codecogs.com/svg.image?Z"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
 |--|--|--|--|--|
 | <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 0 | 0 | 1 | 0 |
 | <img src="https://latex.codecogs.com/svg.image?C"/> | 1 | 1 | 1 | 0 |
+
+2. Faça o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}B\overline{C}+AC"/>.
+
+O mapa para a expressão é mostrado a seguir.
+
+| <img src="https://latex.codecogs.com/svg.image?Z"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
+|--|--|--|--|--|
+| <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 0 | 1 | 0 | 0 |
+| <img src="https://latex.codecogs.com/svg.image?C"/> | 0 | 0 | 1 | 1 |
+
+O termo <img src="https://latex.codecogs.com/svg.image?\overline{A}B\overline{C}"/> não pode mais ser combinado com nenhum outro produto de termos, então a expressão já está no formato mais simplificado.
 
 ## 4. Referências
 
