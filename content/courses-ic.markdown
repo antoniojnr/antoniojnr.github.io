@@ -73,7 +73,7 @@ Identificar e compreender os principais componentes de um computador, o seu func
 
 - [Portas lógicas](/content/ic/4.1-portas-logicas.html)
 - [Álgebra de Boole](/content/ic/4.2-algebra-de-boole.html)
-- Simplificação de circuitos lógicos - Mapa de Karnaugh
+- [Simplificação de circuitos lógicos - Mapa de Karnaugh](/content/ic/4.3-karnaugh.html)
 - Circuitos sequenciais
 - Resolução de problemas utilizando eletrônica digital
 - Computação reconfigurável
