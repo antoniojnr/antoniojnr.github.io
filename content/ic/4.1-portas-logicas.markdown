@@ -82,3 +82,8 @@ Há, ainda, a porta OU exclusivo, abreviada como XOR, que tem duas entradas e um
 **Figura 3.** O símbolo da porta XOR.
 
 A saída da operação XOR é 1 quando as entradas são diferentes (*A = 0* e *B = 1* ou *A = 1* e *B = 0*) ou 0 quando as entradas são iguais (*A = 0* e *B = 0* ou *A = 1* e *B = 1*).
+
+## 2. Referências
+
+1. CROWE, John; HAYES-GILL, Barrie. Introduction to digital electronics. Elsevier, 1998.
+2. LINCOLN, Betty. Introduction to Digital Electronics, 1/e. Pearson Education India, 2014.

@@ -93,3 +93,8 @@ Mostra como expandir equações.
 <div><img src="https://latex.codecogs.com/svg.image?A \wedge (A \vee B) = A"/></div>
 <div><img src="https://latex.codecogs.com/svg.image?A \vee (A \wedge B) = A"/></div>
 </div>
+
+## 2. Referências
+
+1. CROWE, John; HAYES-GILL, Barrie. Introduction to digital electronics. Elsevier, 1998.
+2. LINCOLN, Betty. Introduction to Digital Electronics, 1/e. Pearson Education India, 2014.
