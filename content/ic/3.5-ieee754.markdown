@@ -1,0 +1,21 @@
+---
+layout: default
+title: Representação valores em ponto flutuante
+nav_exclude: true
+---
+
+## 1. Introdução
+
+O padrão IEEE 754 é o formato no qual quase todas as CPUs representam números não inteiros. Além disso, fabricantes de computadores, desenvolvedores de compiladores de linguagens científicas ou de bibliotecas de funções matemáticas utilizam esse formato na representação de números de ponto flutuante.
+
+Vamos estudar sobre os formatos de **precisão única**, de 32 bits, e **precisão dupla**, de 64 bits. Entretanto, há outros formatos de precisão ainda maior que não trataremos neste texto.
+
+## 2. Formato
+
+Vamos utilizar o formato de precisão simples (32 bits) para demonstrar as partes que compõem o layout do padrão, mostradas na Figura 1.
+
+![IEEE 754](/content/images/ieee-754.png "IEEE 754")
+
+**Figura 1.** Layout do formato IEEE 754 de precisão simples.
+
+O formato utiliza 1 bit para representar o **sinal**, 8 bits para o **expoente** e 23 bits para a **mantissa**, que guarda a parte fracionária do número.

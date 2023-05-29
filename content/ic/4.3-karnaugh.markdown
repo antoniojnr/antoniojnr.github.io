@@ -155,7 +155,7 @@ Um mapa de três variáveis terá oito células e um exemplo é mostrado na Tabe
 Vejamos alguns exemplos do uso do mapa de Karnaugh para 3 variáveis para simplificação de expressões.
 
 **Exercícios**
-1. Faça a tabela-verdade e o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=AB+A\overline{C}"/>
+**(1)** Faça a tabela-verdade e o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=AB+A\overline{C}"/>
 
 *Solução*
 
@@ -183,7 +183,7 @@ Temos, então, o seguinte mapa de Karnaugh:
 | <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 0 | 0 | 1 | 0 |
 | <img src="https://latex.codecogs.com/svg.image?C"/> | 1 | 1 | 1 | 0 |
 
-2. Faça o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}B\overline{C}+AC"/>.
+**(2)** Faça o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}B\overline{C}+AC"/>.
 
 O mapa para a expressão é mostrado a seguir.
 
@@ -194,7 +194,7 @@ O mapa para a expressão é mostrado a seguir.
 
 O termo <img src="https://latex.codecogs.com/svg.image?\overline{A}B\overline{C}"/> não pode mais ser combinado com nenhum outro produto de termos, então a expressão já está no formato mais simplificado.
 
-3. Faça o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}.\overline{B}.\overline{C}+A.\overline{B}.\overline{C}"/> e use para simplificar a expressão.
+**(3)** Faça o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}.\overline{B}.\overline{C}+A.\overline{B}.\overline{C}"/> e use para simplificar a expressão.
 
 À primeira vista, parece que não há produtos de termos fundamentais que possam ser agrupados no mapa de Karnaugh a seguir.
 
@@ -202,7 +202,6 @@ O termo <img src="https://latex.codecogs.com/svg.image?\overline{A}B\overline{C}
 |--|--|--|--|--|
 | <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 1 | 0 | 0 | 1 |
 | <img src="https://latex.codecogs.com/svg.image?C"/> | 0 | 0 | 0 | 0 |
-
 
 Enquanto em um mapa de duas variáveis todos os produtos logicamente adjacentes estão fisicamente ao lado um do outro, esse não é o caso para mais de duas variáveis.
 
