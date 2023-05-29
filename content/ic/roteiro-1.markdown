@@ -36,5 +36,3 @@ nav_exclude: true
 **(5)** Implemente o circuito representado pela expressão <img src="https://latex.codecogs.com/svg.image?Z = A \wedge B \vee B \wedge C \vee A \wedge C"/> usando apenas portas NAND.
 
 **(6)** A expressão <img src="https://latex.codecogs.com/svg.image?Z = (A \wedge B) \vee (C \wedge D)"/> representa uma função conhecida como AND-OR-INVERT. Desenhe o circuito desta função e sua tabela-verdade.
-
-**(7)**
