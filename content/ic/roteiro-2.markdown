@@ -61,4 +61,4 @@ Para os exercícios a seguir, use o [Tinkercad](https://www.tinkercad.com/).
 
 **(14)** Monte um circuito para demonstrar a implementação de uma porta AND usando portas NAND.
 
-**(15)** Monte um circuito para demonstrar a implementação de uma porta AND usando portas NAND.
+**(15)** Monte um circuito para demonstrar a implementação de uma porta OR usando portas NAND.
