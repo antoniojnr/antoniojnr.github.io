@@ -31,9 +31,13 @@ Circuitos integrados (CI) são uma parte integral de dispositivos. Os CIs são f
 
 **(4)** Implemente um inversor (NOT) usando uma porta NAND.
 
-**(5)** Implemente um AND usando somente portas NAND. Mostre, também, a implementação usando portas NOR.
+**(5)** Implemente um AND usando somente portas NAND.
 
-**(6)** Implemente um AND usando somente portas NAND. Mostre, também, a implementação usando portas NOR.
+**(5.1)** Implemente um AND usando somente portas NOR.
+
+**(6)** Implemente um OR usando somente portas NAND. 
+
+**(6.1)** Implemente um OR usando somente portas NOR.
 
 ## Circuitos combinacionais
 
