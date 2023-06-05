@@ -33,28 +33,28 @@ Circuitos integrados (CI) são uma parte integral de dispositivos. Os CIs são f
 
 **(5)** Implemente um AND usando somente portas NAND. Mostre, também, a implementação usando portas NOR.
 
-**(5)** Implemente um AND usando somente portas NAND. Mostre, também, a implementação usando portas NOR.
+**(6)** Implemente um AND usando somente portas NAND. Mostre, também, a implementação usando portas NOR.
 
 ## Circuitos combinacionais
 
-**(6)** Construa um multiplexador 2-para-1 implementando a seguinte expressão booleana: <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}.D_0+A.D_1"/>, onde D<sub>0</sub> é a entrada 0 e D<sub>1</sub> é a entrada 1.
+**(7)** Construa um multiplexador 2-para-1 implementando a seguinte expressão booleana: <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}.D_0+A.D_1"/>, onde D<sub>0</sub> é a entrada 0 e D<sub>1</sub> é a entrada 1.
 
-**(7)** Desenhe o circuito e escreva a equação descrevendo a saída de um multiplexador 4-para-1.
+**(8)** Desenhe o circuito e escreva a equação descrevendo a saída de um multiplexador 4-para-1.
 
-**(8)** Demultiplexadores implementam a operação reversa dos multiplexadores, uma vez que permitem que uma única entrada seja roteada para uma de *n* saídas. Implemente um demultiplexador 1-para-4.
+**(9)** Demultiplexadores implementam a operação reversa dos multiplexadores, uma vez que permitem que uma única entrada seja roteada para uma de *n* saídas. Implemente um demultiplexador 1-para-4.
 
-**(9)** Escreva a tabela verdade para um *half-adder* e implemente o circuito.
+**(10)** Escreva a tabela verdade para um *half-adder* e implemente o circuito.
 
-**(10)** Escreva a tabela verdade para um *full-adder* e implemente o circuito.
+**(11)** Escreva a tabela verdade para um *full-adder* e implemente o circuito.
 
-**(11)** Implemente um somador de 4 bits.
+**(12)** Implemente um somador de 4 bits.
 
 ## Circuitos na prática
 
 Para os exercícios a seguir, use o [Tinkercad](https://www.tinkercad.com/).
 
-**(12)** Monte um circuito para demonstrar o funcionamento de uma porta AND.
-
-**(13)** Monte um circuito para demonstrar a implementação de uma porta AND usando portas NAND.
+**(13)** Monte um circuito para demonstrar o funcionamento de uma porta AND.
 
 **(14)** Monte um circuito para demonstrar a implementação de uma porta AND usando portas NAND.
+
+**(15)** Monte um circuito para demonstrar a implementação de uma porta AND usando portas NAND.
