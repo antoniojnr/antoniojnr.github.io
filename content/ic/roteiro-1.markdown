@@ -14,14 +14,14 @@ nav_exclude: true
 
 ## Questões
 
-**(1)** Desenvolva a tabela-verdade para a porta AND de três entradas mostrada na Figura 1.
+**(1.1)** Desenvolva a tabela-verdade para a porta AND de três entradas mostrada na Figura 1.
 
 ![Porta AND](/content/images/and-3.png "Porta AND")
 **Figura 1.** Uma porta AND de três entradas.
 
-**(1.1)** Como você pode representar uma porta AND de três entradas com portas AND de duas entradas?
+**(1.2)** Como você pode representar uma porta AND de três entradas com portas AND de duas entradas?
 
-**(1.2)** Qual a expressão booleana para representar essa operação?
+**(1.3)** Qual a expressão booleana para representar essa operação?
 
 **(2)** Represente a seguinte expressão utilizando portas básicas:
 
