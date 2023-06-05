@@ -18,4 +18,10 @@ Vamos utilizar o formato de precisão simples (32 bits) para demonstrar as parte
 
 **Figura 1.** Layout do formato IEEE 754 de precisão simples.
 
-O formato utiliza 1 bit para representar o **sinal**, 8 bits para o **expoente** e 23 bits para a **mantissa**, que guarda a parte fracionária do número.
+O formato utiliza 1 bit para representar o **sinal**, 8 bits para o **expoente** e 23 bits para a **mantissa**, que guarda a parte fracionária do número. As seções existentes neste layout são as mesmas presentes no formato de precisão dupla (64 bits), onde possuem mais espaço alocado para elas: **expoente** tem 11 bits e **mantissa** tem 52 bits. O tamanho de **sinal** se mantém em 1 bit.
+
+Para entender como o número é armazenado neste formato, vamos relembrar o conceito de **notação científica**. Notação científica é uma forma de escrever e representar de forma compacta números muito grandes (10000000000000000) ou muito pequenos (0,00000000000000001). Sendo utilizada para representar valores no sistema decimal, esta notação está baseia-se em potências de 10, que irão multiplicar ou dividir o valor por 10, de acordo com o expoente ao qual o 10 está elevado. Os valores exemplificados anteriormente, em notação científica, ficariam: 1 × 10<sup>16</sup> e 1 × 10<sup>-17</sup>, respectivamente.
+
+Para armazenar os valores no formato IEEE 754, primeiramente, precisamos convertê-los para a base binária. Considere o valor **45,0625**. A conversão deste valor para binário se dá em duas etapas: *(i)* conversão da parte inteira e *(ii)* conversão da parte fracionária. A conversão de inteiros decimais para binários já foi vista e não vamos nos estender nesse tópico. Assim, 45<sub>(10)</sub> = 101101<sub>(2)</sub>.
+
+Para converter uma fração decimal para binário, siga o processo descrito a seguir.

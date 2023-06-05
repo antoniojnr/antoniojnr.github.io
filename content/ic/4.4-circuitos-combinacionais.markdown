@@ -1,0 +1,52 @@
+---
+layout: default
+title: Circuitos combinacionais
+nav_exclude: true
+---
+
+## 1. Circuitos combinacionais
+
+Alguns circuitos de lógica combinacional são tão usados, que frequentemente eles são considerados como elementos de circuitos (assim como portas lógicas). 
+
+### 1.1. Multiplexadores
+
+Multiplexadores oferecem uma forma de selecionar um entre vários sinais digitais. Um multiplexador terá, em geral, *n* entradas e uma saída.
+
+A entrada que será roteada até a saída é determinada pelo padrão de bits nas *m* linhas de controle. Dessa forma, o número *n* de entradas que podem ser multiplexadas é 2<sup>m</sup>.
+
+Multiplexadores são geralmente nomeados de acordo com a sua quantidade de entradas: n-para-1, 1-para-n ou seletores de dados.
+
+A expressão booleana que representa um multiplexador 2-para-1 é a seguinte: <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}.D_0+A.D_1"/>
+
+**Exercício**
+1. Desenhe o circuito e escreva a equação descrevendo a saída de um multiplexador 4-para-1.
+
+*Solução*
+
+Um multiplexador consiste de múltiplas portas AND. Quando uma delas é ativada (todos os pinos em 1), a entrada é roteada através dela e depois pela porta OR.
+
+Precisamos usar as linhas de controle para ativar uma entrada por vez. Com 2 linhas de controle, controlamos (2<sup>2</sup> = 4) entradas.
+
+O padrão de bits que determinará a seleção de cada entrada é o seguinte:
+
+|**A**|**B**|**Z**|
+|--|---|--|
+| 0 | 0 | **D<sub>0</sub>** |
+| 0 | 1 | **D<sub>1</sub>** |
+| 1 | 0 | **D<sub>2</sub>** |
+| 1 | 1 | **D<sub>3</sub>** |
+
+Ou seja, a entrada **E<sub>0</sub>** será selecionada quando <img src="https://latex.codecogs.com/svg.image?\overline{A}"/> (A = 0) e <img src="https://latex.codecogs.com/svg.image?\overline{B}"/> (B = 0).
+
+Logo, temos a equação a seguir que representa o multiplexador 4-para-1.
+
+<img src="https://latex.codecogs.com/svg.image?Z=\overline{A}.\overline{B}.D_0+\overline{A}.B.D_1+A.\overline{B}.D_2+A.B.D_3"/>
+
+## 1.3. Demultiplexadores
+
+Demultiplexadores implementam a operação reversa dos multiplexadores, uma vez que permitem que uma única entrada seja roteada para uma de *n* saídas. Esse circuito, geralmente chamado de demultiplexador 1-para-n, consiste de *n* portas AND, uma para cada uma das 2<sup>m</sup> combinações das *m* entradas de controle.
+
+## 1.4. Decoders
+
+Um decoder é, essencialmente, um demultiplexador sem linhas de entrada. Então, em vez de alimentar uma linha de entrada através da saída selecionada, simplesmente a saída selecionada se tornará ativa.
+
