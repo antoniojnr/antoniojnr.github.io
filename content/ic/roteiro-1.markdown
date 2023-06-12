@@ -23,7 +23,7 @@ nav_exclude: true
 
 **(1.3)** Qual a expressão booleana para representar essa operação?
 
-**(2)** Represente a seguinte expressão utilizando portas básicas:
+**(2)** Represente o circuito lógido equivalente à seguinte expressão utilizando portas básicas:
 
 <div style="margin: 15px">
 <div><img src="https://latex.codecogs.com/svg.image?Z = A . (B + C) + (E + F) . D"/></div>

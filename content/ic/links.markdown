@@ -35,7 +35,6 @@ Nesta página, reuno todas as coisas sobre as quais falo em aula para vocês, ma
   </tr>
   <tr>
     <th colspan="2">Abril</th>
-    <tr>
     <td>17</td>
     <td>
       <ul>
@@ -46,7 +45,6 @@ Nesta página, reuno todas as coisas sobre as quais falo em aula para vocês, ma
   </tr>
   <tr>
     <th colspan="2">Maio</th>
-    <tr>
     <td>22</td>
     <td>
       <ul>
