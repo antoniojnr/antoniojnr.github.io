@@ -93,3 +93,4 @@ Identificar e compreender os principais componentes de um computador, o seu func
 
 1. [Roteiro 1](/content/ic/roteiro-1.html)
 1. [Roteiro 2](/content/ic/roteiro-2.html)
+1. [Roteiro 3](/content/ic/roteiro-3.html)
