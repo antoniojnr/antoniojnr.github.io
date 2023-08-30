@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Programação Orientada a Objetos - Subsequente
+title: POO para o Subsequente
 parent: Programação Orientada a Objetos
 nav_order: 3
 ---

@@ -2,6 +2,7 @@
 layout: default
 title: Programação Orientada a Objetos
 parent: Disciplinas
+has_children: true
 nav_order: 2
 ---
 
