@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Programação Orientada a Objetos - Subsequente
-parent: Disciplinas
-nav_order: 2
+parent: Programação Orientada a Objetos
+nav_order: 3
 ---
 
 ## Programação Orientada a Objetos
