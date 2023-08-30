@@ -7,9 +7,6 @@ nav_order: 2
 
 ## Programação Orientada a Objetos
 
-### Conteúdo
+### Modalidade
 
-1. [Introdução](/content/poo/1-introducao.html)
-2. [Encapsulamento](/content/poo/2-encapsulamento.html)
-3. [Herança](/content/poo/3-heranca.html)
-4. [Polimorfismo](/content/poo/4-polimorfismo.html)
+- [Subsequente](/content/poo/subsequente/index.html)
