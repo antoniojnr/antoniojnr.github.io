@@ -12,3 +12,7 @@ nav_order: 1
 - [Ementa da disciplina](https://estudante.ifpb.edu.br/media/cursos/346/disciplina/POO.pdf)
 - [Conteúdo](/content/poo/superior/conteudo.html)
 - [Projeto](/content/poo/superior/projeto.html)
+
+### Exercícios
+
+- [Exercício 1](/content/poo/superior/1-introducao.html)
