@@ -8,11 +8,7 @@ nav_order: 1
 
 ## Programação Orientada a Objetos
 
-**Modalidade:** Superior
-
-### Conteúdo
-
-1. [Introdução](/content/poo/subsequente/1-introducao.html)
-2. [Encapsulamento](/content/poo/subsequente/2-encapsulamento.html)
-3. [Herança](/content/poo/subsequente/3-heranca.html)
-4. [Polimorfismo](/content/poo/subsequente/4-polimorfismo.html)
+- Modalidade: Superior
+- [Ementa da disciplina](https://estudante.ifpb.edu.br/media/cursos/346/disciplina/POO.pdf)
+- [Conteúdo](/content/poo/superior/conteudo.html)
+- [Projeto](/content/poo/superior/projeto.html)
