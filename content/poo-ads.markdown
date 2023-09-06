@@ -15,4 +15,5 @@ nav_order: 1
 
 ### Exercícios
 
+- [Exercícios complementares](/content/poo/superior/0-complementares.html)
 - [Exercício 1](/content/poo/superior/1-introducao.html)
