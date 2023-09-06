@@ -62,6 +62,7 @@ A classe possui os seguintes métodos:
   - Antes de ser devolvido, o carro precisa ter seus débitos zerados. Caso contrário, a exceção `CarroNaoPagoException` é lançada.
 - `boolean isDisponivel()`, que retorna o estado do carro: `true`, quando disponível e `false`, quando indisponível.
 - `boolean hasSinistro()`, que retorna `true`, quando houve sinistro e o seguro precisa ser acionado e `false`, caso contrário.
+- `boolean setSinistro(boolean sinistro)`, que define o estado do sinistro.
 - `float getDebito()`, que retorna o valor a ser pago pelo aluguel do carro.
   - O valor é calculado multiplicando o `valorPorKm * distanciaPercorrida`. Se há sinistro, soma-se mais 60% do débito ao valor total.
   - Após pago, não haverá mais sinistro no carro.
