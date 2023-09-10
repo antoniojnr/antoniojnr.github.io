@@ -1,10 +1,12 @@
 ---
 layout: default
-title: Introdução
+title: Exercícios - Encapsulamento, parte 1
 nav_exclude: true
 ---
 
 ## Exercícios
+
+**Tema:** Encapsulamento
 
 ### Exercício 1
 
@@ -98,30 +100,3 @@ Atenção
 O diagrama a seguir representa uma composição, onde `Linha` possui dois `Ponto`s. Desenvolva o código para as classes mostradas.
 
 ![Diagrama 4](/content/images/class-linha-ponto.svg "Diagrama 4")
-
-gradle test --tests CarroAluguelTest.testeCriacao
-gradle test --tests CarroAluguelTest.testeAluguel
-gradle test --tests CarroAluguelTest.testeDevolucao
-gradle test --tests CarroAluguelTest.testePagar
-gradle test --tests CarroAluguelTest.testeSetDistancia
-
-gradle test --tests CirculoTest.testRaio
-gradle test --tests CirculoTest.testArea
-gradle test --tests CirculoTest.testCircunferencia
-
-gradle test --tests EstudanteTest.testNome
-gradle test --tests EstudanteTest.testMatricula
-
-gradle test --tests FuncionarioTest.testNome
-gradle test --tests FuncionarioTest.testSobrenome
-gradle test --tests FuncionarioTest.testSalario
-gradle test --tests FuncionarioTest.testAumento
-
-gradle test --tests PontoLinhaTest.testPonto
-gradle test --tests PontoLinhaTest.testLinha
-gradle test --tests PontoLinhaTest.testComprimento
-
-gradle test --tests RelogioDigitalTest.testCriacao
-gradle test --tests RelogioDigitalTest.testTickSimples
-gradle test --tests RelogioDigitalTest.testTickViraHora
-gradle test --tests RelogioDigitalTest.testTickViraDia
