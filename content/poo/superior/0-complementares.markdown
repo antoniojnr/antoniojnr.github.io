@@ -20,6 +20,13 @@ Crie uma classe `Calculadora` com métodos para realizar operações matemática
 
 Crie uma classe `Estudante` com atributos para nome, matrícula e três notas. Implemente métodos para calcular a média das notas e determinar se o aluno foi aprovado ou reprovado, considerando que a média para ser aprovado é 70. Crie objetos `Estudante` e imprima informações dos objetos.
 
+- A classe `Estudante` deve possuir o construtor `Estudante(String nome, int matricula, double n1, double n2, double n3)`
+- A classe `Estudante` deve possuir o método `double getMedia()` que retorna o cálculo da média das notas do estudante
+- A classe `Estudante` deve possuir um método `void setNotas(double n1, double n2, double n3)` para definir as três notas de uma vez
+- Crie uma exceção `NotaInvalidaException`, que deve ser lançada quando uma nota negativa é passada para os métodos que recebem nota
+- Crie um caso de teste para testar o método `double getMedia()`
+
+
 ### Exercício 4
 
 Crie uma classe `Livro` com atributos para título, autor e preço. Crie objetos `Livro` e exiba informações sobre os livros.
