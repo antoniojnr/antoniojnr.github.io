@@ -33,6 +33,8 @@ public class Carro {
 }
 ```
 
+**Código 1.** A classe Carro.
+
 Os atributos e métodos presentes em uma classe dependem do contexto do sistema em que a classe será criada. Uma classe `Pessoa` para um sistema de academia teria atributos como `peso` e `altura`, que não fariam sentido existirem em uma classe `Pessoa` em um sistema contábil. Por sua vez, atributos como `renda` e `numeroDeDependentes` pertencem ao contexto de sistemas contábeis, mais não ao contexto de sistemas de academia. Classes geralmente representam categorias amplas de entidades usadas em sistemas. Por exemplo, `Estudante`, `Disciplina`, `Professor` e `Turma` podem ser classes de um sistema de gerenciamento escolar.
 
 **Objetos** são instâncias de classes. Cada objeto é criado a partir de uma classe em um processo chamado de instanciação. Nesse processo, o objeto passa a ter o seu próprio conjunto de valores. A instanciação de um objeto do tipo `Carro` é mostrada no Código 2. A classe `Carro` foi criada no Código 1.
@@ -62,6 +64,8 @@ public class Main {
 	}
 }
 ```
+
+**Código 2.** Instanciando e manipulando atributos da classe Carro
 
 Em projetos Java, classes relacionadas são organizadas dentro de pacotes. Um pacote funciona como uma pasta e, de fato, ao explorar a estrutura de diretórios de um projeto Java, você verá muitas pastas dentro de outras pastas. Pacotes são usados para evitar conflitos de nomes (classes com o mesmo nome dentro de um projeto) e escrever código mais fácil de manter.
 
@@ -95,6 +99,8 @@ public class Classe2 {
 }
 ```
 
+**Código 3.** Importando classes.
+
 ### Atributos e métodos
 
 **Atributos** são também chamados de *campos*, *membros* ou *propriedades*, e guardam as informações características dos objetos, representando seu estado. No Código 2, atribuímos valores aos atributos do objeto `car1`, do tipo `Carro`. A classe `Carro` possui três atributos, `ano`, `modelo` e `velocidade`. Os **métodos** são os comportamentos e ações de um objeto, sendo responsáveis por alterar o estado ou fornecer informações sobre um objeto. São análogos às funções ou procedimentos em programação estruturada.
@@ -122,6 +128,8 @@ public class Aluno extends Usuario {
 	// pertencessem a essa classe
 }
 ```
+
+**Código 4.** Usando herança em Java.
 
 Usar herança nos permite criar hierarquias de classes, reutilizar código e personalizar o comportamento das classes filhas. É um conceito fundamental para a criação de programas organizados, flexíveis e eficientes.
 
@@ -151,3 +159,5 @@ public class Carro implements Veiculo {
 	}
 }
 ```
+
+**Código 5.** Uso de interfaces em Java.
