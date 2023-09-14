@@ -30,8 +30,7 @@ Crie métodos de validação para usar nos métodos de depositar e sacar. Exempl
 
 - Saques acima de x reais não podem ser feitos a partir de determinado horário. Use a criatividade para representar o conceito de horário.
 - É cobrada uma tarifa de juros de x% de saques do cheque especial (quando o saldo se torna negativo). Novamente, use a criatividade para representar o cheque especial.
-
-Crie testes de unidade para as validações que você implementar.
+- Crie testes de unidade para as validações que você implementar.
 
 ### Exercício 2
 
