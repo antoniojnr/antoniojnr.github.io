@@ -22,29 +22,36 @@ Cada critério deve ser avaliado com uma nota de 1 a 3. O significado da nota é
 
 ### Exercício 1
 
-Crie uma classe `ContaBancaria` representando uma conta bancária com métodos para depositar, sacar e vericicar o saldo. Use encapsulamento para proteger o saldo.
+Crie uma classe `ContaBancaria` representando uma conta bancária com métodos para depositar, sacar e verificar o saldo.
+
+- Use encapsulamento para proteger o saldo.
+- Ao tentar sacar um valor quando o saldo é zero, esse valor é descontado do cheque especial.
 
 #### Extra
 
 Crie métodos de validação para usar nos métodos de depositar e sacar. Exemplos de possíveis validações:
 
 - Saques acima de x reais não podem ser feitos a partir de determinado horário. Use a criatividade para representar o conceito de horário.
-- É cobrada uma tarifa de juros de x% de saques do cheque especial (quando o saldo se torna negativo). Novamente, use a criatividade para representar o cheque especial.
 - Crie testes de unidade para as validações que você implementar.
 
 ### Exercício 2
 
 Crie a classe `Reserva`, que pertenceria a um sistema de reservas de hotel. A classe possui os atributos: número do quarto, nome do hóspede, valor por diária, data de check-in e data de check-out. Implemente métodos para reservar, cancelar a reserva, calcular o número de diárias entre as datas de reserva.
 
+1. Implemente descontos para um determinado número de diárias: 5 a 9 diárias -> 5%, 10 ou mais diárias -> 10%
+
 #### Extra
 
-1. Implemente descontos para um determinado número de diárias.
 2. Determine a quantidade mínima e máxima de diárias para a reserva.
 3. Determine o horário de check-out, para que seja possível determinar o número de diárias de forma mais clara.
 
 ### Exercício 3
 
 Implemente a classe `Personagem`, que representa um personagem de jogo. Crie os atributos encapsulados para: nome, pontos de saúde e experiência. Além disso, implemente os métodos para sofrer dano,recuperar saúde e ganhar experiência.
+
+- A saúde máxima do personagem é 100.
+- Ganhar experiência aumenta a experiência do personagem em 100 pontos. O limite é 1000. O valor da experiência não é mais incrementado ao atingir 1000.
+- O dano sofrido do personagem segue a seguinte regra: inicialmente, o dano sofrido é 10 e vai sendo reduzido de 1 em 1, conforme a experiência cresce: para experiência 0 -> dano 10, 100 -> dano 9, 200 -> dano 8, ..., 1000 -> dano 1.
 
 #### Extra
 
