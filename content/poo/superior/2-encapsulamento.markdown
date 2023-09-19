@@ -59,7 +59,7 @@ Crie uma regra para sofrer menos dano conforme a experiência do personagem aume
 
 ### Exercício 4
 
-Crie a classe `Postagem`, que representa uma postagem de uma rede social textual. Os atributos de uma postagem são: texto, data, autor e número de curtidas. Os atributos texto, data e autor poderão ser manipulados somente através dos respectivos getters e setters, mas o número de curtidas terá somente o método acessor getCurtidas. O número de curtidas poderá ser alterado através dos métodos curtir() e descurtir(), que incrementará ou decrementará o número de curtidas em 1, respectivamente.
+Crie a classe `Postagem`, que representa uma postagem de uma rede social textual. Os atributos de uma postagem são: texto, data, autor e número de curtidas. Os atributos texto, data e autor poderão ser manipulados somente através dos respectivos getters e setters, mas o número de curtidas terá somente o método acessor getCurtidas. O número de curtidas poderá ser alterado através dos métodos curtir() e descurtir(), que incrementará ou decrementará o número de curtidas em 1, respectivamente. O número mínimo de curtidas que uma postagem pode ter é 0. Descurtir além desse limite não causará nenhuma mudança.
 
 #### Extra
 
