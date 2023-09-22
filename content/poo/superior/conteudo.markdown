@@ -23,7 +23,7 @@ nav_exclude: true
 4. Coleções de Objetos
 5. Herança
 6. Sobreposição
-7. Encapsulamento
+7. [Encapsulamento](/content/poo/superior/conteudo/encapsulamento.html)
 8. Visibilidade
 9. Interface e polimorfismo
 10. Sobrecarga
