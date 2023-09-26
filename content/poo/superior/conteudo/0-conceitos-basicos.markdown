@@ -1,3 +1,9 @@
+---
+layout: default
+title: POO - Conceitos básicos
+nav_exclude: true
+---
+
 # Conceitos básicos de orientação a objetos
 
 Provavelmente, o paradigma de programação utilizado e aprendido por você até o momento foi o de **programação imperativa**. Um paradigma de programação é um estilo ou metodologia para solucionar problemas utilizando uma linguagem de programação. O paradigma imperativo consiste de comandos sequenciais que o computador executará para cumprir uma tarefa. Normalmente, os problemas computacionais que você resolveu em uma disciplina de lógica de programação e algoritmos envolviam a leitura de dados a partir da entrada padrão, um simples processamento e a emissão do resultado na saída padrão.

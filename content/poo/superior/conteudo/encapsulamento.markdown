@@ -1,3 +1,9 @@
+---
+layout: default
+title: POO - Encapsulamento
+nav_exclude: true
+---
+
 # Encapsulamento
 
 Encapsulamento é um dos principais pilares da programação orientada a objetos. Refere-se ao empacotamento de dados em uma única unidade, junto com os métodos que operam nestes dados. Essas unidades de dados e métodos são representadas por **classes** na maioria das linguagens de programação. O empacotamento de dados é geralmente usado para esconder a representação interna ou estado de um objeto do seu exterior. Isso é chamado de **ocultação de informação**.
