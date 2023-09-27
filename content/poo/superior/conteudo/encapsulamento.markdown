@@ -94,6 +94,8 @@ public class Main {
 
 **Código 1.** Classe ContaBancaria.
 
+## Visibilidade
+
 Permitir o acesso direto ao atributo `saldo` abre a possibilidade de atribuir a ele um valor inválido, tornando seu **estado inconsistente**. Para impedir o acesso direto a atributos ou métodos, podemos torná-los privados. Em Java, existem 4 níveis de visibilidade que podem ser definidas para membros de uma classe (métodos e atributos): `public`, `protected`, `private` e _package-protected_ (padrão - sem modificador). Há dois níveis de controle de acesso, no nível de classes e no nível de métodos e atributos.
 
 - Classes podem ter:
