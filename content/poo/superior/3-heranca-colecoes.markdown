@@ -25,6 +25,7 @@ Crie a seguinte hierarquia de classes, que representa o modelo de armas de um jo
   - O construtor `ArmaRecarregavel(String, int, int, int)` recebe o nome da arma do tipo `String`, a quantidade de dano máxima causada pela arma do tipo `int`, a chance de acerto um **número** `int` tal que 0 <= **número** <= 100 e quantidade inicial de projéteis, do tipo `int`.
   - A cada disparo, o número de projéteis é reduzido em 1.
   - O método `disparar()` deve ser implementado assim como na classe `ArmaLancavel` e, além disso, deve retornar 0 caso o número de projéteis seja 0.
+- Crie suas classes dentro do pacote `br.edu.ifpb.poo.jogo`;
 
 ### Exercício 2
 
@@ -44,3 +45,4 @@ As classes a seguir representam parte de um sistema de mercado.
   - `getItem(int)` recebe o índice na lista de um determinado item e retorna esse item.
   - `contaritens()` conta a quantidade de itens na lista. Produtos cuja unidade é 'kg' sempre são contados como 1, independentemente da quantidade; mas se a unidade do produto for 'un', o valor da quantidade é o retornado por `getQuantidade()`.
   - O valor total da compra é a soma do valor de todos os itens.
+- Crie suas classes dentro do pacote `br.edu.ifpb.poo.mercado`;
