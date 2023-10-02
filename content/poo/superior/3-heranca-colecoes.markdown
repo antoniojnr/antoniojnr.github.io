@@ -20,7 +20,7 @@ Crie a seguinte hierarquia de classes, que representa o modelo de armas de um jo
 - `ArmaLancavel` é um tipo de arma que pode ser lançada, como uma lança ou uma _shuriken_.
   - O construtor `ArmaLancavel(String, int, int)` recebe o nome da arma do tipo `String`, a quantidade de dano máxima causada pela arma do tipo `int` e a chance de acerto, um **número** `int` tal que 0 <= **número** <= 100, respectivamente.
   - Use a classe `java.util.Random` para gerar números aleatórios e simular eventos probabilisticos. Você deve deixar a instância de `Random` da classe acessíveis através de getter e setter, como especificado no diagrama, para que seja possível testar seu código.
-  - Existe a chance menor que 100% de essa arma acertar o oponente e, por isso, o método `disparar()` nessa classe deve ser implementado para que o acerto seja probabilistico. Dado que o número aleatório gerado é num, um acerto acontece quando `num <= chanceDeAcerto`.
+  - Existe a chance menor que 100% de essa arma acertar o oponente e, por isso, o método `disparar()` nessa classe deve ser implementado para que o acerto seja probabilistico. Dado que o número aleatório gerado é `num`, um acerto acontece quando `num <= chanceDeAcerto`.
 - `ArmaRecarregavel` é um tipo de arma lançável que dispara projéteis, como um arco-e-flecha ou um revólver.
   - O construtor `ArmaRecarregavel(String, int, int, int)` recebe o nome da arma do tipo `String`, a quantidade de dano máxima causada pela arma do tipo `int`, a chance de acerto um **número** `int` tal que 0 <= **número** <= 100 e quantidade inicial de projéteis, do tipo `int`.
   - A cada disparo, o número de projéteis é reduzido em 1.
