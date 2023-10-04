@@ -101,6 +101,8 @@ public interface Stack {
 }
 ```
 
+Há um teste de unidade para esse exercício disponível [aqui](https://github.com/antoniojnr/aula-poo-20232/blob/main/src/test/java/StackTest.java).
+
 ### Exercício 2
 
 Faça a classe `Inventario` implementar a interface `Iterable`. Implemente seu próprio `Iterator`.
