@@ -91,14 +91,13 @@ Claro! Aqui estão cinco exemplos de interfaces na API Java e suas funções:
 Implemente a interface `Stack`, que define o contrato de uma estrutura de dados chamada **pilha**.
 
 ```java
-interface Stack
-{
-  public void push(String item);   // insere um item no topo
-  public String pop();             // remove um item do topo
-  public String peek();            // retorna um item do topo sem removê-lo
-  public boolean isEmpty();        // determina se a pilha está vazia
-  public boolean isFull();         // determina se a pilha está cheia
-  public String toString();        // retorna a representação da pilha em String
+public interface Stack {
+  void push(String item);   // insere um item no topo
+  String pop();             // remove um item do topo
+  String peek();            // retorna um item do topo sem removê-lo
+  boolean isEmpty();        // determina se a pilha está vazia
+  boolean isFull();         // determina se a pilha está cheia
+  String toString();        // retorna a representação da pilha em String
 }
 ```
 
