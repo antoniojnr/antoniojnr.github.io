@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Polimorfismo
+title: POO - Herança
 nav_exclude: true
 ---
 

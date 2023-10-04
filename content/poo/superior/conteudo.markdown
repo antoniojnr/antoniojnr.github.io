@@ -22,11 +22,10 @@ nav_exclude: true
 3. Composição de Objetos
 4. Coleções de Objetos
 5. [Herança](/content/poo/superior/conteudo/heranca.html)
-6. Sobreposição
+6. Sobreposição e sobrecarga
 7. [Encapsulamento](/content/poo/superior/conteudo/encapsulamento.html)
 8. Visibilidade
-9. Interface e polimorfismo
-10. Sobrecarga
+9. [Interface e polimorfismo](/content/poo/superior/conteudo/polimorfismo.html)
 
 ## 4. EXCEÇÕES
 
