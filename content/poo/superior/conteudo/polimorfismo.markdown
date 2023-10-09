@@ -76,8 +76,6 @@ public class Boi implements Animal, Mamifero {
 
 A API Java possui um grande número de interfaces, entre elas:
 
-Claro! Aqui estão cinco exemplos de interfaces na API Java e suas funções:
-
 1. **`List` (java.util.List):** define uma lista ordenada de elementos, permitindo acesso e manipulação de elementos por índices. Implementações comuns incluem `ArrayList` e `LinkedList`. Essa interface oferece métodos para adicionar, remover, pesquisar e iterar sobre elementos da lista.
 2. **`Set` (java.util.Set):** representa uma coleção de elementos únicos, sem duplicatas. Implementações comuns incluem `HashSet`, `LinkedHashSet` e `TreeSet`. Ela é usada para armazenar e recuperar elementos distintos.
 3. **`Map` (java.util.Map):** representa um mapeamento de chaves para valores. Implementações comuns incluem `HashMap`, `LinkedHashMap`, e `TreeMap`. Ela permite associar valores (valores) a chaves únicas e recuperá-los rapidamente usando essas chaves.
