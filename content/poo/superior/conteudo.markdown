@@ -20,7 +20,7 @@ nav_exclude: true
 1. Classes e objetos
 2. Troca de mensagens entre objetos
 3. Composição de Objetos
-4. Coleções de Objetos
+4. [Coleções de Objetos](/content/poo/superior/conteudo/colecoes.html)
 5. [Herança](/content/poo/superior/conteudo/heranca.html)
 6. Sobreposição e sobrecarga
 7. [Encapsulamento](/content/poo/superior/conteudo/encapsulamento.html)
