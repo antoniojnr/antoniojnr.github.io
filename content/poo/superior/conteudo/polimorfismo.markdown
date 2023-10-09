@@ -105,4 +105,33 @@ Há um teste de unidade para esse exercício disponível [aqui](https://github.c
 
 ### Exercício 2
 
-Faça a classe `Inventario` implementar a interface `Iterable`. Implemente seu próprio `Iterator`.
+Implemente uma classe `Inventario` (implementa interface `InventarioIF` abaixo) que armazena itens encontrados pelo jogador durante o jogo. Além disso, implemente a interface `Iterable` e, consequentemente, implemente seu próprio `Iterator`.
+
+Há um teste de unidade para esse exercício disponível [aqui](https://github.com/antoniojnr/aula-poo-20232/blob/main/src/test/java/InventarioTest.java).
+
+```java
+public interface InventarioIF extends Iterable<ItemJogo> {
+    int getTamanho();
+    void setTamanho(int tamanho);
+    void adicionarItem(ItemJogo item) throws InventarioCheioException;
+
+    void removerItem(int indice);
+
+    boolean contemItem(ItemJogo item);
+
+    List<ItemJogo> getInventario();
+
+    @Override
+    Iterator<ItemJogo> iterator();
+
+    // Não é necessário implementar o método forEach
+    // Deixe o corpo do método vazio
+    @Override
+    void forEach(Consumer<? super ItemJogo> action);
+
+    // Não é necessário implementar o método spliterator
+    // Deixe o corpo do método vazio e retorne null
+    @Override
+    Spliterator<ItemJogo> spliterator();
+}
+```
