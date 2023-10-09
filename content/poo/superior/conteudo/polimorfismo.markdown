@@ -101,13 +101,13 @@ public interface Stack {
 }
 ```
 
-Há um teste de unidade para esse exercício disponível [aqui](https://github.com/antoniojnr/aula-poo-20232/blob/main/src/test/java/StackTest.java).
+Há um teste de unidade para esse exercício disponível [aqui](https://github.com/antoniojnr/aula-poo-20232/blob/main/src/test/java/StackTest.java). Ajuste os _imports_ para corresponder aos pacotes de suas classes.
 
 ### Exercício 2
 
 Implemente uma classe `Inventario` (implementa interface `InventarioIF` abaixo) que armazena itens encontrados pelo jogador durante o jogo. Além disso, implemente a interface `Iterable` e, consequentemente, implemente seu próprio `Iterator`.
 
-Há um teste de unidade para esse exercício disponível [aqui](https://github.com/antoniojnr/aula-poo-20232/blob/main/src/test/java/InventarioTest.java).
+Há um teste de unidade para esse exercício disponível [aqui](https://github.com/antoniojnr/aula-poo-20232/blob/main/src/test/java/InventarioTest.java). Ajuste os _imports_ para corresponder aos pacotes de suas classes.
 
 ```java
 public interface InventarioIF extends Iterable<ItemJogo> {
