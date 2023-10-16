@@ -40,18 +40,21 @@ O complemento do complemento de uma variável é igual à própria variável.
 
 #### **Identidade**
 
-Apresenta os efeitos de aplicar um operador a uma variável e 0 ou 1.
+<div style="margin: 15px">
+<div><img src="https://latex.codecogs.com/svg.image?A \wedge 1 = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \vee 0 = A"/></div>
+</div>
+
+#### **Anulamento**
 
 <div style="margin: 15px">
 <div><img src="https://latex.codecogs.com/svg.image?A \wedge 0 = 0"/></div>
-<div><img src="https://latex.codecogs.com/svg.image?A \wedge 1 = A"/></div>
-<div><img src="https://latex.codecogs.com/svg.image?A \vee 0 = A"/></div>
 <div><img src="https://latex.codecogs.com/svg.image?A \vee 1 = 1"/></div>
 </div>
 
 ### 1.2. Teoremas multivariável
 
-Essas regras se aplicam a operações de álgebra booleana que usam mais de uma variável. 
+Essas regras se aplicam a operações de álgebra booleana que usam mais de uma variável.
 
 #### **Propriedade comutativa**
 
