@@ -96,7 +96,7 @@ Implemente um sistema de biblioteca, que permite ao usuário pegar livros empres
 
 ### 8. Rede social
 
-Crie uma rede social textual simples com classes para usuários, postagens, curtidas e comentários. A implementação básica desse sistema envolve apenas dados criados estaticamente (instanciados no código).
+Crie uma rede social textual simples com classes para usuários, postagens, curtidas e comentários. Sem a criação de contas e autenticação, você pode ter um gerenciador de usuários e disponibilizar uma forma de selecionar qual usuário está interagindo.
 
 **Desafios adicionais (opcionais):**
 
