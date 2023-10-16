@@ -49,12 +49,13 @@ Desenvolva um jogo de quiz que, além das funcionalidades de CRUD de perguntas, 
 
 ### 3. Agenda de contatos
 
-Desenvolva uma agenda de contatos com classes para contatos e grupos.
+Desenvolva uma agenda de contatos. Crie pelo menos 3 diferentes tipos de contatos: contatos de e-mail, telefone, WhatsApp, Telegram, etc. Cada tipo de contato possui atributos específicos. Determine se um relacionamento de herança modelará bem os tipos de contatos existentes e seus atributos.
 
 **Desafios adicionais (opcionais):**
 
-- (5 pontos) Crie a funcionalidade de relacionar contatos, permitindo que usuários estabeleçam relacionamentos entre contatos (por exemplo, família, amigos, colegas)
-- (10 pontos) Desenvolva um recurso de exportação para salvar os dados de contatos em CSV
+- (3 pontos) Crie a funcionalidade de filtragem de contatos. Por exemplo, contatos da família, contatos que fazem aniversário em março, contatos que aceitam chamada de vídeo (digamos, contatos de WhatsApp e Telegram teriam essa possibilidade)
+- (4 pontos) Crie a funcionalidade de relacionar contatos, permitindo que usuários estabeleçam relacionamentos entre contatos (por exemplo, família, amigos, colegas)
+- (8 pontos) Desenvolva um recurso de exportação para salvar os dados de contatos em CSV
 
 ### 4. Ponto de venda
 
