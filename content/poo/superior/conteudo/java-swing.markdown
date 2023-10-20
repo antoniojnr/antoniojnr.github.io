@@ -17,5 +17,5 @@ O Java Swing é uma biblioteca de componentes gráficos que faz parte da Platafo
 
 ## Recursos Adicionais e Exemplos
 
-[Link 1 - Exemplos de interfaces desenvolvidas com Java Swing](https://github.com/antoniojnr/gui-swing/tree/main/src/main/java/br/edu/ifpb/poo)
-Link 2 - [A Visual Guide to Swing Components](https://web.mit.edu/6.005/www/sp14/psets/ps4/java-6-tutorial/components.html)
+- Link 1 - [Exemplos de interfaces desenvolvidas com Java Swing](https://github.com/antoniojnr/gui-swing/tree/main/src/main/java/br/edu/ifpb/poo)
+- Link 2 - [A Visual Guide to Swing Components](https://web.mit.edu/6.005/www/sp14/psets/ps4/java-6-tutorial/components.html)
