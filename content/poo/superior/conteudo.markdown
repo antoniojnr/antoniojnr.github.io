@@ -32,15 +32,14 @@ nav_exclude: true
 1. Tratamento de Exceções
 2. Criação de Exceções
 
-## 5. PROGRAMAÇÃO CONCORRENTE E ASSÍNCRONA
+## 5. DESENVOLVIMENTO DE INTERFACES GRÁFICAS
+
+1. [Java Swing](/content/poo/superior/conteudo/java-swing.html)
+
+## 6. PROGRAMAÇÃO CONCORRENTE E ASSÍNCRONA
 
 1. Threads
 2. Programação assíncrona
-
-## 6. DESENVOLVIMENTO DE INTERFACES GRÁFICAS
-
-1. Caixas de diálogo
-2. Janelas
 
 ## 7. BOAS PRÁTICAS DE POO
 
