@@ -97,7 +97,18 @@ Mostra como expandir equações.
 <div><img src="https://latex.codecogs.com/svg.image?A \vee (A \wedge B) = A"/></div>
 </div>
 
-## 2. Referências
+## 2. Exercícios
+
+Simplifique as seguintes expressões utilizando as leis da álgebra de Boole:
+
+1. <img src="https://latex.codecogs.com/svg.image?Z = A \vee (\overline{A} \wedge B)"/>
+2. <img src="https://latex.codecogs.com/svg.image?Z = A \wedge ((A \vee \overline{A}) \vee \overline{B})"/>
+3. <img src="https://latex.codecogs.com/svg.image?Z = A \vee (\overline{A} \wedge B)"/>
+4. <img src="https://latex.codecogs.com/svg.image?Z = (A \wedge B) \vee B \wedge C \wedge (B \vee C)"/>
+5. <img src="https://latex.codecogs.com/svg.image?Z = A \vee A \wedge B"/>
+6. <img src="https://latex.codecogs.com/svg.image?Z = A \vee (\overline{A} \wedge B)"/>
+
+## 3. Referências
 
 1. CROWE, John; HAYES-GILL, Barrie. Introduction to digital electronics. Elsevier, 1998.
 2. LINCOLN, Betty. Introduction to Digital Electronics, 1/e. Pearson Education India, 2014.
