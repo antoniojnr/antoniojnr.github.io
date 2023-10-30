@@ -8,7 +8,7 @@ nav_exclude: true
 
 ## Instruções
 
-1. Entregue as questões em papel, escritas à mão. 
+1. Entregue as questões em papel, escritas à mão.
 2. O trabalho poderá ser realizado individualmente ou em dupla.
 3. Use o simulador de circuitos lógicos de sua preferência para ver os circuitos em funcionamento (sugestões: [Logic.ly](https://logic.ly/demo/) e [CircuitVerse](https://circuitverse.org/simulator))
 
@@ -23,7 +23,7 @@ nav_exclude: true
 
 **(1.3)** Qual a expressão booleana para representar essa operação?
 
-**(2)** Represente o circuito lógido equivalente à seguinte expressão utilizando portas básicas:
+**(2)** Represente o circuito lógico equivalente à seguinte expressão utilizando portas básicas:
 
 <div style="margin: 15px">
 <div><img src="https://latex.codecogs.com/svg.image?Z = A . (B + C) + (E + F) . D"/></div>

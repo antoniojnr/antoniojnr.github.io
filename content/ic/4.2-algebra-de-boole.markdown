@@ -17,8 +17,8 @@ Como o título sugere, esta seção detalha as operações de portas lógicas qu
 Demonstram que uma operação pode se aplicada várias vezes sem alteração do valor do resultado inicial.
 
 <div style="margin: 15px">
-<div><img src="https://latex.codecogs.com/svg.image?A \wedge A = A"/></div>
-<div><img src="https://latex.codecogs.com/svg.image?A \vee A = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \cdot A = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A + A = A"/></div>
 </div>
 
 #### **Propriedade do elemento inverso**
@@ -26,8 +26,8 @@ Demonstram que uma operação pode se aplicada várias vezes sem alteração do 
 Mostra o efeito de uma operação aplicada a uma variável e o complemento desta.
 
 <div style="margin: 15px">
-<div><img src="https://latex.codecogs.com/svg.image?A \wedge \overline{A} = 0"/></div>
-<div><img src="https://latex.codecogs.com/svg.image?A \vee \overline{A} = 1"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \cdot \overline{A} = 0"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A + \overline{A} = 1"/></div>
 </div>
 
 #### **Lei da involução**
@@ -41,15 +41,15 @@ O complemento do complemento de uma variável é igual à própria variável.
 #### **Identidade**
 
 <div style="margin: 15px">
-<div><img src="https://latex.codecogs.com/svg.image?A \wedge 1 = A"/></div>
-<div><img src="https://latex.codecogs.com/svg.image?A \vee 0 = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \cdot 1 = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A + 0 = A"/></div>
 </div>
 
 #### **Anulamento**
 
 <div style="margin: 15px">
-<div><img src="https://latex.codecogs.com/svg.image?A \wedge 0 = 0"/></div>
-<div><img src="https://latex.codecogs.com/svg.image?A \vee 1 = 1"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \cdot 0 = 0"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A + 1 = 1"/></div>
 </div>
 
 ### 1.2. Teoremas multivariável
@@ -61,8 +61,8 @@ Essas regras se aplicam a operações de álgebra booleana que usam mais de uma 
 Mostra que a saída é a mesma independentemente da ordem das entradas.
 
 <div style="margin: 15px">
-<div><img src="https://latex.codecogs.com/svg.image?X \wedge Y = Y \wedge X"/></div>
-<div><img src="https://latex.codecogs.com/svg.image?X \vee Y = Y \vee X"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?X \cdot Y = Y \cdot X"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?X + Y = Y + X"/></div>
 </div>
 
 #### **Propriedade associativa**
@@ -70,8 +70,8 @@ Mostra que a saída é a mesma independentemente da ordem das entradas.
 Mostra que a ordem de executar uma operação não altera o resultado.
 
 <div style="margin: 15px">
-<div><img src="https://latex.codecogs.com/svg.image?(X \wedge Y) \wedge Z = X \wedge (Y \wedge Z)"/></div>
-<div><img src="https://latex.codecogs.com/svg.image?(X \vee Y) \vee Z = X \vee (Y \vee Z)"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?(X \cdot Y) \cdot Z = X \cdot (Y \cdot Z)"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?(X + Y) + Z = X + (Y + Z)"/></div>
 </div>
 
 #### **Propriedade distributiva**
@@ -79,34 +79,33 @@ Mostra que a ordem de executar uma operação não altera o resultado.
 Mostra como expandir equações.
 
 <div style="margin: 15px">
-<div><img src="https://latex.codecogs.com/svg.image?A \wedge (B \vee C) = (A \wedge B) \vee (A \wedge C)"/></div>
-<div><img src="https://latex.codecogs.com/svg.image?A \vee (B \wedge C) = (A \vee B) \wedge (A \vee C)"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \cdot (B + C) = (A \cdot B) + (A \cdot C)"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A + (B \cdot C) = (A + B) \cdot (A + C)"/></div>
 </div>
 
 #### **Teorema de De Morgan**
 
 <div style="margin: 15px">
-<div><img src="https://latex.codecogs.com/svg.image?\overline{(A \vee B)} = \overline{A} \wedge \overline{B}"/></div>
-<div><img src="https://latex.codecogs.com/svg.image?\overline{(A \wedge B)} = \overline{A} \vee \overline{B}"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?\overline{(A + B)} = \overline{A} \cdot \overline{B}"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?\overline{(A \cdot B)} = \overline{A} + \overline{B}"/></div>
 </div>
 
 #### **Leis da absorção**
 
 <div style="margin: 15px">
-<div><img src="https://latex.codecogs.com/svg.image?A \wedge (A \vee B) = A"/></div>
-<div><img src="https://latex.codecogs.com/svg.image?A \vee (A \wedge B) = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A \cdot (A + B) = A"/></div>
+<div><img src="https://latex.codecogs.com/svg.image?A + (A \cdot B) = A"/></div>
 </div>
 
 ## 2. Exercícios
 
 Simplifique as seguintes expressões utilizando as leis da álgebra de Boole:
 
-1. <img src="https://latex.codecogs.com/svg.image?Z = A \vee (\overline{A} \wedge B)"/>
-2. <img src="https://latex.codecogs.com/svg.image?Z = A \wedge ((A \vee \overline{A}) \vee \overline{B})"/>
-3. <img src="https://latex.codecogs.com/svg.image?Z = A \vee (\overline{A} \wedge B)"/>
-4. <img src="https://latex.codecogs.com/svg.image?Z = (A \wedge B) \vee B \wedge C \wedge (B \vee C)"/>
-5. <img src="https://latex.codecogs.com/svg.image?Z = A \vee A \wedge B"/>
-6. <img src="https://latex.codecogs.com/svg.image?Z = A \vee (\overline{A} \wedge B)"/>
+1. <img src="https://latex.codecogs.com/svg.image?Z = A + (\overline{A} \cdot B)"/>
+2. <img src="https://latex.codecogs.com/svg.image?Z = A \cdot ((A + \overline{A}) + \overline{B})"/>
+3. <img src="https://latex.codecogs.com/svg.image?Z = A + (\overline{A} \cdot B)"/>
+4. <img src="https://latex.codecogs.com/svg.image?Z = (A \cdot B) + B \cdot C \cdot (B + C)"/>
+5. <img src="https://latex.codecogs.com/svg.image?Z = A + A \cdot B"/>
 
 ## 3. Referências
 

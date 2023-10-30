@@ -4,13 +4,21 @@ title: Mapa de Karnaugh
 nav_exclude: true
 ---
 
+## Resumo
+
+- Mapas de Karnaugh, ou _K-maps_:
+  - são utilizados para simplificar expressões booleanas
+  - contém exatamente as mesmas informações que tabelas-verdade
+  - permitem que o processo de simplificação seja feito visualmente
+  - tornam-se inviáveis de serem representados a partir de 5 variáveis
+
 ## 1. Mapa de Karnaugh
 
 O mapa de Karnaugh é uma representação visual de uma expressão booleana apresentado em 1953 por Maurice Karnaugh. O mapa de Karnaugh possui exatamente as mesmas informações que a tabela-verdade, entretanto, reduz a complexidade desta e representa a dada expressão booleana na forma de um mapa. O processo de simplificação, descrito na seção anterior utilizando álgebra de Boole, agora pode ser executado visualmente.
 
 O mapa de Karnaugh é organizado de forma que, sempre que possível, produtos de termos logicamente adjacentes também sejam adjacentes na matriz, para serem logicamente combinados e, então, simplificados.
 
-Produtos de termos são conjunções de variáveis (A and B) e dois produtos de termos são **logicamente adjacentes** quando eles contém as mesmas variáveis e diferem na forma de exatamente uma variável. Por exemplo, *AB* e *AB'* são logicamente adjacentes, pois entre esses dois produtos de termos, somente a forma de *B* mudou (*B* para *B'*). Já *AB* e *A'B'* não são logicamente adjacentes, uma vez que entre os dois produtos de termos, houve duas mudanças: de *A* para *A'* e *B* para *B'*, quando somente uma variável pode mudar para que eles sejam logicamente adjacentes.
+**Produtos de termos** são conjunções de variáveis (A and B) e dois produtos de termos são **logicamente adjacentes** quando eles contém as mesmas variáveis e diferem na forma de exatamente uma variável. Por exemplo, _AB_ e _AB'_ são logicamente adjacentes, pois entre esses dois produtos de termos, somente a forma de _B_ mudou (_B_ para _B'_). Já _AB_ e _A'B'_ não são logicamente adjacentes, uma vez que entre os dois produtos de termos, houve duas mudanças: de _A_ para _A'_ e _B_ para _B'_, quando somente uma variável pode mudar para que eles sejam logicamente adjacentes.
 
 Cada célula do mapa de Karnaugh corresponde a uma linha na tabela-verdade e, consequentemente, também corresponde a um produto de termos fundamental.
 
@@ -18,66 +26,78 @@ Dessa forma, a tabela-verdade da porta AND, mostrada na Tabela 1, pode ser repre
 
 **Tabela 1.** Tabela-verdade da porta AND.
 
-|**A**|**B**|**A.B**|
-|--|---|--|
-| 0 | 0 | **0** |
-| 0 | 1 | **0** |
-| 1 | 0 | **0** |
-| 1 | 1 | **1** |
+| **A** | **B** | **A.B** |
+| ----- | ----- | ------- |
+| 0     | 0     | **0**   |
+| 0     | 1     | **0**   |
+| 1     | 0     | **0**   |
+| 1     | 1     | **1**   |
 
 **Tabela 2.** Mapa de Karnaugh para uma porta AND de duas entradas.
 
-|**Z**|**A=0**|**A=1**|
-|--|---|--|
-| **B=0** | 0 | 0 |
-| **B=1** | 0 | 1 |
+| **Z**   | **A=0** | **A=1** |
+| ------- | ------- | ------- |
+| **B=0** | 0       | 0       |
+| **B=1** | 0       | 1       |
 
-Note que, se uma célula tem 1, então a expressão **Z** contém o produto fundamental indicado pela coluna e linha. Na Tabela 2, *Y = 1* quando *A = 1* e *B = 1*. 
+Note que, se uma célula tem 1, então a expressão **Z** contém o produto fundamental indicado pela coluna e linha. Na Tabela 2, _Y = 1_ quando _A = 1_ e _B = 1_.
 
-Podemos usar uma forma alternativa para indexar o mapa de Karnaugh, que é substituindo *A = 1* por *A* e *A = 0* por *A'* nas colunas e *B* e *B'* nas linhas, obtendo a Tabela 3.
+Podemos usar uma forma alternativa para indexar o mapa de Karnaugh, que é substituindo _A = 1_ por _A_ e _A = 0_ por _A'_ nas colunas e _B_ e _B'_ nas linhas, obtendo a Tabela 3.
 
 **Tabela 3.** Representação alternativa do mapa de Karnaugh para uma porta AND de duas entradas.
 
-|**Z**|**A'**|**A**|
-|--|---|--|
-| **B'** | 0 | 0 |
-| **B** | 0 | 1 |
+| **Z**  | **A'** | **A** |
+| ------ | ------ | ----- |
+| **B'** | 0      | 0     |
+| **B**  | 0      | 1     |
 
-**Exercícios**
-1. Faça a tabela-verdade e mapa de Karnaugh para <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}.\overline{B}+A.B"/>. Que função é essa?
+### 1.1 Exercícios
 
-*Solução*
+**Exercício 1.** Faça a tabela-verdade e mapa de Karnaugh para <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}.\overline{B}+A.B"/>. Que função é essa?
+
+_Solução_
 
 Seja <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}.\overline{B}+A.B"/>.
 
 A tabela-verdade para a função <img src="https://latex.codecogs.com/svg.image?Z"/> é:
 
-| <img src="https://latex.codecogs.com/svg.image?A"/>|<img src="https://latex.codecogs.com/svg.image?B"/>|<img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/>|<img src="https://latex.codecogs.com/svg.image?A.B"/>| <img src="https://latex.codecogs.com/svg.image?Z"/> |
-|--|--|--|--|--|
-| 0 | 0 | 1 | 0 | 1 |
-| 0 | 1 | 0 | 0 | 0 |
-| 1 | 0 | 0 | 0 | 0 |
-| 1 | 1 | 0 | 1 | 1 |
+| <img src="https://latex.codecogs.com/svg.image?A"/> | <img src="https://latex.codecogs.com/svg.image?B"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?A.B"/> | <img src="https://latex.codecogs.com/svg.image?Z"/> |
+| --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------- |
+| 0                                                   | 0                                                   | 1                                                                           | 0                                                     | 1                                                   |
+| 0                                                   | 1                                                   | 0                                                                           | 0                                                     | 0                                                   |
+| 1                                                   | 0                                                   | 0                                                                           | 0                                                     | 0                                                   |
+| 1                                                   | 1                                                   | 0                                                                           | 1                                                     | 1                                                   |
 
 E o mapa de Karnaugh é:
 
-|**Z**|**A'**|**A**|
-|--|---|--|
-| **B'** | 1 | 0 |
-| **B** | 0 | 1 |
+| **Z**  | **A'** | **A** |
+| ------ | ------ | ----- |
+| **B'** | 1      | 0     |
+| **B**  | 0      | 1     |
 
 A tabela-verdade e o mapa de Karnaugh mostrados são da função XNOR.
 
-2. Usando o mapa de Karnaugh, encontre a expressão que representa a função XOR.
+**Exercício 2.** Usando o mapa de Karnaugh, encontre a expressão que representa a função XOR.
 
-O resultado da função XOR é 1 quando A e B são diferentes (*AB'* e *A'B* ) e 0, caso contrário. Assim, temos o seguinte mapa de Karnaugh para essa função.
+_Solução_
 
-|**Z**|**A'**|**A**|
-|--|---|--|
-| **B'** | 0 | 1 |
-| **B** | 1 | 0 |
+O resultado da função XOR é 1 quando A e B são diferentes (_AB'_ e _A'B_ ) e 0, caso contrário. Assim, temos o seguinte mapa de Karnaugh para essa função.
+
+| **Z**  | **A'** | **A** |
+| ------ | ------ | ----- |
+| **B'** | 0      | 1     |
+| **B**  | 1      | 0     |
 
 Vemos que existem dois produtos de termos que compõem a função XOR: <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> e <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/>. Logo, a expressão que representa a função XOR é o produto de termos <img src="https://latex.codecogs.com/svg.image?\overline{A}B+A\overline{B}"/>.
+
+**Exercício 3.** Faça o mapa de Karnaugh para a função OR de duas entradas.
+
+_Solução_
+
+| **Z**  | **A'** | **A** |
+| ------ | ------ | ----- |
+| **B'** | 0      | 1     |
+| **B**  | 1      | 1     |
 
 ## 2. Simplificação usando mapa de Karnaugh
 
@@ -97,30 +117,31 @@ O mapa de Karnaugh para <img src="https://latex.codecogs.com/svg.image?Z=A\overl
 
 **Tabela 4.** Mapa de Karnaugh para a expressão <img src="https://latex.codecogs.com/svg.image?Z=A\overline{B}+AB"/>
 
-|**Z**|**A'**|**A**|
-|--|---|--|
-| **B'** | 0 | 1 |
-| **B** | 0 | 1 |
+| **Z**  | **A'** | **A** |
+| ------ | ------ | ----- |
+| **B'** | 0      | 1     |
+| **B**  | 0      | 1     |
 
 Vemos que os dois produtos de termos fundamentais (<img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> e <img src="https://latex.codecogs.com/svg.image?AB"/>) são logicamente adjacentes (estão na mesma coluna e diferem em uma variável) e, assim, sabemos que eles podem ser combinados.
 
-Sabemos que a variável *B* será eliminada porque os termos adjacentes diferem nessa variável (um tem <img src="https://latex.codecogs.com/svg.image?\overline{B}"/> e outro <img src="https://latex.codecogs.com/svg.image?B"/>), indicando que a expressão não depende do valor de *B*, enquanto ambos os termos possuem *A*. Dessa forma, a expressão é simplificada para *Y = A*.
+Sabemos que a variável _B_ será eliminada porque os termos adjacentes diferem nessa variável (um tem <img src="https://latex.codecogs.com/svg.image?\overline{B}"/> e outro <img src="https://latex.codecogs.com/svg.image?B"/>), indicando que a expressão não depende do valor de _B_, enquanto ambos os termos possuem _A_. Dessa forma, a expressão é simplificada para _Y = A_.
 
 O processo de simplificação é auxiliado visualmente pelo mapa de Karnaugh, mas pode também ser alcançado usando álgebra booleana, nem sempre de forma tão simples.
 
 **Exercícios**
+
 1. Use o mapa de Karnaugh para simplificar <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}.\overline{B}+A.\overline{B}"/>.
 
-*Solução*
+_Solução_
 
 Temos uma soma de produtos de termos que pode ser facilmente ser representada em um mapa de Karnaugh da seguinte forma: a célula do mapa de Karnaugh indexada pela coluna <img src="https://latex.codecogs.com/svg.image?\overline{A}"/> e linha <img src="https://latex.codecogs.com/svg.image?\overline{B}"/> (correspondente ao produto de termos <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/>) terá valor 1, assim como a célula correspondente ao produto de termos <img src="https://latex.codecogs.com/svg.image?A.\overline{B}"/>.
 
 Assim, temos:
 
-|**Z**|**A'**|**A**|
-|--|---|--|
-| **B'** | 1 | 1 |
-| **B** | 0 | 0 |
+| **Z**  | **A'** | **A** |
+| ------ | ------ | ----- |
+| **B'** | 1      | 1     |
+| **B**  | 0      | 0     |
 
 Os produtos <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> e <img src="https://latex.codecogs.com/svg.image?A.\overline{B}"/> são logicamente adjacentes e podem ser combinados. A variável <img src="https://latex.codecogs.com/svg.image?A"/> é eliminada, porque os termos adjacentes diferem nesta variável, restando <img src="https://latex.codecogs.com/svg.image?\overline{B}"/>.
 
@@ -128,88 +149,104 @@ Assim, a simplificação de <img src="https://latex.codecogs.com/svg.image?Z=\ov
 
 2. Use o mapa de Karnaugh para simplificar <img src="https://latex.codecogs.com/svg.image?Z=A\overline{B}+\overline{A}B + AB"/>. Que função é essa?
 
-*Solução*
+_Solução_
 
 O mapa de Karnaugh para a função é o seguinte:
 
-|**Z**|**A'**|**A**|
-|--|---|--|
-| **B'** | 0 | 1 |
-| **B** | 1 | 1 |
+| **Z**  | **A'** | **A** |
+| ------ | ------ | ----- |
+| **B'** | 0      | 1     |
+| **B**  | 1      | 1     |
 
 Os produtos de termos <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> e <img src="https://latex.codecogs.com/svg.image?AB"/> são adjacentes e podem ser simplificados para <img src="https://latex.codecogs.com/svg.image?A"/>. O mesmo vale para os produtos de termos <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> e <img src="https://latex.codecogs.com/svg.image?AB"/>, que podem ser simplificados para <img src="https://latex.codecogs.com/svg.image?B"/>. Logo, a expressão resultante é <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> e <img src="https://latex.codecogs.com/svg.image?Z=A+B"/> e a função representada pela expressão <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> e <img src="https://latex.codecogs.com/svg.image?Z"/> é a função OR.
 
 ## 3. Mapa de Karnaugh para mais de 2 variáveis
 
-Dado que tabelas-verdade e mapas de Karnaugh contém exatamente a mesma informação, então um mapa de Karnaugh para *n* variáveis deverá conter 2<sup>n</sup> células. Na prática mapas de Karnaugh tornam-se inviáveis para mais que cinco variáveis (32 células).
+Dado que tabelas-verdade e mapas de Karnaugh contém exatamente a mesma informação, então um mapa de Karnaugh para _n_ variáveis deverá conter 2<sup>n</sup> células. Na prática mapas de Karnaugh tornam-se inviáveis para mais que cinco variáveis (32 células).
 
 Um mapa de três variáveis terá oito células e um exemplo é mostrado na Tabela 5.
 
 **Tabela 5.** Mapa de Karnaugh para três variáveis. Cada célula mostra o produto de termos composto pela junção do índice da coluna e linha.
 
-|**Z**|<img src="https://latex.codecogs.com/svg.image?\overline{A}\overline{B}"/>|<img src="https://latex.codecogs.com/svg.image?\overline{A}B"/>|<img src="https://latex.codecogs.com/svg.image?AB"/>|<img src="https://latex.codecogs.com/svg.image?A\overline{B}"/>|
-|--|--|--|--|--|
+| **Z**                                                          | <img src="https://latex.codecogs.com/svg.image?\overline{A}\overline{B}"/>             | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/>             | <img src="https://latex.codecogs.com/svg.image?AB"/>             | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/>             |
+| -------------------------------------------------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}\overline{B}\overline{C}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B\overline{C}"/> | <img src="https://latex.codecogs.com/svg.image?AB\overline{C}"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}\overline{C}"/> |
-| <img src="https://latex.codecogs.com/svg.image?C"/> |  <img src="https://latex.codecogs.com/svg.image?\overline{A}\overline{B}C"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}BC"/> | <img src="https://latex.codecogs.com/svg.image?ABC"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}C"/> |
+| <img src="https://latex.codecogs.com/svg.image?C"/>            | <img src="https://latex.codecogs.com/svg.image?\overline{A}\overline{B}C"/>            | <img src="https://latex.codecogs.com/svg.image?\overline{A}BC"/>            | <img src="https://latex.codecogs.com/svg.image?ABC"/>            | <img src="https://latex.codecogs.com/svg.image?A\overline{B}C"/>            |
 
 Vejamos alguns exemplos do uso do mapa de Karnaugh para 3 variáveis para simplificação de expressões.
 
-**Exercícios**
-**(1)** Faça a tabela-verdade e o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=AB+A\overline{C}"/>
+### 3.1. Exercícios
 
-*Solução*
+**Exercício 1.** Faça a tabela-verdade e o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=AB+\overline{A}C"/>
+
+_Solução_
 
 Temos a seguinte tabela-verdade para a função:
 
-| A | B | C | Z |
-|--|--|--|--|
-| 0 | 0 | 0 | 0 |
-| 0 | 0 | 1 | 1 |
-| 0 | 1 | 0 | 0 |
-| 0 | 1 | 1 | 1 |
-| 1 | 0 | 0 | 0 |
-| 1 | 0 | 1 | 0 |
-| 1 | 1 | 0 | 1 |
-| 1 | 1 | 1 | 1 |
+| A   | B   | C   | Z   |
+| --- | --- | --- | --- |
+| 0   | 0   | 0   | 0   |
+| 0   | 0   | 1   | 1   |
+| 0   | 1   | 0   | 0   |
+| 0   | 1   | 1   | 1   |
+| 1   | 0   | 0   | 0   |
+| 1   | 0   | 1   | 0   |
+| 1   | 1   | 0   | 1   |
+| 1   | 1   | 1   | 1   |
 
-A expressão tem três variáveis e o mapa de Karnaugh deve conter outo células. As variáveis A e B rotulam as quatro colunas no mapa (com as quatro combinações possíveis dessas duas variáveis, listadas de forma que sejam logicamente adjacentes: <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/>, <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/>, <img src="https://latex.codecogs.com/svg.image?AB"/> e <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/>) e a terceira variável, C, rotula as duas linhas: <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> e <img src="https://latex.codecogs.com/svg.image?C"/>, como mostrado a seguir. 
+A expressão tem três variáveis e o mapa de Karnaugh deve conter oito células. As variáveis A e B rotulam as quatro colunas no mapa (com as quatro combinações possíveis dessas duas variáveis, listadas de forma que sejam logicamente adjacentes: <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/>, <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/>, <img src="https://latex.codecogs.com/svg.image?AB"/> e <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/>) e a terceira variável, C, rotula as duas linhas: <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> e <img src="https://latex.codecogs.com/svg.image?C"/>, como mostrado a seguir.
 
-As informações da tabela-verdade são, então, passadas para o mapa. Por exemplo, na tabela-verdade, para *A = 0*, *B = 0* e *C = 1* o resultado de *Z = 1*. Logo, no mapa de Karnaugh, a célula indexada por <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> e <img src="https://latex.codecogs.com/svg.image?C"/> é 1 (pois <img src="https://latex.codecogs.com/svg.image?\overline{A}=0"/>, <img src="https://latex.codecogs.com/svg.image?\overline{B} = 0"/> e <img src="https://latex.codecogs.com/svg.image?C = 1"/>).
+As informações da tabela-verdade são, então, passadas para o mapa. Por exemplo, na tabela-verdade, para _A = 0_, _B = 0_ e _C = 1_ o resultado de _Z = 1_. Logo, no mapa de Karnaugh, a célula indexada por <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> e <img src="https://latex.codecogs.com/svg.image?C"/> é 1 (pois <img src="https://latex.codecogs.com/svg.image?\overline{A}=0"/>, <img src="https://latex.codecogs.com/svg.image?\overline{B} = 0"/> e <img src="https://latex.codecogs.com/svg.image?C = 1"/>).
 
 Temos, então, o seguinte mapa de Karnaugh:
 
-| <img src="https://latex.codecogs.com/svg.image?Z"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
-|--|--|--|--|--|
-| <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 0 | 0 | 1 | 0 |
-| <img src="https://latex.codecogs.com/svg.image?C"/> | 1 | 1 | 1 | 0 |
+| <img src="https://latex.codecogs.com/svg.image?Z"/>            | <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
+| -------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
+| <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 0                                                                           | 0                                                               | 1                                                    | 0                                                               |
+| <img src="https://latex.codecogs.com/svg.image?C"/>            | 1                                                                           | 1                                                               | 1                                                    | 0                                                               |
 
-**(2)** Faça o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}B\overline{C}+AC"/>.
+**Exercício 2.** Faça o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}B\overline{C}+AC"/>.
 
 O mapa para a expressão é mostrado a seguir.
 
-| <img src="https://latex.codecogs.com/svg.image?Z"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
-|--|--|--|--|--|
-| <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 0 | 1 | 0 | 0 |
-| <img src="https://latex.codecogs.com/svg.image?C"/> | 0 | 0 | 1 | 1 |
+| <img src="https://latex.codecogs.com/svg.image?Z"/>            | <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
+| -------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
+| <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 0                                                                           | 1                                                               | 0                                                    | 0                                                               |
+| <img src="https://latex.codecogs.com/svg.image?C"/>            | 0                                                                           | 0                                                               | 1                                                    | 1                                                               |
 
 O termo <img src="https://latex.codecogs.com/svg.image?\overline{A}B\overline{C}"/> não pode mais ser combinado com nenhum outro produto de termos, então a expressão já está no formato mais simplificado.
 
-**(3)** Faça o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}.\overline{B}.\overline{C}+A.\overline{B}.\overline{C}"/> e use para simplificar a expressão.
+**Exercício 3.** Faça o mapa de Karnaugh para a função <img src="https://latex.codecogs.com/svg.image?Z=\overline{A}.\overline{B}.\overline{C}+A.\overline{B}.\overline{C}"/> e use para simplificar a expressão.
 
 À primeira vista, parece que não há produtos de termos fundamentais que possam ser agrupados no mapa de Karnaugh a seguir.
 
-| <img src="https://latex.codecogs.com/svg.image?Z"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
-|--|--|--|--|--|
-| <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 1 | 0 | 0 | 1 |
-| <img src="https://latex.codecogs.com/svg.image?C"/> | 0 | 0 | 0 | 0 |
+| <img src="https://latex.codecogs.com/svg.image?Z"/>            | <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
+| -------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
+| <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 1                                                                           | 0                                                               | 0                                                    | 1                                                               |
+| <img src="https://latex.codecogs.com/svg.image?C"/>            | 0                                                                           | 0                                                               | 0                                                    | 0                                                               |
 
 Enquanto em um mapa de duas variáveis todos os produtos logicamente adjacentes estão fisicamente ao lado um do outro, esse não é o caso para mais de duas variáveis.
 
-Para um mapa de três variáveis, apesar de <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> e <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> serem logicamente adjacentes, eles não estão próximos fisicamente no mapa de Karnaugh, uma vez que estão na primeira e na última colunas. 
+Para um mapa de três variáveis, apesar de <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> e <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> serem logicamente adjacentes, eles não estão próximos fisicamente no mapa de Karnaugh, uma vez que estão na primeira e na última colunas.
 
 Entretanto, eles estão conectados como se o mapa estivesse enrolado formando um cilindro, conectando as colunas 1 e 4, como mostrado na figura a seguir. Assim, os termos podem ser agrupados para formar <img src="https://latex.codecogs.com/svg.image?Z=\overline{B}.\overline{C}"/>
 
 ![Mapa de Karnaugh](/content/images/karnaugh-2.png "Mapa de Karnaugh")
+
+## 4. Exercícios
+
+Use o mapa de Karnaugh para encontrar a forma simplificada das seguintes expressões:
+
+1. AB + AB’
+2. AB + A’B + A’B’
+3. AB’ + A’B’
+4. ABC + ABC’ + AB’C
+5. ABC’ + AB’C + AB’C’ + A’BC + A’BC’ + A’B’C
+6. ABC + ABC’ + A’BC + A’B’C
+7. ABC + ABC’ + AB’C + AB’C’ + A’B’C
+8. ABCD + ABC’D + ABCD’ + A’BCD + A’B’CD + A’BCD’
+9. ABC’D + AB’CD + AB’C’D + A’BCD + A’BC’D + A’BCD’ + A’B’C’D’
+10. AB’C’D + AB’CD’ + AB’C’D’ + A’B’CD + A’B’C’D + A’B’CD’ + A’B’C’D’
 
 ## 4. Referências
 
