@@ -235,7 +235,7 @@ Entretanto, eles estão conectados como se o mapa estivesse enrolado formando um
 
 ## 4. Exercícios
 
-Use o mapa de Karnaugh para encontrar a forma simplificada das seguintes expressões:
+**Exercício 1.** Use o mapa de Karnaugh para encontrar a forma simplificada das seguintes expressões:
 
 1. AB + AB’
 2. AB + A’B + A’B’
@@ -247,6 +247,8 @@ Use o mapa de Karnaugh para encontrar a forma simplificada das seguintes express
 8. ABCD + ABC’D + ABCD’ + A’BCD + A’B’CD + A’BCD’
 9. ABC’D + AB’CD + AB’C’D + A’BCD + A’BC’D + A’BCD’ + A’B’C’D’
 10. AB’C’D + AB’CD’ + AB’C’D’ + A’B’CD + A’B’C’D + A’B’CD’ + A’B’C’D’
+
+**Exercício 2.** Como podemos usar a tabela verdade e mapa de Karnaugh para simplificar a expressão <img src="https://latex.codecogs.com/svg.image?Y=\overline{A.B} + \overline{A + B}"/> ?
 
 ## 4. Referências
 
