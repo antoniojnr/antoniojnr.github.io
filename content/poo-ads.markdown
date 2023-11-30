@@ -33,3 +33,4 @@ haverá 3 avaliações na disciplina (**A1**, **A2** e **A3**), detalhadas a seg
 - [Exercício 4 - Sistemas](/content/poo/superior/4-sistemas.html)
 - Exercício 5 - Programação concorrente
 - Exercício 6 - Interfaces gráficas
+- [Projeto final](/content/poo/superior/7-final.html)
