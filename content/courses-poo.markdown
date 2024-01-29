@@ -11,5 +11,6 @@ nav_order: 2
 
 ### Modalidade
 
+- [Integrado](/content/poo-integrado.html)
 - [Subsequente](/content/poo-subsequente.html)
 - [Superior - ADS](/content/poo-ads.html)
