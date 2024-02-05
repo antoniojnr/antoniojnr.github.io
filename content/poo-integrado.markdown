@@ -17,6 +17,10 @@ haverá 2 avaliações por bimestre na disciplina (**A1** e **A2**), detalhadas 
 - Provas
 - Projeto
 
+### Conteúdo
+
+- [Classes e objetos](https://lace-rutabaga-0d7.notion.site/Classes-e-objetos-5b39447ffd04463d8ef160af065a5f66?pvs=4)
+
 ### Listas de exercícios
 
 - Exercício 1 - Encapsulamento
