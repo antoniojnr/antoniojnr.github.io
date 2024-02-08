@@ -27,7 +27,7 @@ haverá 3 avaliações na disciplina (**A1**, **A2** e **A3**), detalhadas a seg
 ### Listas de exercícios
 
 - [Exercícios complementares](/content/poo/superior/0-complementares.html)
-- [Exercício 1 - Encapsulamento](/content/poo/superior/1-encapsulamento.html)
+- [Exercício 1 - Encapsulamento](/content/poo/superior/1-encapsulamento-20241.html)
 - [Exercício 2 - Encapsulamento](/content/poo/superior/2-encapsulamento.html)
 - [Exercício 3 - Herança e coleções](/content/poo/superior/3-heranca-colecoes.html)
 - [Exercício 4 - Sistemas](/content/poo/superior/4-sistemas.html)

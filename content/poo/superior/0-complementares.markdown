@@ -38,7 +38,7 @@ Crie uma classe `ContaCorrente` com atributos para número da conta, saldo e tit
 
 ### Exercício 6
 
-Crie uma classe `Triangulo` que represente um triângulo com atributos para os comprimentos dos lados. Implemente um método para determinar o tipo de triângulo (equilátero, isósceles ou escaleno). Crie objetos `Triangulo` de forma a obter triângulos de tipos diferentes.
+Crie uma classe `Triangulo` que represente um triângulo com atributos para os comprimentos dos lados. Implemente: (i) um método para determinar o tipo de triângulo (equilátero, isósceles ou escaleno) e (ii) um método para determinar se os comprimentos passados formam um triângulo válido. Crie objetos `Triangulo` de forma a obter triângulos de tipos diferentes.
 
 ### Exercício 7
 
