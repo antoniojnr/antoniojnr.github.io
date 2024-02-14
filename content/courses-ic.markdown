@@ -11,9 +11,9 @@ nav_order: 1
 
 ### Informações gerais
 
-- **Aulas:** segundas-feiras, 08:40 às 12:20
+- **Aulas:** terças-feiras, 08:40 às 12:20
 - **Carga horária:** 67h
-- **Calendário** disponível [aqui](/content/ic/calendario.html)
+<!-- - **Calendário** disponível [aqui](/content/ic/calendario.html) -->
 - **Links adicionais** mencionados em sala disponíveis [aqui](/content/ic/links.html)
 
 ### Ementa
@@ -40,13 +40,31 @@ Identificar e compreender os principais componentes de um computador, o seu func
 ### Avaliação
 
 - Três notas por semestre, divididas em:
-  - Listas de exercícios - **5 listas** (Primeira nota)
-  - Mini-testes semanais - **13 mini-testes - pode ser menos, dependendo de motivos quaisquer** (Segunda e terceira notas - a média de todos os mini-testes é repetida na segunda e terceira notas no SUAP)
+  - Listas de exercícios - (**Primeira** e **segunda** notas)
+  - Avaliações - **3 avaliações** (**Terceira** nota)
 
 ### Regras
 
 - **Contato através do Classroom:** preste atenção ao mural da disciplina e a comentários deixados nas atividades
 - **Tolerância zero para plágio:** exercícios de dois ou mais alunos com respostas semelhantes ou exercícios com respostas plagiadas de quaisquer fontes serão automaticamente zerados
+
+### Bibliografia
+
+_Retirado da ementa_
+
+#### Bibliografia Básica
+
+- TANENBAUM. A. S. **Organização Estruturada de Computadores**, 6ª Ed. Pearson, 2013.
+- CARVALHO, A. C. P. L. F. e LORENA, A. C. **Introdução à Computação – Hardware, Software e Dados**. Ed. LTC, 2017.
+- MANZANO, A. L. N. G. e MANZANO, M. I. N. G. **Estudo Dirigido de Informática Básica**, 7ª Edição. Editora Érica, 2009.
+
+#### Bibliografia Complementar
+
+- IDOETA, I. V. e CAPUANO, F. G. **Elementos de Eletrônica Digital**. 43a Ed. Editora Érica, 2018.
+- TOCCI, R.; WIDMER, N.; MOSS, G. **Sistemas Digitais: Princípios e Aplicações**. 12a Ed. São Paulo: Pearson Universidades, 2019.
+- SILBERSCHALTZ, A.; GALVIN P. B. e GAGNE G., **Fundamentos de Sistemas Operacionais**, 9ª Edição, Ed. LTC, 2015.
+- STALLINGS, William. **Arquitetura e Organização de Computadores**. 5. ed., Prentice Hall, 2003.
+- PATTERSON, D. A.; HENNESSY, J. L. **Organização e Projeto de Computadores: a interface hardware/software**. 5a Ed. LTC, 2017.
 
 ### Conteúdo Programático
 
