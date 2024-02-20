@@ -73,6 +73,8 @@ _Retirado da ementa_
 - Origem do computador
 - História e evolução do computador
 
+[Slides](https://docs.google.com/presentation/d/1LnceI2kZdNKWYQBkRNlcfl6Zeoj8Y9KeWmjzMD_twrk/edit?usp=sharing)
+
 #### **Unidade II - Componentes de um sistema computacional**
 
 - Hardware
