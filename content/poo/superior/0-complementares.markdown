@@ -57,3 +57,13 @@ No construtor, lance uma exceção `ValorInvalidoException` quando as seguintes 
 1. Um dia menor que 1 ou maior que 31 for passado;
 2. Um mês menor que 1 ou maior que 12 for passado;
 3. Um ano maior que o ano atual for passado.
+
+### Exercício 10
+
+Escreva um programa em Java que lê dois valores `a` e `b` da entrada padrão, efetua a divisão `a / b` e exibe o resultado, com precisão de 2 casas decimais. Prepare o seu código para tratar a possibilidade de acontecer a divisão por zero.
+
+### Exercício 11
+
+Crie a classe `Usuario`, com dois atributos, email e senha. Valide o email e senha, para que o email esteja no formato `aaa@bbb.com` (não precisa testar outras terminações de domínio, como _.net_ ou _.com.br_) e a senha seja numérica (sem letras ou símbolos).
+
+Lance uma exceção `EmailInvalidoException` quando um email em formato inválido for passado através do construtor ou método `setEmail` e `SenhaInvalidaException` quando uma senha em formáto inválido for passada através do construtor ou método `setSenha`.
