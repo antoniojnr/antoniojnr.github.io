@@ -75,6 +75,11 @@ _Retirado da ementa_
 
 [Slides](https://docs.google.com/presentation/d/1LnceI2kZdNKWYQBkRNlcfl6Zeoj8Y9KeWmjzMD_twrk/edit?usp=sharing)
 
+##### Links
+
+- [Diagrama da computação dos números de Bernoulli, por Ada Lovelace](https://en.wikipedia.org/wiki/File:Diagram_for_the_computation_of_Bernoulli_numbers.jpg)
+-
+
 #### **Unidade II - Componentes de um sistema computacional**
 
 - Hardware
