@@ -106,11 +106,15 @@ class Personagem {
 }
 ```
 
-<aside>
+**Código 5.** Implementação de métodos na classe `Personagem`.
 
-**Nomes de métodos** É uma convenção que os nomes de métodos denotem ações e, por isso, são compostos de verbos no infinitivo, às vezes juntos de outras palavras. Além disso, nunca deve haver caracteres acentuados em nomes, seja de métodos, classes ou variáveis. Se você escolher outra forma ou padrão para nomear seus métodos, saiba que isso pode ficar confuso para quem for ler seu código.
+<blockquote>
 
-</aside>
+**Nomes de métodos**
+
+É uma convenção que os nomes de métodos denotem ações e, por isso, são compostos de verbos no infinitivo, às vezes juntos de outras palavras. Além disso, nunca deve haver caracteres acentuados em nomes, seja de métodos, classes ou variáveis. Se você escolher outra forma ou padrão para nomear seus métodos, saiba que isso pode ficar confuso para quem for ler seu código.
+
+</blockquote>
 
 Um método tem um **nome**, uma **lista de parâmetros**, que pode ser vazia, um **retorno**, que é opcional, e um **corpo**. No Código 5, o método `sofrerDano` tem um parâmetro, `dano`, que corresponde à quantidade de vida que será subtraída do personagem, como se pode ver no corpo do método, que é o código entre `{...}`. O método `subirNivel` não possui parâmetros e o método `ganharExperiencia` tem dois parâmetros, `vida` e `forca`. O método `getNivel` retorna o valor do nível atual do personagem. Parâmetros são valores passados para o método que serão usados durante sua execução.
 
@@ -122,11 +126,6 @@ Na linha 1 do Código 6, temos a instanciação da classe `Personagem` guardada 
 
 Agora que temos uma instância de `Personagem`, podemos acessar seus atributos para leitura ou escrita e invocar seus métodos.
 
-- Na linha 2, o valor do atributo `vida` é lido para ser impresso.
-- Na linha 3, o valor do atributo `vida` passa a ser 100.
-- Na linha 4, o método `sofrerDano` é invocado, sendo passado 20 como parâmetro. Ou seja, o personagem sofrerá dano de 20.
-- Na linha 5, o valor do atributo `vida` é lido para ser impresso mais uma vez.
-
 ```javascript
 let personagem1 = new Personagem(); // Linha 1: Instanciação
 console.log(personagem1.vida); // Linha 2: Leitura do atributo vida
@@ -135,9 +134,14 @@ personagem1.sofrerDano(20); // Linha 4: Chamada do método sofrerDano
 console.log(personagem1.vida); // Linha 5: Leitura do atributo vida
 ```
 
+- Na linha 2, o valor do atributo `vida` é lido para ser impresso.
+- Na linha 3, o valor do atributo `vida` passa a ser 100.
+- Na linha 4, o método `sofrerDano` é invocado, sendo passado 20 como parâmetro. Ou seja, o personagem sofrerá dano de 20.
+- Na linha 5, o valor do atributo `vida` é lido para ser impresso mais uma vez.
+
 O atributo `vida` também é chamado de **variável de instância**, assim como `sofrerDano` é um **método de instância**. O atributo `vida` guarda um valor que só existe quando um objeto é instanciado e o método sofrerDano manipula valores que só existem quando um objeto é instanciado—neste caso, quando um objeto da classe `Personagem` é instanciado. Os outros atributos e métodos da classe Personagem também são variáveis e métodos de instância, respectivamente.
 
-Usando a palavra reservada `static`, podemos definir que um atributo não será uma variável de instância, ou seja, que ele vai conter um valor que não depende da instanciação de um objeto para existir. Também podemos criar métodos que não manipulam variáveis de instância. Há um exemplo de uso de atributos e métodos estáticos no Código 7.
+Usando a palavra reservada `static`, podemos definir que um atributo não será uma variável de instância, ou seja, que ele vai conter um valor que não depende da instanciação de um objeto para existir. Também podemos criar métodos que não manipulam variáveis de instância. Há um exemplo de uso de atributos e métodos estáticos no Código 6.
 
 ```javascript
 class Personagem {
@@ -150,19 +154,21 @@ class Personagem {
 }
 ```
 
+**Código 6.** Atibuto e método estáticos declarados em `Personagem`.
+
 O atributo `vida_maxima` possui o valor 100 independentemente da existência de uma instância. É como se esse atributo definisse o valor máximo de vida para qualquer personagem. Podemos alterar esse valor da forma a seguir.
 
 ```javascript
 Personagem.vida_maxima = 150;
 ```
 
-O método estaVivo, por sua vez, não manipula variáveis de instância. O dado que ele precisa para funcionar é uma instância qualquer de Personagem.
+O método `estaVivo`, por sua vez, não manipula variáveis de instância. O dado que ele precisa para funcionar é uma instância qualquer de Personagem.
 
 ## Mais sobre atributos e métodos
 
 Vimos que atributos e métodos são definidos em uma classe a partir do momento em que são declarados no corpo de uma classe, da forma como foi feito no Código 5. Para referenciar atributos e métodos dentro de código na classe, usamos a palavra reservada `this`.
 
-O `this` é usado para referenciar membros (atributos e métodos) que possuem ou manipulam dados da instância (o objeto criado com `new`). Vamos entender melhor como isso funciona, analisando os métodos `sofrerDano` e `ganharExperiencia` da classe `Personagem`, declarada no Código 8.
+O `this` é usado para referenciar membros (atributos e métodos) que possuem ou manipulam dados da instância (o objeto criado com `new`). Vamos entender melhor como isso funciona, analisando os métodos `sofrerDano` e `ganharExperiencia` da classe `Personagem`, declarada no Código 7.
 
 ```javascript
 sofrerDano(dano) {
@@ -178,6 +184,8 @@ ganharExperiencia(vida, forca) {
 }
 ```
 
+**Código 7.** Métodos `sofrerDano` e `ganharExperiencia`.
+
 O `this.vida` e `this.forca` usados no código fazem referência às variáveis de instância `vida` e `forca`. Quando a classe `Personagem` e valores forem atribuídos a essas variáveis, será possível acessar essas valores usando `this.vida` e `this.forca`.
 
 No método `ganharExperiencia`, em `this.vida += vida`, o `this` ganha mais uma utilidade, que é remover a ambiguidade entre qual variável `vida` utilizar: a dos parâmetros ou o atributo.
@@ -186,7 +194,7 @@ O mesmo é válido para métodos. Se você precisar fazer referência a métodos
 
 ## Construtor
 
-Quando a classe é instanciada, o seu **construtor** é chamado. O construtor contém código que será executado para inicializar a classe. Construtores são bem semelhantes a métodos, podendo inclusive ter parâmetros, mas não têm retorno. Em JavaScript devem ser declarados da forma mostrada no Código 9.
+Quando a classe é instanciada, o seu **construtor** é chamado. O construtor contém código que será executado para inicializar a classe. Construtores são bem semelhantes a métodos, podendo inclusive ter parâmetros, mas não têm retorno. Em JavaScript devem ser declarados da forma mostrada no Código 8.
 
 ```javascript
 constructor() {
@@ -198,7 +206,9 @@ constructor() {
 }
 ```
 
-É no construtor que podemos definir valores iniciais para os atributos da classe, porque será o primeiro código que executa durante sua inicialização, como mostrado no Código 10.
+**Código 8.** Declaração de um construtor.
+
+É no construtor que podemos definir valores iniciais para os atributos da classe, porque será o primeiro código que executa durante sua inicialização, como mostrado no Código 9.
 
 ```javascript
 class Personagem {
@@ -220,4 +230,6 @@ class Personagem {
 }
 ```
 
-Agora, pratique os conceitos aprendidos nesse capítulo [resolvendo os exercícios](https://www.notion.so/Classes-e-objetos-7275499f61b24f1c851f610f67b43172?pvs=21).
+**Código 9.** Exemplo de uso do construtor.
+
+Agora, pratique os conceitos aprendidos nesse capítulo [resolvendo os exercícios](./ex-classes-e-objetos.html).

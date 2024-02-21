@@ -19,14 +19,8 @@ haverá 2 avaliações por bimestre na disciplina (**A1** e **A2**), detalhadas 
 
 ### Conteúdo
 
-- [Classes e objetos](https://lace-rutabaga-0d7.notion.site/Classes-e-objetos-5b39447ffd04463d8ef160af065a5f66?pvs=4)
+- [Classes e objetos](/content/poo/integrado/classes-e-objetos.html)
 
 ### Listas de exercícios
 
-- Exercício 1 - Encapsulamento
-- Exercício 2 - Encapsulamento
-- Exercício 3 - Herança e coleções
-- Exercício 4 - Entrada e saída
-- Exercício 5 - Persistência
-- Exercício 5 - Programação concorrente
-- Exercício 6 - Interfaces gráficas
+- Exercício 1 - Classes e objetos
