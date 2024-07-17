@@ -172,15 +172,15 @@ O `this` é usado para referenciar membros (atributos e métodos) que possuem ou
 
 ```javascript
 sofrerDano(dano) {
-	let danoSofrido = dano - defesa;
-	danoSofrido = Math.max(0, danoSofrido);
+  let danoSofrido = dano - defesa;
+  danoSofrido = Math.max(0, danoSofrido);
   this.vida = this.vida - danoSofrido;
 }
 
 ganharExperiencia(vida, forca) {
-	this.vida += vida;
-	this.forca += forca;
-	this.subirNivel();
+  this.vida += vida;
+  this.forca += forca;
+  this.subirNivel();
 }
 ```
 
@@ -225,7 +225,7 @@ class Personagem {
     this.forca = 10;
     this.defesa = 0;
     this.nivel = 0;
-    this.arma = null; //undefined
+    this.arma = null;
   }
 }
 ```
