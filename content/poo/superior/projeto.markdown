@@ -22,10 +22,13 @@ O projeto poderá ser feito de dupla ou individualmente.
 O projeto deve utilizar adequadamente os conceitos de orientação a objetos, como:
 
 - Classes e Objetos
+- Composição
 - Herança
 - Polimorfismo
 - Encapsulamento
 - Interfaces e Classes Abstratas
+
+Não utilize conceitos que você julgue não serem necessários no seu código. Entretanto, você deverá justificar quando um conceito for utilizado sem necessidade ou não for utilizado quando houver necessidade.
 
 ### Exceções
 
@@ -47,11 +50,11 @@ O projeto deve implementar persistência de dados utilizando arquivos.
 - Dados devem ser salvos e carregados a partir de arquivos (texto ou binários).
 - O sistema deve ser capaz de operar com dados persistidos entre execuções.
 
-### Threads
+### ~~Threads~~
 
-O projeto deve utilizar, no mínimo, uma thread além da thread principal.
+~~O projeto deve utilizar, no mínimo, uma thread além da thread principal.~~
 
-- As threads podem ser utilizadas para funcionalidades como atualização de interface, execução de tarefas em segundo plano, animações, etc.
+- ~~As threads podem ser utilizadas para funcionalidades como atualização de interface, execução de tarefas em segundo plano, animações, etc.~~
 
 ## Requisitos não-funcionais
 
@@ -69,15 +72,6 @@ O projeto deve incluir documentação que descreva:
 - Como configurar e executar o projeto.
 - Descrição das funcionalidades principais.
 
-### Critérios de Avaliação
-
-- **Funcionalidade:** O projeto atende a todos os requisitos funcionais especificados.
-- **Qualidade do Código:** O código está bem organizado, é legível e segue boas práticas.
-- **Documentação:** A documentação está completa e ajuda a entender o projeto e seu funcionamento.
-- **Usabilidade:** A interface gráfica é intuitiva e facilita a interação do usuário com o sistema.
-- **Tratamento de Exceções:** O sistema trata adequadamente as exceções e erros.
-- **Uso de Threads:** O projeto utiliza threads de maneira apropriada e eficaz.
-
 ### Entregáveis
 
 Os itens a seguir devem ser mantidos em um repositório do GitHub.
@@ -89,5 +83,25 @@ Os itens a seguir devem ser mantidos em um repositório do GitHub.
 
 ## Prazos
 
-- Data de entrega: [Definir após divulgação do calendário pós-greve]
-  Apresentação do projeto: [Definir após divulgação do calendário pós-greve]
+- **Data de entrega:** 10/09/2024
+- **Apresentação do projeto:** 16 e 17/09/2024
+
+## Apresentação
+
+Na apresentação, você deverá demonstrar a aplicação em funcionamento e estar preparado para explicar sobre o funcionamento de qualquer parte de sua aplicação.
+
+As apresentações acontecerão no horário da aula: 13:30 às 17:00 dos dias 16 e 17/09/2024.
+
+As apresentações terão a duração máxima de 20 minutos.
+
+Para poderem ser apresentados, os projetos deverão ser enviados previamente, no dia 10/09/2024. Não cumprir essa etapa acarretará uma penalidade de -20 pontos na nota da apresentação.
+
+## Critérios de Avaliação
+
+- **Funcionalidade:** _(35 pontos)_ O projeto atende a todos os requisitos funcionais especificados.
+- **Qualidade do Código:** _(15 pontos)_ O código está bem organizado, é legível e segue boas práticas.
+- **Documentação:** _(10 pontos)_ A documentação está completa e ajuda a entender o projeto e seu funcionamento.
+- **Usabilidade:** _(5 pontos)_ A interface gráfica é intuitiva e facilita a interação do usuário com o sistema.
+- **Tratamento de Exceções:** _(5 pontos)_ O sistema trata adequadamente as exceções e erros.
+- **Apresentaçao:** _(30 pontos)_ As funcionalidades do sistema foram bem demonstradas e as dúvidas sobre a implementação foram respondidas. Não enviar o projeto antes da apresentação acarretará uma penalidade de -20 pontos na nota da apresentação.
+- ~~**Uso de Threads:** O projeto utiliza threads de maneira apropriada e eficaz.~~
