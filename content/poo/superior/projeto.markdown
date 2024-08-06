@@ -80,6 +80,7 @@ Os itens a seguir devem ser mantidos em um repositório do GitHub.
 - Arquivos de dados utilizados para persistência.
 - Documentação completa (README, diagramas, etc.).
 - Capturas de tela da interface gráfica em funcionamento.
+- Arquivo JAR do projeto - a aplicação deverá estar contida em um arquivo JAR, que deverá executar, abrindo a classe principal.
 
 ## Prazos
 
