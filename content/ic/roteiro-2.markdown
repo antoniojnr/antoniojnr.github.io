@@ -8,7 +8,7 @@ nav_exclude: true
 
 ## Instruções
 
-1. Entregue as questões em papel, escritas à mão. 
+1. Entregue as questões em papel, escritas à mão.
 2. O trabalho poderá ser realizado individualmente ou em dupla.
 3. Use o simulador de circuitos lógicos de sua preferência para ver os circuitos em funcionamento (sugestões: [Logic.ly](https://logic.ly/demo/) e [CircuitVerse](https://circuitverse.org/simulator))
 
@@ -20,14 +20,12 @@ nav_exclude: true
 
 **(3)** A partir do mapa de Karnaugh a seguir, encontre a expressão simplificada.
 
-| <img src="https://latex.codecogs.com/svg.image?Z"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
-|--|--|--|--|--|
-| <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 1 | 0 | 1 | 1 |
-| <img src="https://latex.codecogs.com/svg.image?C"/> | 0 | 0 | 1 | 1 |
+| <img src="https://latex.codecogs.com/svg.image?Z"/>            | <img src="https://latex.codecogs.com/svg.image?\overline{A}.\overline{B}"/> | <img src="https://latex.codecogs.com/svg.image?\overline{A}B"/> | <img src="https://latex.codecogs.com/svg.image?AB"/> | <img src="https://latex.codecogs.com/svg.image?A\overline{B}"/> |
+| -------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
+| <img src="https://latex.codecogs.com/svg.image?\overline{C}"/> | 1                                                                           | 0                                                               | 1                                                    | 1                                                               |
+| <img src="https://latex.codecogs.com/svg.image?C"/>            | 0                                                                           | 0                                                               | 1                                                    | 1                                                               |
 
 ## Portas lógicas
-
-Circuitos integrados (CI) são uma parte integral de dispositivos. Os CIs são feitos de portas lógicas além de outros componentes. O uso de portas AND e OR causam dificuldades e complicam a montagem do circuito. Assim, os métodos para reduzir o número de portas que são empregadas em um circuito necessitam ser evoluídos. Um método é a implementação de expressões lógicas usando portas NAND e NOR. Estas portas podem executar as funções de todas as outras portas lógicas e, assim, são chamadas de portas universais.
 
 **(4)** Implemente um inversor (NOT) usando uma porta NAND.
 
@@ -35,7 +33,7 @@ Circuitos integrados (CI) são uma parte integral de dispositivos. Os CIs são f
 
 **(5.2)** Implemente um AND usando somente portas NOR.
 
-**(6.1)** Implemente um OR usando somente portas NAND. 
+**(6.1)** Implemente um OR usando somente portas NAND.
 
 **(6.2)** Implemente um OR usando somente portas NOR.
 
@@ -45,11 +43,11 @@ Circuitos integrados (CI) são uma parte integral de dispositivos. Os CIs são f
 
 **(8)** Desenhe o circuito e escreva a equação descrevendo a saída de um multiplexador 4-para-1.
 
-**(9)** Demultiplexadores implementam a operação reversa dos multiplexadores, uma vez que permitem que uma única entrada seja roteada para uma de *n* saídas. Implemente um demultiplexador 1-para-4.
+**(9)** Demultiplexadores implementam a operação reversa dos multiplexadores, uma vez que permitem que uma única entrada seja roteada para uma de _n_ saídas. Implemente um demultiplexador 1-para-4.
 
-**(10)** Escreva a tabela verdade para um *half-adder* e implemente o circuito.
+**(10)** Escreva a tabela verdade para um _half-adder_ e implemente o circuito.
 
-**(11)** Escreva a tabela verdade para um *full-adder* e implemente o circuito.
+**(11)** Escreva a tabela verdade para um _full-adder_ e implemente o circuito.
 
 **(12)** Implemente um somador de 4 bits.
 
