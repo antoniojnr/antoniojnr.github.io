@@ -3,28 +3,33 @@ layout: default
 title: POO para ADS
 parent: Programação Orientada a Objetos
 grand_parent: Disciplinas
-nav_order: 1
+nav_order: 2
 ---
 
 ## Programação Orientada a Objetos
 
+**Semestre:** 2024.2
+
 **Modalidade:** Superior
 
-**Avaliações e notas:**
-haverá 3 avaliações na disciplina (**A1**, **A2** e **A3**), detalhadas a seguir.
+**Avaliações e notas:** 3 avaliações (**A1**, **A2** e **A3**), detalhadas a seguir.
 
-- Listas de exercícios: 40% da nota final, divididos em:
-  - Listas de exercícios de 1 a 3 (20% da nota final - **A1**)
-  - Listas de exercícios de 4 a 5 (20% da nota final - **A2**)
+- Prova 1 (20% da nota final - **A1**)
+- Prova 2 (20% da nota final - **A2**)
 - Projeto (60% da nota final - **A3**)
 
 **Notas:**
 
 - [Ementa da disciplina](https://estudante.ifpb.edu.br/media/cursos/346/disciplina/POO.pdf)
 - [Conteúdo](/content/poo/superior/conteudo.html)
-- [Projeto](/content/poo/superior/projeto.html)
+- Projeto
+
+[//]: # "/content/poo/superior/7-final.html"
+[//]: # "/content/poo/superior/projeto.html"
 
 ### Listas de exercícios
+
+É fundamental que você faça as listas de exercícios. Embora não valham pontuação, elas são corrigidas em aula, o que permite que você discuta seu código diretamente com o professor. É uma oportunidade para receber feedback e melhorar suas habilidades de programação.
 
 - [Exercícios complementares](/content/poo/superior/0-complementares.html)
 - [Exercício 1 - Encapsulamento](/content/poo/superior/1-encapsulamento-20241.html)

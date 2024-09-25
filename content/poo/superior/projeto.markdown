@@ -78,6 +78,8 @@ Os itens a seguir devem ser mantidos em um repositório do GitHub.
 
 - Código-fonte do projeto.
 - Arquivos de dados utilizados para persistência.
+  - Envie toda a estrutura de diretórios para o seu jar encontrar os arquivos persistidos
+  - Popule previamente os arquivos com dados para demonstração
 - Documentação completa (README, diagramas, etc.).
 - Capturas de tela da interface gráfica em funcionamento.
 - Arquivo JAR do projeto - a aplicação deverá estar contida em um arquivo JAR, que deverá executar, abrindo a classe principal.

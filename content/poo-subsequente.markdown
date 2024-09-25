@@ -3,7 +3,7 @@ layout: default
 title: POO para o Subsequente
 parent: Programação Orientada a Objetos
 grand_parent: Disciplinas
-nav_order: 1
+nav_order: 2
 ---
 
 ## Programação Orientada a Objetos
