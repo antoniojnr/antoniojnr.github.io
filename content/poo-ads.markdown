@@ -27,6 +27,16 @@ nav_order: 2
 [//]: # "/content/poo/superior/7-final.html"
 [//]: # "/content/poo/superior/projeto.html"
 
+### Datas
+
+Veja o [calendário](/content/poo/superior/calendario.html).
+
+- **Início do semestre:** 07/10/2024
+- **Férias docentes:** 19/12/2024 a 18/01/2025
+- **Retorno das férias:** 20/01/2025
+- **Término do semestre:** 11/03/2025
+- **Finais:** 11 a 14/03/2025
+
 ### Listas de exercícios
 
 É fundamental que você faça as listas de exercícios. Embora não valham pontuação, elas são corrigidas em aula, o que permite que você discuta seu código diretamente com o professor. É uma oportunidade para receber feedback e melhorar suas habilidades de programação.
