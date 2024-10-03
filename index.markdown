@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-toc: false
+has_toc: false
 ---
 
 Seja bem vindo à página de disciplinas do professor Antonio Júnior.
