@@ -42,14 +42,14 @@ nav_exclude: true
     <td>16/160 aulas</td>
   </tr>
   <tr>
-    <td>18</td>
+    <td>21</td>
     <td>
       A definir
     </td>
     <td>20/160 aulas</td>
   </tr>
   <tr>
-    <td>19</td>
+    <td>22</td>
     <td>
       A definir
     </td>

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Exercícios - Classes e Objetos
+nav_exclude: true
+---
+
 # Classes e objetos
 
 ## **Exercício 1**

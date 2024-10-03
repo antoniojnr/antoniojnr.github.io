@@ -18,7 +18,7 @@ nav_order: 2
 - Prova 2 (20% da nota final - **A2**)
 - Projeto (60% da nota final - **A3**)
 
-**Notas:**
+**Informaçoes:**
 
 - [Ementa da disciplina](https://estudante.ifpb.edu.br/media/cursos/346/disciplina/POO.pdf)
 - [Conteúdo](/content/poo/superior/conteudo.html)

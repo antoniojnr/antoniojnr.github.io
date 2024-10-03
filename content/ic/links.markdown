@@ -21,6 +21,7 @@ Nesta página, reuno todas as coisas sobre as quais falo em aula para vocês, ma
         <li>Filme "O Jogo da Imitação" está disponível na Netflix ou HBOMax</li>
         <li>História de Ana Luíza, de Campina Grande/PB, que fez a transição de carreira de direito para TI (<a href="https://open.spotify.com/episode/3wzoXtATxI8UuX8ld38m9t?si=69f47753127448f0" target="_blank">link aqui</a>)</li>
         <li>Falamos sobre bootcamps (lembrei o nome, é Driven) que prometem ensinar programação em 9 meses 🤭 - não mencionei isso em sala, mas existe <a href="https://roadmap.sh/" target="_blank">esse site</a> (roadmap.sh) muito interessante que mostra o caminho que você deve seguir e o que deve estudar para seguir diversas carreiras na área de TI, de desenvolvedor frontend a UX design. Bootcamps pagos no Brasil provavelmente copiam a ementa daí.</li>
+        <li>Diagrama da computação dos números de Bernoulli, por Ada Lovelace (<a href="https://en.wikipedia.org/wiki/File:Diagram_for_the_computation_of_Bernoulli_numbers.jpg" targer="_blank">link aqui</a>)</li>
       </ul>
     </td>
   </tr>
