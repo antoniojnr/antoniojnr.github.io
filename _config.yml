@@ -4,16 +4,17 @@ description: >- # this means to ignore newlines until "baseurl:"
   Site das disciplinas ministradas pelo professor Antonio Júnior
   no IFPB, campus Esperança.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://antoniojnr.github.io" 
+url: "https://antoniojnr.github.io"
 
 twitter_username: addsjunior
-github_username:  antoniojnr
+github_username: antoniojnr
 
 # Build settings
 remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-feed
 
+toc: false
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

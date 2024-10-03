@@ -70,7 +70,7 @@ nav_exclude: true
     <td>28/160 aulas</td>
   </tr>
   <tr>
-    <th>2025</th>
+    <th>2024</th>
     <th colspan="2"><strong>Novembro</strong></th>
   </tr>
   <tr>

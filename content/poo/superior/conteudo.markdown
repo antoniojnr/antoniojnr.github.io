@@ -14,6 +14,12 @@ nav_exclude: true
 ## 2. FERRAMENTAS PARA O DESENVOLVIMENTO
 
 1. Ambiente de Desenvolvimento Integrado (IDE)
+   1. Criando um novo projeto
+   2. Organização dos diretórios do projeto
+   3. Ferramentas de build
+   4. Determinando a JDK do projeto
+   5. Adicionando bibliotecas externas
+   6. Executando e depurando código
 
 ## 3. ORIENTAÇÃO A OBJETOS
 
