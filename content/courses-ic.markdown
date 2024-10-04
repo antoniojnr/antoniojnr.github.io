@@ -39,6 +39,10 @@ Veja o [calendário](/content/ic/calendario.html).
 - **Término do semestre:** 11/03/2025
 - **Finais:** 11 a 14/03/2025
 
+### Ferramentas
+
+- [Conversor numérico](https://numerical-converter.vercel.app)
+
 ### Bibliografia
 
 _Retirado da ementa_
