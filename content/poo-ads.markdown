@@ -41,11 +41,4 @@ Veja o [calendário](/content/poo/superior/calendario.html).
 
 É fundamental que você faça as listas de exercícios. Embora não valham pontuação, elas são corrigidas em aula, o que permite que você discuta seu código diretamente com o professor. É uma oportunidade para receber feedback e melhorar suas habilidades de programação.
 
-- [Exercícios complementares](/content/poo/superior/0-complementares.html)
-- [Exercício 1 - Encapsulamento](/content/poo/superior/1-encapsulamento-20241.html)
-- [Exercício 2 - Encapsulamento](/content/poo/superior/2-encapsulamento.html)
-- [Exercício 3 - Herança e coleções](/content/poo/superior/3-heranca-colecoes.html)
-- [Exercício 4 - Sistemas](/content/poo/superior/4-sistemas.html)
-- Exercício 5 - Programação concorrente
-- Exercício 6 - Interfaces gráficas
-- [Projeto final](/content/poo/superior/7-final.html)
+- [Exercício 1 - Introdução](/content/poo/superior/0-complementares.html)
