@@ -14,23 +14,44 @@ nav_exclude: true
   <tr>
     <td>07</td>
     <td>
+      <div><b>Conteúdo</b></div>
       <ul>
         <li>Apresentação da disciplina</li>
+        <li>Introdução a Java</li>
       </ul>
+      <div><b>Material</b></div>
+      <ul>
+        <li><a href="https://docs.google.com/presentation/d/1RmcAnLS2raME2Bex_pFIxFWETef4-h3SI7IHEZAegCo/edit?usp=classroom_web&authuser=0" target="_blank">Slides - Visão geral</a></li>
+        <li><a href="https://docs.google.com/presentation/d/1Zs0equT-VdvXZDOgxrf7mppDbw25xubu2E4Edcsna7I/edit?usp=classroom_web&authuser=0" target="_blank"> Slides - A linguagem Java</a></li>
+        <li><a href="https://docs.google.com/presentation/d/1zGhdmQ9wYg4V137QQRKEnjhf0PI_iyht4xvFtcag31c/edit?usp=classroom_web&authuser=0" target="_blank">Slides - Entrada e saída de dados</a></li>
+        <li><a href="https://docs.google.com/presentation/d/182A1I4bN5DAvkGZx6rEvo6TPDIGcIfT5mkjpXnlIi9M/edit?usp=classroom_web&authuser=0" target="_blank">Slides - Encapsulamento</a></li>
+      </ul>
+      <div></div>
+      <div></div>
     </td>
     <td>4/160 aulas</td>
+
   </tr>
   <tr>
     <td>08</td>
     <td>
-      A definir
+      <a href="https://antoniojnr.github.io/content/poo/superior/0-complementares.html" target="_blank">Exercício 1 - Introdução</a>
     </td>
     <td>8/160 aulas</td>
   </tr>
   <tr>
     <td>14</td>
     <td>
-      A definir
+      <div><b>Conteúdo</b></div>
+      <ul>
+        <li>Ambiente de Desenvolvimento Integrado (IDE)</li>
+        <li>Tipos, classe e objeto</li>
+      </ul>
+      <div><b>Material</b></div>
+      <ul>
+      <li><a href="https://docs.google.com/presentation/d/1-LewPjggEPQx954Ax7oB2spZUTwcFPYeJIsnNJhfaCg/edit?usp=classroom_web&authuser=0" target="_blank">Slides - Ambiente de desenvolvimento</a></li>
+        <li><a href="https://docs.google.com/presentation/d/1pGsgz0kC6CvR3J5mGWYTWzm0UtrtLqMCLXKC0AKOpTk/edit?usp=classroom_web&authuser=0" target="_blank">Slides - Tipos, classe e objeto</a></li>
+      </ul>
     </td>
     <td>12/160 aulas</td>
   </tr>
