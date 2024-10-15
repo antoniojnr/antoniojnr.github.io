@@ -42,3 +42,4 @@ Veja o [calendário](/content/poo/superior/calendario.html).
 É fundamental que você faça as listas de exercícios. Embora não valham pontuação, elas são corrigidas em aula, o que permite que você discuta seu código diretamente com o professor. É uma oportunidade para receber feedback e melhorar suas habilidades de programação.
 
 - [Exercício 1 - Introdução](/content/poo/superior/0-complementares.html)
+- [Exercício 2 - Tipos e classes wrapper](/content/poo/superior/ex-tipos.html)
