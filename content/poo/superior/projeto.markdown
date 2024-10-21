@@ -7,13 +7,13 @@ nav_exclude: true
 ## Projeto da disciplina
 
 **Disciplina:** Programação Orientada a Objetos
-**Período:** 2024.1
+**Período:** 2024.2
 
 ## Resumo
 
-Todos os projetos devem ser desenvolvidos em Java utilizando o paradigma de Programação Orientada a Objetos. Os alunos devem implementar uma aplicação completa que aborde todos os conceitos e técnicas ensinadas ao longo da disciplina, incluindo exceções, interface gráfica em Java Swing, persistência de dados em arquivos e threads.
+Todos os projetos devem ser desenvolvidos em Java utilizando o paradigma de Programação Orientada a Objetos. Os alunos devem implementar uma aplicação completa que aborde todos os conceitos e técnicas ensinadas ao longo da disciplina, incluindo exceções, interface gráfica em Java Swing, persistência de dados em arquivos e padrões de projeto.
 
-O projeto poderá ser feito de dupla ou individualmente.
+O projeto poderá ser feito individualmente ou em equipes de até 3 pessoas.
 
 ## Requisitos funcionais
 
@@ -49,12 +49,6 @@ O projeto deve implementar persistência de dados utilizando arquivos.
 
 - Dados devem ser salvos e carregados a partir de arquivos (texto ou binários).
 - O sistema deve ser capaz de operar com dados persistidos entre execuções.
-
-### ~~Threads~~
-
-~~O projeto deve utilizar, no mínimo, uma thread além da thread principal.~~
-
-- ~~As threads podem ser utilizadas para funcionalidades como atualização de interface, execução de tarefas em segundo plano, animações, etc.~~
 
 ## Requisitos não-funcionais
 

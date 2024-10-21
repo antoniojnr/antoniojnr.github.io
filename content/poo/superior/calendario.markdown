@@ -23,8 +23,6 @@ nav_exclude: true
       <ul>
         <li><a href="https://docs.google.com/presentation/d/1RmcAnLS2raME2Bex_pFIxFWETef4-h3SI7IHEZAegCo/edit?usp=classroom_web&authuser=0" target="_blank">Slides - Visão geral</a></li>
         <li><a href="https://docs.google.com/presentation/d/1Zs0equT-VdvXZDOgxrf7mppDbw25xubu2E4Edcsna7I/edit?usp=classroom_web&authuser=0" target="_blank"> Slides - A linguagem Java</a></li>
-        <li><a href="https://docs.google.com/presentation/d/1zGhdmQ9wYg4V137QQRKEnjhf0PI_iyht4xvFtcag31c/edit?usp=classroom_web&authuser=0" target="_blank">Slides - Entrada e saída de dados</a></li>
-        <li><a href="https://docs.google.com/presentation/d/182A1I4bN5DAvkGZx6rEvo6TPDIGcIfT5mkjpXnlIi9M/edit?usp=classroom_web&authuser=0" target="_blank">Slides - Encapsulamento</a></li>
       </ul>
       <div></div>
       <div></div>
@@ -58,14 +56,23 @@ nav_exclude: true
   <tr>
     <td>15</td>
     <td>
-      A definir
+      <a href="https://antoniojnr.github.io/content/poo/superior/ex-tipos.html" target="_blank">Exercício 2 - Tipos e classes wrapper</a>
     </td>
     <td>16/160 aulas</td>
   </tr>
   <tr>
     <td>21</td>
     <td>
-      A definir
+      <div><b>Conteúdo</b></div>
+      <ul>
+        <li>Entrada e saída</li>
+        <li>Encapsulamento</li>
+      </ul>
+      <div><b>Material</b></div>
+      <ul>
+        <li><a href="https://docs.google.com/presentation/d/1zGhdmQ9wYg4V137QQRKEnjhf0PI_iyht4xvFtcag31c/edit?usp=classroom_web&authuser=0" target="_blank">Slides - Entrada e saída de dados</a></li>
+        <li><a href="https://docs.google.com/presentation/d/182A1I4bN5DAvkGZx6rEvo6TPDIGcIfT5mkjpXnlIi9M/edit?usp=classroom_web&authuser=0" target="_blank">Slides - Encapsulamento</a></li>
+      </ul>
     </td>
     <td>20/160 aulas</td>
   </tr>
