@@ -1,12 +1,14 @@
 ---
 layout: default
-title: Exercícios - Encapsulamento, parte 1
+title: Exercícios - Classes e Objetos
 nav_exclude: true
 ---
 
 ## Exercícios
 
-**Tema:** Encapsulamento
+**Tema:** Classes e Objetos
+
+São fornecidos casos de teste para os exercícios abaixo, para que você saiba se está implementando-os de acordo com o esperado. Baixe os casos de teste [aqui](/content/poo/superior/testes-classes-objetos.zip).
 
 ### Exercício 1
 

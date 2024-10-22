@@ -43,3 +43,4 @@ Veja o [calendário](/content/poo/superior/calendario.html).
 
 - [Exercício 1 - Introdução](/content/poo/superior/0-complementares.html)
 - [Exercício 2 - Tipos e classes wrapper](/content/poo/superior/ex-tipos.html)
+- [Exercício 3 - Classes e objetos](/content/poo/superior/ex-classes-e-objetos.html)

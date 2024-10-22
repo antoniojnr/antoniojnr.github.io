@@ -79,7 +79,7 @@ nav_exclude: true
   <tr>
     <td>22</td>
     <td>
-      A definir
+    <a href="https://antoniojnr.github.io/content/poo/superior/ex-classes-e-objetos.html" target="_blank">Exercício 3 - Classes e objetos</a>
     </td>
     <td>24/160 aulas</td>
   </tr>
