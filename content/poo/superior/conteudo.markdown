@@ -24,13 +24,13 @@ nav_exclude: true
 ## 3. ORIENTAÇÃO A OBJETOS
 
 1. Classes e objetos
-2. Troca de mensagens entre objetos
-3. Composição de Objetos
-4. [Coleções de Objetos](/content/poo/superior/conteudo/colecoes.html)
-5. [Herança](/content/poo/superior/conteudo/heranca.html)
-6. Sobreposição e sobrecarga
-7. [Encapsulamento](/content/poo/superior/conteudo/encapsulamento.html)
-8. Visibilidade
+2. Visibilidade
+3. [Encapsulamento](/content/poo/superior/conteudo/encapsulamento.html)
+4. Troca de mensagens entre objetos
+5. Composição de Objetos
+6. [Coleções de Objetos](/content/poo/superior/conteudo/colecoes.html)
+7. [Herança](/content/poo/superior/conteudo/heranca.html)
+8. Sobreposição e sobrecarga
 9. [Interface e polimorfismo](/content/poo/superior/conteudo/polimorfismo.html)
 
 ## 4. EXCEÇÕES
@@ -53,3 +53,7 @@ nav_exclude: true
 2. Alta coesão
 3. Nomenclatura de classes, métodos e variáveis
 4. Princípios de Programação Orientada a Objetos (SOLID)
+
+## 8. TÓPICOS EXTRACURRICULARES
+
+1. Arquitetura cliente-servidor
