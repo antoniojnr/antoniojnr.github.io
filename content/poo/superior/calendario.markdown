@@ -109,7 +109,7 @@ nav_exclude: true
   <tr>
     <td>04</td>
     <td>
-      A definir
+      <a href="https://antoniojnr.github.io/content/poo/superior/2-encapsulamento-20242.html" target="_blank">Exercício 4 - Encapsulamento</a>
     </td>
     <td>32/160 aulas</td>
   </tr>
@@ -144,7 +144,7 @@ nav_exclude: true
   <tr>
     <td>19</td>
     <td>
-      A definir
+      <b>Primeira avaliação</b>
     </td>
     <td>52/160 aulas</td>
   </tr>
@@ -204,7 +204,7 @@ nav_exclude: true
   <tr>
     <td>17</td>
     <td>
-      A definir
+      <b>Segunda avaliação</b>
     </td>
     <td>84/160 aulas</td>
   </tr>
