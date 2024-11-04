@@ -26,8 +26,8 @@ nav_exclude: true
 1. Classes e objetos
 2. Visibilidade
 3. [Encapsulamento](/content/poo/superior/conteudo/encapsulamento.html)
-4. Composição de Objetos
-5. Troca de mensagens entre objetos
+4. Troca de mensagens entre objetos
+5. Composição de Objetos
 6. [Coleções de Objetos](/content/poo/superior/conteudo/colecoes.html)
 7. [Herança](/content/poo/superior/conteudo/heranca.html)
 8. Sobreposição e sobrecarga
