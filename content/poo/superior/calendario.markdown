@@ -93,7 +93,12 @@ nav_exclude: true
   <tr>
     <td>29</td>
     <td>
-      A definir
+      <div><b>Conteúdo</b></div>
+      <ul>
+        <li>Encapsulamento</li>
+        <li>Troca de mensagens entre objetos</li>
+        <li>Composição de Objetos</li>
+      </ul>
     </td>
     <td>28/160 aulas</td>
   </tr>
