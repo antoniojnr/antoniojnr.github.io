@@ -14,8 +14,8 @@ nav_order: 2
 
 **Avaliações e notas:** 3 avaliações (**A1**, **A2** e **A3**), detalhadas a seguir.
 
-- Prova 1 (20% da nota final - **A1**) - Dia 19/12/2024
-- Prova 2 (20% da nota final - **A2**) - Dia 17/11/2024
+- Prova 1 (20% da nota final - **A1**) - Dia 19/11/2024
+- Prova 2 (20% da nota final - **A2**) - Dia 17/12/2024
 - Projeto (60% da nota final - **A3**)
 
 **Informaçoes:**
