@@ -94,7 +94,7 @@ nav_exclude: true
   <tr>
     <td>17</td>
     <td>
-      A definir
+      <b>Primeira avaliação</b>
     </td>
     <td>44/80 aulas</td>
   </tr>
@@ -144,7 +144,7 @@ nav_exclude: true
   <tr>
     <td>25</td>
     <td>
-      A definir
+      <b>Segunda avaliação</b>
     </td>
     <td>68/80 aulas</td>
   </tr>

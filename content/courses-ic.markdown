@@ -20,8 +20,8 @@ nav_order: 1
 **Avaliações e notas:** 3 avaliações (**A1**, **A2** e **A3**), detalhadas a seguir.
 
 - Listas de exercício (**A1**)
-- Prova 1 (**A2**)
-- Prova 2(**A3**)
+- Prova 1 (**A2**) - Dia 17/12/2024
+- Prova 2(**A3**) - Dia 25/02/2025
 
 **Informações:**
 
