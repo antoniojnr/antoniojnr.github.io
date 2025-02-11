@@ -26,7 +26,7 @@ nav_order: 1
 **Informações:**
 
 - [Ementa da disciplina](https://estudante.ifpb.edu.br/media/cursos/346/disciplina/IC.pdf)
-- [Conteúdo](/content/poo/superior/conteudo.html)
+- [Conteúdo](/content/ic/conteudo.html)
 - **Links adicionais** mencionados em sala disponíveis [aqui](/content/ic/links.html)
 
 ### Datas

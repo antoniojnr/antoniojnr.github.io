@@ -46,3 +46,18 @@ As classes a seguir representam parte de um sistema de mercado.
   - `contaritens()` conta a quantidade de itens na lista. Produtos cuja unidade é 'kg' sempre são contados como 1, independentemente da quantidade; mas se a unidade do produto for 'un', o valor da quantidade é o retornado por `getQuantidade()`.
   - O valor total da compra é a soma do valor de todos os itens.
 - Crie suas classes dentro do pacote `br.edu.ifpb.poo.mercado`;
+
+### Exercício 3
+
+Crie uma implementação usando array para a interface `MyList`, definida a seguir.
+
+```java
+interface MyList {
+  void add(String item);
+  void remove(String item);
+  void remove(int index);
+  boolean contains(String item);
+  int size();
+  int indexOf(String item);
+}
+```
