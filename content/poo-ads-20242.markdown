@@ -8,7 +8,7 @@ nav_order: 2
 
 ## Programação Orientada a Objetos
 
-**Semestre:** 2025.1
+**Semestre:** 2024.2
 
 **Modalidade:** Superior
 
@@ -21,12 +21,15 @@ nav_order: 2
 **Informaçoes:**
 
 - [Ementa da disciplina](https://estudante.ifpb.edu.br/media/cursos/346/disciplina/POO.pdf)
-- [Conteúdo](/content/poo/superior/conteudo.html)
-- [Página do semestre 2024.2](/content/poo-ads-20242.html)
+- [Conteúdo](/content/poo/superior/conteudo-20242.html)
+- Projeto
+
+[//]: # "/content/poo/superior/7-final.html"
+[//]: # "/content/poo/superior/projeto.html"
 
 ### Datas
 
-Veja o [calendário](/content/poo/superior/calendario.html).
+Veja o [calendário](/content/poo/superior/calendario-20242.html).
 
 - **Início do semestre:** 07/10/2024
 - **Férias docentes:** 19/12/2024 a 18/01/2025
