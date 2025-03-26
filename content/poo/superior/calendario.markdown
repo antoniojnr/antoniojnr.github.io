@@ -18,13 +18,22 @@ nav_exclude: true
         <li>Apresentação da disciplina</li>
         <li>Introdução à linguagem Java</li>
       </ul>
+      <div><b>Material</b></div>
+      <ul>
+        <li><a href="https://docs.google.com/presentation/d/1RmcAnLS2raME2Bex_pFIxFWETef4-h3SI7IHEZAegCo/edit?usp=classroom_web&authuser=0" target="_blank">Slides - Visão geral</a></li>
+        <li><a href="https://docs.google.com/presentation/d/1Zs0equT-VdvXZDOgxrf7mppDbw25xubu2E4Edcsna7I/edit?usp=classroom_web&authuser=0" target="_blank"> Slides - A linguagem Java</a></li>
+      </ul>
     </td>
     <td>4/160 aulas</td>
   </tr>
   <tr>
     <td>25</td>
     <td>
-      Exercício 1 - Introdução à linguagem Java
+      <div><b>Conteúdo</b></div>
+        <ul>
+          <li>Introdução à linguagem Java</li>
+        </ul>
+      <s>Exercício 1 - Introdução à linguagem Java</s>
     </td>
     <td>9/160 aulas</td>
   </tr>
@@ -35,6 +44,10 @@ nav_exclude: true
       <ul>
         <li>Ambiente de Desenvolvimento Integrado (IDE)</li>
         <li>Tipos, classe e objeto</li>
+      </ul>
+      <div><b>Material</b></div>
+      <ul>
+        <li><a href="https://docs.google.com/presentation/d/1-LewPjggEPQx954Ax7oB2spZUTwcFPYeJIsnNJhfaCg/edit?usp=classroom_web&authuser=0" target="_blank">Slides - Ambiente de desenvolvimento</a></li>
       </ul>
     </td>
     <td>13/160 aulas</td>
