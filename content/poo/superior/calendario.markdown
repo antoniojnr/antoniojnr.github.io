@@ -48,6 +48,7 @@ nav_exclude: true
       <div><b>Material</b></div>
       <ul>
         <li><a href="https://docs.google.com/presentation/d/1-LewPjggEPQx954Ax7oB2spZUTwcFPYeJIsnNJhfaCg/edit?usp=classroom_web&authuser=0" target="_blank">Slides - Ambiente de desenvolvimento</a></li>
+        <li><a href="https://antoniodias.notion.site/Classes-e-Objetos-1c7f7a8772918034810dfc5447f830a5" target="_blank">Exercício - classes e objetos</a></li>
       </ul>
     </td>
     <td>13/160 aulas</td>
