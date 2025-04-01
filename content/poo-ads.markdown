@@ -14,9 +14,9 @@ nav_order: 2
 
 **Avaliações e notas:** 3 avaliações (**A1**, **A2** e **A3**), detalhadas a seguir.
 
-- Minitestes (20% da nota final - **A1**)
-- Apresentação (20% da nota final - **A2**)
-- Projeto (60% da nota final - **A3**)
+- **Minitestes** (20% da nota final - **A1**) - serão, aproximadamente, 8 minitestes no semestre. Os minitestes não terão reposição, mas aluno poderá faltar até 25% dos minitestes ou ter 25% das notas mais baixas descartadas.
+- **Apresentação** (20% da nota final - **A2**)
+- **Projeto** (60% da nota final - **A3**)
 
 **Informaçoes:**
 
