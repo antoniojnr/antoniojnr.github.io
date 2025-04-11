@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Projeto da disciplina - POO - 2023.2
+title: Projeto da disciplina - POO - 2025.1
 nav_exclude: true
 ---
 
 ## Projeto da disciplina
 
 **Disciplina:** Programação Orientada a Objetos
-**Período:** 2024.2
+**Período:** 2025.1
 
 ## Resumo
 
