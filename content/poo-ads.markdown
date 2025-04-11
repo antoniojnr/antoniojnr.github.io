@@ -23,16 +23,16 @@ nav_order: 2
 - [Ementa da disciplina](https://estudante.ifpb.edu.br/media/cursos/346/disciplina/POO.pdf)
 - [Conteúdo](/content/poo/superior/conteudo.html)
 - [Página do semestre 2024.2](/content/poo-ads-20242.html)
+- [Projeto](/content/poo/superior/projeto.html)
 
 ### Datas
 
 Veja o [calendário](/content/poo/superior/calendario.html).
 
-- **Início do semestre:** 07/10/2024
-- **Férias docentes:** 19/12/2024 a 18/01/2025
-- **Retorno das férias:** 20/01/2025
-- **Término do semestre:** 11/03/2025
-- **Finais:** 11 a 14/03/2025
+- **Início do semestre:** 19/03/2025
+- **Férias docentes:** 25/06 a 22/07/2025
+- **Término do semestre:** 22/08/2025
+- **Finais:** 25 a 27/08/2025
 
 ### Listas de exercícios
 

@@ -24,7 +24,7 @@ nav_exclude: true
         <li><a href="https://docs.google.com/presentation/d/1Zs0equT-VdvXZDOgxrf7mppDbw25xubu2E4Edcsna7I/edit?usp=classroom_web&authuser=0" target="_blank"> Slides - A linguagem Java</a></li>
       </ul>
     </td>
-    <td>4/160 aulas</td>
+    <td>(4) 4/160 aulas</td>
   </tr>
   <tr>
     <td>25</td>
@@ -35,7 +35,7 @@ nav_exclude: true
         </ul>
       <s>Exercício 1 - Introdução à linguagem Java</s>
     </td>
-    <td>9/160 aulas</td>
+    <td>(5) 9/160 aulas</td>
   </tr>
   <tr>
     <td>31</td>
@@ -51,7 +51,7 @@ nav_exclude: true
         <li><a href="https://antoniodias.notion.site/Classes-e-Objetos-1c7f7a8772918034810dfc5447f830a5" target="_blank">Exercício - classes e objetos</a></li>
       </ul>
     </td>
-    <td>13/160 aulas</td>
+    <td>(4) 13/160 aulas</td>
   </tr>
   <tr>
     <th colspan="3"><strong>Abril</strong></th>
@@ -61,7 +61,7 @@ nav_exclude: true
     <td>
       Exercício 2 - Tipos e classes wrapper
     </td>
-    <td>18/160 aulas</td>
+    <td>(5) 18/160 aulas</td>
   </tr>
   <tr>
     <td>07</td>
