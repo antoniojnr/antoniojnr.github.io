@@ -62,9 +62,7 @@ Até 20 pontos de pontuação podem ser obtidos para cobrir nota que você não 
 
 ### Qualidade do Código
 
-O código deve ser bem estruturado e seguir boas práticas de programação.
-
-- Nomes de variáveis, métodos e classes devem ser significativos e seguir convenções de nomenclatura.
+O código deve ser bem estruturado e seguir boas práticas de programação. [Veja alguns requisitos detalhados aqui](/content/poo/qualidade-codigo.html).
 
 ### Documentação
 
