@@ -86,8 +86,8 @@ Os itens a seguir devem ser mantidos em um repositório do GitHub.
 
 ## Prazos
 
-- **Data de entrega:** 08/08/2025 (data provável)
-- **Apresentação do projeto:** 11 e 12/08/2025 (datas prováveis)
+- **Data de entrega:** 16/08/2025
+- **Apresentação do projeto:** 18 e 19/08/2025
 
 ## Apresentação
 
