@@ -1,3 +1,9 @@
+---
+layout: default
+title: Plano de Laboratórios – OWASP Top 10 (2021)
+nav_exclude: true
+---
+
 # Plano de Laboratórios – OWASP Top 10 (2021)
 
 ---

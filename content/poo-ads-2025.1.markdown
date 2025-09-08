@@ -8,33 +8,31 @@ nav_order: 2
 
 ## Programação Orientada a Objetos
 
-**Semestre:** 2025.2
+**Semestre:** 2025.1
 
 **Modalidade:** Superior
 
 **Avaliações e notas:** 3 avaliações (**A1**, **A2** e **A3**), detalhadas a seguir.
 
-- **Avaliação 1** (25% da nota final - **A1**)
-- **Avaliação 2** (25% da nota final - **A2**)
-- **Projeto** (50% da nota final - **A3**)
+- **Minitestes** (20% da nota final - **A1**) - serão, aproximadamente, 8 minitestes no semestre. Os minitestes não terão reposição, mas aluno poderá faltar até 25% dos minitestes ou ter 25% das notas mais baixas descartadas.
+- **Apresentação** (20% da nota final - **A2**)
+- **Projeto** (60% da nota final - **A3**)
 
 **Informaçoes:**
 
 - [Ementa da disciplina](https://estudante.ifpb.edu.br/media/cursos/346/disciplina/POO.pdf)
 - [Conteúdo](/content/poo/superior/conteudo.html)
 - [Página do semestre 2024.2](/content/poo-ads-20242.html)
-- [Página do semestre 2025.1](/content/poo-ads-20251.html)
 - [Projeto](/content/poo/superior/projeto.html)
 
 ### Datas
 
-Veja o [calendário](/content/poo/superior/calendario.html).
+Veja o [calendário](/content/poo/superior/calendario-20251.html).
 
-- **Início do semestre:** 04/09/2025
-- **Recesso Natalino:** 26/12 a 30/12/2025
-- **Férias docentes:** 02/01 a 16/02/2026
-- **Término do semestre:** 29/01/2026
-- **Data provável da final:** 02/02/2026
+- **Início do semestre:** 19/03/2025
+- **Férias docentes:** 25/06 a 22/07/2025
+- **Término do semestre:** 22/08/2025
+- **Finais:** 25 a 27/08/2025
 
 ### Listas de exercícios
 
