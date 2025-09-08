@@ -8,10 +8,10 @@ nav_exclude: true
 
 <table>
   <tr>
-    <th colspan="3"><strong>Setembro</strong></th>
+    <th colspan="3"><strong>Março</strong></th>
   </tr>
   <tr>
-    <td>08</td>
+    <td>24</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -27,7 +27,7 @@ nav_exclude: true
     <td>4/160 aulas</td>
   </tr>
   <tr>
-    <td>09</td>
+    <td>25</td>
     <td>
       <div><b>Conteúdo</b></div>
         <ul>
@@ -38,7 +38,7 @@ nav_exclude: true
     <td>9/160 aulas</td>
   </tr>
   <tr>
-    <td>15</td>
+    <td>31</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -54,14 +54,17 @@ nav_exclude: true
     <td>13/160 aulas</td>
   </tr>
   <tr>
-    <td>16</td>
+    <th colspan="3"><strong>Abril</strong></th>
+  </tr>
+  <tr>
+    <td>01</td>
     <td>
       Exercício 2 - Tipos e classes wrapper
     </td>
     <td>18/160 aulas</td>
   </tr>
   <tr>
-    <td>22</td>
+    <td>07</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -72,7 +75,7 @@ nav_exclude: true
     <td>23/160 aulas</td>
   </tr>
   <tr>
-    <td>23</td>
+    <td>08</td>
     <td>
       <div><b>Exercícios</b></div>
       <ul>
@@ -83,7 +86,7 @@ nav_exclude: true
     <td>28/160 aulas</td>
   </tr>
   <tr>
-    <td>29</td>
+    <td>14</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -95,17 +98,21 @@ nav_exclude: true
     <td>33/160 aulas</td>
   </tr>
   <tr>
-    <td>30</td>
+    <td>15</td>
     <td>
       Exercício 5 - Encapsulamento e composição
     </td>
     <td>38/160 aulas</td>
   </tr>
   <tr>
-    <th colspan="3"><strong>Outubro</strong></th>
+    <td>21</td>
+    <td style="color: red;">
+      <div><b>Feriado:</b> Dia de Tiradentes</div>
+    </td>
+    <td>--/160 aulas</td>
   </tr>
   <tr>
-    <td>06</td>
+    <td>22</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -117,14 +124,14 @@ nav_exclude: true
     <td>43/160 aulas</td>
   </tr>
   <tr>
-    <td>07</td>
+    <td>28</td>
     <td>
       Exercício 6 - Herança, interfaces e classes abstratas
     </td>
     <td>48/160 aulas</td>
   </tr>
     <tr>
-    <td>13</td>
+    <td>29</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -134,7 +141,10 @@ nav_exclude: true
     <td>53/160 aulas</td>
   </tr>
   <tr>
-    <td>14</td>
+    <th colspan="3"><strong>Maio</strong></th>
+  </tr>
+  <tr>
+    <td>05</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -145,21 +155,21 @@ nav_exclude: true
     <td>58/160 aulas</td>
   </tr>
   <tr>
-    <td>20</td>
+    <td>06</td>
     <td>
       Exercício 7 - Coleções de objetos e Streams API
     </td>
     <td>63/160 aulas</td>
   </tr>
   <tr>
-    <td>21</td>
+    <td>12</td>
     <td>
       Exercício 7 - Coleções de objetos e Streams API (continuação)
     </td>
     <td>68/160 aulas</td>
   </tr>
   <tr>
-    <td>27</td>
+    <td>12</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -169,17 +179,14 @@ nav_exclude: true
     <td>73/160 aulas</td>
   </tr>
   <tr>
-    <td>28</td>
+    <td>13</td>
     <td>
       Exercício 8 - Sobreposição e sobrecarga
     </td>
     <td>78/160 aulas</td>
   </tr>
   <tr>
-    <th colspan="3"><strong>Novembro</strong></th>
-  </tr>
-  <tr>
-    <td>03</td>
+    <td>19</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -190,14 +197,14 @@ nav_exclude: true
     <td>83/160 aulas</td>
   </tr>
   <tr>
-    <td>04</td>
+    <td>20</td>
     <td>
       Exercício 9 - Exceções
     </td>
     <td>88/160 aulas</td>
   </tr>
   <tr>
-    <td>10</td>
+    <td>26</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -207,14 +214,17 @@ nav_exclude: true
     <td>93/160 aulas</td>
   </tr>
     <tr>
-    <td>11</td>
+    <td>27</td>
     <td>
       Exercício 10 - Interfaces gráficas
     </td>
     <td>98/160 aulas</td>
   </tr>
   <tr>
-    <td>17</td>
+    <th colspan="3"><strong>Junho</strong></th>
+  </tr>
+  <tr>
+    <td>02</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -224,14 +234,14 @@ nav_exclude: true
     <td>103/160 aulas</td>
   </tr>
   <tr>
-    <td>18</td>
+    <td>03</td>
     <td>
       Exercício 10 - Interfaces gráficas (continuação)
     </td>
     <td>108/160 aulas</td>
   </tr>
   <tr>
-    <td>24</td>
+    <td>09</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -241,24 +251,14 @@ nav_exclude: true
     <td>113/160 aulas</td>
   </tr>
   <tr>
-    <td>25</td>
+    <td>10</td>
     <td>
       Exercício 10 - Interfaces gráficas (continuação)
     </td>
     <td>118/160 aulas</td>
   </tr>
   <tr>
-    <th colspan="3"><strong>Dezembro</strong></th>
-  </tr>
-  <tr>
-    <td>01</td>
-    <td>
-      <b>Feriado municipal: Emancipação Política de Esperança</b>
-    </td>
-    <td>--/160 aulas</td>
-  </tr>
-  <tr>
-    <td>02</td>
+    <td>16</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -268,14 +268,7 @@ nav_exclude: true
     <td>123/160 aulas</td>
   </tr>
   <tr>
-    <td>08</td>
-    <td>
-      <b>Feriado estadual: Dia de Nossa Senhora da Conceição</b>
-    </td>
-    <td>--/160 aulas</td>
-  </tr>
-  <tr>
-    <td>09</td>
+    <td>17</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -285,14 +278,31 @@ nav_exclude: true
     <td>127/160 aulas</td>
   </tr>
   <tr>
-    <td>15</td>
+    <td>23</td>
     <td>
       Exercício 11 - Threads
     </td>
     <td>131/160 aulas</td>
   </tr>
   <tr>
-    <td>16</td>
+    <td>24</td>
+    <td style="color: red;">
+      <b>Início das férias docentes (28 dias)</b>
+    </td>
+    <td>--/160 aulas</td>
+  </tr>
+  <tr>
+    <th colspan="3"><strong>Julho</strong></th>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td style="color: red;">
+      <b>Fim das férias docentes (28 dias)</b>
+    </td>
+    <td>--/160 aulas</td>
+  </tr>
+  <tr>
+    <td>28</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -303,7 +313,7 @@ nav_exclude: true
     <td>135/160 aulas</td>
   </tr>
   <tr>
-    <td>22</td>
+    <td>29</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -314,7 +324,10 @@ nav_exclude: true
     <td>139/160 aulas</td>
   </tr>
   <tr>
-    <td>23</td>
+    <th colspan="3"><strong>Agosto</strong></th>
+  </tr>
+  <tr>
+    <td>04</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -325,10 +338,14 @@ nav_exclude: true
     <td>143/160 aulas</td>
   </tr>
   <tr>
-    <th colspan="3"><strong>Janeiro</strong></th>
+    <td>05</td>
+    <td style="color: red;">
+      <b>Feriado:</b> Fundação da Paraíba
+    </td>
+    <td>--/160 aulas</td>
   </tr>
   <tr>
-    <td>19</td>
+    <td>11</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -339,7 +356,7 @@ nav_exclude: true
     <td>148/160 aulas</td>
   </tr>
   <tr>
-    <td>20</td>
+    <td>12</td>
     <td>
       <div><b>Conteúdo</b></div>
       <ul>
@@ -350,24 +367,21 @@ nav_exclude: true
     <td>152/160 aulas</td>
   </tr>
   <tr>
-    <td>26</td>
+    <td>18</td>
     <td>
       Apresentações de projetos
     </td>
     <td>156/160 aulas</td>
   </tr>
   <tr>
-    <td>27</td>
+    <td>19</td>
     <td>
       Apresentações de projetos
     </td>
     <td>160/160 aulas</td>
   </tr>
   <tr>
-    <th colspan="3"><strong>Fevereiro</strong></th>
-  </tr>
-  <tr>
-    <td>02</td>
+    <td>25</td>
     <td style="color: blue;">
       <b>Data provável da avaliação final</b>
     </td>
