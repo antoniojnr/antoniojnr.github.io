@@ -40,7 +40,8 @@ Veja o [calendário](/content/poo/superior/calendario.html).
 
 É fundamental que você faça as listas de exercícios. Embora não valham pontuação, elas são corrigidas em aula, o que permite que você discuta seu código diretamente com o professor. É uma oportunidade para receber feedback e melhorar suas habilidades de programação.
 
-- [Exercício 1 - Introdução](/content/poo/superior/0-complementares.html)
-- [Exercício 2 - Tipos e classes wrapper](/content/poo/superior/ex-tipos.html)
-- [Exercício 3 - Classes e objetos](/content/poo/superior/ex-classes-e-objetos.html)
-- [Exercício 4 - Encapsulamento](/content/poo/superior/2-encapsulamento-20242.html)
+- [Exercício 1 - Básico](https://www.notion.so/antoniodias/Primeiros-passos-269f7a87729180308b5fdd5a2620ce97)
+- [Exercício 2 - Introdução](/content/poo/superior/0-complementares.html)
+- [Exercício 3 - Tipos e classes wrapper](/content/poo/superior/ex-tipos.html)
+- [Exercício 4 - Classes e objetos](/content/poo/superior/ex-classes-e-objetos.html)
+- [Exercício 5 - Encapsulamento](/content/poo/superior/2-encapsulamento-20242.html)
