@@ -25,12 +25,11 @@ nav_order: 1
 **Informações:**
 
 - [Ementa da disciplina](/content/seginfo/ementa.html)
-- [Conteúdo](/content/ic/conteudo.html)
-- **Links adicionais** mencionados em sala disponíveis [aqui](/content/ic/links.html)
+- **Links adicionais** mencionados em sala disponíveis [aqui]([/content/courses-si.html#links))
 
 ## Datas
 
-Veja o [calendário](/content/ic/calendario.html).
+Veja o [calendário](/content/seginfo/calendario.html).
 
 - **Início do semestre:** 04/09/2025
 - **Recesso Natalino:** 26/12 a 30/12/2025

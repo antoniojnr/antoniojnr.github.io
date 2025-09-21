@@ -12,12 +12,12 @@ nav_exclude: true
   </tr>
   <tr>
     <td>09</td>
-    <td></td>
+    <td>Introdução e conceitos básicos</td>
     <td>2/40 aulas</td>
   </tr>
   <tr>
     <td>16</td>
-    <td></td>
+    <td>Aula cedida para apresentação dos projetos</td>
     <td>4/40 aulas</td>
   </tr>
   <tr>
