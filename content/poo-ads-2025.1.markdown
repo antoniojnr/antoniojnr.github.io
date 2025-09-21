@@ -3,7 +3,7 @@ layout: default
 title: POO para ADS
 parent: Programação Orientada a Objetos
 grand_parent: Disciplinas
-nav_order: 2
+nav_exclude: true
 ---
 
 ## Programação Orientada a Objetos
