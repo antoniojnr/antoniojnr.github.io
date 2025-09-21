@@ -16,151 +16,151 @@ Introdução e conceitos básicos de segurança da informação. Riscos envolven
 - Panorama atual de ameaças cibernéticas
 - **Prática:** Análise de casos reais usando navegador web
 
-**Aula 2:** Reconhecimento e Engenharia Social
-
-- Técnicas de OSINT (Open Source Intelligence)
-- **Prática:** Uso de ferramentas online para coleta de informações públicas (Google Dorking, Shodan, Have I Been Pwned)
-
-**Aula 3:** Fundamentos de Criptografia
+**Aula 2:** Fundamentos de Criptografia
 
 - Criptografia simétrica vs assimétrica
 - **Prática:** Implementação de cifra de César em Python online (repl.it/codepen)
 
-**Aula 4:** Hash e Integridade de Dados
+**Aula 3:** Hash e Integridade de Dados
 
 - Funções hash (MD5, SHA-256)
 - **Prática:** Criação de checksums usando Python/JavaScript online e verificação de integridade
 
-**Aula 5:** Implementação de AES
+**Aula 4:** Implementação de AES
 
 - Algoritmo AES explicado
 - **Prática:** Exercícios de uso prático de bibliotecas de criptografia
 
-**Aula 6:** Criptografia de Chave Pública (RSA)
+**Aula 5:** Criptografia de Chave Pública (RSA)
 
 - Conceitos matemáticos básicos
 - **Prática:** Demonstração de um exemplo simples do mecanismo usado no algoritmo RSA
 
-**Aula 7:** Infraestrutura de Chaves Públicas (PKI)
+**Aula 6:** Infraestrutura de Chaves Públicas (PKI)
 
 - Autoridades certificadoras
 - **Prática:** Exame de certificados SSL usando ferramentas do navegador
 
-**Aula 8:** Criação e Validação de Certificados
+**Aula 7:** Criação e Validação de Certificados
 
 - Formatos de certificados (PEM, DER)
 - **Prática:** Análise prática de certificados em sites reais
 
-**Aula 9:** Protocolo SSL/TLS
+**Aula 8:** Protocolo SSL/TLS
 
 - Handshake SSL/TLS
 - **Prática:** Análise de tráfego HTTPS usando ferramentas do navegador (DevTools)
 
-**Aula 10:** Implementação de Conexões Seguras
+**Aula 9:** Implementação de Conexões Seguras
 
 - Configuração de HTTPS
 - **Prática:** Criação de servidor HTTPS simples usando Node.js online
 
-**Aula 11:** SQL Injection
+**Aula 10:** SQL Injection
 
 - Como funciona e impactos
 - **Prática:** Criação de aplicação vulnerável em JavaScript/PHP online e exploração
 
-**Aula 12:** Prevenção de SQL Injection
+**Aula 11:** Prevenção de SQL Injection
 
 - Prepared statements e sanitização
 - **Prática:** Correção da aplicação vulnerável criada na aula anterior
 
-**Aula 13:** XSS Refletido e Armazenado
+**Aula 12:** XSS Refletido e Armazenado
 
 - Tipos de XSS e vetores de ataque
 - **Prática:** Criação de aplicação web vulnerável a XSS usando HTML/JavaScript
 
-**Aula 14:** Prevenção de XSS
+**Aula 13:** Prevenção de XSS
 
 - Content Security Policy (CSP), sanitização
 - **Prática:** Implementação de proteções anti-XSS na aplicação anterior
 
-**Aula 15:** Cross-Site Request Forgery (CSRF)
+**Aula 14:** Cross-Site Request Forgery (CSRF)
 
 - Funcionamento e exploração
 - **Prática:** Criação de ataque CSRF usando formulários HTML simples
 
-**Aula 16:** Tokens CSRF e SameSite Cookies
+**Aula 15:** Tokens CSRF e SameSite Cookies
 
 - Mecanismos de proteção
 - **Prática:** Implementação de proteção CSRF usando JavaScript
 
-**Aula 17:** Sistemas de Autenticação
+**Aula 16:** Sistemas de Autenticação
 
 - Senhas, 2FA, biometria
 - **Prática:** Implementação de sistema de login básico com hash de senhas
 
-**Aula 18:** JWT (JSON Web Tokens)
+**Aula 17:** JWT (JSON Web Tokens)
 
 - Estrutura e uso de JWTs
 - **Prática:** Criação e validação de JWTs usando JavaScript
 
-**Aula 19:** Vulnerabilidades em APIs REST
+**Aula 18:** Vulnerabilidades em APIs REST
 
 - OWASP API Security Top 10
 - **Prática:** Criação de API vulnerável usando Node.js online
 
-**Aula 20:** Securização de APIs
+**Aula 19:** Securização de APIs
 
 - Rate limiting, validação, autenticação
 - **Prática:** Implementação de proteções na API criada anteriormente
 
-**Aula 21:** Tipos de Malware
+**Aula 20:** Tipos de Malware
 
 - Vírus, trojans, ransomware, spyware
 - **Prática:** Análise estática de samples de malware usando VirusTotal
 
-**Aula 22:** Análise Básica de Código Malicioso
+**Aula 21:** Análise Básica de Código Malicioso
 
 - Técnicas de ofuscação
 - **Prática:** Desobfuscação de JavaScript malicioso usando ferramentas online
 
-**Aula 23:** Sniffing e Análise de Tráfego
+**Aula 22:** Sniffing e Análise de Tráfego
 
 - Protocolos inseguros
 - **Prática:** Captura de tráfego
 
-**Aula 24:** Firewalls e Detecção de Intrusão
+**Aula 23:** Firewalls e Detecção de Intrusão
 
 - Conceitos e implementação
 - **Prática:** Criação de regras básicas de firewall usando iptables (simulação)
 
-**Aula 25:** ARP Spoofing e MITM
+**Aula 24:** ARP Spoofing e MITM
 
 - Ataques man-in-the-middle
 - **Prática:** Simulação de ataque MITM usando JavaScript/WebRTC
 
-**Aula 26:** DNS Spoofing e Cache Poisoning
+**Aula 25:** DNS Spoofing e Cache Poisoning
 
 - Manipulação de resolução DNS
 - **Prática:** Demonstração usando ferramentas online de DNS lookup
 
-**Aula 27:** Protocolos de Segurança Wi-Fi
+**Aula 26:** Protocolos de Segurança Wi-Fi
 
 - WEP, WPA, WPA2, WPA3
 - **Prática:** Análise de redes Wi-Fi usando ferramentas do navegador (WebRTC)
 
-**Aula 28:** Ataques contra Redes Wireless
+**Aula 27:** Ataques contra Redes Wireless
 
 - Handshake capture, evil twin
 - **Prática:** Criação de portal captivo falso usando HTML/JavaScript
 
-**Aula 29:** Vulnerabilidades em Apps Mobile
+**Aula 28:** Vulnerabilidades em Apps Mobile
 
 - OWASP Mobile Top 10
 - **Prática:** Boas práticas de desenvolvimento seguro para mobile/web
   - _Possibilidade de incluir:_ Análise de APKs usando ferramentas online - APKTool online
 
-**Aula 30:** Desenvolvimento Seguro Mobile
+**Aula 29:** Desenvolvimento Seguro Mobile
 
 - Armazenamento seguro, comunicação
 - **Prática:** Criação de app web progressivo com boas práticas de segurança
+
+**Aula 30:** Reconhecimento e Engenharia Social
+
+- Técnicas de OSINT (Open Source Intelligence)
+- **Prática:** Uso de ferramentas online para coleta de informações públicas (Google Dorking, Shodan, Have I Been Pwned)
 
 **Aula 31:** Metodologia de Pentest
 
