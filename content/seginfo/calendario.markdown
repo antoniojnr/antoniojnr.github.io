@@ -22,7 +22,7 @@ nav_exclude: true
   </tr>
   <tr>
     <td>23</td>
-    <td></td>
+    <td>Conceitos básicos</td>
     <td>6/40 aulas</td>
   </tr>
   <tr>

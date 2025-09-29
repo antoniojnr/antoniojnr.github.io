@@ -67,6 +67,17 @@ DE OLIVEIRA, N.; GOMES, M.; LOPES, R.; NOBRE, J. **Segurança da Informação pa
 
 ## Links
 
+### Assuntos mencionados em aula
+
+- 09/09/2025
+  - Vazamento de dados do Facebook:
+    - https://www.cisoadvisor.com.br/vazamento-do-facebook-pegou-8-064-916-usuarios-brasileiros/
+    - https://www.cisoadvisor.com.br/facebook-e-condenado-a-indenizar-8-milhoes-de-brasileiros/
+    - https://www.bleepingcomputer.com/news/security/facebook-attributes-533-million-users-data-leak-to-scraping-not-hacking/
+    - https://www.bleepingcomputer.com/news/security/533-million-facebook-users-phone-numbers-leaked-on-hacker-forum/
+- 23/09/2025
+  - Tor - https://www.gate.com/pt/learn/articles/what-is-the-tor-network/131
+
 ### Exploits
 
 - [Exploit Database](https://www.exploit-db.com/)

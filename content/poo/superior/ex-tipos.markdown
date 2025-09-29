@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Exercícios - Encapsulamento, parte 1
+title: Exercícios - Tipos primitivos e wrapper classes
 nav_exclude: true
 ---
 
