@@ -12,11 +12,12 @@ nav_order: 2
 
 **Modalidade:** Superior
 
-**Avaliações e notas:** 3 avaliações (**A1**, **A2** e **A3**), detalhadas a seguir.
+**Avaliações e notas:** 4 avaliações (**A1**, **A2**, **A3** e **A4**), detalhadas a seguir.
 
-- **Avaliação 1** (25% da nota final - **A1**)
-- **Avaliação 2** (25% da nota final - **A2**)
-- **Projeto** (50% da nota final - **A3**)
+- **Avaliação 1** (20% da nota final - **A1**)
+- **Avaliação 2** (20% da nota final - **A2**)
+- **Exercícios** (10% da nota final - **A3**)
+- **Projeto** (50% da nota final - **A4**)
 
 **Informaçoes:**
 
