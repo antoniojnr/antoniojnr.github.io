@@ -21,8 +21,6 @@ e
 **Linguagem:** JavaScript
 **IDE recomendada:** Visual Studio Code
 
-ferramentas obrigatórias
-
 ## Frequência
 
 - A presença mínima exigida é de 75%.
