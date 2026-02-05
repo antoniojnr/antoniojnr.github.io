@@ -1,0 +1,30 @@
+:root {
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+}
+
+.pill {
+  padding: var(--space-xs);
+  padding-left: var(--space-md);
+  border-radius: var(--space-md);
+  font-weight: 600;
+  background-color: var(--pill-bg);
+  color: var(--pill-color, inherit);
+}
+
+.blue {
+  --pill-bg: rgb(128, 194, 255);
+}
+
+.green {
+  --pill-bg: rgb(55, 214, 87);
+  --pill-color: white;
+}
+
+.red {
+  --pill-bg: rgb(255, 78, 18);
+  --pill-color: white;
+}

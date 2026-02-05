@@ -1,0 +1,5 @@
+<footer class="book-footer">
+  {{ with .CurrentSection }} {{ if ne .RelPermalink $.RelPermalink }}
+  <a href="{{ .RelPermalink }}"> ← Voltar para {{ .Title }} </a>
+  {{ end }} {{ end }}
+</footer>
