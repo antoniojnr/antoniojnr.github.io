@@ -4,6 +4,8 @@
   --space-md: 1rem;
   --space-lg: 1.5rem;
   --space-xl: 2rem;
+  --light-blue: rgb(176, 217, 255);
+  --dark-blue: rgb(53, 122, 187);
 }
 
 .pill {
@@ -13,10 +15,14 @@
   font-weight: 600;
   background-color: var(--pill-bg);
   color: var(--pill-color, inherit);
+
+  &:not(:last-child) {
+    margin-bottom: var(--space-sm);
+  }
 }
 
 .blue {
-  --pill-bg: rgb(128, 194, 255);
+  --pill-bg: var(--light-blue);
 }
 
 .green {
@@ -27,4 +33,21 @@
 .red {
   --pill-bg: rgb(255, 78, 18);
   --pill-color: white;
+}
+
+.extra {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  font-size: x-small;
+  margin-top: var(--space-xs);
+}
+
+.avaliacao {
+  display: inline-block;
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--space-xs);
+  list-style: none;
+  font-weight: 500;
 }

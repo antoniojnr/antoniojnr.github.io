@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://antoniojnr.github.io/'
 languageCode = 'pt-br'
-title = 'Disciplinas do Professor Antonio Dias'
+title = 'Antonio Dias'
 theme = 'hugo-book'
 
 [params]

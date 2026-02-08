@@ -11,15 +11,24 @@ bookCollapseSection: true
 
 ## Informações gerais
 
-Há páginas específicas para informações sobre:
+Há páginas específicas para informações sobre
 {{< button href="/docs/disciplinas/poo-info/avaliacoes/" >}}Avaliações{{< /button >}}
 e
 {{< button href="/docs/disciplinas/poo-info/calendario/" >}}Calendário{{< /button >}}
 
 ## Ferramentas e ambiente
 
-**Linguagem:** JavaScript
+**Linguagem:** JavaScript\
 **IDE recomendada:** Visual Studio Code
+
+> [!TIP]
+>
+> **Instalação do Visual Studio Code (VSCode)**  
+> Em algumas situações, o VSCode pode estar indisponível na máquina do laboratório
+> ou você pode ter problemas para instalar ou executar o VSCode no seu computador.
+> Siga o guia de instalação do VSCode para tentar solucionar esses problemas.
+>
+> {{< button href="/docs/disciplinas/poo-info/calendario/" >}}Guia de instalação do VSCode{{< /button >}}
 
 ## Frequência
 
