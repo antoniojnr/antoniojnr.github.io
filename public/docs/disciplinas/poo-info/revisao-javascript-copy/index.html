@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="JavaScript - uma breve introdução à linguagem# Antes de entrarmos propriamente em programação orientada a objetos, é fundamental garantir que todos tenham uma base sólida dos fundamentos da linguagem JavaScript.
+Esta revisão tem como objetivo nivelar conceitos, corrigir vícios comuns e preparar o terreno para o uso consciente de classes, objetos e métodos.
+Dominar esses fundamentos é essencial para compreender como objetos armazenam estado, como métodos operam sobre dados e como erros sutis surgem em sistemas maiores. A partir daqui, passamos a organizar esse conhecimento usando os princípios da programação orientada a objetos.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript-copy/">
+  <meta property="og:site_name" content="Antonio Dias">
+  <meta property="og:title" content="JavaScript - uma breve introdução à linguagem">
+  <meta property="og:description" content="JavaScript - uma breve introdução à linguagem# Antes de entrarmos propriamente em programação orientada a objetos, é fundamental garantir que todos tenham uma base sólida dos fundamentos da linguagem JavaScript.
+Esta revisão tem como objetivo nivelar conceitos, corrigir vícios comuns e preparar o terreno para o uso consciente de classes, objetos e métodos.
+Dominar esses fundamentos é essencial para compreender como objetos armazenam estado, como métodos operam sobre dados e como erros sutis surgem em sistemas maiores. A partir daqui, passamos a organizar esse conhecimento usando os princípios da programação orientada a objetos.">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="JavaScript - uma breve introdução à linguagem">
+  <meta itemprop="description" content="JavaScript - uma breve introdução à linguagem# Antes de entrarmos propriamente em programação orientada a objetos, é fundamental garantir que todos tenham uma base sólida dos fundamentos da linguagem JavaScript.
+Esta revisão tem como objetivo nivelar conceitos, corrigir vícios comuns e preparar o terreno para o uso consciente de classes, objetos e métodos.
+Dominar esses fundamentos é essencial para compreender como objetos armazenam estado, como métodos operam sobre dados e como erros sutis surgem em sistemas maiores. A partir daqui, passamos a organizar esse conhecimento usando os princípios da programação orientada a objetos.">
+  <meta itemprop="wordCount" content="1680">
+
+<title>JavaScript - uma breve introdução à linguagem | Antonio Dias</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript-copy/">
+<link rel="stylesheet" href="/book.min.a734d0f84f339961c2f38061ac4210305aad75979ab791937815c1ac455d7ec7.css" integrity="sha256-pzTQ&#43;E8zmWHC84BhrEIQMFqtdZeat5GTeBXBrEVdfsc=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.9face9d628230d0e3f74c6db0b3efb1dad6ae5b1142123cc12b33008127e0c84.js" integrity="sha256-n6zp1igjDQ4/dMbbCz77Ha1q5bEUISPMErMwCBJ&#43;DIQ=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Antonio Dias</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Buscar"
+    aria-label="Buscar"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="toggle"  />
+    <label for="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="flex">
+      <a href="/docs/posts/" class="">
+        Atualizações</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/posts/primeiro-post/" class="">
+      Primeiro Post</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/" class="">
+      Disciplinas</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0658642cbe0befc355ebbab1ea93df0" class="toggle"  />
+    <label for="section-e0658642cbe0befc355ebbab1ea93df0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/" class="">
+        POO (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/projeto/" class="">
+      Projeto</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ad90f794895ae5dd26ad3b3869e4edf2" class="toggle" checked />
+    <label for="section-ad90f794895ae5dd26ad3b3869e4edf2" class="flex">
+      <a href="/docs/disciplinas/poo-info/" class="">
+        POO (Integrado)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript-copy/" class="active">
+      JavaScript - uma breve introdução à linguagem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-85611c34c3e4fce02fc9163ca37c73a3" class="toggle"  />
+    <label for="section-85611c34c3e4fce02fc9163ca37c73a3" class="flex">
+      <a href="/docs/disciplinas/poo-info/revisao-javascript/" class="">
+        JavaScript - uma breve introdução à linguagem</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="toggle"  />
+    <label for="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="flex">
+      <a href="/docs/disciplinas/seginfo-ads/" class="">
+        Seg. da Informação (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>JavaScript - uma breve introdução à linguagem</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-fundamentos-essenciais-da-linguagem">1. Fundamentos essenciais da linguagem</a>
+      <ul>
+        <li><a href="#execução-no-navegador-console-do-devtools">Execução no navegador (console do DevTools)</a></li>
+        <li><a href="#let-const-e-escopo-de-bloco"><code>let</code>, <code>const</code> e escopo de bloco</a></li>
+        <li><a href="#tipos-primitivos-number-string-boolean-undefined-null">Tipos primitivos: <code>number</code>, <code>string</code>, <code>boolean</code>, <code>undefined</code>, <code>null</code></a></li>
+        <li><a href="#operadores-aritméticos-relacionais-e-lógicos">Operadores aritméticos, relacionais e lógicos</a></li>
+        <li><a href="#conversão-implícita-vs-explícita-number-string">Conversão implícita vs explícita (<code>Number()</code>, <code>String()</code>)</a></li>
+        <li><a href="#atividades-sugeridas">Atividades sugeridas</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="javascript---uma-breve-introdução-à-linguagem">JavaScript - uma breve introdução à linguagem<a class="anchor" href="#javascript---uma-breve-introdu%c3%a7%c3%a3o-%c3%a0-linguagem">#</a></h1>
+<p>Antes de entrarmos propriamente em <strong>programação orientada a objetos</strong>, é fundamental garantir que todos tenham uma base sólida dos fundamentos da linguagem JavaScript.</p>
+<p>Esta revisão tem como objetivo nivelar conceitos, corrigir vícios comuns e preparar o terreno para o uso consciente de classes, objetos e métodos.</p>
+<p>Dominar esses fundamentos é essencial para compreender como objetos armazenam estado, como métodos operam sobre dados e como erros sutis surgem em sistemas maiores. A partir daqui, passamos a organizar esse conhecimento usando os princípios da programação orientada a objetos.</p>
+<h2 id="1-fundamentos-essenciais-da-linguagem">1. Fundamentos essenciais da linguagem<a class="anchor" href="#1-fundamentos-essenciais-da-linguagem">#</a></h2>
+<h3 id="execução-no-navegador-console-do-devtools">Execução no navegador (console do DevTools)<a class="anchor" href="#execu%c3%a7%c3%a3o-no-navegador-console-do-devtools">#</a></h3>
+<p>Nem sempre é necessário criar arquivos ou abrir uma IDE para testar código JavaScript. Uma das grandes vantagens da linguagem é poder executá-la diretamente no navegador, por meio do console do <strong>DevTools</strong>.</p>
+<p>Para abrir o console:</p>
+<ul>
+<li><strong>Chrome / Edge</strong>: <code>F12</code> ou <code>Ctrl + Shift + J</code></li>
+<li><strong>Firefox</strong>: <code>F12</code> ou <code>Ctrl + Shift + K</code></li>
+</ul>
+<p>O console permite:</p>
+<ul>
+<li>Executar código JavaScript de forma imediata</li>
+<li>Testar expressões isoladas</li>
+<li>Experimentar funções e estruturas da linguagem</li>
+<li>Inspecionar valores, variáveis e objetos</li>
+<li>Observar erros e comportamentos inesperados</li>
+</ul>
+<p>Ao longo desta revisão, o console será nossa principal ferramenta de experimentação.</p>
+<p><strong>Exemplo prático:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Olá, mundo!&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">soma</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;A soma é:&#34;</span>, <span style="color:#a6e22e">soma</span>);</span></span></code></pre></div><p>Observe que:</p>
+<ul>
+<li><code>console.log</code> exibe informações no console;</li>
+<li>o JavaScript executa cada linha imediatamente após você pressionar <strong>Enter</strong>.</li>
+</ul>
+<h3 id="let-const-e-escopo-de-bloco"><code>let</code>, <code>const</code> e escopo de bloco<a class="anchor" href="#let-const-e-escopo-de-bloco">#</a></h3>
+<p>JavaScript possui três formas de declarar variáveis: <code>var</code>, <code>let</code> e <code>const</code>.</p>
+<p>Nesta disciplina, não utilizaremos <code>var</code>, pois ela ignora escopo de bloco e pode gerar comportamentos confusos.</p>
+<p><strong>Escopo de bloco:</strong> Variáveis declaradas com <code>let</code> e <code>const</code> só existem dentro do bloco <code>{}</code> onde foram declaradas.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>); <span style="color:#75715e">// 0, 1, 2
+</span></span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// console.log(i); // Erro! &#39;i&#39; não existe fora do for
+</span></span></span></code></pre></div><p>Isso evita conflitos e efeitos colaterais, algo essencial quando trabalhamos com sistemas maiores</p>
+<p><strong><code>let</code></strong></p>
+<ul>
+<li>Usado quando o valor da variável pode mudar</li>
+<li>Possui escopo de bloco</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">idade</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">idade</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">26</span>; <span style="color:#75715e">// OK - pode reatribuir
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">true</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Maria&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">nome</span>); <span style="color:#75715e">// &#34;Maria&#34;
+</span></span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// console.log(nome); // Erro! &#39;nome&#39; só existe dentro do bloco if
+</span></span></span></code></pre></div><p><strong><code>const</code></strong></p>
+<ul>
+<li>Usado quando a variável não deve ser reatribuída</li>
+<li>Também possui escopo de bloco</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">PI</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.14159</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// PI = 3.14; // Erro! Não pode reatribuir uma constante
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numeros</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">numeros</span>[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>; <span style="color:#75715e">// OK - pode modificar os valores
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// numeros = [5, 6]; // Erro! Não pode reatribuir a constante
+</span></span></span></code></pre></div><blockquote class='book-hint important'>
+<p><strong>Regra prática:</strong>
+Use <code>const</code> sempre que possível. Use <code>let</code> apenas quando precisar reatribuir.</p></blockquote><h3 id="tipos-primitivos-number-string-boolean-undefined-null">Tipos primitivos: <code>number</code>, <code>string</code>, <code>boolean</code>, <code>undefined</code>, <code>null</code><a class="anchor" href="#tipos-primitivos-number-string-boolean-undefined-null">#</a></h3>
+<p>JavaScript possui tipos primitivos, que representam valores simples e imutáveis.</p>
+<p>Use <code>typeof</code> para inspecionar o tipo de um valor.</p>
+<p><strong><code>number</code></strong></p>
+<p>Representa todos os números, inteiros ou decimais.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">inteiro</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">42</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">decimal</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.14</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">negativo</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">infinito</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Infinity</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">naoNumero</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">NaN</span>; <span style="color:#75715e">// Not a Number
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">inteiro</span>); <span style="color:#75715e">// &#34;number&#34;
+</span></span></span></code></pre></div><blockquote class='book-hint warning'>
+<p>Em JavaScript, não existe <code>int</code> ou <code>float</code>.</p></blockquote><p><strong><code>string</code></strong></p>
+<p>Representa texto. Pode ser declarada com aspas simples, duplas ou acento grave (crase).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;João&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">sobrenome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Silva&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">frase</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Olá, </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">nome</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">sobrenome</span><span style="color:#e6db74">}</span><span style="color:#e6db74">!`</span>; <span style="color:#75715e">// Template literal
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">nome</span>); <span style="color:#75715e">// &#34;string&#34;
+</span></span></span></code></pre></div><blockquote class='book-hint important'>
+<p>O uso de <em>template literals</em> (crase) facilita a composição de strings dinâmicas.</p></blockquote><p><strong><code>boolean</code></strong></p>
+<p>Representa valores lógicos.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">ativo</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">bloqueado</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">ativo</span>); <span style="color:#75715e">// &#34;boolean&#34;
+</span></span></span></code></pre></div><p><strong>undefined</strong>: Variável declarada mas não inicializada (ou seja, não recebeu valor).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span>); <span style="color:#75715e">// undefined
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">x</span>); <span style="color:#75715e">// &#34;undefined&#34;
+</span></span></span></code></pre></div><p><strong>null</strong>: Representa ausência intencional de valor.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">usuario</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>; <span style="color:#75715e">// Nenhum usuário selecionado
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">null</span>); <span style="color:#75715e">// &#34;object&#34; (comportamento histórico do JS)
+</span></span></span></code></pre></div><blockquote class='book-hint important'>
+<p>Apesar do <code>typeof</code>, <code>null</code> não é um objeto.</p></blockquote><h3 id="operadores-aritméticos-relacionais-e-lógicos">Operadores aritméticos, relacionais e lógicos<a class="anchor" href="#operadores-aritm%c3%a9ticos-relacionais-e-l%c3%b3gicos">#</a></h3>
+<p><strong>Operadores aritméticos</strong>: Realizam operações matemáticas.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>); <span style="color:#75715e">// 13 - Adição
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">b</span>); <span style="color:#75715e">// 7  - Subtração
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">b</span>); <span style="color:#75715e">// 30 - Multiplicação
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">b</span>); <span style="color:#75715e">// 3.333... - Divisão
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span> <span style="color:#f92672">%</span> <span style="color:#a6e22e">b</span>); <span style="color:#75715e">// 1  - Resto da divisão (módulo)
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span> <span style="color:#f92672">**</span> <span style="color:#a6e22e">b</span>); <span style="color:#75715e">// 1000 - Exponenciação
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Operadores de incremento/decremento
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">contador</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">contador</span><span style="color:#f92672">++</span>; <span style="color:#75715e">// contador = 6
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">contador</span><span style="color:#f92672">--</span>; <span style="color:#75715e">// contador = 5
+</span></span></span></code></pre></div><p><strong>Operadores relacionais</strong>: Comparam valores e retornam boolean.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">y</span>); <span style="color:#75715e">// true  - Maior que
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">y</span>); <span style="color:#75715e">// false - Menor que
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">10</span>); <span style="color:#75715e">// true  - Maior ou igual
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">5</span>); <span style="color:#75715e">// false - Menor ou igual
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">y</span>); <span style="color:#75715e">// false - Igual (com conversão de tipo)
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">y</span>); <span style="color:#75715e">// false - Estritamente igual
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span> <span style="color:#f92672">!=</span> <span style="color:#a6e22e">y</span>); <span style="color:#75715e">// true  - Diferente (com conversão)
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span> <span style="color:#f92672">!==</span> <span style="color:#a6e22e">y</span>); <span style="color:#75715e">// true  - Estritamente diferente
+</span></span></span></code></pre></div><p><strong>Operadores lógicos</strong>: Combinam expressões booleanas.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">temCNH</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">maiorDeIdade</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">estaCansado</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// AND (&amp;&amp;) - Retorna true se AMBOS forem true
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">temCNH</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">maiorDeIdade</span>); <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">temCNH</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">estaCansado</span>); <span style="color:#75715e">// false
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// OR (||) - Retorna true se PELO MENOS UM for true
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">temCNH</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">estaCansado</span>); <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">false</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">false</span>); <span style="color:#75715e">// false
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// NOT (!) - Inverte o valor booleano
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">estaCansado</span>); <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">temCNH</span>); <span style="color:#75715e">// false
+</span></span></span></code></pre></div><h3 id="conversão-implícita-vs-explícita-number-string">Conversão implícita vs explícita (<code>Number()</code>, <code>String()</code>)<a class="anchor" href="#convers%c3%a3o-impl%c3%adcita-vs-expl%c3%adcita-number-string">#</a></h3>
+<p><strong>Conversão implícita (coerção)</strong>: JavaScript converte automaticamente tipos em certas operações.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// String + Number = String (concatenação)
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>); <span style="color:#75715e">// &#34;105&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Idade: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">25</span>); <span style="color:#75715e">// &#34;Idade: 25&#34;
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Operações matemáticas convertem para number
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">5</span>); <span style="color:#75715e">// 5
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#f92672">*</span> <span style="color:#e6db74">&#34;2&#34;</span>); <span style="color:#75715e">// 20
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#f92672">/</span> <span style="color:#e6db74">&#34;2&#34;</span>); <span style="color:#75715e">// 5
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Boolean em contexto numérico
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">true</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// 2
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">false</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// 1
+</span></span></span></code></pre></div><blockquote class='book-hint warning'>
+<p>Essas conversões automáticas são uma fonte comum de bugs.</p></blockquote><p><strong>Conversão explícita</strong>: Você força a conversão usando funções.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Converter para Number
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Number(<span style="color:#e6db74">&#34;42&#34;</span>)); <span style="color:#75715e">// 42
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Number(<span style="color:#e6db74">&#34;3.14&#34;</span>)); <span style="color:#75715e">// 3.14
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Number(<span style="color:#e6db74">&#34;abc&#34;</span>)); <span style="color:#75715e">// NaN
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Number(<span style="color:#66d9ef">true</span>)); <span style="color:#75715e">// 1
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Number(<span style="color:#66d9ef">false</span>)); <span style="color:#75715e">// 0
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Alternativas para converter para número
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(parseInt(<span style="color:#e6db74">&#34;42&#34;</span>)); <span style="color:#75715e">// 42 (inteiro)
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(parseFloat(<span style="color:#e6db74">&#34;3.14&#34;</span>)); <span style="color:#75715e">// 3.14 (decimal)
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;42&#34;</span>); <span style="color:#75715e">// 42 (operador unário +)
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Converter para String
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(String(<span style="color:#ae81ff">42</span>)); <span style="color:#75715e">// &#34;42&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(String(<span style="color:#66d9ef">true</span>)); <span style="color:#75715e">// &#34;true&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(String(<span style="color:#66d9ef">null</span>)); <span style="color:#75715e">// &#34;null&#34;
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Alternativas para converter para string
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>((<span style="color:#ae81ff">42</span>).<span style="color:#a6e22e">toString</span>()); <span style="color:#75715e">// &#34;42&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">42</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#34;</span>); <span style="color:#75715e">// &#34;42&#34;
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Converter para Boolean
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Boolean(<span style="color:#ae81ff">1</span>)); <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Boolean(<span style="color:#ae81ff">0</span>)); <span style="color:#75715e">// false
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Boolean(<span style="color:#e6db74">&#34;texto&#34;</span>)); <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Boolean(<span style="color:#e6db74">&#34;&#34;</span>)); <span style="color:#75715e">// false
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#f92672">!!</span><span style="color:#ae81ff">42</span>); <span style="color:#75715e">// true (dupla negação)
+</span></span></span></code></pre></div><p>Um operador unário é um operador que atua sobre um único operando (um único valor).
+Em JavaScript, alguns operadores unários são usados com frequência para conversão de tipos.</p>
+<p><em>Operador unário + (conversão para número)</em></p>
+<p>O operador <code>+</code>, quando usado antes de um valor, tenta converter esse valor para o tipo number.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;42&#34;</span>; <span style="color:#75715e">// 42
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;3.14&#34;</span>; <span style="color:#75715e">// 3.14
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;abc&#34;</span>; <span style="color:#75715e">// NaN
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">+</span><span style="color:#66d9ef">true</span>; <span style="color:#75715e">// 1
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">+</span><span style="color:#66d9ef">false</span>; <span style="color:#75715e">// 0
+</span></span></span></code></pre></div><p>Esse operador funciona de forma semelhante a <code>Number()</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>Number(<span style="color:#e6db74">&#34;42&#34;</span>); <span style="color:#75715e">// 42
+</span></span></span></code></pre></div><h3 id="atividades-sugeridas">Atividades sugeridas<a class="anchor" href="#atividades-sugeridas">#</a></h3>
+<p>As atividades a seguir devem ser feitas primeiro no papel ou mentalmente, e só depois testadas no console.</p>
+<h4 id="1-prever-o-valor-final-de-expressões">1. Prever o valor final de expressões<a class="anchor" href="#1-prever-o-valor-final-de-express%c3%b5es">#</a></h4>
+<p>Analise as expressões abaixo e preveja o resultado antes de executar no console:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Exercício 1
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado1</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;5&#34;</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Exercício 2
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado2</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;5&#34;</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Exercício 3
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado3</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#f92672">*</span> <span style="color:#e6db74">&#34;2&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Exercício 4
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado4</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Exercício 5
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado5</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;20&#34;</span> <span style="color:#f92672">/</span> <span style="color:#e6db74">&#34;4&#34;</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Exercício 6
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado6</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Exercício 7
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado7</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abc&#34;</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Exercício 8
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado8</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Exercício 9
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado9</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">undefined</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Exercício 10
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado10</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;5&#34;</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">5</span>;</span></span></code></pre></div><details>
+<summary>Ver respostas</summary>
+<ol>
+<li><code>&quot;53&quot;</code> (concatenação)</li>
+<li><code>2</code> (subtração numérica)</li>
+<li><code>20</code> (multiplicação numérica)</li>
+<li><code>2</code> (true=1, false=0)</li>
+<li><code>10</code> (5 + 5)</li>
+<li><code>false</code> (10&gt;5 é true, mas 3&lt;2 é false)</li>
+<li><code>NaN</code> (não é possível subtrair de string)</li>
+<li><code>10</code> (null vira 0)</li>
+<li><code>NaN</code> (undefined não converte bem)</li>
+<li><code>false</code> (tipos diferentes)</li>
+</ol>
+</details>
+<h4 id="2-corrigir-códigos-com-erros-de-escopo">2. Corrigir códigos com erros de escopo<a class="anchor" href="#2-corrigir-c%c3%b3digos-com-erros-de-escopo">#</a></h4>
+<p>Identifique e corrija os erros nos códigos abaixo:</p>
+<p><strong>Exercício 1:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Código com erro
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">true</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">mensagem</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Olá&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">mensagem</span>); <span style="color:#75715e">// Funciona com var, mas não é boa prática
+</span></span></span></code></pre></div><details>
+<summary>Ver correção do <b>Exercício 1</b></summary>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Código corrigido
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mensagem</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">true</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mensagem</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Olá&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">mensagem</span>);</span></span></code></pre></div></details>
+<p><strong>Exercício 2:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Código com erro
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>); <span style="color:#75715e">// Erro! &#39;i&#39; não existe fora do for
+</span></span></span></code></pre></div><details>
+<summary>Ver correção do <b>Exercício 2</b></summary>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Código corrigido
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>); <span style="color:#75715e">// Agora funciona
+</span></span></span></code></pre></div></details>
+<p><strong>Exercício 3:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Código com erro
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">nome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;João&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">nome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Maria&#34;</span>; <span style="color:#75715e">// Erro! Não pode reatribuir const
+</span></span></span></code></pre></div><details>
+<summary>Ver correção do <b>Exercício 3</b></summary>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Código corrigido - use let se precisar reatribuir
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;João&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">nome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Maria&#34;</span>; <span style="color:#75715e">// OK
+</span></span></span></code></pre></div></details>
+<h4 id="3-comparar--vs-">3. Comparar == vs ===<a class="anchor" href="#3-comparar--vs-">#</a></h4>
+<p>O operador <code>==</code> faz conversão de tipos antes de comparar (coerção), enquanto <code>===</code> compara valor E tipo.</p>
+<p><strong>Exemplos comparativos:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Igualdade com conversão (==)
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">5</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;5&#34;</span>); <span style="color:#75715e">// true - converte &#34;5&#34; para número
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">true</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// true - converte true para 1
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">false</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// true - converte false para 0
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">null</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">undefined</span>); <span style="color:#75715e">// true - caso especial
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// true - string vazia vira 0
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Igualdade estrita (===)
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">5</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;5&#34;</span>); <span style="color:#75715e">// false - tipos diferentes
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">true</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// false - tipos diferentes
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">false</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// false - tipos diferentes
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">null</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">undefined</span>); <span style="color:#75715e">// false - tipos diferentes
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// false - tipos diferentes
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Casos curiosos
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// true - array é convertido
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([<span style="color:#ae81ff">1</span>] <span style="color:#f92672">===</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// false - tipos diferentes
+</span></span></span></code></pre></div><p><strong>Recomendação</strong>: Use sempre <code>===</code> e <code>!==</code> para evitar bugs causados por conversões inesperadas.</p>
+<p><strong>Exercícios práticos:</strong></p>
+<p>Preveja o resultado (<code>true</code> ou <code>false</code>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#ae81ff">1.</span> <span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>         <span style="color:#75715e">// ?
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff">2.</span> <span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>        <span style="color:#75715e">// ?
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff">3.</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">false</span>       <span style="color:#75715e">// ?
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff">4.</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">false</span>      <span style="color:#75715e">// ?
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff">5.</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>        <span style="color:#75715e">// ?
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff">6.</span> <span style="color:#66d9ef">undefined</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span> <span style="color:#75715e">// ?
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff">7.</span> [] <span style="color:#f92672">==</span> <span style="color:#66d9ef">false</span>      <span style="color:#75715e">// ?
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff">8.</span> [] <span style="color:#f92672">===</span> <span style="color:#66d9ef">false</span>     <span style="color:#75715e">// ?
+</span></span></span></code></pre></div><details>
+<summary>Ver respostas</summary>
+<ol>
+<li><code>true</code> (conversão)</li>
+<li><code>false</code> (tipos diferentes)</li>
+<li><code>true</code> (conversão)</li>
+<li><code>false</code> (tipos diferentes)</li>
+<li><code>false</code> (null não converte para número em ==)</li>
+<li><code>true</code> (caso especial)</li>
+<li><code>true</code> (conversão complexa)</li>
+<li><code>false</code> (tipos diferentes)</li>
+</ol>
+</details>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <footer class="book-footer">
+   
+  <a href="/docs/disciplinas/poo-info/"> ← Voltar para POO (Integrado) </a>
+   
+</footer>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-fundamentos-essenciais-da-linguagem">1. Fundamentos essenciais da linguagem</a>
+      <ul>
+        <li><a href="#execução-no-navegador-console-do-devtools">Execução no navegador (console do DevTools)</a></li>
+        <li><a href="#let-const-e-escopo-de-bloco"><code>let</code>, <code>const</code> e escopo de bloco</a></li>
+        <li><a href="#tipos-primitivos-number-string-boolean-undefined-null">Tipos primitivos: <code>number</code>, <code>string</code>, <code>boolean</code>, <code>undefined</code>, <code>null</code></a></li>
+        <li><a href="#operadores-aritméticos-relacionais-e-lógicos">Operadores aritméticos, relacionais e lógicos</a></li>
+        <li><a href="#conversão-implícita-vs-explícita-number-string">Conversão implícita vs explícita (<code>Number()</code>, <code>String()</code>)</a></li>
+        <li><a href="#atividades-sugeridas">Atividades sugeridas</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

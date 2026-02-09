@@ -20,17 +20,21 @@ Acesse [Avaliações](/docs/disciplinas/poo-info/avaliacoes/) para informações
 
 - **Início das aulas:** 09/02
 - **1º bimestre**
-  - **1ª avaliação**:
-  - **2ª avaliação**:
+  - **1ª avaliação**: 16/03
+  - **2ª avaliação**: 06/04
+  - **Recuperação**: 13/04
 - **2º bimestre**
   - **1ª avaliação**:
   - **2ª avaliação**:
+  - **Recuperação**:
 - **3º bimestre**
   - **1ª avaliação**:
   - **2ª avaliação**:
+  - **Recuperação**:
 - **4º bimestre**
   - **1ª avaliação**:
   - **2ª avaliação**:
+  - **Recuperação**:
 - **Prova final (data provável):** 21/12
 
 ## Calendário detalhado
@@ -48,21 +52,24 @@ Acesse [Avaliações](/docs/disciplinas/poo-info/avaliacoes/) para informações
       <div><b>Conteúdo</b></div>
       <ul>
         <li>Apresentação da disciplina</li>
-        <li>Introdução a Java</li>
+        <li>Revisão de JavaScript</li>
       </ul>
     </td>
-    <td>*/120 aulas</td>
+    <td>3/120 aulas</td>
   </tr>
   <tr>
     <td>16</td>
     <td>
       <div class="pill red">Feriado: Carnaval</div>
     </td>
-    <td>*/120 aulas</td>
+    <td>---</td>
   </tr>
   <tr>
     <td>23</td>
     <td>
+      <ul>
+        <li>Revisão de JavaScript</li>
+      </ul>
     </td>
     <td>*/120 aulas</td>
   </tr>
@@ -73,34 +80,45 @@ Acesse [Avaliações](/docs/disciplinas/poo-info/avaliacoes/) para informações
   <tr>
     <td>02</td>
     <td>
+      <ul>
+        <li>Revisão de JavaScript</li>
+        <li>Classes e Objetos</li>
+      </ul>
     </td>
     <td>*/120 aulas</td>
   </tr>
   <tr>
     <td>09</td>
     <td>
-      A definir
+      <ul>
+        <li>Classes e Objetos</li>
+      </ul>
     </td>
     <td>*/120 aulas</td>
   </tr>
   <tr>
     <td>16</td>
     <td>
-      A definir
+      <div class="avaliacao">Avaliação 1</div>
+      <div>A avaliação abrange todos os tópicos já ministrados até essa data.</div>
     </td>
     <td>*/120 aulas</td>
   </tr>
   <tr>
     <td>23</td>
     <td>
-      A definir
+      <ul>
+        <li>Encapsulamento</li>
+      </ul>
     </td>
     <td>*/120 aulas</td>
   </tr>
   <tr>
     <td>30</td>
     <td>
-      A definir
+      <ul>
+        <li>Encapsulamento</li>
+      </ul>
     </td>
     <td>*/120 aulas</td>
   </tr>
@@ -110,14 +128,15 @@ Acesse [Avaliações](/docs/disciplinas/poo-info/avaliacoes/) para informações
   <tr>
     <td>06</td>
     <td>
-      A definir
+      <div class="avaliacao">Avaliação 2</div>
+      <div>A avaliação abrange todos os tópicos já ministrados até essa data.</div>
     </td>
     <td>*/120 aulas</td>
   </tr>
   <tr>
     <td>13</td>
     <td>
-      A definir
+      <b>Recuperação?</b>
     </td>
     <td>*/120 aulas</td>
   </tr>

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="2. Estruturas de controle# As estruturas de controle determinam como e quando determinadas partes do código são executadas.
+Elas são fundamentais para expressar lógica, tomar decisões e repetir ações.
+O objetivo desta seção é reforçar o raciocínio lógico e a capacidade de acompanhar o fluxo de execução de um programa.
+Estruturas condicionais: if, else, else if# if# A estrutura if permite executar um bloco de código apenas se uma condição for verdadeira.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/2-estruturas-controle/">
+  <meta property="og:site_name" content="Antonio Dias">
+  <meta property="og:title" content="2. Estruturas de controle">
+  <meta property="og:description" content="2. Estruturas de controle# As estruturas de controle determinam como e quando determinadas partes do código são executadas.
+Elas são fundamentais para expressar lógica, tomar decisões e repetir ações.
+O objetivo desta seção é reforçar o raciocínio lógico e a capacidade de acompanhar o fluxo de execução de um programa.
+Estruturas condicionais: if, else, else if# if# A estrutura if permite executar um bloco de código apenas se uma condição for verdadeira.">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="2. Estruturas de controle">
+  <meta itemprop="description" content="2. Estruturas de controle# As estruturas de controle determinam como e quando determinadas partes do código são executadas.
+Elas são fundamentais para expressar lógica, tomar decisões e repetir ações.
+O objetivo desta seção é reforçar o raciocínio lógico e a capacidade de acompanhar o fluxo de execução de um programa.
+Estruturas condicionais: if, else, else if# if# A estrutura if permite executar um bloco de código apenas se uma condição for verdadeira.">
+  <meta itemprop="wordCount" content="840">
+
+<title>2. Estruturas de controle | Antonio Dias</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/2-estruturas-controle/">
+<link rel="stylesheet" href="/book.min.a734d0f84f339961c2f38061ac4210305aad75979ab791937815c1ac455d7ec7.css" integrity="sha256-pzTQ&#43;E8zmWHC84BhrEIQMFqtdZeat5GTeBXBrEVdfsc=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.b98390a2d1e12957b8ef72078f137c4f80b7535024186b8cb28a934c66245e67.js" integrity="sha256-uYOQotHhKVe473IHjxN8T4C3U1AkGGuMsoqTTGYkXmc=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Antonio Dias</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Buscar"
+    aria-label="Buscar"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="toggle"  />
+    <label for="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="flex">
+      <a href="/docs/posts/" class="">
+        Atualizações</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/posts/primeiro-post/" class="">
+      Primeiro Post</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/" class="">
+      Disciplinas</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0658642cbe0befc355ebbab1ea93df0" class="toggle"  />
+    <label for="section-e0658642cbe0befc355ebbab1ea93df0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/" class="">
+        POO (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/projeto/" class="">
+      Projeto</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ad90f794895ae5dd26ad3b3869e4edf2" class="toggle" checked />
+    <label for="section-ad90f794895ae5dd26ad3b3869e4edf2" class="flex">
+      <a href="/docs/disciplinas/poo-info/" class="">
+        POO (Integrado)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-85611c34c3e4fce02fc9163ca37c73a3" class="toggle" checked />
+    <label for="section-85611c34c3e4fce02fc9163ca37c73a3" class="flex">
+      <a href="/docs/disciplinas/poo-info/revisao-javascript/" class="">
+        JavaScript - uma breve introdução à linguagem</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/1-fundamentos/" class="">
+      1. Fundamentos essenciais da linguagem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/2-estruturas-controle/" class="active">
+      2. Estruturas de controle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/3-funcoes/" class="">
+      3. Funções</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="toggle"  />
+    <label for="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="flex">
+      <a href="/docs/disciplinas/seginfo-ads/" class="">
+        Seg. da Informação (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>2. Estruturas de controle</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#estruturas-condicionais-if-else-else-if">Estruturas condicionais: <code>if</code>, <code>else</code>, <code>else if</code></a>
+      <ul>
+        <li><a href="#if"><code>if</code></a></li>
+        <li><a href="#if--else"><code>if</code> + <code>else</code></a></li>
+        <li><a href="#else-if"><code>else if</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#estrutura-switch">Estrutura <code>switch</code></a>
+      <ul>
+        <li><a href="#papel-do-break">Papel do <code>break</code></a></li>
+        <li><a href="#fall-through-no-switch"><em>Fall-through</em> no <code>switch</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#laços-de-repetição">Laços de repetição</a>
+      <ul>
+        <li><a href="#for"><code>for</code></a></li>
+        <li><a href="#while"><code>while</code></a></li>
+        <li><a href="#dowhile"><code>do...while</code></a></li>
+        <li><a href="#break-e-continue-em-laços"><code>break</code> e <code>continue</code> em laços</a></li>
+      </ul>
+    </li>
+    <li><a href="#atividades-sugeridas">Atividades sugeridas</a>
+      <ul>
+        <li><a href="#1-simuladores-simples">1. Simuladores simples</a></li>
+        <li><a href="#2-exercícios-de-rastreamento-de-execução-trace">2. Exercícios de rastreamento de execução (<em>trace</em>)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="2-estruturas-de-controle">2. Estruturas de controle<a class="anchor" href="#2-estruturas-de-controle">#</a></h1>
+<p>As estruturas de controle determinam <strong>como e quando</strong> determinadas partes do código são executadas.</p>
+<p>Elas são fundamentais para expressar lógica, tomar decisões e repetir ações.</p>
+<p>O objetivo desta seção é reforçar o raciocínio lógico e a capacidade de acompanhar o fluxo de execução de um programa.</p>
+<hr>
+<h2 id="estruturas-condicionais-if-else-else-if">Estruturas condicionais: <code>if</code>, <code>else</code>, <code>else if</code><a class="anchor" href="#estruturas-condicionais-if-else-else-if">#</a></h2>
+<h3 id="if"><code>if</code><a class="anchor" href="#if">#</a></h3>
+<p>A estrutura <code>if</code> permite executar um bloco de código <strong>apenas se uma condição for verdadeira</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">idade</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">18</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">idade</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">18</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Maior de idade&#34;</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Se a condição for falsa, o bloco não é executado.</p>
+<h3 id="if--else"><code>if</code> + <code>else</code><a class="anchor" href="#if--else">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nota</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">nota</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">7</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Aprovado&#34;</span>);
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Reprovado&#34;</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Nesse caso apenas um dos blocos será executado. O <code>else</code> é executado quando a condição do <code>if</code> é falsa.</p>
+<h3 id="else-if"><code>else if</code><a class="anchor" href="#else-if">#</a></h3>
+<p>Usado quando existem várias condições possíveis, mas apenas uma deve ser executada.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nota</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">nota</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">9</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Excelente&#34;</span>);
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">nota</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">7</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Aprovado&#34;</span>);
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">nota</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">5</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Recuperação&#34;</span>);
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Reprovado&#34;</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><blockquote class='book-hint important'>
+<p>A avaliação ocorre de cima para baixo.
+Assim que uma condição é verdadeira, as demais são ignoradas.</p></blockquote><h2 id="estrutura-switch">Estrutura <code>switch</code><a class="anchor" href="#estrutura-switch">#</a></h2>
+<p>O <code>switch</code> é uma alternativa ao uso de vários <code>else if</code> quando se deseja comparar um mesmo valor contra diferentes opções.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dia</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">dia</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Segunda-feira&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Terça-feira&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Quarta-feira&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Dia inválido&#34;</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><h3 id="papel-do-break">Papel do <code>break</code><a class="anchor" href="#papel-do-break">#</a></h3>
+<p>O <code>break</code> interrompe a execução do switch. Sem ele, ocorre o chamado <code>fall-through</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">valor</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">valor</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Um&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Dois&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Resultado:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Um
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Dois
+</span></span></span></code></pre></div><blockquote class='book-hint information'>
+<p>Em geral, use <code>break</code> em cada <code>case</code>, salvo quando o efeito de queda for intencional.</p></blockquote><h3 id="fall-through-no-switch"><em>Fall-through</em> no <code>switch</code><a class="anchor" href="#fall-through-no-switch">#</a></h3>
+<p>No JavaScript, o <code>switch</code> não interrompe automaticamente a execução ao final de um <code>case</code>.</p>
+<p>Se não houver um break, o fluxo de execução &ldquo;cai&rdquo; para o próximo <code>case</code>, mesmo que ele não corresponda ao valor testado.</p>
+<p>Esse comportamento é chamado de <code>fall-through</code>.</p>
+<p>O <code>switch</code> funciona assim:</p>
+<ol>
+<li>O valor da expressão é avaliado uma única vez.</li>
+<li>O JavaScript procura o primeiro <code>case</code> que corresponde a esse valor.</li>
+<li>A partir desse ponto, todas as instruções são executadas em sequência, até que:
+<ul>
+<li>um <code>break</code> seja encontrado, ou</li>
+<li>o <code>switch</code> termine.</li>
+</ul>
+</li>
+</ol>
+<p>Ou seja, o <code>case</code> apenas define o ponto de entrada, não o ponto de saída.</p>
+<p><strong>Uso intencional de <em>fall-through</em></strong></p>
+<p>Apesar de frequentemente causar erros, o <em>fall-through</em> pode ser usado de forma intencional, quando vários casos devem executar o mesmo código.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dia</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">dia</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Dia útil&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">6</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">7</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Fim de semana&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Nesse exemplo, os casos 1 a 5 &ldquo;caem&rdquo; no mesmo bloco. O comportamento é controlado e desejado.</p>
+<h2 id="laços-de-repetição">Laços de repetição<a class="anchor" href="#la%c3%a7os-de-repeti%c3%a7%c3%a3o">#</a></h2>
+<p>Laços permitem repetir um bloco de código enquanto uma condição for satisfeita.</p>
+<h3 id="for"><code>for</code><a class="anchor" href="#for">#</a></h3>
+<p>Usado quando o número de repetições é conhecido ou controlado por um contador.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>A estrutura do <code>for</code> possui três partes:</p>
+<ul>
+<li>inicialização (<code>let i = 0</code>)</li>
+<li>condição (<code>i &lt; 5</code>)</li>
+<li>atualização (<code>i++</code>)</li>
+</ul>
+<blockquote class='book-hint important'>
+<p>A variável <code>i</code> existe apenas dentro do laço.</p></blockquote><h3 id="while"><code>while</code><a class="anchor" href="#while">#</a></h3>
+<p>Executa enquanto a condição for verdadeira. A condição é verificada antes da execução do bloco.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">contador</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">contador</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">contador</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">contador</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><blockquote class='book-hint important'>
+<p>Se a condição nunca se tornar falsa, o laço será infinito.</p></blockquote><h3 id="dowhile"><code>do...while</code><a class="anchor" href="#dowhile">#</a></h3>
+<p>Semelhante ao <code>while</code>, mas a condição é verificada após a execução do bloco. Isso garante que o código seja executado pelo menos uma vez.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">numero</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">numero</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">numero</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">numero</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>);</span></span></code></pre></div><p>Mesmo com a condição falsa, o bloco executa uma vez.</p>
+<h3 id="break-e-continue-em-laços"><code>break</code> e <code>continue</code> em laços<a class="anchor" href="#break-e-continue-em-la%c3%a7os">#</a></h3>
+<h4 id="break"><code>break</code><a class="anchor" href="#break">#</a></h4>
+<p>Interrompe completamente o laço.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">5</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Resultado:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// 0 1 2 3 4
+</span></span></span></code></pre></div><h4 id="continue"><code>continue</code><a class="anchor" href="#continue">#</a></h4>
+<p>Interrompe apenas a iteração atual, passando para a próxima.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">2</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">continue</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Resultado:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// 0 1 3 4
+</span></span></span></code></pre></div><h2 id="atividades-sugeridas">Atividades sugeridas<a class="anchor" href="#atividades-sugeridas">#</a></h2>
+<h3 id="1-simuladores-simples">1. Simuladores simples<a class="anchor" href="#1-simuladores-simples">#</a></h3>
+<p><strong>Contador controlado</strong></p>
+<p>Crie um programa que:</p>
+<ul>
+<li>comece em um número inicial</li>
+<li>termine em um número final</li>
+<li>mostre apenas os números pares</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">inicio</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fim</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// complete o código
+</span></span></span></code></pre></div><p><strong>Menu textual simples</strong></p>
+<p>Simule um menu usando <code>switch</code>. Exiba mensagens diferentes conforme a opção escolhida.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// 1 - Cadastrar
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// 2 - Listar
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// 3 - Sair
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Opção: 2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Opção escolhida: 2 - Listar
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Listando...
+</span></span></span></code></pre></div><h3 id="2-exercícios-de-rastreamento-de-execução-trace">2. Exercícios de rastreamento de execução (<em>trace</em>)<a class="anchor" href="#2-exerc%c3%adcios-de-rastreamento-de-execu%c3%a7%c3%a3o-trace">#</a></h3>
+<p>Antes de executar, anote o que será impresso no console.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">x</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">i</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span>);</span></span></code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">3</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">valor</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">valor</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;A&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;B&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;C&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;D&#34;</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <footer class="book-footer">
+   
+  <a href="/docs/disciplinas/poo-info/revisao-javascript/"> ← Voltar para JavaScript - uma breve introdução à linguagem </a>
+   
+</footer>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#estruturas-condicionais-if-else-else-if">Estruturas condicionais: <code>if</code>, <code>else</code>, <code>else if</code></a>
+      <ul>
+        <li><a href="#if"><code>if</code></a></li>
+        <li><a href="#if--else"><code>if</code> + <code>else</code></a></li>
+        <li><a href="#else-if"><code>else if</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#estrutura-switch">Estrutura <code>switch</code></a>
+      <ul>
+        <li><a href="#papel-do-break">Papel do <code>break</code></a></li>
+        <li><a href="#fall-through-no-switch"><em>Fall-through</em> no <code>switch</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#laços-de-repetição">Laços de repetição</a>
+      <ul>
+        <li><a href="#for"><code>for</code></a></li>
+        <li><a href="#while"><code>while</code></a></li>
+        <li><a href="#dowhile"><code>do...while</code></a></li>
+        <li><a href="#break-e-continue-em-laços"><code>break</code> e <code>continue</code> em laços</a></li>
+      </ul>
+    </li>
+    <li><a href="#atividades-sugeridas">Atividades sugeridas</a>
+      <ul>
+        <li><a href="#1-simuladores-simples">1. Simuladores simples</a></li>
+        <li><a href="#2-exercícios-de-rastreamento-de-execução-trace">2. Exercícios de rastreamento de execução (<em>trace</em>)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

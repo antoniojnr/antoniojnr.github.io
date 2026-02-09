@@ -14,14 +14,15 @@ weight: 1
 
 ## Resumo sobre avaliações
 
-- Avaliação 1 - \\( AV1 \\) (Peso 2)
-- Avaliação 2 - \\( AV2 \\) (Peso 2)
+- Exercícios - \\( EX \\)
+- Avaliação - \\( AV \\)
 - Exercícios de sala - \\( EX \\) (Média da nota de exercícios tem peso 2)
 - Projeto - \\( PJ \\) (Peso 4)
 
 A nota final (\\( NF \\)) é calculada através da média ponderada:
 
 {{< katex display=true >}}
+
 NF = \frac{AV1 \times 2 + AV2 \times 2 + EX \times 2 + PJ \times 4}{10}
 {{< /katex >}}
 

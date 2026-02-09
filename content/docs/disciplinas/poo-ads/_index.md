@@ -10,6 +10,23 @@ bookCollapseSection: true
 **Curso:** Análise e Desenvolvimento de Sistemas\
 **Período:** 2026.1
 
+## Informações gerais
+
+Verifique as páginas específicas para informações sobre
+{{< button href="/docs/disciplinas/poo-ads/avaliacoes/" >}}Avaliações{{< /button >}}
+e
+{{< button href="/docs/disciplinas/poo-ads/calendario/" >}}Calendário{{< /button >}}
+
+## Ferramentas e ambiente
+
+**Linguagem:** Java\
+**IDE recomendada:** IntelliJ IDEA
+
+> [!IMPORTANT]
+> É possível obter uma licença educacional para o IntelliJ IDEA usando seu e-mail acadêmico.
+>
+> {{< button href="https://www.jetbrains.com/academy/student-pack/" >}}Clique e siga as instruções{{< /button >}}
+
 ## Metodologia
 
 A disciplina será desenvolvida por meio de aulas expositivas dialogadas, intercaladas com atividades práticas em laboratório, nas quais os conceitos de programação orientada a objetos serão aplicados de forma progressiva. Durante as aulas, serão apresentados exemplos práticos, análise de código e demonstrações de implementação, seguidas da resolução de exercícios orientados pelo professor.

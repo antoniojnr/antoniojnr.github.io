@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="3. Funções# Em JavaScript, funções não servem apenas para organizar código.
+Elas são valores, podem ser armazenadas em variáveis, passadas como argumento e retornadas por outras funções. São consideradas “cidadãs de primeira classe” porque são tratadas como valores comuns da linguagem.
+O objetivo desta seção é preparar o estudante para:
+entender métodos em classes; compreender callbacks; perceber como o encapsulamento começa antes mesmo da orientação a objetos. Encapsulamento é a ideia de esconder detalhes internos de um código e expor apenas o que é necessário para usá-lo. No contexto de funções: quem usa uma função não precisa saber como ela funciona por dentro, precisa saber apenas o que ela faz e como chamá-la.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/3-funcoes/">
+  <meta property="og:site_name" content="Antonio Dias">
+  <meta property="og:title" content="3. Funções">
+  <meta property="og:description" content="3. Funções# Em JavaScript, funções não servem apenas para organizar código.
+Elas são valores, podem ser armazenadas em variáveis, passadas como argumento e retornadas por outras funções. São consideradas “cidadãs de primeira classe” porque são tratadas como valores comuns da linguagem.
+O objetivo desta seção é preparar o estudante para:
+entender métodos em classes; compreender callbacks; perceber como o encapsulamento começa antes mesmo da orientação a objetos. Encapsulamento é a ideia de esconder detalhes internos de um código e expor apenas o que é necessário para usá-lo. No contexto de funções: quem usa uma função não precisa saber como ela funciona por dentro, precisa saber apenas o que ela faz e como chamá-la.">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="3. Funções">
+  <meta itemprop="description" content="3. Funções# Em JavaScript, funções não servem apenas para organizar código.
+Elas são valores, podem ser armazenadas em variáveis, passadas como argumento e retornadas por outras funções. São consideradas “cidadãs de primeira classe” porque são tratadas como valores comuns da linguagem.
+O objetivo desta seção é preparar o estudante para:
+entender métodos em classes; compreender callbacks; perceber como o encapsulamento começa antes mesmo da orientação a objetos. Encapsulamento é a ideia de esconder detalhes internos de um código e expor apenas o que é necessário para usá-lo. No contexto de funções: quem usa uma função não precisa saber como ela funciona por dentro, precisa saber apenas o que ela faz e como chamá-la.">
+  <meta itemprop="wordCount" content="774">
+
+<title>3. Funções | Antonio Dias</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/3-funcoes/">
+<link rel="stylesheet" href="/book.min.a734d0f84f339961c2f38061ac4210305aad75979ab791937815c1ac455d7ec7.css" integrity="sha256-pzTQ&#43;E8zmWHC84BhrEIQMFqtdZeat5GTeBXBrEVdfsc=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.b98390a2d1e12957b8ef72078f137c4f80b7535024186b8cb28a934c66245e67.js" integrity="sha256-uYOQotHhKVe473IHjxN8T4C3U1AkGGuMsoqTTGYkXmc=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Antonio Dias</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Buscar"
+    aria-label="Buscar"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="toggle"  />
+    <label for="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="flex">
+      <a href="/docs/posts/" class="">
+        Atualizações</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/posts/primeiro-post/" class="">
+      Primeiro Post</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/" class="">
+      Disciplinas</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0658642cbe0befc355ebbab1ea93df0" class="toggle"  />
+    <label for="section-e0658642cbe0befc355ebbab1ea93df0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/" class="">
+        POO (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/projeto/" class="">
+      Projeto</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ad90f794895ae5dd26ad3b3869e4edf2" class="toggle" checked />
+    <label for="section-ad90f794895ae5dd26ad3b3869e4edf2" class="flex">
+      <a href="/docs/disciplinas/poo-info/" class="">
+        POO (Integrado)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-85611c34c3e4fce02fc9163ca37c73a3" class="toggle" checked />
+    <label for="section-85611c34c3e4fce02fc9163ca37c73a3" class="flex">
+      <a href="/docs/disciplinas/poo-info/revisao-javascript/" class="">
+        JavaScript - uma breve introdução à linguagem</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/1-fundamentos/" class="">
+      1. Fundamentos essenciais da linguagem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/2-estruturas-controle/" class="">
+      2. Estruturas de controle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/3-funcoes/" class="active">
+      3. Funções</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="toggle"  />
+    <label for="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="flex">
+      <a href="/docs/disciplinas/seginfo-ads/" class="">
+        Seg. da Informação (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>3. Funções</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#o-que-é-uma-função">O que é uma função?</a>
+      <ul>
+        <li><a href="#declaração-de-funções">Declaração de funções</a></li>
+        <li><a href="#parâmetros-e-retorno">Parâmetros e retorno</a></li>
+        <li><a href="#escopo-de-função">Escopo de função</a></li>
+        <li><a href="#funções-anônimas">Funções anônimas</a></li>
+        <li><a href="#funções-seta-arrow-functions">Funções seta (<em>Arrow functions</em>)</a></li>
+        <li><a href="#funções-como-valores">Funções como valores</a></li>
+        <li><a href="#funções-retornando-funções">Funções retornando funções</a></li>
+      </ul>
+    </li>
+    <li><a href="#atividades-sugeridas">Atividades sugeridas</a>
+      <ul>
+        <li><a href="#1-rastreamento-de-execução">1. Rastreamento de execução</a></li>
+        <li><a href="#2-função-sem-retorno">2. Função sem retorno</a></li>
+        <li><a href="#3-função-como-argumento">3. Função como argumento</a></li>
+        <li><a href="#4-conversão-de-função">4. Conversão de função</a></li>
+        <li><a href="#5-exercício-conceitual">5. Exercício conceitual</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="3-funções">3. Funções<a class="anchor" href="#3-fun%c3%a7%c3%b5es">#</a></h1>
+<p>Em JavaScript, funções não servem apenas para organizar código.<br>
+Elas são valores, podem ser armazenadas em variáveis, passadas como argumento e retornadas por outras funções. São consideradas &ldquo;cidadãs de primeira classe&rdquo; porque são tratadas como valores comuns da linguagem.</p>
+<p>O objetivo desta seção é preparar o estudante para:</p>
+<ul>
+<li>entender métodos em classes;</li>
+<li>compreender <em>callbacks</em>;</li>
+<li>perceber como o <strong>encapsulamento</strong> começa antes mesmo da orientação a objetos.</li>
+</ul>
+<p><strong>Encapsulamento</strong> é a ideia de esconder detalhes internos de um código e expor apenas o que é necessário para usá-lo. No contexto de funções: quem usa uma função não precisa saber como ela funciona por dentro, precisa saber apenas o que ela faz e como chamá-la.</p>
+<hr>
+<h2 id="o-que-é-uma-função">O que é uma função?<a class="anchor" href="#o-que-%c3%a9-uma-fun%c3%a7%c3%a3o">#</a></h2>
+<p>Uma função é um bloco de código reutilizável que pode receber dados (parâmetros), executa uma sequência de instruções e pode ou não retornar um valor.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">saudacao</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Olá!&#34;</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Para executar a função, usamos parênteses:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">saudacao</span>();</span></span></code></pre></div><h3 id="declaração-de-funções">Declaração de funções<a class="anchor" href="#declara%c3%a7%c3%a3o-de-fun%c3%a7%c3%b5es">#</a></h3>
+<p>A forma mais tradicional de definir uma função é a declaração de função:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">soma</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">soma</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">resultado</span>); <span style="color:#75715e">// 5
+</span></span></span></code></pre></div><p>As características importantes a serem mencionadas são: funções geralmente têm um nome (às vezes podem não ter) e pode ser chamada antes ou depois da sua definição no código. É adequado usá-la, quando a função representa uma ação ou regra clara do sistema.</p>
+<h3 id="parâmetros-e-retorno">Parâmetros e retorno<a class="anchor" href="#par%c3%a2metros-e-retorno">#</a></h3>
+<p>Parâmetros são variáveis locais que recebem valores no momento da chamada da função.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">dobro</span>(<span style="color:#a6e22e">numero</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">numero</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dobro</span>(<span style="color:#ae81ff">4</span>); <span style="color:#75715e">// 8
+</span></span></span></code></pre></div><p>Se nenhum valor for passado, o parâmetro recebe <code>undefined</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">dobro</span>(); <span style="color:#75715e">// NaN
+</span></span></span></code></pre></div><p>O <code>return</code> (retorno) encerra a execução da função e define o valor retornado.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">verificaIdade</span>(<span style="color:#a6e22e">idade</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">idade</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">18</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Maior de idade&#34;</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Menor de idade&#34;</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><blockquote class='book-hint important'>
+<p>Uma função pode ter vários <code>return</code>, mas apenas um será executado por chamada.</p></blockquote><h3 id="escopo-de-função">Escopo de função<a class="anchor" href="#escopo-de-fun%c3%a7%c3%a3o">#</a></h3>
+<p>Variáveis declaradas dentro de uma função só existem dentro dela.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">exemplo</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">exemplo</span>();
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// console.log(x); // Erro
+</span></span></span></code></pre></div><blockquote class='book-hint important'>
+<p>Isso é um primeiro contato com encapsulamento: dados internos não vazam para fora.</p></blockquote><h3 id="funções-anônimas">Funções anônimas<a class="anchor" href="#fun%c3%a7%c3%b5es-an%c3%b4nimas">#</a></h3>
+<p>Uma função não precisa ter nome. Funções sem nome são chamadas de funções anônimas.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">saudacao</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Olá!&#34;</span>);
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">saudacao</span>();</span></span></code></pre></div><p>Nesse caso, a função é armazenada em uma variável. Quem nomeia a função é a variável.</p>
+<h3 id="funções-seta-arrow-functions">Funções seta (<em>Arrow functions</em>)<a class="anchor" href="#fun%c3%a7%c3%b5es-seta-arrow-functions">#</a></h3>
+<p>Funções seta são uma forma mais concisa de escrever funções.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">soma</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>;
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div><p>Quando o corpo tem apenas uma expressão, o <code>return</code> é implícito:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">soma</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) =&gt; <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>;</span></span></code></pre></div><p>Outro exemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dobro</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">x</span> =&gt; <span style="color:#a6e22e">x</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;</span></span></code></pre></div><p>Funções seta tornam o código mais enxuto e são muito usadas como callbacks, mas não substituem completamente funções tradicionais (isso ficará claro quando avançarmos na disciplina de POO).</p>
+<h3 id="funções-como-valores">Funções como valores<a class="anchor" href="#fun%c3%a7%c3%b5es-como-valores">#</a></h3>
+<p>Em JavaScript, funções são valores como qualquer outro. Isso significa que uma função pode ser atribuída a uma variável, passada como argumento ou até retornada por outra função.</p>
+<p><strong>Função como argumento</strong> (<em>callback</em>)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">executar</span>(<span style="color:#a6e22e">funcao</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">funcao</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">mensagem</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Executando função&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">executar</span>(<span style="color:#a6e22e">mensagem</span>);</span></span></code></pre></div><p>Nesse trecho de código, <code>mensagem</code> não é executada imediatamente. Ela é passada como valor e <code>executar</code> decide quando chamá-la.</p>
+<p>Exemplo prático com lógica:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">processar</span>(<span style="color:#a6e22e">valor</span>, <span style="color:#a6e22e">operacao</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">operacao</span>(<span style="color:#a6e22e">valor</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dobro</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">x</span>) =&gt; <span style="color:#a6e22e">x</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">triplo</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">x</span>) =&gt; <span style="color:#a6e22e">x</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">processar</span>(<span style="color:#ae81ff">5</span>, <span style="color:#a6e22e">dobro</span>); <span style="color:#75715e">// 10
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">processar</span>(<span style="color:#ae81ff">5</span>, <span style="color:#a6e22e">triplo</span>); <span style="color:#75715e">// 15
+</span></span></span></code></pre></div><p>Esse padrão é a base de eventos e <em>callbacks</em>.</p>
+<h3 id="funções-retornando-funções">Funções retornando funções<a class="anchor" href="#fun%c3%a7%c3%b5es-retornando-fun%c3%a7%c3%b5es">#</a></h3>
+<p>Uma função também pode retornar outra função:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">criarMultiplicador</span>(<span style="color:#a6e22e">fator</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">numero</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">numero</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">fator</span>;
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">duplicar</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">criarMultiplicador</span>(<span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">duplicar</span>(<span style="color:#ae81ff">5</span>); <span style="color:#75715e">// 10
+</span></span></span></code></pre></div><p>Esse tipo de construção será importante para compreender encapsulamento funcional e interpretar código mais avançado em JavaScript.</p>
+<h2 id="atividades-sugeridas">Atividades sugeridas<a class="anchor" href="#atividades-sugeridas">#</a></h2>
+<h3 id="1-rastreamento-de-execução">1. Rastreamento de execução<a class="anchor" href="#1-rastreamento-de-execu%c3%a7%c3%a3o">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">teste</span>(<span style="color:#a6e22e">x</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">x</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">teste</span>(<span style="color:#ae81ff">3</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">y</span>);</span></span></code></pre></div><p>Qual é o valor final de y?</p>
+<h3 id="2-função-sem-retorno">2. Função sem retorno<a class="anchor" href="#2-fun%c3%a7%c3%a3o-sem-retorno">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">imprime</span>(<span style="color:#a6e22e">valor</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">valor</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">imprime</span>(<span style="color:#ae81ff">10</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">resultado</span>);</span></span></code></pre></div><ol>
+<li>O que será impresso?</li>
+<li>Qual é o valor de resultado?</li>
+</ol>
+<h3 id="3-função-como-argumento">3. Função como argumento<a class="anchor" href="#3-fun%c3%a7%c3%a3o-como-argumento">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">executar</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">operacao</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">operacao</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">soma</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">x</span>, <span style="color:#a6e22e">y</span>) =&gt; <span style="color:#a6e22e">x</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">y</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">sub</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">x</span>, <span style="color:#a6e22e">y</span>) =&gt; <span style="color:#a6e22e">x</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">y</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">executar</span>(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">5</span>, <span style="color:#a6e22e">soma</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">executar</span>(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">5</span>, <span style="color:#a6e22e">sub</span>);</span></span></code></pre></div><p>Por que operacao precisa ser uma função?</p>
+<h3 id="4-conversão-de-função">4. Conversão de função<a class="anchor" href="#4-convers%c3%a3o-de-fun%c3%a7%c3%a3o">#</a></h3>
+<p>Reescreva a função abaixo como função seta (<em>arrow function</em>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">quadrado</span>(<span style="color:#a6e22e">x</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">x</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><h3 id="5-exercício-conceitual">5. Exercício conceitual<a class="anchor" href="#5-exerc%c3%adcio-conceitual">#</a></h3>
+<p>Explique, com suas palavras:</p>
+<p>a. Q que significa dizer que funções são “cidadãos de primeira classe”?
+b. Por que isso é importante para a programação orientada a objetos em JavaScript?</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <footer class="book-footer">
+   
+  <a href="/docs/disciplinas/poo-info/revisao-javascript/"> ← Voltar para JavaScript - uma breve introdução à linguagem </a>
+   
+</footer>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#o-que-é-uma-função">O que é uma função?</a>
+      <ul>
+        <li><a href="#declaração-de-funções">Declaração de funções</a></li>
+        <li><a href="#parâmetros-e-retorno">Parâmetros e retorno</a></li>
+        <li><a href="#escopo-de-função">Escopo de função</a></li>
+        <li><a href="#funções-anônimas">Funções anônimas</a></li>
+        <li><a href="#funções-seta-arrow-functions">Funções seta (<em>Arrow functions</em>)</a></li>
+        <li><a href="#funções-como-valores">Funções como valores</a></li>
+        <li><a href="#funções-retornando-funções">Funções retornando funções</a></li>
+      </ul>
+    </li>
+    <li><a href="#atividades-sugeridas">Atividades sugeridas</a>
+      <ul>
+        <li><a href="#1-rastreamento-de-execução">1. Rastreamento de execução</a></li>
+        <li><a href="#2-função-sem-retorno">2. Função sem retorno</a></li>
+        <li><a href="#3-função-como-argumento">3. Função como argumento</a></li>
+        <li><a href="#4-conversão-de-função">4. Conversão de função</a></li>
+        <li><a href="#5-exercício-conceitual">5. Exercício conceitual</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

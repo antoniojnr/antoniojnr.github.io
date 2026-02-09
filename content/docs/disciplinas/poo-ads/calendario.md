@@ -176,7 +176,7 @@ weight: 1
   <tr>
     <td>31 <em>(ter)</em></td>
     <td>
-      <div class="prova">Avaliação 1</div>
+      <div class="avaliacao">Avaliação 1</div>
       <div>A prova abrange todos os tópicos já ministrados até essa data.</div>
     </td>
     <td>67/160 aulas</td>
@@ -345,7 +345,7 @@ weight: 1
   <tr>
     <td>02 <em>(ter)</em></td>
     <td>
-      <div class="prova">Avaliação 2</div>
+      <div class="avaliacao">Avaliação 2</div>
       <div>A prova abrange todos os tópicos já ministrados até essa data.</div>
     </td>
     <td>142/160 aulas</td>
@@ -353,7 +353,7 @@ weight: 1
   <tr>
     <td>08 <em>(seg)</em></td>
     <td>
-      <div class="prova">Reposição de avaliações</div>
+      <div class="avaliacao">Reposição de avaliações</div>
       <div>É permitido repor uma avaliação sem justificativa. Para repor duas avaliações, é necessário apresentar justificativa. Não há reposição de menor nota.</div>
     </td>
     <td>147/160 aulas</td>

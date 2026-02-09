@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript - uma breve introdução à linguagem on Antonio Dias</title>
+    <link>http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/</link>
+    <description>Recent content in JavaScript - uma breve introdução à linguagem on Antonio Dias</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <atom:link href="http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. Fundamentos essenciais da linguagem</title>
+      <link>http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/1-fundamentos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/1-fundamentos/</guid>
+      <description>&lt;h1 id=&#34;1-fundamentos-essenciais-da-linguagem&#34;&gt;1. Fundamentos essenciais da linguagem&lt;a class=&#34;anchor&#34; href=&#34;#1-fundamentos-essenciais-da-linguagem&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;execução-no-navegador-console-do-devtools&#34;&gt;Execução no navegador (console do DevTools)&lt;a class=&#34;anchor&#34; href=&#34;#execu%c3%a7%c3%a3o-no-navegador-console-do-devtools&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Nem sempre é necessário criar arquivos ou abrir uma IDE para testar código JavaScript. Uma das grandes vantagens da linguagem é poder executá-la diretamente no navegador, por meio do console do &lt;strong&gt;DevTools&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Para abrir o console:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Chrome / Edge&lt;/strong&gt;: &lt;code&gt;F12&lt;/code&gt; ou &lt;code&gt;Ctrl + Shift + J&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Firefox&lt;/strong&gt;: &lt;code&gt;F12&lt;/code&gt; ou &lt;code&gt;Ctrl + Shift + K&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;O console permite:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Executar código JavaScript de forma imediata&lt;/li&gt;&#xA;&lt;li&gt;Testar expressões isoladas&lt;/li&gt;&#xA;&lt;li&gt;Experimentar funções e estruturas da linguagem&lt;/li&gt;&#xA;&lt;li&gt;Inspecionar valores, variáveis e objetos&lt;/li&gt;&#xA;&lt;li&gt;Observar erros e comportamentos inesperados&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Ao longo desta revisão, o console será nossa principal ferramenta de experimentação.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2. Estruturas de controle</title>
+      <link>http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/2-estruturas-controle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/2-estruturas-controle/</guid>
+      <description>&lt;h1 id=&#34;2-estruturas-de-controle&#34;&gt;2. Estruturas de controle&lt;a class=&#34;anchor&#34; href=&#34;#2-estruturas-de-controle&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;As estruturas de controle determinam &lt;strong&gt;como e quando&lt;/strong&gt; determinadas partes do código são executadas.&lt;/p&gt;&#xA;&lt;p&gt;Elas são fundamentais para expressar lógica, tomar decisões e repetir ações.&lt;/p&gt;&#xA;&lt;p&gt;O objetivo desta seção é reforçar o raciocínio lógico e a capacidade de acompanhar o fluxo de execução de um programa.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;estruturas-condicionais-if-else-else-if&#34;&gt;Estruturas condicionais: &lt;code&gt;if&lt;/code&gt;, &lt;code&gt;else&lt;/code&gt;, &lt;code&gt;else if&lt;/code&gt;&lt;a class=&#34;anchor&#34; href=&#34;#estruturas-condicionais-if-else-else-if&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;if&#34;&gt;&lt;code&gt;if&lt;/code&gt;&lt;a class=&#34;anchor&#34; href=&#34;#if&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;A estrutura &lt;code&gt;if&lt;/code&gt; permite executar um bloco de código &lt;strong&gt;apenas se uma condição for verdadeira&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>3. Funções</title>
+      <link>http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/3-funcoes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/3-funcoes/</guid>
+      <description>&lt;h1 id=&#34;3-funções&#34;&gt;3. Funções&lt;a class=&#34;anchor&#34; href=&#34;#3-fun%c3%a7%c3%b5es&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Em JavaScript, funções não servem apenas para organizar código.&lt;br&gt;&#xA;Elas são valores, podem ser armazenadas em variáveis, passadas como argumento e retornadas por outras funções. São consideradas &amp;ldquo;cidadãs de primeira classe&amp;rdquo; porque são tratadas como valores comuns da linguagem.&lt;/p&gt;&#xA;&lt;p&gt;O objetivo desta seção é preparar o estudante para:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;entender métodos em classes;&lt;/li&gt;&#xA;&lt;li&gt;compreender &lt;em&gt;callbacks&lt;/em&gt;;&lt;/li&gt;&#xA;&lt;li&gt;perceber como o &lt;strong&gt;encapsulamento&lt;/strong&gt; começa antes mesmo da orientação a objetos.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Encapsulamento&lt;/strong&gt; é a ideia de esconder detalhes internos de um código e expor apenas o que é necessário para usá-lo. No contexto de funções: quem usa uma função não precisa saber como ela funciona por dentro, precisa saber apenas o que ela faz e como chamá-la.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Anotações</title>
+      <link>http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/anotacoes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/anotacoes/</guid>
+      <description>&lt;ol start=&#34;5&#34;&gt;&#xA;&lt;li&gt;Herança não é o centro da POO em JavaScript&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Em JavaScript, herança existe, mas não é o principal mecanismo de reutilização.&lt;/p&gt;&#xA;&lt;p&gt;A reutilização ocorre via composição de objetos, delegação de comportamento e passagem de funções.&lt;/p&gt;&#xA;&lt;p&gt;Tudo isso depende de funções serem cidadãos de primeira classe.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

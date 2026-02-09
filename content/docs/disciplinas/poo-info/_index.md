@@ -11,7 +11,7 @@ bookCollapseSection: true
 
 ## Informações gerais
 
-Há páginas específicas para informações sobre
+Verifique as páginas específicas para informações sobre
 {{< button href="/docs/disciplinas/poo-info/avaliacoes/" >}}Avaliações{{< /button >}}
 e
 {{< button href="/docs/disciplinas/poo-info/calendario/" >}}Calendário{{< /button >}}
