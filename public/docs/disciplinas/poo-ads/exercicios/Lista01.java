@@ -8,9 +8,9 @@ public class Lista01 {
     int q = sc.nextInt();
 
     switch (q) {
-      case 1 -> questao4();
-      case 2 -> questao4();
-      case 3 -> questao4();
+      case 1 -> questao1();
+      case 2 -> questao2();
+      case 3 -> questao3();
       case 4 -> questao4();
       case 5 -> questao5();
       case 6 -> questao6();
