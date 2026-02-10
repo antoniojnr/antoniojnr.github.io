@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercícios on Antonio Dias</title>
+    <link>http://localhost:1313/docs/disciplinas/poo-ads/exercicios/</link>
+    <description>Recent content in Exercícios on Antonio Dias</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <atom:link href="http://localhost:1313/docs/disciplinas/poo-ads/exercicios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lista 01</title>
+      <link>http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista01/</guid>
+      <description>&lt;h1 id=&#34;lista-01&#34;&gt;Lista 01&lt;a class=&#34;anchor&#34; href=&#34;#lista-01&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;instruções&#34;&gt;Instruções&lt;a class=&#34;anchor&#34; href=&#34;#instru%c3%a7%c3%b5es&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Neste ponto da disciplina, ainda não vimos operações de entrada e saída. Por isso, para simular a entrada dos programas, você deverá, simplesmente, declarar variáveis e inicializá-las com os valores que seriam lidos na entrada.&lt;/p&gt;&#xA;&lt;blockquote class=&#39;book-hint important&#39;&gt;&#xA;&lt;p&gt;Todos os exercícios devem ser feitos em um único programa Java, seguindo a estrutura fornecida no link a seguir. Essa estrutura consiste de um programa com um menu inicial para escolha do exercício que será executada e um método separado para cada exercício. Você preencherá apenas o corpo desses métodos, implementando a lógica pedida em cada questão. Não crie arquivos separados nem coloque toda a lógica dentro do main.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

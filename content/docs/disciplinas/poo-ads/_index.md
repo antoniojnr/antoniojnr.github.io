@@ -36,3 +36,11 @@ Os estudantes realizarão exercícios semanais, geralmente a cada unidade, envol
 As atividades práticas serão desenvolvidas em ambiente de laboratório, utilizando as ferramentas listadas nos recursos didáticos, envolvendo situações próximas às encontradas no contexto profissional. O acompanhamento do aprendizado será contínuo, com feedback frequente sobre os exercícios realizados, discussões em sala e orientações para melhoria das soluções apresentadas.
 
 No decorrer da disciplina, são propostas atividades individuais e em grupo, estimulando a autonomia e a troca de experiências entre os estudantes.
+
+## Materiais úteis
+
+[1. Introdução à Programação Orientada a Objetos usando Java - Rafael Santos](http://www.lac.inpe.br/~rafael.santos/Docs/IntroPOOJava/POO-EXER.pdf) \
+[1.1. Informações e material adicional para o livro](http://www.lac.inpe.br/~rafael.santos/java.html) \
+[2. Java e Orientação a Objetos - Alura](https://www.ispsn.org/sites/default/files/documentos-virtuais/pdf/apostila-java-orientacao-objetos_1.pdf) \
+[3. Introdução à Programação Orientada a Objetos (POO) - Fundação Bradesco](https://lms.ev.org.br/mpls/Custom/Cds/COURSES/3236-POO/curso/pdfs/ebook.pdf) \
+[4. Java, Java, Java - Object-Oriented Problem Solving - Third Edition - R. Morelli and R. Walde](https://www.cs.trincoll.edu/~ram/jjj/jjj-os-20170625.pdf)
