@@ -8,32 +8,30 @@ weight: 1
 
 ## Informações
 
-**Disciplina:** Programação Orientada a Objetos\
-**Curso:** Técnico Integrado em Informática\
-**Ano:** 2026
+**Disciplina:** Segurança da Informação\
+**Curso:** Análise e Desenvolvimento de Sistemas\
+**Ano:** 2026.1
 
 ## Resumo sobre avaliações
 
-- Exercícios - \\( EX \\)
+- Exercícios de casa - \\( EX \\) - (média de exercícios)
 - Avaliação - \\( AV \\)
-- Exercícios de sala - \\( EX \\) (Média da nota de exercícios tem peso 2)
-- Projeto - \\( PJ \\) (Peso 4)
 
 A nota final (\\( NF \\)) é calculada através da média ponderada:
 
 {{< katex display=true >}}
-
-NF = \frac{AV1 \times 2 + AV2 \times 2 + EX \times 2 + PJ \times 4}{10}
+NF = \frac{EX + AV}{2}
 {{< /katex >}}
+
+Os exercícios de sala serão contabilizados para contar como participação.
 
 ## Sobre as avaliações
 
-As notas das avaliações são obtidas por meio de exercícios e provas.
+As notas das avaliações são obtidas por meio de exercícios e uma prova.
 
-A **1ª avaliação** do semestre corresponde à média dos exercícios realizados em sala.
-A **2ª avaliação** consiste em uma prova escrita, com questões discursivas e/ou objetivas.
+A **nota de exercícios** do semestre corresponde à média dos exercícios de casa. Existem 4 exercícios de casa previstos no calendário. A **nota de avaliação** consiste em uma prova escrita, com questões discursivas e/ou objetivas.
 
-Os exercícios são disponibilizados por meio do Google Sala de Aula e consistem em formulários com questões objetivas. Exercícios entregues após o prazo sofrem uma penalidade de 30% na nota.
+Os exercícios são disponibilizados por meio do Google Sala de Aula e consistem de formulários com questões objetivas. Exercícios entregues após o prazo sofrem uma penalidade de 30% na nota.
 Por exemplo, uma nota 90 em um exercício entregue no prazo passa a ser 63 quando a entrega ocorre fora do prazo.
 
 Serão realizadas práticas em sala de aula com o objetivo de exercitar os conteúdos trabalhados.
@@ -65,10 +63,9 @@ Sim. Mas exercícios entregues fora do prazo sofrerão uma penalidade de 30% na 
 </details>
 
 <details>
-<summary>As avaliações, exercícios e projeto são individuais?</summary>
+<summary>As avaliações e exercícios são individuais?</summary>
 
-- Avaliações (provas) são individuais;
-- Exercícios são individuais.
+Sim.
 
 </details>
 
@@ -146,11 +143,9 @@ Você pode desenvolver um rascunho da forma que quiser, mas as respostas devem s
 <details>
 <summary>Haverá avaliação de reposição?</summary>
 
-Sim. É permitida a reposição de **uma** avaliação sem necessidade de justificativa.
+Sim. É permitida a reposição da avaliação sem necessidade de justificativa.
 
-O estudante que perder mais de uma avaliação poderá optar por qual delas deseja repor.
-
-Não há reposição de exercícios ou menor nota.
+Não há reposição de exercícios ou menor nota, nem reposição da reposição.
 
 </details>
 

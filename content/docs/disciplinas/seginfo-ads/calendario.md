@@ -8,7 +8,7 @@ weight: 1
 
 ## Informações
 
-**Disciplina:** Segurança da Informação
+**Disciplina:** Segurança da Informação\
 **Curso:** Análise e Desenvolvimento de Sistemas\
 **Período:** 2026.1
 
@@ -48,7 +48,7 @@ weight: 1
     <td>24</td>
     <td>
       <ul>
-        <li>Criptografia simétrica</li>
+        <li>Introdução e conceitos básicos sobre segurança da informação (continuação)</li>
       </ul>
     </td>
     <td>4/40 aulas</td>
@@ -60,8 +60,7 @@ weight: 1
     <td>03</td>
     <td>
       <ul>
-        <li>Criptografia assimétrica</li>
-        <li>Gerência de chaves</li>
+        <li>Criptografia simétrica</li>
       </ul>
     </td>
     <td>6/40 aulas</td>
@@ -70,17 +69,18 @@ weight: 1
     <td>10</td>
     <td>
       <ul>
-        <li>Funções hash criptográficas</li>
+        <li>Criptografia assimétrica</li>
+        <li>Gerência de chaves</li>
       </ul>
     </td>
     <td>8/40 aulas</td>
+
   </tr>
   <tr>
     <td>17</td>
     <td>
       <ul>
-        <li><b>Prática em sala:</b> Criptografia e funções Hash Criptográficas</li>
-        <li><b>Exercício de casa 1:</b> Conceitos básicos, criptografia e funções hash criptográficas</li>
+        <li>Funções hash criptográficas</li>
       </ul>
     </td>
     <td>
@@ -91,8 +91,8 @@ weight: 1
   <tr>
     <td>24</td>
     <td>
-      <div class="avaliacao">Avaliação 1</div>
-      <div>A prova abrange todos os tópicos já ministrados até essa data.</div>
+      <li><b>Prática em sala:</b> Criptografia e funções Hash Criptográficas</li>
+      <li><b>Exercício de casa 1:</b> Conceitos básicos, criptografia e funções hash criptográficas</li>
     </td>
     <td>
     14/40 aulas
@@ -137,7 +137,7 @@ weight: 1
     <td>14</td>
     <td>
       <ul>
-        <li>Continuação - Soluções de segurança e tecnologias</li>
+        <li>Soluções de segurança e tecnologias (continuação)</li>
         <li><b>Exercício de casa 2:</b> Segurança de dispositivos; soluções de segurança e tecnologias</li>
       </ul>
     </td>
@@ -153,6 +153,8 @@ weight: 1
   <tr>
     <td>28</td>
     <td>
+      <div class="avaliacao">Avaliação 1</div>
+      <div>A prova abrange todos os tópicos já ministrados até essa data.</div>
       <ul>
         <li>Segurança em redes sem fio</li>
       </ul>
@@ -222,8 +224,10 @@ weight: 1
     <td>02</td>
     <td>
       <ul>
-        <li><b>Prática em sala:</b> Vulnerabilidades em autenticação</li>
-        <li><b>Exercício de casa 4:</b> Vulnerabilidades em aplicações</li>
+        <li>Vulnerabilidades em aplicações</li>
+        <ul>
+          <li>Vulnerabilidades em autenticação (continuação)</li>
+        </ul>
       </ul>
     </td>
     <td>
@@ -234,8 +238,10 @@ weight: 1
   <tr>
     <td>09</td>
     <td>
-      <div class="avaliacao">Avaliação 2</div>
-      <div>A prova abrange todos os tópicos já ministrados até essa data.</div>
+      <ul>
+        <li><b>Prática em sala:</b> Vulnerabilidades em autenticação</li>
+        <li><b>Exercício de casa 4:</b> Vulnerabilidades em aplicações</li>
+      </ul>
     </td>
     <td>
     38/40 aulas

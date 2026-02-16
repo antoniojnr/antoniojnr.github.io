@@ -32,7 +32,7 @@ Executar código JavaScript de forma imediata Testar expressões isoladas Experi
 Para abrir o console:
 Chrome / Edge: F12 ou Ctrl &#43; Shift &#43; J Firefox: F12 ou Ctrl &#43; Shift &#43; K O console permite:
 Executar código JavaScript de forma imediata Testar expressões isoladas Experimentar funções e estruturas da linguagem Inspecionar valores, variáveis e objetos Observar erros e comportamentos inesperados Ao longo desta revisão, o console será nossa principal ferramenta de experimentação.">
-  <meta itemprop="wordCount" content="1907">
+  <meta itemprop="wordCount" content="2368">
 
 <title>1. Fundamentos essenciais da linguagem | Antonio Dias</title>
 <link rel="icon" href="/favicon.png" >
@@ -181,6 +181,47 @@ Executar código JavaScript de forma imediata Testar expressões isoladas Experi
     <a href="/docs/disciplinas/poo-ads/calendario/" class="">
       Calendário</a>
   
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3de58d405969aa3459400420373baf0f" class="toggle"  />
+    <label for="section-3de58d405969aa3459400420373baf0f" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/" class="">
+        Exercícios</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-23e47a9839d0b7fff7effd5165e44534" class="toggle"  />
+    <label for="section-23e47a9839d0b7fff7effd5165e44534" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista01/" class="">
+        Lista 01</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
 
         </li>
       
@@ -442,6 +483,7 @@ Executar código JavaScript de forma imediata Testar expressões isoladas Experi
         <li><a href="#boolean"><code>boolean</code></a></li>
         <li><a href="#undefined"><code>undefined</code></a></li>
         <li><a href="#null"><code>null</code></a></li>
+        <li><a href="#o-nan---not-a-number">O <code>NaN</code> - <em>Not a Number</em></a></li>
       </ul>
     </li>
     <li><a href="#operadores-aritméticos-relacionais-e-lógicos">Operadores aritméticos, relacionais e lógicos</a>
@@ -459,14 +501,13 @@ Executar código JavaScript de forma imediata Testar expressões isoladas Experi
     </li>
     <li><a href="#considere-o-valor">Considere o valor</a></li>
     <li><a href="#primeira-negação-x">Primeira negação (<code>!x</code>)</a></li>
-    <li><a href="#segunda-negação-x">Segunda negação (<code>!!x</code>)</a></li>
-    <li><a href="#atividades-sugeridas">Atividades sugeridas</a>
+    <li><a href="#segunda-negação-x">Segunda negação (<code>!!x</code>)</a>
       <ul>
-        <li><a href="#1-prever-o-valor-final-de-expressões">1. Prever o valor final de expressões</a></li>
-        <li><a href="#2-corrigir-códigos-com-erros-de-escopo">2. Corrigir códigos com erros de escopo</a></li>
-        <li><a href="#3-comparar--vs-">3. Comparar <code>==</code> vs <code>===</code></a></li>
+        <li></li>
+        <li><a href="#operadores----e-">Operadores <code>==</code>, <code>===</code>, <code>!=</code> e <code>!==</code></a></li>
       </ul>
     </li>
+    <li><a href="#atividades-sugeridas">Atividades sugeridas</a></li>
   </ul>
 </nav>
 
@@ -542,6 +583,8 @@ Executar código JavaScript de forma imediata Testar expressões isoladas Experi
 <p><strong>Regra prática:</strong>
 Use <code>const</code> sempre que possível. Use <code>let</code> apenas quando precisar reatribuir.</p></blockquote><h2 id="tipos-primitivos-number-string-boolean-undefined-null">Tipos primitivos: <code>number</code>, <code>string</code>, <code>boolean</code>, <code>undefined</code>, <code>null</code><a class="anchor" href="#tipos-primitivos-number-string-boolean-undefined-null">#</a></h2>
 <p>JavaScript possui tipos primitivos, que representam valores simples e imutáveis. Use <code>typeof</code> para inspecionar o tipo de um valor; por exemplo, para descobrir qual o tipo do resultado de uma expressão.</p>
+<p>Antes de avançar, vale entender como o JavaScript funciona. Diferente de linguagens mais rígidas, o JavaScript tenta ser flexível, convertendo tipos automaticamente.</p>
+<p>Isso gera consequências importantes: Código mais rápido de escrever e menos verboso (menos comandos para executar uma ação). Entretanto, com essas vantagens vêm algumas desvantagens. Um programador iniciante pode criar código repleto de conversões invisíveis, resultados inesperados e bugs difíceis de perceber.</p>
 <h3 id="number"><code>number</code><a class="anchor" href="#number">#</a></h3>
 <p>Representa todos os números, inteiros ou decimais.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">inteiro</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">42</span>;
@@ -576,7 +619,30 @@ Use <code>const</code> sempre que possível. Use <code>let</code> apenas quando 
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">usuario</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>; <span style="color:#75715e">// Nenhum usuário selecionado
 </span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">null</span>); <span style="color:#75715e">// &#34;object&#34; (comportamento histórico do JS)
 </span></span></span></code></pre></div><blockquote class='book-hint important'>
-<p>Apesar do <code>typeof</code>, <code>null</code> não é um objeto.</p></blockquote><h2 id="operadores-aritméticos-relacionais-e-lógicos">Operadores aritméticos, relacionais e lógicos<a class="anchor" href="#operadores-aritm%c3%a9ticos-relacionais-e-l%c3%b3gicos">#</a></h2>
+<p>Apesar do <code>typeof</code>, <code>null</code> não é um objeto.</p></blockquote><h3 id="o-nan---not-a-number">O <code>NaN</code> - <em>Not a Number</em><a class="anchor" href="#o-nan---not-a-number">#</a></h3>
+<p><code>NaN</code> significa <code>Not a Number</code>, um valor especial em JavaScript que tem comportamentos únicos.</p>
+<p><strong>1. <code>NaN</code> é do tipo <code>number</code></strong></p>
+<p><code>typeof NaN; // &quot;number&quot;</code></p>
+<p>Isso acontece porque <code>NaN</code> representa um erro dentro do sistema numérico do JavaScript.</p>
+<p><strong>2. <code>NaN</code> não é igual a ele mesmo</strong></p>
+<p>Este é um dos comportamentos mais estranhos da linguagem:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">NaN</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">NaN</span>; <span style="color:#75715e">// false
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">NaN</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">NaN</span>; <span style="color:#75715e">// false
+</span></span></span></code></pre></div><p>Em JavaScript, <code>NaN</code> representa um valor inválido e dois valores inválidos não são considerados iguais.</p>
+<p><strong>3. Como detectar corretamente</strong></p>
+<p>Nunca compare com <code>NaN</code> diretamente.</p>
+<p>Errado: <code>valor === NaN;</code></p>
+<p>Correto: <code>Number.isNaN(valor);</code></p>
+<p>Exemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> Number(<span style="color:#e6db74">&#34;abc&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Number.isNaN(<span style="color:#a6e22e">x</span>); <span style="color:#75715e">// true
+</span></span></span></code></pre></div><p>As situações comuns que resultam em <code>NaN</code> são:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>Number(<span style="color:#e6db74">&#34;abc&#34;</span>); <span style="color:#75715e">// NaN
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff">0</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">0</span>; <span style="color:#75715e">// NaN
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;texto&#34;</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>; <span style="color:#75715e">// NaN
+</span></span></span><span style="display:flex;"><span>Math.<span style="color:#a6e22e">sqrt</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>); <span style="color:#75715e">// NaN
+</span></span></span></code></pre></div><h2 id="operadores-aritméticos-relacionais-e-lógicos">Operadores aritméticos, relacionais e lógicos<a class="anchor" href="#operadores-aritm%c3%a9ticos-relacionais-e-l%c3%b3gicos">#</a></h2>
 <h3 id="operadores-aritméticos">Operadores aritméticos<a class="anchor" href="#operadores-aritm%c3%a9ticos">#</a></h3>
 <p>Realizam operações matemáticas.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>,
@@ -750,6 +816,28 @@ Ele é o resultado da aplicação do operador unário de negação (<code>!</cod
 </span></span></span><span style="display:flex;"><span><span style="color:#f92672">!!</span><span style="color:#66d9ef">null</span>; <span style="color:#75715e">// false
 </span></span></span><span style="display:flex;"><span><span style="color:#f92672">!!</span><span style="color:#66d9ef">undefined</span>; <span style="color:#75715e">// false
 </span></span></span></code></pre></div><p>Esses resultados seguem as regras de valores <em>truthy</em> e <em>falsy</em> do JavaScript.</p>
+<h4 id="o-que-é-truthy-e-falsy">O que é <em>truthy</em> e <em>falsy</em>?<a class="anchor" href="#o-que-%c3%a9-truthy-e-falsy">#</a></h4>
+<p>Em JavaScript, nem todo valor booleano vem de <code>true</code> ou <code>false</code>. Em muitos contextos, a linguagem converte valores automaticamente para booleano. Isso significa que, onde quer que esses valores sejam usados, eles serão interpretados como <code>boolean</code>. Por exemplo, na condição de um <code>if</code>.</p>
+<p><strong>Valores <em>falsy</em></strong></p>
+<p>Estes sempre viram <code>false</code>:</p>
+<ul>
+<li><code>false</code></li>
+<li><code>0</code></li>
+<li><code>&quot;&quot;</code> (string vazia)</li>
+<li><code>null</code></li>
+<li><code>undefined</code></li>
+<li><code>NaN</code></li>
+</ul>
+<p><strong>Valores <em>truthy</em></strong></p>
+<p>Todo valor que não está na lista acima é <em>truthy</em>.</p>
+<p>Exemplos:</p>
+<ul>
+<li><code>Boolean(&quot;0&quot;); // true</code></li>
+<li><code>Boolean(&quot;false&quot;); // true</code></li>
+<li><code>Boolean([]); // true</code></li>
+<li><code>Boolean({}); // true</code></li>
+<li><code>Boolean(42); // true</code></li>
+</ul>
 <p><strong>Comparação com <code>Boolean()</code></strong></p>
 <p>O efeito de <code>!!valor</code> é o mesmo que <code>Boolean(valor)</code></p>
 <p>Exemplo:</p>
@@ -769,10 +857,32 @@ Ele é o resultado da aplicação do operador unário de negação (<code>!</cod
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Usuário existe&#34;</span>);
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Apesar de comum em código JavaScript real, o uso de <code>!!</code> não é obrigatório, pode reduzir a legibilidade para iniciantes e não deve ser usado como &ldquo;atalho&rdquo; sem entendimento.</p>
 <p>O <code>!!</code> foi apresentado aqui apenas como algo que o estudante precisa reconhecer e compreender, não necessariamente usar. Por simplicidade e clareza, prefira <code>Boolean(valor)</code>.</p>
+<h3 id="operadores----e-">Operadores <code>==</code>, <code>===</code>, <code>!=</code> e <code>!==</code><a class="anchor" href="#operadores----e-">#</a></h3>
+<p>O operador <code>==</code> faz conversão de tipos antes de comparar (coerção), enquanto <code>===</code> compara valor E tipo.</p>
+<p><strong>Exemplos comparativos:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Igualdade com conversão (==)
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">5</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;5&#34;</span>); <span style="color:#75715e">// true - converte &#34;5&#34; para número
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">true</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// true - converte true para 1
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">false</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// true - converte false para 0
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">null</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">undefined</span>); <span style="color:#75715e">// true - caso especial
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// true - string vazia vira 0
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Igualdade estrita (===)
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">5</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;5&#34;</span>); <span style="color:#75715e">// false - tipos diferentes
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">true</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// false - tipos diferentes
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">false</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// false - tipos diferentes
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">null</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">undefined</span>); <span style="color:#75715e">// false - tipos diferentes
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// false - tipos diferentes
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Casos curiosos
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// true - array é convertido
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([<span style="color:#ae81ff">1</span>] <span style="color:#f92672">===</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// false - tipos diferentes
+</span></span></span></code></pre></div><p><strong>Recomendação</strong>: Use sempre <code>===</code> e <code>!==</code> em vez de <code>==</code> e <code>!=</code> para evitar bugs causados por conversões inesperadas.</p>
 <h2 id="atividades-sugeridas">Atividades sugeridas<a class="anchor" href="#atividades-sugeridas">#</a></h2>
 <p>As atividades a seguir devem ser feitas primeiro no papel ou mentalmente, e só depois testadas no console.</p>
-<h3 id="1-prever-o-valor-final-de-expressões">1. Prever o valor final de expressões<a class="anchor" href="#1-prever-o-valor-final-de-express%c3%b5es">#</a></h3>
-<p>Analise as expressões abaixo e preveja o resultado antes de executar no console:</p>
+<ol>
+<li>Analise as expressões abaixo e preveja o resultado antes de executar no console:</li>
+</ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Exercício 1
 </span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado1</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;5&#34;</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>;
 </span></span><span style="display:flex;"><span>
@@ -802,7 +912,7 @@ Ele é o resultado da aplicação do operador unário de negação (<code>!</cod
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Exercício 10
 </span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado10</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;5&#34;</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">5</span>;</span></span></code></pre></div><details>
-<summary>Ver respostas</summary>
+<summary>Ver respostas do <b>Exercício 1</b></summary>
 <ol>
 <li><code>&quot;53&quot;</code> (concatenação)</li>
 <li><code>2</code> (subtração numérica)</li>
@@ -816,30 +926,32 @@ Ele é o resultado da aplicação do operador unário de negação (<code>!</cod
 <li><code>false</code> (tipos diferentes)</li>
 </ol>
 </details>
-<h3 id="2-corrigir-códigos-com-erros-de-escopo">2. Corrigir códigos com erros de escopo<a class="anchor" href="#2-corrigir-c%c3%b3digos-com-erros-de-escopo">#</a></h3>
-<p>Identifique e corrija os erros nos códigos abaixo:</p>
-<p><strong>Exercício 1:</strong></p>
+<ol start="2">
+<li>Identifique e corrija os erros no código abaixo:</li>
+</ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Código com erro
 </span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">true</span>) {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">mensagem</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Olá&#34;</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">mensagem</span>); <span style="color:#75715e">// Funciona com var, mas não é boa prática
 </span></span></span></code></pre></div><details>
-<summary>Ver correção do <b>Exercício 1</b></summary>
+<summary>Ver correção do <b>Exercício 2</b></summary>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Código corrigido
 </span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mensagem</span>;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">true</span>) {
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mensagem</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Olá&#34;</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">mensagem</span>);</span></span></code></pre></div></details>
-<p><strong>Exercício 2:</strong></p>
+<ol start="3">
+<li>Identifique e corrija os erros no código abaixo:</li>
+</ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Código com erro
 </span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ...
 </span></span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>); <span style="color:#75715e">// Erro! &#39;i&#39; não existe fora do for
 </span></span></span></code></pre></div><details>
-<summary>Ver correção do <b>Exercício 2</b></summary>
+<summary>Ver correção do <b>Exercício 3</b></summary>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Código corrigido
 </span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span>;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
@@ -847,39 +959,21 @@ Ele é o resultado da aplicação do operador unário de negação (<code>!</cod
 </span></span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>); <span style="color:#75715e">// Agora funciona
 </span></span></span></code></pre></div></details>
-<p><strong>Exercício 3:</strong></p>
+<ol start="4">
+<li>Identifique e corrija os erros no código abaixo:</li>
+</ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Código com erro
 </span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">nome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;João&#34;</span>;
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">nome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Maria&#34;</span>; <span style="color:#75715e">// Erro! Não pode reatribuir const
 </span></span></span></code></pre></div><details>
-<summary>Ver correção do <b>Exercício 3</b></summary>
+<summary>Ver correção do <b>Exercício 4</b></summary>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Código corrigido - use let se precisar reatribuir
 </span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;João&#34;</span>;
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">nome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Maria&#34;</span>; <span style="color:#75715e">// OK
 </span></span></span></code></pre></div></details>
-<h3 id="3-comparar--vs-">3. Comparar <code>==</code> vs <code>===</code><a class="anchor" href="#3-comparar--vs-">#</a></h3>
-<p>O operador <code>==</code> faz conversão de tipos antes de comparar (coerção), enquanto <code>===</code> compara valor E tipo.</p>
-<p><strong>Exemplos comparativos:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Igualdade com conversão (==)
-</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">5</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;5&#34;</span>); <span style="color:#75715e">// true - converte &#34;5&#34; para número
-</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">true</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// true - converte true para 1
-</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">false</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// true - converte false para 0
-</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">null</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">undefined</span>); <span style="color:#75715e">// true - caso especial
-</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// true - string vazia vira 0
-</span></span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Igualdade estrita (===)
-</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">5</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;5&#34;</span>); <span style="color:#75715e">// false - tipos diferentes
-</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">true</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// false - tipos diferentes
-</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">false</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// false - tipos diferentes
-</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">null</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">undefined</span>); <span style="color:#75715e">// false - tipos diferentes
-</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// false - tipos diferentes
-</span></span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Casos curiosos
-</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// true - array é convertido
-</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([<span style="color:#ae81ff">1</span>] <span style="color:#f92672">===</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// false - tipos diferentes
-</span></span></span></code></pre></div><p><strong>Recomendação</strong>: Use sempre <code>===</code> e <code>!==</code> para evitar bugs causados por conversões inesperadas.</p>
-<p><strong>Exercícios práticos:</strong></p>
-<p>Preveja o resultado (<code>true</code> ou <code>false</code>):</p>
+<ol start="5">
+<li>Preveja o resultado (<code>true</code> ou <code>false</code>):</li>
+</ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#ae81ff">1.</span> <span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>         <span style="color:#75715e">// ?
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff">2.</span> <span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>        <span style="color:#75715e">// ?
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff">3.</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">false</span>       <span style="color:#75715e">// ?
@@ -889,7 +983,7 @@ Ele é o resultado da aplicação do operador unário de negação (<code>!</cod
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff">7.</span> [] <span style="color:#f92672">==</span> <span style="color:#66d9ef">false</span>      <span style="color:#75715e">// ?
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff">8.</span> [] <span style="color:#f92672">===</span> <span style="color:#66d9ef">false</span>     <span style="color:#75715e">// ?
 </span></span></span></code></pre></div><details>
-<summary>Ver respostas</summary>
+<summary>Ver respostas do <b>Exercício 5</b></summary>
 <ol>
 <li><code>true</code> (conversão)</li>
 <li><code>false</code> (tipos diferentes)</li>
@@ -901,7 +995,50 @@ Ele é o resultado da aplicação do operador unário de negação (<code>!</cod
 <li><code>false</code> (tipos diferentes)</li>
 </ol>
 </details>
-</article>
+<ol start="6">
+<li>Preveja o resultado:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;5&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">z</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;1&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">z</span>);</span></span></code></pre></div><ol start="7">
+<li>Explique o passo a passo de como a expressão a seguir é avaliada:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">resultado</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;5&#34;</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">resultado</span>);</span></span></code></pre></div><ol start="8">
+<li>Considere o código a seguir. O que será exibido e por que a saída do código é essa?</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> Number(<span style="color:#e6db74">&#34;abc&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">NaN</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Number.isNaN(<span style="color:#a6e22e">a</span>));</span></span></code></pre></div><ol start="9">
+<li>Preveja quais linhas imprimem algo:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;&#34;</span>) <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;A&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;0&#34;</span>) <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;B&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#ae81ff">0</span>) <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;C&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ([]) <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;D&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">null</span>) <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;E&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;false&#34;</span>) <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;F&#34;</span>);</span></span></code></pre></div><ol start="10">
+<li>
+<p>Explique com suas palavras por que <code>&quot;5&quot; + 5</code> e <code>&quot;5&quot; - 5</code> produzem resultados de tipos diferentes?</p>
+</li>
+<li>
+<p>O código abaixo pode ser interpretado de duas formas diferentes:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;100&#34;</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">20</span>;</span></span></code></pre></div><p>a) Qual é o resultado atual?<br>
+b) Por que o JavaScript escolhe esse comportamento?<br>
+c) Reescreva o código para forçar concatenação<br>
+d) Reescreva o código para forçar soma numérica</p>
+<ol start="12">
+<li>Complete o código:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">valor</span> <span style="color:#f92672">=</span> Number(<span style="color:#e6db74">&#34;texto&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Imprima &#34;Número inválido&#34; se for NaN
+</span></span></span></code></pre></div></article>
  
       
 
@@ -959,6 +1096,7 @@ Ele é o resultado da aplicação do operador unário de negação (<code>!</cod
         <li><a href="#boolean"><code>boolean</code></a></li>
         <li><a href="#undefined"><code>undefined</code></a></li>
         <li><a href="#null"><code>null</code></a></li>
+        <li><a href="#o-nan---not-a-number">O <code>NaN</code> - <em>Not a Number</em></a></li>
       </ul>
     </li>
     <li><a href="#operadores-aritméticos-relacionais-e-lógicos">Operadores aritméticos, relacionais e lógicos</a>
@@ -976,14 +1114,13 @@ Ele é o resultado da aplicação do operador unário de negação (<code>!</cod
     </li>
     <li><a href="#considere-o-valor">Considere o valor</a></li>
     <li><a href="#primeira-negação-x">Primeira negação (<code>!x</code>)</a></li>
-    <li><a href="#segunda-negação-x">Segunda negação (<code>!!x</code>)</a></li>
-    <li><a href="#atividades-sugeridas">Atividades sugeridas</a>
+    <li><a href="#segunda-negação-x">Segunda negação (<code>!!x</code>)</a>
       <ul>
-        <li><a href="#1-prever-o-valor-final-de-expressões">1. Prever o valor final de expressões</a></li>
-        <li><a href="#2-corrigir-códigos-com-erros-de-escopo">2. Corrigir códigos com erros de escopo</a></li>
-        <li><a href="#3-comparar--vs-">3. Comparar <code>==</code> vs <code>===</code></a></li>
+        <li></li>
+        <li><a href="#operadores----e-">Operadores <code>==</code>, <code>===</code>, <code>!=</code> e <code>!==</code></a></li>
       </ul>
     </li>
+    <li><a href="#atividades-sugeridas">Atividades sugeridas</a></li>
   </ul>
 </nav>
 

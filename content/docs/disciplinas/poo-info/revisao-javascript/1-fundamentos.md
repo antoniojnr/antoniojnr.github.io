@@ -94,6 +94,10 @@ numeros[0] = 4; // OK - pode modificar os valores
 
 JavaScript possui tipos primitivos, que representam valores simples e imutáveis. Use `typeof` para inspecionar o tipo de um valor; por exemplo, para descobrir qual o tipo do resultado de uma expressão.
 
+Antes de avançar, vale entender como o JavaScript funciona. Diferente de linguagens mais rígidas, o JavaScript tenta ser flexível, convertendo tipos automaticamente.
+
+Isso gera consequências importantes: Código mais rápido de escrever e menos verboso (menos comandos para executar uma ação). Entretanto, com essas vantagens vêm algumas desvantagens. Um programador iniciante pode criar código repleto de conversões invisíveis, resultados inesperados e bugs difíceis de perceber.
+
 ### `number`
 
 Representa todos os números, inteiros ou decimais.
@@ -158,6 +162,52 @@ console.log(typeof null); // "object" (comportamento histórico do JS)
 
 > [!IMPORTANT]
 > Apesar do `typeof`, `null` não é um objeto.
+
+### O `NaN` - _Not a Number_
+
+`NaN` significa `Not a Number`, um valor especial em JavaScript que tem comportamentos únicos.
+
+**1. `NaN` é do tipo `number`**
+
+`typeof NaN; // "number"`
+
+Isso acontece porque `NaN` representa um erro dentro do sistema numérico do JavaScript.
+
+**2. `NaN` não é igual a ele mesmo**
+
+Este é um dos comportamentos mais estranhos da linguagem:
+
+```javascript
+NaN === NaN; // false
+NaN == NaN; // false
+```
+
+Em JavaScript, `NaN` representa um valor inválido e dois valores inválidos não são considerados iguais.
+
+**3. Como detectar corretamente**
+
+Nunca compare com `NaN` diretamente.
+
+Errado: `valor === NaN;`
+
+Correto: `Number.isNaN(valor);`
+
+Exemplo:
+
+```javascript
+let x = Number("abc");
+
+Number.isNaN(x); // true
+```
+
+As situações comuns que resultam em `NaN` são:
+
+```javascript
+Number("abc"); // NaN
+0 / 0; // NaN
+"texto" - 1; // NaN
+Math.sqrt(-1); // NaN
+```
 
 ## Operadores aritméticos, relacionais e lógicos
 
@@ -354,6 +404,33 @@ Exemplos comuns
 
 Esses resultados seguem as regras de valores _truthy_ e _falsy_ do JavaScript.
 
+#### O que é _truthy_ e _falsy_?
+
+Em JavaScript, nem todo valor booleano vem de `true` ou `false`. Em muitos contextos, a linguagem converte valores automaticamente para booleano. Isso significa que, onde quer que esses valores sejam usados, eles serão interpretados como `boolean`. Por exemplo, na condição de um `if`.
+
+**Valores _falsy_**
+
+Estes sempre viram `false`:
+
+- `false`
+- `0`
+- `""` (string vazia)
+- `null`
+- `undefined`
+- `NaN`
+
+**Valores _truthy_**
+
+Todo valor que não está na lista acima é _truthy_.
+
+Exemplos:
+
+- `Boolean("0"); // true`
+- `Boolean("false"); // true`
+- `Boolean([]); // true`
+- `Boolean({}); // true`
+- `Boolean(42); // true`
+
 **Comparação com `Boolean()`**
 
 O efeito de `!!valor` é o mesmo que `Boolean(valor)`
@@ -391,13 +468,39 @@ Apesar de comum em código JavaScript real, o uso de `!!` não é obrigatório, 
 
 O `!!` foi apresentado aqui apenas como algo que o estudante precisa reconhecer e compreender, não necessariamente usar. Por simplicidade e clareza, prefira `Boolean(valor)`.
 
+### Operadores `==`, `===`, `!=` e `!==`
+
+O operador `==` faz conversão de tipos antes de comparar (coerção), enquanto `===` compara valor E tipo.
+
+**Exemplos comparativos:**
+
+```javascript
+// Igualdade com conversão (==)
+console.log(5 == "5"); // true - converte "5" para número
+console.log(true == 1); // true - converte true para 1
+console.log(false == 0); // true - converte false para 0
+console.log(null == undefined); // true - caso especial
+console.log("" == 0); // true - string vazia vira 0
+
+// Igualdade estrita (===)
+console.log(5 === "5"); // false - tipos diferentes
+console.log(true === 1); // false - tipos diferentes
+console.log(false === 0); // false - tipos diferentes
+console.log(null === undefined); // false - tipos diferentes
+console.log("" === 0); // false - tipos diferentes
+
+// Casos curiosos
+console.log([1] == 1); // true - array é convertido
+console.log([1] === 1); // false - tipos diferentes
+```
+
+**Recomendação**: Use sempre `===` e `!==` em vez de `==` e `!=` para evitar bugs causados por conversões inesperadas.
+
 ## Atividades sugeridas
 
 As atividades a seguir devem ser feitas primeiro no papel ou mentalmente, e só depois testadas no console.
 
-### 1. Prever o valor final de expressões
-
-Analise as expressões abaixo e preveja o resultado antes de executar no console:
+1. Analise as expressões abaixo e preveja o resultado antes de executar no console:
 
 ```javascript
 // Exercício 1
@@ -432,7 +535,7 @@ let resultado10 = "5" === 5;
 ```
 
 <details>
-<summary>Ver respostas</summary>
+<summary>Ver respostas do <b>Exercício 1</b></summary>
 
 1. `"53"` (concatenação)
 2. `2` (subtração numérica)
@@ -447,11 +550,7 @@ let resultado10 = "5" === 5;
 
 </details>
 
-### 2. Corrigir códigos com erros de escopo
-
-Identifique e corrija os erros nos códigos abaixo:
-
-**Exercício 1:**
+2. Identifique e corrija os erros no código abaixo:
 
 ```javascript
 // Código com erro
@@ -462,7 +561,7 @@ console.log(mensagem); // Funciona com var, mas não é boa prática
 ```
 
 <details>
-<summary>Ver correção do <b>Exercício 1</b></summary>
+<summary>Ver correção do <b>Exercício 2</b></summary>
 
 ```javascript
 // Código corrigido
@@ -475,7 +574,7 @@ console.log(mensagem);
 
 </details>
 
-**Exercício 2:**
+3. Identifique e corrija os erros no código abaixo:
 
 ```javascript
 // Código com erro
@@ -486,7 +585,7 @@ console.log(i); // Erro! 'i' não existe fora do for
 ```
 
 <details>
-<summary>Ver correção do <b>Exercício 2</b></summary>
+<summary>Ver correção do <b>Exercício 3</b></summary>
 
 ```javascript
 // Código corrigido
@@ -499,7 +598,7 @@ console.log(i); // Agora funciona
 
 </details>
 
-**Exercício 3:**
+4. Identifique e corrija os erros no código abaixo:
 
 ```javascript
 // Código com erro
@@ -508,7 +607,7 @@ nome = "Maria"; // Erro! Não pode reatribuir const
 ```
 
 <details>
-<summary>Ver correção do <b>Exercício 3</b></summary>
+<summary>Ver correção do <b>Exercício 4</b></summary>
 
 ```javascript
 // Código corrigido - use let se precisar reatribuir
@@ -518,37 +617,7 @@ nome = "Maria"; // OK
 
 </details>
 
-### 3. Comparar `==` vs `===`
-
-O operador `==` faz conversão de tipos antes de comparar (coerção), enquanto `===` compara valor E tipo.
-
-**Exemplos comparativos:**
-
-```javascript
-// Igualdade com conversão (==)
-console.log(5 == "5"); // true - converte "5" para número
-console.log(true == 1); // true - converte true para 1
-console.log(false == 0); // true - converte false para 0
-console.log(null == undefined); // true - caso especial
-console.log("" == 0); // true - string vazia vira 0
-
-// Igualdade estrita (===)
-console.log(5 === "5"); // false - tipos diferentes
-console.log(true === 1); // false - tipos diferentes
-console.log(false === 0); // false - tipos diferentes
-console.log(null === undefined); // false - tipos diferentes
-console.log("" === 0); // false - tipos diferentes
-
-// Casos curiosos
-console.log([1] == 1); // true - array é convertido
-console.log([1] === 1); // false - tipos diferentes
-```
-
-**Recomendação**: Use sempre `===` e `!==` para evitar bugs causados por conversões inesperadas.
-
-**Exercícios práticos:**
-
-Preveja o resultado (`true` ou `false`):
+5. Preveja o resultado (`true` ou `false`):
 
 ```javascript
 1. "0" == 0         // ?
@@ -562,7 +631,7 @@ Preveja o resultado (`true` ou `false`):
 ```
 
 <details>
-<summary>Ver respostas</summary>
+<summary>Ver respostas do <b>Exercício 5</b></summary>
 
 1. `true` (conversão)
 2. `false` (tipos diferentes)
@@ -574,3 +643,61 @@ Preveja o resultado (`true` ou `false`):
 8. `false` (tipos diferentes)
 
 </details>
+
+6. Preveja o resultado:
+
+```javascript
+let x = "5";
+let y = x * 2;
+let z = y + "1";
+
+console.log(z);
+```
+
+7. Explique o passo a passo de como a expressão a seguir é avaliada:
+
+```javascript
+let resultado = "5" + 5 * 2;
+console.log(resultado);
+```
+
+8. Considere o código a seguir. O que será exibido e por que a saída do código é essa?
+
+```javascript
+let a = Number("abc");
+
+console.log(a === NaN);
+console.log(Number.isNaN(a));
+```
+
+9. Preveja quais linhas imprimem algo:
+
+```javascript
+if ("") console.log("A");
+if ("0") console.log("B");
+if (0) console.log("C");
+if ([]) console.log("D");
+if (null) console.log("E");
+if ("false") console.log("F");
+```
+
+10. Explique com suas palavras por que `"5" + 5` e `"5" - 5` produzem resultados de tipos diferentes?
+
+11. O código abaixo pode ser interpretado de duas formas diferentes:
+
+```javascript
+let total = "100" + 20;
+```
+
+a) Qual é o resultado atual?\
+b) Por que o JavaScript escolhe esse comportamento?\
+c) Reescreva o código para forçar concatenação\
+d) Reescreva o código para forçar soma numérica
+
+12. Complete o código:
+
+```javascript
+let valor = Number("texto");
+
+// Imprima "Número inválido" se for NaN
+```
