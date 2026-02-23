@@ -23,6 +23,8 @@ weight: 1
 
 ## Cronograma
 
+[Veja o calendário dos cursos superiores](https://www.ifpb.edu.br/campus/esperanca/ensino/calendario-academico/documentos/calendario-academico_2026-cursos-superiores.pdf)
+
 <table>
   <tr>
     <th colspan="3"><strong>Fevereiro</strong></th>
