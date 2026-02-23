@@ -8,31 +8,25 @@ https://github.com/alex-shpak/hugo-book
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="1. Fundamentos essenciais da linguagem# Execução no navegador (console do DevTools)# Nem sempre é necessário criar arquivos ou abrir uma IDE para testar código JavaScript. Uma das grandes vantagens da linguagem é poder executá-la diretamente no navegador, por meio do console do DevTools.
-Para abrir o console:
-Chrome / Edge: F12 ou Ctrl &#43; Shift &#43; J Firefox: F12 ou Ctrl &#43; Shift &#43; K O console permite:
-Executar código JavaScript de forma imediata Testar expressões isoladas Experimentar funções e estruturas da linguagem Inspecionar valores, variáveis e objetos Observar erros e comportamentos inesperados Ao longo desta revisão, o console será nossa principal ferramenta de experimentação.
+<meta name="description" content="1. Fundamentos essenciais da linguagem# JavaScript é uma linguagem de programação interpretada, dinâmica e multiparadigma, criada originalmente para rodar nos navegadores. Hoje, com ambientes como o Node.js, ela também está presente no servidor, em ferramentas de linha de comando e em aplicações desktop.
+Por ter sido projetada para ser acessível e flexível, JavaScript carrega algumas decisões de design que podem surpreender programadores vindos de outras linguagens: tipos que se convertem automaticamente, valores que se comportam diferente dependendo do contexto, e operadores que produzem resultados inesperados se não forem bem compreendidos.
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/1-fundamentos/">
   <meta property="og:site_name" content="Antonio Dias">
   <meta property="og:title" content="1. Fundamentos essenciais da linguagem">
-  <meta property="og:description" content="1. Fundamentos essenciais da linguagem# Execução no navegador (console do DevTools)# Nem sempre é necessário criar arquivos ou abrir uma IDE para testar código JavaScript. Uma das grandes vantagens da linguagem é poder executá-la diretamente no navegador, por meio do console do DevTools.
-Para abrir o console:
-Chrome / Edge: F12 ou Ctrl &#43; Shift &#43; J Firefox: F12 ou Ctrl &#43; Shift &#43; K O console permite:
-Executar código JavaScript de forma imediata Testar expressões isoladas Experimentar funções e estruturas da linguagem Inspecionar valores, variáveis e objetos Observar erros e comportamentos inesperados Ao longo desta revisão, o console será nossa principal ferramenta de experimentação.">
+  <meta property="og:description" content="1. Fundamentos essenciais da linguagem# JavaScript é uma linguagem de programação interpretada, dinâmica e multiparadigma, criada originalmente para rodar nos navegadores. Hoje, com ambientes como o Node.js, ela também está presente no servidor, em ferramentas de linha de comando e em aplicações desktop.
+Por ter sido projetada para ser acessível e flexível, JavaScript carrega algumas decisões de design que podem surpreender programadores vindos de outras linguagens: tipos que se convertem automaticamente, valores que se comportam diferente dependendo do contexto, e operadores que produzem resultados inesperados se não forem bem compreendidos.">
   <meta property="og:locale" content="pt_br">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
 
 
   <meta itemprop="name" content="1. Fundamentos essenciais da linguagem">
-  <meta itemprop="description" content="1. Fundamentos essenciais da linguagem# Execução no navegador (console do DevTools)# Nem sempre é necessário criar arquivos ou abrir uma IDE para testar código JavaScript. Uma das grandes vantagens da linguagem é poder executá-la diretamente no navegador, por meio do console do DevTools.
-Para abrir o console:
-Chrome / Edge: F12 ou Ctrl &#43; Shift &#43; J Firefox: F12 ou Ctrl &#43; Shift &#43; K O console permite:
-Executar código JavaScript de forma imediata Testar expressões isoladas Experimentar funções e estruturas da linguagem Inspecionar valores, variáveis e objetos Observar erros e comportamentos inesperados Ao longo desta revisão, o console será nossa principal ferramenta de experimentação.">
-  <meta itemprop="wordCount" content="2368">
+  <meta itemprop="description" content="1. Fundamentos essenciais da linguagem# JavaScript é uma linguagem de programação interpretada, dinâmica e multiparadigma, criada originalmente para rodar nos navegadores. Hoje, com ambientes como o Node.js, ela também está presente no servidor, em ferramentas de linha de comando e em aplicações desktop.
+Por ter sido projetada para ser acessível e flexível, JavaScript carrega algumas decisões de design que podem surpreender programadores vindos de outras linguagens: tipos que se convertem automaticamente, valores que se comportam diferente dependendo do contexto, e operadores que produzem resultados inesperados se não forem bem compreendidos.">
+  <meta itemprop="wordCount" content="2620">
 
 <title>1. Fundamentos essenciais da linguagem | Antonio Dias</title>
 <link rel="icon" href="/favicon.png" >
@@ -42,7 +36,7 @@ Executar código JavaScript de forma imediata Testar expressões isoladas Experi
 
 
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.58295da8850901808cbfd764c18d2d512e72c6cfa60d05fd83c771a546ab9bda.js" integrity="sha256-WCldqIUJAYCMv9dkwY0tUS5yxs&#43;mDQX9g8dxpUarm9o=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.ada3584f6e8920f620288df6740794597ac1fb115c32eae00b9e6cf4c8e79d38.js" integrity="sha256-raNYT26JIPYgKI32dAeUWXrB&#43;xFcMurgC55s9MjnnTg=" crossorigin="anonymous"></script>
 
 
 
@@ -351,6 +345,8 @@ Executar código JavaScript de forma imediata Testar expressões isoladas Experi
         </li>
       
     
+      
+    
   </ul>
 
         </li>
@@ -493,7 +489,7 @@ Executar código JavaScript de forma imediata Testar expressões isoladas Experi
         <li><a href="#operadores-lógicos">Operadores lógicos</a></li>
       </ul>
     </li>
-    <li><a href="#conversão-implícita-vs-explícita-number-string">Conversão implícita vs explícita (<code>Number()</code>, <code>String()</code>)</a>
+    <li><a href="#conversão-implícita-vs-explícita">Conversão implícita vs explícita</a>
       <ul>
         <li><a href="#conversão-implícita-coerção">Conversão implícita (coerção)</a></li>
         <li><a href="#conversão-explícita">Conversão explícita</a></li>
@@ -521,6 +517,9 @@ Executar código JavaScript de forma imediata Testar expressões isoladas Experi
       
       
   <article class="markdown book-article"><h1 id="1-fundamentos-essenciais-da-linguagem">1. Fundamentos essenciais da linguagem<a class="anchor" href="#1-fundamentos-essenciais-da-linguagem">#</a></h1>
+<p>JavaScript é uma linguagem de programação interpretada, dinâmica e multiparadigma, criada originalmente para rodar nos navegadores. Hoje, com ambientes como o Node.js, ela também está presente no servidor, em ferramentas de linha de comando e em aplicações desktop.</p>
+<p>Por ter sido projetada para ser acessível e flexível, JavaScript carrega algumas decisões de design que podem surpreender programadores vindos de outras linguagens: tipos que se convertem automaticamente, valores que se comportam diferente dependendo do contexto, e operadores que produzem resultados inesperados se não forem bem compreendidos.</p>
+<p>Este capítulo cobre os fundamentos da linguagem que qualquer desenvolvedor JavaScript precisa dominar; não apenas para escrever código que funciona, mas para entender por que ele funciona.</p>
 <h2 id="execução-no-navegador-console-do-devtools">Execução no navegador (console do DevTools)<a class="anchor" href="#execu%c3%a7%c3%a3o-no-navegador-console-do-devtools">#</a></h2>
 <p>Nem sempre é necessário criar arquivos ou abrir uma IDE para testar código JavaScript. Uma das grandes vantagens da linguagem é poder executá-la diretamente no navegador, por meio do console do <strong>DevTools</strong>.</p>
 <p>Para abrir o console:</p>
@@ -584,7 +583,7 @@ Executar código JavaScript de forma imediata Testar expressões isoladas Experi
 Use <code>const</code> sempre que possível. Use <code>let</code> apenas quando precisar reatribuir.</p></blockquote><h2 id="tipos-primitivos-number-string-boolean-undefined-null">Tipos primitivos: <code>number</code>, <code>string</code>, <code>boolean</code>, <code>undefined</code>, <code>null</code><a class="anchor" href="#tipos-primitivos-number-string-boolean-undefined-null">#</a></h2>
 <p>JavaScript possui tipos primitivos, que representam valores simples e imutáveis. Use <code>typeof</code> para inspecionar o tipo de um valor; por exemplo, para descobrir qual o tipo do resultado de uma expressão.</p>
 <p>Antes de avançar, vale entender como o JavaScript funciona. Diferente de linguagens mais rígidas, o JavaScript tenta ser flexível, convertendo tipos automaticamente.</p>
-<p>Isso gera consequências importantes: Código mais rápido de escrever e menos verboso (menos comandos para executar uma ação). Entretanto, com essas vantagens vêm algumas desvantagens. Um programador iniciante pode criar código repleto de conversões invisíveis, resultados inesperados e bugs difíceis de perceber.</p>
+<p>Isso gera consequências importantes, como código mais rápido de escrever e menos verboso (menos comandos para executar uma ação). Entretanto, com essas vantagens vêm algumas desvantagens. Um programador iniciante pode criar código repleto de conversões invisíveis, resultados inesperados e bugs difíceis de perceber.</p>
 <h3 id="number"><code>number</code><a class="anchor" href="#number">#</a></h3>
 <p>Representa todos os números, inteiros ou decimais.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">inteiro</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">42</span>;
@@ -643,6 +642,7 @@ Use <code>const</code> sempre que possível. Use <code>let</code> apenas quando 
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;texto&#34;</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>; <span style="color:#75715e">// NaN
 </span></span></span><span style="display:flex;"><span>Math.<span style="color:#a6e22e">sqrt</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>); <span style="color:#75715e">// NaN
 </span></span></span></code></pre></div><h2 id="operadores-aritméticos-relacionais-e-lógicos">Operadores aritméticos, relacionais e lógicos<a class="anchor" href="#operadores-aritm%c3%a9ticos-relacionais-e-l%c3%b3gicos">#</a></h2>
+<p>Operadores são os símbolos que dizem ao JavaScript o que fazer com os valores. Toda expressão na linguagem — de um simples cálculo a uma condição complexa — é construída com eles. Nesta seção, você vai conhecer os três grupos principais: os que realizam cálculos, os que comparam valores e os que combinam condições lógicas.</p>
 <h3 id="operadores-aritméticos">Operadores aritméticos<a class="anchor" href="#operadores-aritm%c3%a9ticos">#</a></h3>
 <p>Realizam operações matemáticas.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>,
@@ -689,7 +689,9 @@ Use <code>const</code> sempre que possível. Use <code>let</code> apenas quando 
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// NOT (!) - Inverte o valor booleano
 </span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">estaCansado</span>); <span style="color:#75715e">// true
 </span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">temCNH</span>); <span style="color:#75715e">// false
-</span></span></span></code></pre></div><h2 id="conversão-implícita-vs-explícita-number-string">Conversão implícita vs explícita (<code>Number()</code>, <code>String()</code>)<a class="anchor" href="#convers%c3%a3o-impl%c3%adcita-vs-expl%c3%adcita-number-string">#</a></h2>
+</span></span></span></code></pre></div><h2 id="conversão-implícita-vs-explícita">Conversão implícita vs explícita<a class="anchor" href="#convers%c3%a3o-impl%c3%adcita-vs-expl%c3%adcita">#</a></h2>
+<p>Uma das características mais marcantes do JavaScript é a sua flexibilidade com tipos. Ao contrário de linguagens mais rígidas, onde misturar um número com uma <code>string</code> gera um erro, o JavaScript tenta tratar a situação por conta própria, convertendo valores automaticamente para que a operação faça sentido. Esse comportamento se chama <strong>coerção</strong>, e embora pareça conveniente, é uma das principais fontes de bugs em código JavaScript.</p>
+<p>Entender quando o JavaScript converte tipos sozinho, e quando você deve fazer isso explicitamente, é essencial para escrever código previsível.</p>
 <h3 id="conversão-implícita-coerção">Conversão implícita (coerção)<a class="anchor" href="#convers%c3%a3o-impl%c3%adcita-coer%c3%a7%c3%a3o">#</a></h3>
 <p>JavaScript converte automaticamente tipos em certas operações.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// String + Number = String (concatenação)
@@ -767,8 +769,8 @@ Use <code>const</code> sempre que possível. Use <code>let</code> apenas quando 
 </span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#f92672">!!</span><span style="color:#ae81ff">42</span>); <span style="color:#75715e">// true (dupla negação)
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>Na linha 11, você vê uma menção a um <strong>operador unário</strong>. Este é um operador que atua sobre um único operando (um único valor).
-Em JavaScript, alguns operadores unários são usados com frequência para conversão de tipos.</p>
+</div><p>Na linha 11, você vê uma menção a um <strong>operador unário</strong>. Este é um operador que atua sobre um único operando (um único valor).</p>
+<p>Em JavaScript, alguns operadores unários são usados com frequência para conversão de tipos.</p>
 <h4 id="operador-unário--conversão-para-número">Operador unário <code>+</code> (conversão para número)<a class="anchor" href="#operador-un%c3%a1rio--convers%c3%a3o-para-n%c3%bamero">#</a></h4>
 <p>O operador <code>+</code>, quando usado antes de um valor, tenta converter esse valor para o tipo <code>number</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;42&#34;</span>; <span style="color:#75715e">// 42
@@ -1106,7 +1108,7 @@ d) Reescreva o código para forçar soma numérica</p>
         <li><a href="#operadores-lógicos">Operadores lógicos</a></li>
       </ul>
     </li>
-    <li><a href="#conversão-implícita-vs-explícita-number-string">Conversão implícita vs explícita (<code>Number()</code>, <code>String()</code>)</a>
+    <li><a href="#conversão-implícita-vs-explícita">Conversão implícita vs explícita</a>
       <ul>
         <li><a href="#conversão-implícita-coerção">Conversão implícita (coerção)</a></li>
         <li><a href="#conversão-explícita">Conversão explícita</a></li>
