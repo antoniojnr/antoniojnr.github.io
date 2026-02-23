@@ -13,10 +13,10 @@ weight: 1
 
 ## Calendário resumido
 
-{{% hint info %}}
-**Avaliações**  
-Acesse [Avaliações](/docs/disciplinas/poo-info/avaliacoes/) para informações sobre como as avaliações bimestrais serão conduzidas.
-{{% /hint %}}
+> [!INFO]
+>
+> **Avaliações**  
+> Acesse [Avaliações](/docs/disciplinas/poo-info/avaliacoes/) para informações sobre como as avaliações bimestrais serão conduzidas.
 
 - **Início das aulas:** 09/02
 - **1º bimestre**
@@ -37,7 +37,9 @@ Acesse [Avaliações](/docs/disciplinas/poo-info/avaliacoes/) para informações
   - **Recuperação**:
 - **Prova final (data provável):** 21/12
 
-## Calendário detalhado
+## Cronograma
+
+[Veja o calendário dos cursos integrados](https://www.ifpb.edu.br/campus/esperanca/ensino/calendario-academico/documentos/calendario-academico_2026-cursos-integrados.pdf)
 
 <table>
   <tr>

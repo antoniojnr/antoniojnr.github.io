@@ -5,6 +5,12 @@ weight: 1
 
 # 1. Fundamentos essenciais da linguagem
 
+JavaScript é uma linguagem de programação interpretada, dinâmica e multiparadigma, criada originalmente para rodar nos navegadores. Hoje, com ambientes como o Node.js, ela também está presente no servidor, em ferramentas de linha de comando e em aplicações desktop.
+
+Por ter sido projetada para ser acessível e flexível, JavaScript carrega algumas decisões de design que podem surpreender programadores vindos de outras linguagens: tipos que se convertem automaticamente, valores que se comportam diferente dependendo do contexto, e operadores que produzem resultados inesperados se não forem bem compreendidos.
+
+Este capítulo cobre os fundamentos da linguagem que qualquer desenvolvedor JavaScript precisa dominar; não apenas para escrever código que funciona, mas para entender por que ele funciona.
+
 ## Execução no navegador (console do DevTools)
 
 Nem sempre é necessário criar arquivos ou abrir uma IDE para testar código JavaScript. Uma das grandes vantagens da linguagem é poder executá-la diretamente no navegador, por meio do console do **DevTools**.
@@ -96,7 +102,7 @@ JavaScript possui tipos primitivos, que representam valores simples e imutáveis
 
 Antes de avançar, vale entender como o JavaScript funciona. Diferente de linguagens mais rígidas, o JavaScript tenta ser flexível, convertendo tipos automaticamente.
 
-Isso gera consequências importantes: Código mais rápido de escrever e menos verboso (menos comandos para executar uma ação). Entretanto, com essas vantagens vêm algumas desvantagens. Um programador iniciante pode criar código repleto de conversões invisíveis, resultados inesperados e bugs difíceis de perceber.
+Isso gera consequências importantes, como código mais rápido de escrever e menos verboso (menos comandos para executar uma ação). Entretanto, com essas vantagens vêm algumas desvantagens. Um programador iniciante pode criar código repleto de conversões invisíveis, resultados inesperados e bugs difíceis de perceber.
 
 ### `number`
 
@@ -211,6 +217,8 @@ Math.sqrt(-1); // NaN
 
 ## Operadores aritméticos, relacionais e lógicos
 
+Operadores são os símbolos que dizem ao JavaScript o que fazer com os valores. Toda expressão na linguagem — de um simples cálculo a uma condição complexa — é construída com eles. Nesta seção, você vai conhecer os três grupos principais: os que realizam cálculos, os que comparam valores e os que combinam condições lógicas.
+
 ### Operadores aritméticos
 
 Realizam operações matemáticas.
@@ -272,7 +280,11 @@ console.log(!estaCansado); // true
 console.log(!temCNH); // false
 ```
 
-## Conversão implícita vs explícita (`Number()`, `String()`)
+## Conversão implícita vs explícita
+
+Uma das características mais marcantes do JavaScript é a sua flexibilidade com tipos. Ao contrário de linguagens mais rígidas, onde misturar um número com uma `string` gera um erro, o JavaScript tenta tratar a situação por conta própria, convertendo valores automaticamente para que a operação faça sentido. Esse comportamento se chama **coerção**, e embora pareça conveniente, é uma das principais fontes de bugs em código JavaScript.
+
+Entender quando o JavaScript converte tipos sozinho, e quando você deve fazer isso explicitamente, é essencial para escrever código previsível.
 
 ### Conversão implícita (coerção)
 
@@ -331,6 +343,7 @@ console.log(!!42); // true (dupla negação)
 ```
 
 Na linha 11, você vê uma menção a um **operador unário**. Este é um operador que atua sobre um único operando (um único valor).
+
 Em JavaScript, alguns operadores unários são usados com frequência para conversão de tipos.
 
 #### Operador unário `+` (conversão para número)
