@@ -17,7 +17,7 @@ Não use `Scanner`; todos os valores devem ser declarados diretamente no código
 
 1. Crie um programa que demonstre o comportamento de _overflow_ e _underflow_ nos tipos `byte`, `short` e `int`. Em seguida, para cada tipo:
 
-1.1. Exiba o valor máximo e mínimo usando constantes das _Wrapper Classes_ correspondentes (Use obrigatoriamente `Byte.MAX_VALUE`, `Short.MIN_VALUE`, `Integer.MAX_VALUE`, etc).
+1.1. Exiba o valor máximo e mínimo usando constantes das _Wrapper Classes_ correspondentes (Use obrigatoriamente `Byte.MAX_VALUE`, `Short.MAX_VALUE`, `Integer.MAX_VALUE`, etc).
 1.2. Some 1 ao valor máximo de cada tipo e exiba o resultado, explicando em comentários o que acontece.
 1.3. Converta explicitamente um `long` com valor 300 para `byte` e exiba o resultado, justificando o valor obtido.
 
