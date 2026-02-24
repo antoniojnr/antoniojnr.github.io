@@ -7,4 +7,5 @@ bookCollapseSection: true
 
 # Exercícios
 
-[Lista 01 - Introdução à linguagem Java](/docs/disciplinas/poo-ads/exercicios/lista01/)
+[Lista 01 - Introdução à linguagem Java](/docs/disciplinas/poo-ads/exercicios/lista01/)\
+[Lista 02 - Classes Wrapper, Tipos, Classes e Objetos](/docs/disciplinas/poo-ads/exercicios/lista02/)
