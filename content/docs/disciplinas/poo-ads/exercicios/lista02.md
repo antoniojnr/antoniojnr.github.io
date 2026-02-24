@@ -23,18 +23,18 @@ Não use `Scanner`; todos os valores devem ser declarados diretamente no código
 
 ---
 
-2. Crie a classe `MinhaString` que recebe no construtor um parâmetro `String valor`, que é um valor de um dos tipos: `int`, `double`, `long` e `boolean`.
+2. ~~Crie a classe `MinhaString` que recebe no construtor um parâmetro `String valor`, que é um valor de um dos tipos: `int`, `double`, `long` e `boolean`.~~
 
-A classe deve efetuar a conversão do valor recebido para qualquer um dos outros tipos, desde que seja possível, através dos métodos a seguir. Quando não for possível converter, retorne `null`:
+~~A classe deve efetuar a conversão do valor recebido para qualquer um dos outros tipos, desde que seja possível, através dos métodos a seguir. Quando não for possível converter, retorne `null`:~~
 
-- `toInteger()`: retorna o `Integer` correspondente
-- `toDouble()`: retorna o `Double` correspondente
-- `toLong()`: retorna o `Long` correspondente
-- `toBoolean()`: retorna o `Boolean` correspondente
+- ~~`toInteger()`: retorna o `Integer` correspondente~~
+- ~~`toDouble()`: retorna o `Double` correspondente~~
+- ~~`toLong()`: retorna o `Long` correspondente~~
+- ~~`toBoolean()`: retorna o `Boolean` correspondente~~
 
-Use os métodos `Integer.parseInt()`, `Double.parseDouble()`, etc, das respectivas _wrapper classes_.
+~~Use os métodos `Integer.parseInt()`, `Double.parseDouble()`, etc, das respectivas _wrapper classes_.~~
 
-**Exemplo**
+~~**Exemplo**~~
 
 ```java
 MinhaString minhaStr = new MinhaString("123");
@@ -52,7 +52,7 @@ System.out.println(minhaStr.toBoolean()); // null
 
 ---
 
-3. Implemente a classe `Temperatura` com as seguintes características:
+1. Implemente a classe `Temperatura` com as seguintes características:
 
 - Atributo `double valor` e `String escala` (aceitar apenas "C", "F" ou "K").
 - Construtor que valide a escala; imprima "Escala inválida" se inválida.
