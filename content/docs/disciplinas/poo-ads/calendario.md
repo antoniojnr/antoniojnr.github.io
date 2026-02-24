@@ -62,7 +62,8 @@ weight: 1
     <td>23 <em>(seg)</em></td>
     <td>
       <ul>
-        <li>Introdução ao Git</li>
+        <li>Tipos primitivos</li>
+        <li>Classes e objetos</li>
       </ul>
     </td>
     <td>14/160 aulas</td>
@@ -71,7 +72,7 @@ weight: 1
     <td>24 <em>(ter)</em></td>
     <td>
       <ul>
-        <li><b>Exercício:</b> Introdução ao Git</li>
+        <li><b>Exercício:</b> Tipos, classes e objetos</li>
       </ul>
     </td>
     <td>18/160 aulas</td>
@@ -84,8 +85,7 @@ weight: 1
     <td>02 <em>(seg)</em></td>
     <td>
       <ul>
-        <li>Tipos primitivos</li>
-        <li>Classes e objetos</li>
+        <li>Introdução ao Git</li>
       </ul>
     </td>
     <td>23/160 aulas</td>
@@ -94,7 +94,7 @@ weight: 1
     <td>03 <em>(ter)</em></td>
     <td>
       <ul>
-        <li><b>Exercício:</b> Tipos, classes e objetos</li>
+        <li><b>Exercício:</b> Introdução ao Git</li>
       </ul>
     </td>
     <td>27/160 aulas</td>
