@@ -15,7 +15,7 @@ Não use `Scanner`; todos os valores devem ser declarados diretamente no código
 
 ## Exercícios
 
-1. Crie um programa que demonstre o comportamento de _overflow_ e _underflow_ nos tipos `byte`, `short` e `int`. Em seguida, para cada tipo:
+**(Questão 01)** Crie um programa que demonstre o comportamento de _overflow_ e _underflow_ nos tipos `byte`, `short` e `int`. Em seguida, para cada tipo:
 
 1.1. Exiba o valor máximo e mínimo usando constantes das _Wrapper Classes_ correspondentes (Use obrigatoriamente `Byte.MAX_VALUE`, `Short.MAX_VALUE`, `Integer.MAX_VALUE`, etc).
 1.2. Some 1 ao valor máximo de cada tipo e exiba o resultado, explicando em comentários o que acontece.
@@ -23,7 +23,7 @@ Não use `Scanner`; todos os valores devem ser declarados diretamente no código
 
 ---
 
-2. ~~Crie a classe `MinhaString` que recebe no construtor um parâmetro `String valor`, que é um valor de um dos tipos: `int`, `double`, `long` e `boolean`.~~
+**(Questão 02)** ~~Crie a classe `MinhaString` que recebe no construtor um parâmetro `String valor`, que é um valor de um dos tipos: `int`, `double`, `long` e `boolean`.~~
 
 ~~A classe deve efetuar a conversão do valor recebido para qualquer um dos outros tipos, desde que seja possível, através dos métodos a seguir. Quando não for possível converter, retorne `null`:~~
 
@@ -52,7 +52,7 @@ System.out.println(minhaStr.toBoolean()); // null
 
 ---
 
-1. Implemente a classe `Temperatura` com as seguintes características:
+**(Questão 03)** Implemente a classe `Temperatura` com as seguintes características:
 
 - Atributo `double valor` e `String escala` (aceitar apenas "C", "F" ou "K").
 - Construtor que valide a escala; imprima "Escala inválida" se inválida.
@@ -69,7 +69,7 @@ Métodos de conversão:
 
 ---
 
-4. Crie uma classe `Estudante` com atributos para nome, matrícula e um array de notas. Crie métodos para calcular a média das notas e determinar se o aluno foi aprovado ou reprovado, considerando que a média para ser aprovado é 70. Crie objetos `Estudante` e imprima informações dos objetos.
+**(Questão 04)** Crie uma classe `Estudante` com atributos para nome, matrícula e um array de notas. Crie métodos para calcular a média das notas e determinar se o aluno foi aprovado ou reprovado, considerando que a média para ser aprovado é 70. Crie objetos `Estudante` e imprima informações dos objetos.
 
 - A classe `Estudante` deve possuir:
   - Construtor `Estudante(nome, matricula, n1, n2, ...)` onde, após `nome` e `matrícula`, pode ser passada uma quantidade variável de notas (usando varags).
@@ -80,7 +80,7 @@ Métodos de conversão:
 
 ---
 
-5. Crie uma classe `ContaCorrente` com:
+**(Questão 05)** Crie uma classe `ContaCorrente` com:
 
 Atributos:
 
@@ -98,7 +98,7 @@ No `main`, crie **duas** contas, realize depósitos, saques e uma transferência
 
 ---
 
-6. Crie uma classe Circulo com:
+**(Questão 06)** Crie uma classe Circulo com:
 
 Atributo:
 
@@ -120,7 +120,7 @@ No `main`:
 
 ---
 
-7. Crie uma classe Relogio que representa um horário no formato HH:MM:SS.
+**(Questão 07)** Crie uma classe Relogio que representa um horário no formato HH:MM:SS.
 
 Atributos: int horas, int minutos, int segundos
 
