@@ -707,6 +707,6 @@ let numeros = [1, 2, 2, 3, 4, 4, 5, 1];
 
 17. Se um laço fica infinito, por que isso acontece geralmente?
 
-18. Por que usar `break` em um laço melhora a performance?
+18. Por que usar `break` em um laço pode melhorar a performance?
 
-19. Como estruturaria um programa com múltiplas validações?
+19. Como você estruturaria um programa com múltiplas validações?

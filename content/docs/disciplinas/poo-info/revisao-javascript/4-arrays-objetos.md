@@ -517,3 +517,69 @@ d. Exiba todas as músicas numeradas, começando em 1.
 a. Qual a diferença entre acessar uma propriedade com notação de ponto e com notação de colchetes? Em que situação os colchetes são indispensáveis?\
 b. O que é um método? Em que sentido ele é diferente de uma função comum?\
 c. Por que arrays de objetos são uma estrutura tão comum na programação? Que tipo de dado eles representam bem?
+
+**(Questão 07)** Esta atividade consiste de um mini-projeto para integrar os assuntos já vistos até o momento. Você vai desenvolver um sistema para gerenciamento de tarefas, que permite a realização das operações básicas de cadastro, listagem, edição e remoção.
+
+a. Na etapa 1, implemente um menu, onde o usuário possa escolher alguma da operações para realizar.
+
+Este menu deve ser exibido continuamente, enquanto o usuário não escolher a opção 5 - Sair. Seu programa deve mostrar "Opção inválida", caso o usuário digite alguma opção diferente de `1`,`2`, `3`, `4` ou `5`.
+
+Uma vez que as ações não estão implementadas, exiba apenas uma mensagem indicando a opção escolhida. Um exemplo de funcionamento do menu é mostrado a seguir.
+
+```
+=== LISTA DE TAREFAS ===
+1 - Criar nova tarefa
+2 - Listar tarefas
+3 - Editar tarefa
+4 - Remover tarefa
+5 - Sair
+
+Opção: 1
+------------------------
+=== CRIAR TAREFA     ===
+Criando tarefa...
+```
+
+b. Na etapa 2, implemente a operação de criar nova tarefa. Cada tarefa tem um prazo e uma descrição. O usuário deve digitar esses dados e o sistema deve criar um novo objeto e guardar em um array.
+
+c. Na etapa 3, implemente a listagem de tarefas, exibindo-as conforme mostrado a seguir.
+
+```
+=== LISTAR TAREFAS   ===
+03/03/2026 - Atividade de POO
+06/03/2026 - Finalizar o livro de português
+11/03/2026 - Aniversário de Antonio
+```
+
+d. Na etapa 4, implemente a edição de tarefas. Primeiro, é necessário exibi-las com uma numeração para o usuário possa indicar qual tarefa quer editar.
+
+```
+=== EDITAR TAREFA   ===
+1 - 03/03/2026 - Atividade de POO
+2 - 06/03/2026 - Finalizar o livro de português
+3 - 11/03/2026 - Aniversário de Antonio
+
+Qual tarefa você quer editar? (Ex.: 1): 1
+---
+Editando tarefa:
+03/03/2026 - Atividade de POO
+
+Digite um novo prazo: 04/03/2026
+Digite uma nova descrição:
+
+Tarefa editada:
+04/03/2026 - Atividade de POO
+```
+
+e. Na etapa 5, implemente a remoção de tarefas. Primeiro, é necessário exibi-las com uma numeração para o usuário possa indicar qual tarefa quer remover.
+
+```
+=== REMOVER TAREFA   ===
+1 - 03/03/2026 - Atividade de POO
+2 - 06/03/2026 - Finalizar o livro de português
+3 - 11/03/2026 - Aniversário de Antonio
+
+Qual tarefa você quer REMOVER? (Ex.: 1): 1
+
+Tarefa removida.
+```
