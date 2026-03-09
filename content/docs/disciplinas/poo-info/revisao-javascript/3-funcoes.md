@@ -281,3 +281,7 @@ soma5(10); // 15
 a. O que significa dizer que funções são "cidadãs de primeira classe" em JavaScript?\
 b. Qual é a diferença prática entre passar `mensagem` e passar `mensagem()` como argumento para outra função?\
 c. O escopo de função é uma forma de encapsulamento? Justifique.
+
+## Atividades extra
+
+1. [Plataforma de streaming](/content/docs/disciplinas/poo-info/revisao-javascript/3-exercicio-funcoes/)
