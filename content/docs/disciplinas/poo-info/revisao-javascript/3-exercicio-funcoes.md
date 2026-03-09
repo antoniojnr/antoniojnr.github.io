@@ -1,5 +1,5 @@
 ---
-title: "3. Funções"
+title: "3. Funções (Exercício)"
 weight: 3
 bookHidden: false
 ---
