@@ -1,7 +1,7 @@
 ---
 title: "3. Funções"
 weight: 3
-bookHidden: false
+bookHidden: true
 ---
 
 # 3. Funções
