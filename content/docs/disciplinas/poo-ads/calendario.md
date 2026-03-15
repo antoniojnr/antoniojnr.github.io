@@ -308,9 +308,9 @@ weight: 1
   <tr>
     <td>20 <em>(qua)</em></td>
     <td>
-      <div class="pill blue extra">Aula extra - 3 aulas</div>
+      <div class="pill blue extra">Aula extra - 4 aulas</div>
     </td>
-    <td>124/160 aulas</td>
+    <td>125/160 aulas</td>
   </tr>
   <tr>
     <td>25 <em>(seg)</em></td>
@@ -319,7 +319,7 @@ weight: 1
         <li>Java 2D</li>
       </ul>
     </td>
-    <td>129/160 aulas</td>
+    <td>130/160 aulas</td>
   </tr>
   <tr>
     <td>26 <em>(ter)</em></td>
@@ -351,6 +351,13 @@ weight: 1
       <div>A prova abrange todos os tópicos já ministrados até essa data.</div>
     </td>
     <td>142/160 aulas</td>
+  </tr>
+  <tr>
+    <td>03 <em>(qua)</em></td>
+    <td>
+      <div class="pill blue extra">Aula extra - 4 aulas</div>
+    </td>
+    <td>58/160 aulas</td>
   </tr>
   <tr>
     <td>08 <em>(seg)</em></td>

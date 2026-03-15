@@ -98,7 +98,6 @@ weight: 1
     </td>
     <td>
     14/40 aulas
-    <div class="pill blue extra">Aula extra: 1</div>
     </td>
   </tr>
   <tr>
@@ -118,6 +117,13 @@ weight: 1
 
   <tr>
     <th colspan="3"><strong>Abril</strong></th>
+  </tr>
+  <tr>
+    <td>01 <em>(qua)</em></td>
+    <td>
+      <div class="pill blue extra">Aula extra - 2 aulas</div>
+    </td>
+    <td>58/160 aulas</td>
   </tr>
   <tr>
     <td>07</td>
@@ -144,6 +150,13 @@ weight: 1
       </ul>
     </td>
     <td>20/40 aulas</td>
+  </tr>
+  <tr>
+    <td>15 <em>(qua)</em></td>
+    <td>
+      <div class="pill blue extra">Aula extra - 2 aulas</div>
+    </td>
+    <td>58/160 aulas</td>
   </tr>
   <tr>
     <td>21</td>
@@ -179,6 +192,13 @@ weight: 1
     25/40 aulas
     <div class="pill blue extra">Aula extra: 1</div>
     </td>
+  </tr>
+  <tr>
+    <td>06 <em>(qua)</em></td>
+    <td>
+      <div class="pill blue extra">Aula extra - 2 aulas</div>
+    </td>
+    <td>58/160 aulas</td>
   </tr>
   <tr>
     <td>12</td>
@@ -234,8 +254,14 @@ weight: 1
     </td>
     <td>
     35/40 aulas
-    <div class="pill blue extra">Aula extra: 1</div>
     </td>
+  </tr>
+  <tr>
+    <td>03 <em>(qua)</em></td>
+    <td>
+      <div class="pill blue extra">Aula extra - 2 aulas</div>
+    </td>
+    <td>58/160 aulas</td>
   </tr>
   <tr>
     <td>09</td>
@@ -247,7 +273,6 @@ weight: 1
     </td>
     <td>
     38/40 aulas
-    <div class="pill blue extra">Aula extra: 1</div>
     </td>
   </tr>
   <tr>
