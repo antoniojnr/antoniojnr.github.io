@@ -123,7 +123,7 @@ weight: 1
     <td>
       <div class="pill blue extra">Aula extra - 2 aulas</div>
     </td>
-    <td>58/160 aulas</td>
+    <td>18/40 aulas</td>
   </tr>
   <tr>
     <td>07</td>
@@ -139,7 +139,7 @@ weight: 1
         </ul>
       </ul>
     </td>
-    <td>18/40 aulas</td>
+    <td>20/40 aulas</td>
   </tr>
   <tr>
     <td>14</td>
@@ -149,14 +149,14 @@ weight: 1
         <li><b>Exercício de casa 2:</b> Segurança de dispositivos; soluções de segurança e tecnologias</li>
       </ul>
     </td>
-    <td>20/40 aulas</td>
+    <td>22/40 aulas</td>
   </tr>
   <tr>
     <td>15 <em>(qua)</em></td>
     <td>
       <div class="pill blue extra">Aula extra - 2 aulas</div>
     </td>
-    <td>58/160 aulas</td>
+    <td>24/40 aulas</td>
   </tr>
   <tr>
     <td>21</td>
@@ -174,7 +174,7 @@ weight: 1
         <li>Segurança em redes sem fio</li>
       </ul>
     </td>
-    <td>22/40 aulas</td>
+    <td>26/40 aulas</td>
   </tr>
 
   <tr>
@@ -189,7 +189,7 @@ weight: 1
       </ul>
     </td>
     <td>
-    25/40 aulas
+    29/40 aulas
     <div class="pill blue extra">Aula extra: 1</div>
     </td>
   </tr>
@@ -198,7 +198,7 @@ weight: 1
     <td>
       <div class="pill blue extra">Aula extra - 2 aulas</div>
     </td>
-    <td>58/160 aulas</td>
+    <td>31/40 aulas</td>
   </tr>
   <tr>
     <td>12</td>
@@ -212,7 +212,7 @@ weight: 1
         </ul>
       </ul>
     </td>
-    <td>27/40 aulas</td>
+    <td>33/40 aulas</td>
   </tr>
   <tr>
     <td>19</td>
@@ -222,7 +222,7 @@ weight: 1
       </ul>
     </td>
     <td>
-    30/40 aulas
+    36/40 aulas
     <div class="pill blue extra">Aula extra: 1</div>
     </td>
   </tr>
@@ -236,7 +236,7 @@ weight: 1
         </ul>
       </ul>
     </td>
-    <td>32/40 aulas</td>
+    <td>38/40 aulas</td>
   </tr>
 
   <tr>
@@ -253,7 +253,7 @@ weight: 1
       </ul>
     </td>
     <td>
-    35/40 aulas
+    41/40 aulas
     </td>
   </tr>
   <tr>
@@ -261,7 +261,7 @@ weight: 1
     <td>
       <div class="pill blue extra">Aula extra - 2 aulas</div>
     </td>
-    <td>58/160 aulas</td>
+    <td>43/40 aulas</td>
   </tr>
   <tr>
     <td>09</td>
@@ -272,7 +272,7 @@ weight: 1
       </ul>
     </td>
     <td>
-    38/40 aulas
+    46/40 aulas
     </td>
   </tr>
   <tr>
@@ -281,7 +281,7 @@ weight: 1
       <div class="avaliacao">Reposição de avaliações</div>
       <div>É permitido repor uma avaliação sem justificativa. Para repor duas avaliações, é necessário apresentar justificativa. Não há reposição de menor nota.</div>
     </td>
-    <td>40/40 aulas</td>
+    <td>48/40 aulas</td>
   </tr>
   <tr>
     <td>18</td>

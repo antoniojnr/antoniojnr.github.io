@@ -328,7 +328,7 @@ weight: 1
         <li><b>Exercício:</b> Java 2D</li>
       </ul>
     </td>
-    <td>133/160 aulas</td>
+    <td>134/160 aulas</td>
   </tr>
 
   <tr>
@@ -342,7 +342,7 @@ weight: 1
         <li>Bibliotecas externas</li>
       </ul>
     </td>
-    <td>138/160 aulas</td>
+    <td>139/160 aulas</td>
   </tr>
   <tr>
     <td>02 <em>(ter)</em></td>
@@ -350,14 +350,14 @@ weight: 1
       <div class="avaliacao">Avaliação 2</div>
       <div>A prova abrange todos os tópicos já ministrados até essa data.</div>
     </td>
-    <td>142/160 aulas</td>
+    <td>143/160 aulas</td>
   </tr>
   <tr>
     <td>03 <em>(qua)</em></td>
     <td>
       <div class="pill blue extra">Aula extra - 4 aulas</div>
     </td>
-    <td>58/160 aulas</td>
+    <td>147/160 aulas</td>
   </tr>
   <tr>
     <td>08 <em>(seg)</em></td>
@@ -365,7 +365,7 @@ weight: 1
       <div class="avaliacao">Reposição de avaliações</div>
       <div>É permitido repor uma avaliação sem justificativa. Para repor duas avaliações, é necessário apresentar justificativa. Não há reposição de menor nota.</div>
     </td>
-    <td>147/160 aulas</td>
+    <td>152/160 aulas</td>
   </tr>
   <tr>
     <td>09 <em>(ter)</em></td>
@@ -374,7 +374,7 @@ weight: 1
         <li>Acompanhamento de projetos</li>
       </ul>
     </td>
-    <td>151/160 aulas</td>
+    <td>156/160 aulas</td>
   </tr>
   <tr>
     <td>15 <em>(seg)</em></td>
@@ -383,7 +383,7 @@ weight: 1
         <li><b>Apresentação de projetos</b></li>
       </ul>
     </td>
-    <td>156/160 aulas</td>
+    <td>161/160 aulas</td>
   </tr>
   <tr>
     <td>16 <em>(ter)</em></td>
@@ -392,7 +392,7 @@ weight: 1
         <li><b>Apresentação de projetos</b></li>
       </ul>
     </td>
-    <td>160/160 aulas</td>
+    <td>165/160 aulas</td>
   </tr>
   <tr>
     <td>18</td>

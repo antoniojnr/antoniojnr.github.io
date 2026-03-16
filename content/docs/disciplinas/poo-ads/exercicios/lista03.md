@@ -5,6 +5,8 @@ bookCollapseSection: true
 #bookHidden: true
 ---
 
+# Lista 03
+
 ## Objetivo
 
 Praticar os conceitos fundamentais do Git em um cenário realista: você vai criar e versionar um pequeno projeto de software, registrar um histórico significativo, trabalhar com branches e tags, e desfazer mudanças em diferentes situações.
