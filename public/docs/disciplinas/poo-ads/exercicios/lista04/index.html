@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lista 04# Instruções# Observe com atenção os requisitos e como os pacotes para cada questão devem ser organizados. Todos os exercícios devem ser feitos em um único projeto do IntelliJ. A correção será feita presencialmente, com o professor executando os casos de teste na sua máquina. Baixe os casos de teste aqui Respeite a estrutura de pacotes também no diretório de testes, mas mova para o diretório de testes do seu projeto apenas os casos de testes em que estiver trabalhando. Caso contrário, seu projeto apresentará erro de compilação enquanto não implementar todas as classes e métodos usados nos casos de testes. Exercícios# Questão 01. Implemente a classe Receita que representa uma receita culinária cadastrada em um aplicativo.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista04/">
+  <meta property="og:site_name" content="Antonio Dias">
+  <meta property="og:title" content="Lista 04">
+  <meta property="og:description" content="Lista 04# Instruções# Observe com atenção os requisitos e como os pacotes para cada questão devem ser organizados. Todos os exercícios devem ser feitos em um único projeto do IntelliJ. A correção será feita presencialmente, com o professor executando os casos de teste na sua máquina. Baixe os casos de teste aqui Respeite a estrutura de pacotes também no diretório de testes, mas mova para o diretório de testes do seu projeto apenas os casos de testes em que estiver trabalhando. Caso contrário, seu projeto apresentará erro de compilação enquanto não implementar todas as classes e métodos usados nos casos de testes. Exercícios# Questão 01. Implemente a classe Receita que representa uma receita culinária cadastrada em um aplicativo.">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="Lista 04">
+  <meta itemprop="description" content="Lista 04# Instruções# Observe com atenção os requisitos e como os pacotes para cada questão devem ser organizados. Todos os exercícios devem ser feitos em um único projeto do IntelliJ. A correção será feita presencialmente, com o professor executando os casos de teste na sua máquina. Baixe os casos de teste aqui Respeite a estrutura de pacotes também no diretório de testes, mas mova para o diretório de testes do seu projeto apenas os casos de testes em que estiver trabalhando. Caso contrário, seu projeto apresentará erro de compilação enquanto não implementar todas as classes e métodos usados nos casos de testes. Exercícios# Questão 01. Implemente a classe Receita que representa uma receita culinária cadastrada em um aplicativo.">
+  <meta itemprop="wordCount" content="1508">
+
+<title>Lista 04 | Antonio Dias</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista04/">
+<link rel="stylesheet" href="/book.min.a734d0f84f339961c2f38061ac4210305aad75979ab791937815c1ac455d7ec7.css" integrity="sha256-pzTQ&#43;E8zmWHC84BhrEIQMFqtdZeat5GTeBXBrEVdfsc=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.bc34b5319327da457f1934b46fba3f95229393e76fafb741640afdf8c56c48b1.js" integrity="sha256-vDS1MZMn2kV/GTS0b7o/lSKTk&#43;dvr7dBZAr9&#43;MVsSLE=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Antonio Dias</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Buscar"
+    aria-label="Buscar"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="toggle"  />
+    <label for="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="flex">
+      <a href="/docs/posts/" class="">
+        Atualizações</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/posts/primeiro-post/" class="">
+      Primeiro Post</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/" class="">
+      Disciplinas</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0658642cbe0befc355ebbab1ea93df0" class="toggle" checked />
+    <label for="section-e0658642cbe0befc355ebbab1ea93df0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/" class="">
+        POO (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3de58d405969aa3459400420373baf0f" class="toggle" checked />
+    <label for="section-3de58d405969aa3459400420373baf0f" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/" class="">
+        Exercícios</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-23e47a9839d0b7fff7effd5165e44534" class="toggle"  />
+    <label for="section-23e47a9839d0b7fff7effd5165e44534" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista01/" class="">
+        Lista 01</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f252426f7bf9838e8641f64c9ba7f7df" class="toggle"  />
+    <label for="section-f252426f7bf9838e8641f64c9ba7f7df" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista02/" class="">
+        Lista 02</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-472fd952daa9782f8296f0029a22a9c0" class="toggle"  />
+    <label for="section-472fd952daa9782f8296f0029a22a9c0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista03/" class="">
+        Lista 03</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9dcdb8fdaeac7c4002bbc97a700158ee" class="toggle" checked />
+    <label for="section-9dcdb8fdaeac7c4002bbc97a700158ee" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista04/" class="active">
+        Lista 04</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/projeto/" class="">
+      Projeto</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/git/" class="">
+      Git</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ad90f794895ae5dd26ad3b3869e4edf2" class="toggle"  />
+    <label for="section-ad90f794895ae5dd26ad3b3869e4edf2" class="flex">
+      <a href="/docs/disciplinas/poo-info/" class="">
+        POO (Integrado)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-85611c34c3e4fce02fc9163ca37c73a3" class="toggle"  />
+    <label for="section-85611c34c3e4fce02fc9163ca37c73a3" class="flex">
+      <a href="/docs/disciplinas/poo-info/revisao-javascript/" class="">
+        JavaScript - uma breve introdução à linguagem</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/1-fundamentos/" class="">
+      1. Fundamentos essenciais da linguagem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/2-estruturas-controle/" class="">
+      2. Estruturas de controle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/3-funcoes/" class="">
+      3. Funções</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/3-exercicio-funcoes/" class="">
+      3. Funções (Exercício)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/4-arrays-objetos/" class="">
+      4. Arrays e Objetos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/5-strings/" class="">
+      5. Strings</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="toggle"  />
+    <label for="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="flex">
+      <a href="/docs/disciplinas/seginfo-ads/" class="">
+        Seg. da Informação (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Lista 04</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#instruções">Instruções</a></li>
+    <li><a href="#exercícios">Exercícios</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="lista-04">Lista 04<a class="anchor" href="#lista-04">#</a></h1>
+<h2 id="instruções">Instruções<a class="anchor" href="#instru%c3%a7%c3%b5es">#</a></h2>
+<ul>
+<li>Observe com atenção os requisitos e como os pacotes para cada questão devem ser organizados.</li>
+<li>Todos os exercícios devem ser feitos em um único projeto do IntelliJ.</li>
+<li>A correção será feita presencialmente, com o professor executando os casos de teste na sua máquina.</li>
+<li>Baixe os casos de teste <a class="book-btn"href="/docs/disciplinas/poo-ads/exercicios/testes-lista04-20261.zip">aqui</a></li>
+<li>Respeite a estrutura de pacotes também no diretório de testes, mas mova para o diretório de testes do seu projeto apenas os casos de testes em que estiver trabalhando. Caso contrário, seu projeto apresentará erro de compilação enquanto não implementar todas as classes e métodos usados nos casos de testes.</li>
+</ul>
+<h2 id="exercícios">Exercícios<a class="anchor" href="#exerc%c3%adcios">#</a></h2>
+<p><strong>Questão 01.</strong> Implemente a classe <code>Receita</code> que representa uma receita culinária cadastrada em um aplicativo.</p>
+<p><strong>Atributos:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Atributo</th>
+          <th>Tipo</th>
+          <th>Descrição</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>nome</code></td>
+          <td><code>String</code></td>
+          <td>Nome da receita</td>
+      </tr>
+      <tr>
+          <td><code>tempoPreparo</code></td>
+          <td><code>int</code></td>
+          <td>Tempo de preparo em minutos</td>
+      </tr>
+      <tr>
+          <td><code>rendimentoPorcoes</code></td>
+          <td><code>int</code></td>
+          <td>Quantidade de porções geradas</td>
+      </tr>
+      <tr>
+          <td><code>ingredientes</code></td>
+          <td><code>List&lt;String&gt;</code></td>
+          <td>Lista interna de ingredientes</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Requisitos:</strong></p>
+<ol>
+<li>As classes devem estar dentro do pacote <code>lista04.receita</code>.</li>
+<li>O construtor deve lançar <code>IllegalArgumentException</code> se <code>nome</code> for nulo ou vazio, ou se <code>tempoPreparo</code> ou <code>rendimentoPorcoes</code> forem menores ou iguais a zero.</li>
+<li>Os <em>setters</em> de <code>tempoPreparo</code> e <code>rendimentoPorcoes</code> devem lançar <code>IllegalArgumentException</code> para valores inválidos, com mensagem descritiva.</li>
+<li>O método <code>getIngredientes()</code> deve retornar uma <strong>cópia</strong> da lista interna, nunca a referência direta.</li>
+<li>O método <code>adicionarIngrediente(String ingrediente)</code> deve ignorar silenciosamente entradas nulas ou vazias (sem lançar exceção — são situações esperadas em tempo de execução).</li>
+<li>O método <code>removerIngrediente(String ingrediente)</code> deve remover o ingrediente se ele existir na lista, ignorando silenciosamente caso não exista.</li>
+</ol>
+<hr>
+<p><strong>Questão 02.</strong> Implemente a classe <code>Drone</code> que representa o estado operacional de um drone de monitoramento.</p>
+<p><strong>Atributos:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Atributo</th>
+          <th>Tipo</th>
+          <th>Descrição</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>identificador</code></td>
+          <td><code>String</code></td>
+          <td>Código único do drone (imutável após criação)</td>
+      </tr>
+      <tr>
+          <td><code>bateria</code></td>
+          <td><code>int</code></td>
+          <td>Nível de bateria em % (0 a 100)</td>
+      </tr>
+      <tr>
+          <td><code>altitude</code></td>
+          <td><code>int</code></td>
+          <td>Altitude atual em metros (0 a 120)</td>
+      </tr>
+      <tr>
+          <td><code>emVoo</code></td>
+          <td><code>boolean</code></td>
+          <td>Indica se o drone está em voo</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Requisitos:</strong></p>
+<p>As classes devem estar dentro do pacote <code>lista04.drone</code>.</p>
+<ol>
+<li>O construtor deve lançar <code>IllegalArgumentException</code> se <code>identificador</code> for nulo ou vazio.</li>
+<li><code>identificador</code> não possui <em>setter</em> — é definido apenas no construtor.</li>
+<li><code>setBateria(int valor)</code> deve lançar <code>IllegalArgumentException</code> se o valor estiver fora do intervalo 0–100, com mensagem indicando o valor recebido e o intervalo esperado.</li>
+<li><code>setAltitude(int metros)</code> deve lançar <code>IllegalArgumentException</code> se o valor for negativo ou acima de 120. Deve ignorar a operação (sem lançar exceção) caso o drone não esteja em voo.</li>
+<li>O método <code>decolar()</code> não deve alterar o estado <code>emVoo</code> caso a bateria seja menor ou igual a 20%. Não lança exceção, pois bateria baixa é uma condição operacional normal.</li>
+<li>O método <code>pousar()</code> define <code>emVoo = false</code> e <code>altitude = 0</code>.</li>
+</ol>
+<hr>
+<p><strong>Questão 03.</strong> Implemente a classe <code>Episodio</code> que representa um episódio de um podcast.</p>
+<p><strong>Atributos:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Atributo</th>
+          <th>Tipo</th>
+          <th>Descrição</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>titulo</code></td>
+          <td><code>String</code></td>
+          <td>Título do episódio</td>
+      </tr>
+      <tr>
+          <td><code>numero</code></td>
+          <td><code>int</code></td>
+          <td>Número do episódio (imutável após criação)</td>
+      </tr>
+      <tr>
+          <td><code>duracaoMinutos</code></td>
+          <td><code>int</code></td>
+          <td>Duração em minutos</td>
+      </tr>
+      <tr>
+          <td><code>status</code></td>
+          <td><code>String</code></td>
+          <td>Status: <code>&quot;RASCUNHO&quot;</code>, <code>&quot;PUBLICADO&quot;</code> ou <code>&quot;ARQUIVADO&quot;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Requisitos:</strong></p>
+<p>As classes devem estar dentro do pacote <code>lista04.podcast</code>.</p>
+<ol>
+<li>O construtor deve lançar <code>IllegalArgumentException</code> nos seguintes casos, com mensagens descritivas:
+<ul>
+<li><code>titulo</code> nulo ou vazio.</li>
+<li><code>numero</code> menor ou igual a zero.</li>
+<li><code>duracaoMinutos</code> menor ou igual a zero.</li>
+</ul>
+</li>
+<li>O <em>setter</em> de <code>duracaoMinutos</code> deve lançar <code>IllegalArgumentException</code> para valores inválidos.</li>
+<li><code>numero</code> não possui <em>setter</em>.</li>
+<li><code>status</code> não possui <em>setter</em> direto. As transições são feitas por três métodos, que ignoram a operação (sem lançar exceção) quando a transição não é permitida:
+<ul>
+<li><code>publicar()</code>: muda de <code>&quot;RASCUNHO&quot;</code> para <code>&quot;PUBLICADO&quot;</code>. Inválido em qualquer outro estado.</li>
+<li><code>arquivar()</code>: muda de <code>&quot;PUBLICADO&quot;</code> para <code>&quot;ARQUIVADO&quot;</code>. Inválido em qualquer outro estado.</li>
+<li><code>restaurar()</code>: muda de <code>&quot;ARQUIVADO&quot;</code> para <code>&quot;RASCUNHO&quot;</code>. Inválido em qualquer outro estado.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><strong>Questão 04.</strong> Implemente as classes <code>Musica</code> e <code>Playlist</code>.</p>
+<p><strong>Classe <code>Musica</code>:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Atributo</th>
+          <th>Tipo</th>
+          <th>Descrição</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>titulo</code></td>
+          <td><code>String</code></td>
+          <td>Título da música</td>
+      </tr>
+      <tr>
+          <td><code>artista</code></td>
+          <td><code>String</code></td>
+          <td>Nome do artista</td>
+      </tr>
+      <tr>
+          <td><code>duracaoSegundos</code></td>
+          <td><code>int</code></td>
+          <td>Duração em segundos</td>
+      </tr>
+      <tr>
+          <td><code>prioridade</code></td>
+          <td><code>String</code></td>
+          <td><code>&quot;NORMAL&quot;</code> ou <code>&quot;URGENTE&quot;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Requisitos gerais:</strong></p>
+<p>As classes devem estar dentro do pacote <code>lista04.musica</code>.</p>
+<p><strong>Requisitos de <code>Musica</code>:</strong></p>
+<ol>
+<li>O construtor deve lançar <code>IllegalArgumentException</code> se <code>titulo</code> ou <code>artista</code> forem nulos ou vazios, ou se <code>duracaoSegundos</code> for menor ou igual a zero.</li>
+<li>O <em>setter</em> de <code>prioridade</code> deve lançar <code>IllegalArgumentException</code> se o valor não for <code>&quot;NORMAL&quot;</code> ou <code>&quot;URGENTE&quot;</code>.</li>
+</ol>
+<p><strong>Classe <code>Playlist</code>:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Atributo</th>
+          <th>Tipo</th>
+          <th>Descrição</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>nome</code></td>
+          <td><code>String</code></td>
+          <td>Nome da playlist</td>
+      </tr>
+      <tr>
+          <td><code>fila</code></td>
+          <td><code>List&lt;Musica&gt;</code></td>
+          <td>Lista interna de músicas (não exposta diretamente)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Requisitos de <code>Playlist</code>:</strong></p>
+<ol>
+<li>O construtor deve lançar <code>IllegalArgumentException</code> se <code>nome</code> for nulo ou vazio.</li>
+<li>Não forneça <em>getter</em> para <code>fila</code>.</li>
+<li>O método <code>adicionar(Musica m)</code> deve lançar <code>IllegalArgumentException</code> se <code>m</code> for nulo. Músicas <code>&quot;URGENTE&quot;</code> são inseridas antes das <code>&quot;NORMAL&quot;</code>; músicas <code>&quot;NORMAL&quot;</code> vão para o final.</li>
+<li>Implemente também os métodos:
+<ul>
+<li><code>remover(String titulo)</code>: remove a primeira música com o título informado, ignorando silenciosamente caso não exista.</li>
+<li><code>proximaMusica()</code>: retorna (sem remover) a primeira música da fila, ou <code>null</code> se vazia.</li>
+<li><code>reproduzirProxima()</code>: remove e retorna a primeira música da fila, ou <code>null</code> se vazia.</li>
+<li><code>tamanho()</code>: retorna o número de músicas na fila.</li>
+<li><code>listar()</code>: exibe título, artista e prioridade de cada música na ordem atual.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><strong>Questão 05.</strong> Implemente as classes <code>ItemLaboratorio</code> e <code>EstoqueLaboratorio</code>.</p>
+<p><strong>Classe <code>ItemLaboratorio</code>:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Atributo</th>
+          <th>Tipo</th>
+          <th>Descrição</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>codigo</code></td>
+          <td><code>String</code></td>
+          <td>Código do item (imutável)</td>
+      </tr>
+      <tr>
+          <td><code>nome</code></td>
+          <td><code>String</code></td>
+          <td>Nome do item</td>
+      </tr>
+      <tr>
+          <td><code>quantidadeDisponivel</code></td>
+          <td><code>int</code></td>
+          <td>Quantidade atual em estoque (≥ 0)</td>
+      </tr>
+      <tr>
+          <td><code>quantidadeMinima</code></td>
+          <td><code>int</code></td>
+          <td>Quantidade mínima de segurança (&gt; 0)</td>
+      </tr>
+      <tr>
+          <td><code>status</code></td>
+          <td><code>String</code></td>
+          <td><code>&quot;NORMAL&quot;</code>, <code>&quot;ALERTA&quot;</code> ou <code>&quot;ESGOTADO&quot;</code> — calculado automaticamente</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Regras de status:</strong></p>
+<ul>
+<li><code>&quot;ESGOTADO&quot;</code>: quantidade disponível igual a zero.</li>
+<li><code>&quot;ALERTA&quot;</code>: quantidade disponível maior que zero e menor ou igual à quantidade mínima.</li>
+<li><code>&quot;NORMAL&quot;</code>: quantidade disponível maior que a quantidade mínima.</li>
+</ul>
+<p><strong>Requisitos gerais:</strong></p>
+<p>As classes devem estar dentro do pacote <code>lista04.laboratorio</code>.</p>
+<p><strong>Requisitos de <code>ItemLaboratorio</code>:</strong></p>
+<ol>
+<li>O construtor deve lançar <code>IllegalArgumentException</code> se <code>codigo</code> ou <code>nome</code> forem nulos ou vazios, se <code>quantidadeDisponivel</code> for negativa, ou se <code>quantidadeMinima</code> for menor ou igual a zero.</li>
+<li><code>codigo</code> não possui <em>setter</em>.</li>
+<li><code>status</code> não possui <em>setter</em> — é recalculado automaticamente sempre que <code>quantidadeDisponivel</code> for alterada.</li>
+<li><code>quantidadeDisponivel</code> só é alterada pelos métodos:
+<ul>
+<li><code>entrada(int quantidade)</code>: deve lançar <code>IllegalArgumentException</code> se <code>quantidade</code> for menor ou igual a zero.</li>
+<li><code>saida(int quantidade)</code>: deve lançar <code>IllegalArgumentException</code> se <code>quantidade</code> for menor ou igual a zero. Deve ignorar a operação (sem lançar exceção) se o resultado deixar o estoque negativo, uma vez que falta de estoque é uma situação operacional esperada.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Classe <code>EstoqueLaboratorio</code>:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Atributo</th>
+          <th>Tipo</th>
+          <th>Descrição</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>itens</code></td>
+          <td><code>List&lt;ItemLaboratorio&gt;</code></td>
+          <td>Lista interna de itens</td>
+      </tr>
+  </tbody>
+</table>
+<p>Implemente os métodos:</p>
+<ul>
+<li><code>cadastrar(ItemLaboratorio item)</code>: deve lançar <code>IllegalArgumentException</code> se <code>item</code> for nulo.</li>
+<li><code>buscarPorCodigo(String codigo)</code>: retorna o item correspondente ou <code>null</code>.</li>
+<li><code>listarEmAlerta()</code>: retorna uma <strong>cópia</strong> da lista contendo apenas itens com status <code>&quot;ALERTA&quot;</code> ou <code>&quot;ESGOTADO&quot;</code>.</li>
+</ul>
+<hr>
+<p><strong>Questão 06.</strong> Implemente as classes <code>Consulta</code> e <code>AgendaMedica</code>.</p>
+<p><strong>Classe <code>Consulta</code>:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Atributo</th>
+          <th>Tipo</th>
+          <th>Descrição</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>id</code></td>
+          <td><code>int</code></td>
+          <td>Identificador único (imutável)</td>
+      </tr>
+      <tr>
+          <td><code>nomePaciente</code></td>
+          <td><code>String</code></td>
+          <td>Nome do paciente</td>
+      </tr>
+      <tr>
+          <td><code>nomeMedico</code></td>
+          <td><code>String</code></td>
+          <td>Nome do médico</td>
+      </tr>
+      <tr>
+          <td><code>dataHora</code></td>
+          <td><code>String</code></td>
+          <td>Data e hora no formato <code>&quot;DD/MM/AAAA HH:MM&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>status</code></td>
+          <td><code>String</code></td>
+          <td><code>&quot;AGENDADA&quot;</code>, <code>&quot;CONFIRMADA&quot;</code>, <code>&quot;CANCELADA&quot;</code> ou <code>&quot;REALIZADA&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>observacoes</code></td>
+          <td><code>String</code></td>
+          <td>Observações adicionais (pode ser vazio)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Regras de transição de status:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>De → Para</th>
+          <th>Permitido?</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>AGENDADA</code> → <code>CONFIRMADA</code></td>
+          <td>Sim</td>
+      </tr>
+      <tr>
+          <td><code>AGENDADA</code> → <code>CANCELADA</code></td>
+          <td>Sim</td>
+      </tr>
+      <tr>
+          <td><code>CONFIRMADA</code> → <code>REALIZADA</code></td>
+          <td>Sim</td>
+      </tr>
+      <tr>
+          <td><code>CONFIRMADA</code> → <code>CANCELADA</code></td>
+          <td>Sim</td>
+      </tr>
+      <tr>
+          <td><code>CANCELADA</code> → qualquer</td>
+          <td>Não</td>
+      </tr>
+      <tr>
+          <td><code>REALIZADA</code> → qualquer</td>
+          <td>Não</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Requisitos gerais:</strong></p>
+<p>As classes devem estar dentro do pacote <code>lista04.agendaMedica</code>.</p>
+<p><strong>Requisitos de <code>Consulta</code>:</strong></p>
+<ol>
+<li>O construtor deve lançar <code>IllegalArgumentException</code> se <code>nomePaciente</code>, <code>nomeMedico</code> ou <code>dataHora</code> forem nulos ou vazios, ou se <code>id</code> for menor ou igual a zero.</li>
+<li><code>id</code> não possui <em>setter</em>.</li>
+<li><code>status</code> não possui <em>setter</em> direto. As transições são feitas pelos métodos <code>confirmar()</code>, <code>cancelar()</code> e <code>realizar()</code>, que ignoram a operação (sem lançar exceção) quando a transição não é permitida.</li>
+<li><code>observacoes</code> possui <em>getter</em> e <em>setter</em> sem restrições.</li>
+<li>Os demais atributos possuem apenas <em>getter</em>.</li>
+</ol>
+<p><strong>Classe <code>AgendaMedica</code>:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Atributo</th>
+          <th>Tipo</th>
+          <th>Descrição</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>consultas</code></td>
+          <td><code>List&lt;Consulta&gt;</code></td>
+          <td>Lista interna de consultas</td>
+      </tr>
+  </tbody>
+</table>
+<p>Implemente os métodos:</p>
+<ul>
+<li><code>agendar(Consulta c)</code>: deve lançar <code>IllegalArgumentException</code> se <code>c</code> for nulo.</li>
+<li><code>buscarPorId(int id)</code>: retorna a consulta ou <code>null</code>.</li>
+<li><code>listarPorMedico(String nomeMedico)</code>: retorna uma <strong>cópia</strong> da lista filtrada pelo médico.</li>
+<li><code>listarAtivas()</code>: retorna consultas com status <code>&quot;AGENDADA&quot;</code> ou <code>&quot;CONFIRMADA&quot;</code>.</li>
+</ul>
+<hr>
+<p><strong>Questão 07.</strong> Implemente as classes <code>Documento</code> e <code>FilaDeImpressao</code>.</p>
+<p><strong>Classe <code>Documento</code>:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Atributo</th>
+          <th>Tipo</th>
+          <th>Descrição</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>nome</code></td>
+          <td><code>String</code></td>
+          <td>Nome do arquivo</td>
+      </tr>
+      <tr>
+          <td><code>numeroPaginas</code></td>
+          <td><code>int</code></td>
+          <td>Número de páginas (&gt; 0)</td>
+      </tr>
+      <tr>
+          <td><code>prioridade</code></td>
+          <td><code>String</code></td>
+          <td><code>&quot;NORMAL&quot;</code> ou <code>&quot;URGENTE&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>status</code></td>
+          <td><code>String</code></td>
+          <td><code>&quot;AGUARDANDO&quot;</code>, <code>&quot;IMPRIMINDO&quot;</code> ou <code>&quot;CONCLUIDO&quot;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Requisitos gerais:</strong></p>
+<p>As classes devem estar dentro do pacote <code>lista04.impressao</code>.</p>
+<p><strong>Requisitos de <code>Documento</code>:</strong></p>
+<ol>
+<li>O construtor deve lançar <code>IllegalArgumentException</code> se <code>nome</code> for nulo ou vazio, se <code>numeroPaginas</code> for menor ou igual a zero, ou se <code>prioridade</code> não for <code>&quot;NORMAL&quot;</code> ou <code>&quot;URGENTE&quot;</code>.</li>
+<li>O status inicia como <code>&quot;AGUARDANDO&quot;</code> e não possui <em>setter</em> direto. As transições seguem a ordem <code>AGUARDANDO → IMPRIMINDO → CONCLUIDO</code> e são feitas pelos métodos <code>iniciarImpressao()</code> e <code>concluir()</code>, que ignoram a operação (sem lançar exceção) quando chamados fora de ordem.</li>
+</ol>
+<p><strong>Classe <code>FilaDeImpressao</code>:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Atributo</th>
+          <th>Tipo</th>
+          <th>Descrição</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>nome</code></td>
+          <td><code>String</code></td>
+          <td>Nome da impressora</td>
+      </tr>
+      <tr>
+          <td><code>fila</code></td>
+          <td><code>List&lt;Documento&gt;</code></td>
+          <td>Lista interna — não exposta diretamente</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Requisitos de <code>FilaDeImpressao</code>:</strong></p>
+<ol>
+<li>O construtor deve lançar <code>IllegalArgumentException</code> se <code>nome</code> for nulo ou vazio.</li>
+<li>Não forneça <em>getter</em> para <code>fila</code>.</li>
+<li>Implemente os métodos:
+<ul>
+<li><code>adicionar(Documento d)</code>: deve lançar <code>IllegalArgumentException</code> se <code>d</code> for nulo. Documentos <code>&quot;URGENTE&quot;</code> são inseridos ao final do bloco de urgentes já existente (antes dos normais); documentos <code>&quot;NORMAL&quot;</code> vão para o final da fila.</li>
+<li><code>cancelar(String nome)</code>: remove da fila o documento com aquele nome <strong>somente se seu status for <code>&quot;AGUARDANDO&quot;</code></strong>. Ignora (sem lançar exceção) se o documento não for encontrado ou não puder ser cancelado.</li>
+<li><code>imprimirProximo()</code>: pega o primeiro documento da fila, chama <code>iniciarImpressao()</code> e depois <code>concluir()</code>, exibindo nome e número de páginas. Remove-o da fila ao concluir. Exibe mensagem se a fila estiver vazia.</li>
+<li><code>exibirFila()</code>: mostra nome, prioridade e status de cada documento na ordem atual.</li>
+<li><code>totalPaginasNaFila()</code>: retorna a soma das páginas de todos os documentos ainda na fila.</li>
+</ul>
+</li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <footer class="book-footer">
+   
+  <a href="/docs/disciplinas/poo-ads/exercicios/"> ← Voltar para Exercícios </a>
+   
+</footer>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#instruções">Instruções</a></li>
+    <li><a href="#exercícios">Exercícios</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

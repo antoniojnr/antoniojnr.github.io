@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="4. Arrays e Objetos# Arrays e objetos são as principais estruturas de dados em JavaScript — e entender como elas se relacionam ajuda a compreender a linguagem de forma mais profunda.
+Um objeto é um conjunto de propriedades: cada propriedade tem um nome (sempre uma string) e um valor associado. Um array, por sua vez, é um objeto especializado cujas propriedades são índices inteiros (0, 1, 2…), com comportamentos extras para lidar com sequências ordenadas de dados.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/4-arrays-objetos/">
+  <meta property="og:site_name" content="Antonio Dias">
+  <meta property="og:title" content="4. Arrays e Objetos">
+  <meta property="og:description" content="4. Arrays e Objetos# Arrays e objetos são as principais estruturas de dados em JavaScript — e entender como elas se relacionam ajuda a compreender a linguagem de forma mais profunda.
+Um objeto é um conjunto de propriedades: cada propriedade tem um nome (sempre uma string) e um valor associado. Um array, por sua vez, é um objeto especializado cujas propriedades são índices inteiros (0, 1, 2…), com comportamentos extras para lidar com sequências ordenadas de dados.">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="4. Arrays e Objetos">
+  <meta itemprop="description" content="4. Arrays e Objetos# Arrays e objetos são as principais estruturas de dados em JavaScript — e entender como elas se relacionam ajuda a compreender a linguagem de forma mais profunda.
+Um objeto é um conjunto de propriedades: cada propriedade tem um nome (sempre uma string) e um valor associado. Um array, por sua vez, é um objeto especializado cujas propriedades são índices inteiros (0, 1, 2…), com comportamentos extras para lidar com sequências ordenadas de dados.">
+  <meta itemprop="wordCount" content="2791">
+
+<title>4. Arrays e Objetos | Antonio Dias</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/4-arrays-objetos/">
+<link rel="stylesheet" href="/book.min.a734d0f84f339961c2f38061ac4210305aad75979ab791937815c1ac455d7ec7.css" integrity="sha256-pzTQ&#43;E8zmWHC84BhrEIQMFqtdZeat5GTeBXBrEVdfsc=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.bc34b5319327da457f1934b46fba3f95229393e76fafb741640afdf8c56c48b1.js" integrity="sha256-vDS1MZMn2kV/GTS0b7o/lSKTk&#43;dvr7dBZAr9&#43;MVsSLE=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Antonio Dias</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Buscar"
+    aria-label="Buscar"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="toggle"  />
+    <label for="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="flex">
+      <a href="/docs/posts/" class="">
+        Atualizações</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/posts/primeiro-post/" class="">
+      Primeiro Post</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/" class="">
+      Disciplinas</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0658642cbe0befc355ebbab1ea93df0" class="toggle"  />
+    <label for="section-e0658642cbe0befc355ebbab1ea93df0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/" class="">
+        POO (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3de58d405969aa3459400420373baf0f" class="toggle"  />
+    <label for="section-3de58d405969aa3459400420373baf0f" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/" class="">
+        Exercícios</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-23e47a9839d0b7fff7effd5165e44534" class="toggle"  />
+    <label for="section-23e47a9839d0b7fff7effd5165e44534" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista01/" class="">
+        Lista 01</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f252426f7bf9838e8641f64c9ba7f7df" class="toggle"  />
+    <label for="section-f252426f7bf9838e8641f64c9ba7f7df" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista02/" class="">
+        Lista 02</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-472fd952daa9782f8296f0029a22a9c0" class="toggle"  />
+    <label for="section-472fd952daa9782f8296f0029a22a9c0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista03/" class="">
+        Lista 03</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9dcdb8fdaeac7c4002bbc97a700158ee" class="toggle"  />
+    <label for="section-9dcdb8fdaeac7c4002bbc97a700158ee" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista04/" class="">
+        Lista 04</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/projeto/" class="">
+      Projeto</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/git/" class="">
+      Git</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ad90f794895ae5dd26ad3b3869e4edf2" class="toggle" checked />
+    <label for="section-ad90f794895ae5dd26ad3b3869e4edf2" class="flex">
+      <a href="/docs/disciplinas/poo-info/" class="">
+        POO (Integrado)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-85611c34c3e4fce02fc9163ca37c73a3" class="toggle" checked />
+    <label for="section-85611c34c3e4fce02fc9163ca37c73a3" class="flex">
+      <a href="/docs/disciplinas/poo-info/revisao-javascript/" class="">
+        JavaScript - uma breve introdução à linguagem</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/1-fundamentos/" class="">
+      1. Fundamentos essenciais da linguagem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/2-estruturas-controle/" class="">
+      2. Estruturas de controle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/3-funcoes/" class="">
+      3. Funções</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/3-exercicio-funcoes/" class="">
+      3. Funções (Exercício)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/4-arrays-objetos/" class="active">
+      4. Arrays e Objetos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/5-strings/" class="">
+      5. Strings</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="toggle"  />
+    <label for="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="flex">
+      <a href="/docs/disciplinas/seginfo-ads/" class="">
+        Seg. da Informação (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>4. Arrays e Objetos</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#arrays">Arrays</a>
+      <ul>
+        <li><a href="#o-que-é-um-array">O que é um array?</a></li>
+        <li><a href="#criando-e-acessando-elementos">Criando e acessando elementos</a></li>
+        <li><a href="#propriedades-e-métodos-essenciais">Propriedades e métodos essenciais</a></li>
+        <li><a href="#iterando-sobre-arrays">Iterando sobre arrays</a></li>
+        <li><a href="#métodos-de-ordem-superior">Métodos de ordem superior</a></li>
+      </ul>
+    </li>
+    <li><a href="#objetos">Objetos</a>
+      <ul>
+        <li><a href="#o-que-é-um-objeto">O que é um objeto?</a></li>
+        <li><a href="#criando-e-acessando-propriedades">Criando e acessando propriedades</a></li>
+        <li><a href="#métodos">Métodos</a></li>
+        <li><a href="#adicionando-alterando-e-removendo-propriedades">Adicionando, alterando e removendo propriedades</a></li>
+        <li><a href="#iterando-sobre-objetos">Iterando sobre objetos</a></li>
+      </ul>
+    </li>
+    <li><a href="#arrays-e-objetos-juntos">Arrays e objetos juntos</a>
+      <ul>
+        <li><a href="#arrays-de-objetos">Arrays de objetos</a></li>
+        <li><a href="#objetos-com-arrays-como-propriedades">Objetos com arrays como propriedades</a></li>
+      </ul>
+    </li>
+    <li><a href="#atividades-sugeridas">Atividades sugeridas</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="4-arrays-e-objetos">4. Arrays e Objetos<a class="anchor" href="#4-arrays-e-objetos">#</a></h1>
+<p>Arrays e objetos são as principais estruturas de dados em JavaScript — e entender como elas se relacionam ajuda a compreender a linguagem de forma mais profunda.</p>
+<p>Um objeto é um conjunto de propriedades: cada propriedade tem um nome (sempre uma string) e um valor associado. Um array, por sua vez, é um objeto especializado cujas propriedades são índices inteiros (0, 1, 2&hellip;), com comportamentos extras para lidar com sequências ordenadas de dados.</p>
+<p>Na prática, arrays são usados para armazenar e manipular coleções — uma lista de nomes, uma sequência de resultados. Objetos, por outro lado, agrupam propriedades e valores sob um contexto comum — e um de seus usos mais comuns é justamente descrever entidades: um Produto, um Estudante, um Usuário. São, por isso, a base introdutória do estudo de orientação a objetos.</p>
+<hr>
+<h2 id="arrays">Arrays<a class="anchor" href="#arrays">#</a></h2>
+<h3 id="o-que-é-um-array">O que é um array?<a class="anchor" href="#o-que-%c3%a9-um-array">#</a></h3>
+<p>Um array é uma sequência ordenada de valores. Cada valor é chamado de elemento e ocupa uma posição numérica no array, conhecida como índice. O primeiro elemento sempre está no índice 0.</p>
+<p>Arrays em JavaScript não têm tipo fixo: podem conter números, strings, booleanos ou qualquer outro valor — inclusive outros arrays. Essa última possibilidade permite representar estruturas como matrizes (arrays de arrays).</p>
+<h3 id="criando-e-acessando-elementos">Criando e acessando elementos<a class="anchor" href="#criando-e-acessando-elementos">#</a></h3>
+<p>A forma mais direta de criar um array é através de um literal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dados</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">numeros</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">varios</span> <span style="color:#f92672">=</span> [<span style="color:#66d9ef">false</span>, [], <span style="color:#ae81ff">5</span>, <span style="color:#e6db74">&#34;a&#34;</span>];</span></span></code></pre></div><p>Os valores de um literal não precisam ser constantes — podem ser expressões calculadas no momento da criação:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">calculados</span> <span style="color:#f92672">=</span> [<span style="color:#a6e22e">x</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">x</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, Math.<span style="color:#a6e22e">sqrt</span>(<span style="color:#a6e22e">x</span>)]; <span style="color:#75715e">// [20, 11, 3.16...]
+</span></span></span></code></pre></div><p>Arrays literais também podem conter objetos ou outros arrays:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">matriz</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>],
+</span></span><span style="display:flex;"><span>  [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>],
+</span></span><span style="display:flex;"><span>  [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>],
+</span></span><span style="display:flex;"><span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Aqui temos um array de objetos, que serão abordados na próxima seção.
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">pessoas</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Ana&#34;</span>, <span style="color:#a6e22e">idade</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">21</span> },
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Bruno&#34;</span>, <span style="color:#a6e22e">idade</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">19</span> },
+</span></span><span style="display:flex;"><span>];</span></span></code></pre></div><p>Para acessar um elemento, usa-se o índice entre colchetes. Lembre que o primeiro elemento está no índice 0:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">frutas</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;maçã&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;uva&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">frutas</span>[<span style="color:#ae81ff">0</span>]; <span style="color:#75715e">// &#34;maçã&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">frutas</span>[<span style="color:#ae81ff">2</span>]; <span style="color:#75715e">// &#34;uva&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">frutas</span>[<span style="color:#ae81ff">5</span>]; <span style="color:#75715e">// undefined — índice inexistente não gera erro
+</span></span></span></code></pre></div><p>Para acessar elementos em uma matriz, usamos a mesma notação de colchetes duas vezes — o primeiro índice seleciona o array interno, e o segundo seleciona o elemento dentro dele:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">matriz</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>],
+</span></span><span style="display:flex;"><span>  [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>],
+</span></span><span style="display:flex;"><span>  [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>],
+</span></span><span style="display:flex;"><span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">matriz</span>[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">1</span>]; <span style="color:#75715e">// índice 1 do array no índice 0: 2
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">matriz</span>[<span style="color:#ae81ff">2</span>][<span style="color:#ae81ff">0</span>]; <span style="color:#75715e">// índice 0 do array no índice 2: 5
+</span></span></span></code></pre></div><p>Para modificar um elemento, basta atribuir um novo valor à posição:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">frutas</span>[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;manga&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">frutas</span>); <span style="color:#75715e">// [&#34;maçã&#34;, &#34;manga&#34;, &#34;uva&#34;]
+</span></span></span></code></pre></div><h3 id="propriedades-e-métodos-essenciais">Propriedades e métodos essenciais<a class="anchor" href="#propriedades-e-m%c3%a9todos-essenciais">#</a></h3>
+<h4 id="length"><code>length</code><a class="anchor" href="#length">#</a></h4>
+<p>Retorna o número de elementos do array:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">numeros</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">numeros</span>.<span style="color:#a6e22e">length</span>; <span style="color:#75715e">// 3
+</span></span></span></code></pre></div><p>É útil quando precisamos percorrer o array sem saber quantos elementos ele tem, ou para acessar o último elemento:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">numeros</span>[<span style="color:#a6e22e">numeros</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]; <span style="color:#75715e">// 30
+</span></span></span></code></pre></div><h4 id="push-pop-shift-e-unshift"><code>push</code>, <code>pop</code>, <code>shift</code> e <code>unshift</code><a class="anchor" href="#push-pop-shift-e-unshift">#</a></h4>
+<p>Esses quatro métodos adicionam ou removem elementos nas extremidades do array. Todos modificam o array original.</p>
+<p><code>push</code> adiciona um ou mais elementos ao final; <code>pop</code> remove o último e o retorna:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nomes</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Lara&#34;</span>, <span style="color:#e6db74">&#34;Vitória&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">nomes</span>.<span style="color:#a6e22e">push</span>(<span style="color:#e6db74">&#34;Eliel&#34;</span>); <span style="color:#75715e">// [&#34;Lara&#34;, &#34;Vitória&#34;, &#34;Eliel&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">removido</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nomes</span>.<span style="color:#a6e22e">pop</span>(); <span style="color:#75715e">// removido = &#34;Eliel&#34;, nomes = [&#34;Lara&#34;, &#34;Vitória&#34;]
+</span></span></span></code></pre></div><p><code>unshift</code> adiciona ao início; <code>shift</code> remove o primeiro e o retorna:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">nomes</span>.<span style="color:#a6e22e">unshift</span>(<span style="color:#e6db74">&#34;Michel&#34;</span>); <span style="color:#75715e">// [&#34;Michel&#34;, &#34;Lara&#34;, &#34;Vitória&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">primeiro</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nomes</span>.<span style="color:#a6e22e">shift</span>(); <span style="color:#75715e">// primeiro = &#34;Michel&#34;, nomes = [&#34;Lara&#34;, &#34;Vitória&#34;]
+</span></span></span></code></pre></div><h4 id="indexof-e-includes"><code>indexOf</code> e <code>includes</code><a class="anchor" href="#indexof-e-includes">#</a></h4>
+<p><code>indexOf</code> retorna o índice da primeira ocorrência de um valor, ou <code>-1</code> se não encontrar:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">cores</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;azul&#34;</span>, <span style="color:#e6db74">&#34;verde&#34;</span>, <span style="color:#e6db74">&#34;azul&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cores</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;verde&#34;</span>); <span style="color:#75715e">// 1
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">cores</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;roxo&#34;</span>); <span style="color:#75715e">// -1
+</span></span></span></code></pre></div><p><code>includes</code> responde apenas se o valor existe, com <code>true</code> ou <code>false</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">cores</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#e6db74">&#34;azul&#34;</span>); <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">cores</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#e6db74">&#34;roxo&#34;</span>); <span style="color:#75715e">// false
+</span></span></span></code></pre></div><p>Use <code>indexOf</code> quando precisar saber <em>onde</em> o elemento está; use <code>includes</code> quando precisar saber apenas <em>se</em> ele está.</p>
+<h4 id="slice-e-splice"><code>slice</code> e <code>splice</code><a class="anchor" href="#slice-e-splice">#</a></h4>
+<p><code>slice(início, fim)</code> retorna uma cópia de um trecho do array, sem modificar o original. O índice de fim não é incluído:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">letras</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>, <span style="color:#e6db74">&#34;d&#34;</span>, <span style="color:#e6db74">&#34;e&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">letras</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>); <span style="color:#75715e">// [&#34;b&#34;, &#34;c&#34;, &#34;d&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">letras</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">2</span>); <span style="color:#75715e">// [&#34;c&#34;, &#34;d&#34;, &#34;e&#34;] — até o fim
+</span></span></span></code></pre></div><p><code>splice(índice, quantidade, ...itens)</code> modifica o array original: remove elementos a partir de um índice e, opcionalmente, insere novos no lugar:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">letras</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>, <span style="color:#e6db74">&#34;d&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">letras</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>); <span style="color:#75715e">// remove 2 a partir do índice 1 → letras = [&#34;a&#34;, &#34;d&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">letras</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#34;x&#34;</span>, <span style="color:#e6db74">&#34;y&#34;</span>); <span style="color:#75715e">// insere sem remover → letras = [&#34;a&#34;, &#34;x&#34;, &#34;y&#34;, &#34;d&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">letras</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;z&#34;</span>); <span style="color:#75715e">// remove 1 e insere &#34;z&#34; → letras = [&#34;a&#34;, &#34;x&#34;, &#34;z&#34;, &#34;d&#34;]
+</span></span></span></code></pre></div><blockquote class='book-hint '>
+<p><code>slice</code> não altera o array original; <code>splice</code> altera. Essa distinção importa sempre que o array original precisar ser preservado.</p>
+</blockquote><h3 id="iterando-sobre-arrays">Iterando sobre arrays<a class="anchor" href="#iterando-sobre-arrays">#</a></h3>
+<p>A forma mais direta de percorrer um array é com o <code>for</code> tradicional, usando o índice:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">numeros</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">numeros</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">numeros</span>[<span style="color:#a6e22e">i</span>]);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>O <code>for...of</code> é uma alternativa mais legível quando o índice não é necessário:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">numero</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">numeros</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">numero</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Use <code>for</code> quando precisar do índice durante a iteração; use <code>for...of</code> quando só os valores importam.</p>
+<h3 id="métodos-de-ordem-superior">Métodos de ordem superior<a class="anchor" href="#m%c3%a9todos-de-ordem-superior">#</a></h3>
+<p>Os métodos a seguir recebem uma função como argumento — o que os torna muito expressivos para trabalhar com coleções. Cada um percorre o array e aplica a função a cada elemento, mas com propósitos diferentes.</p>
+<h4 id="foreach"><code>forEach</code><a class="anchor" href="#foreach">#</a></h4>
+<p>Executa uma função para cada elemento, sem retornar nada. Substitui o <code>for</code> quando o objetivo é apenas produzir um efeito colateral, como imprimir valores:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nomes</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Iago&#34;</span>, <span style="color:#e6db74">&#34;Kezya&#34;</span>, <span style="color:#e6db74">&#34;Otávio&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">nomes</span>.<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">nome</span>) =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">nome</span>));</span></span></code></pre></div><h4 id="map"><code>map</code><a class="anchor" href="#map">#</a></h4>
+<p>Transforma cada elemento do array e retorna um <strong>novo array</strong> com os resultados. O array original não é modificado:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">numeros</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dobrados</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">numeros</span>.<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">n</span>) =&gt; <span style="color:#a6e22e">n</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// dobrados = [2, 4, 6, 8]
+</span></span></span></code></pre></div><h4 id="filter"><code>filter</code><a class="anchor" href="#filter">#</a></h4>
+<p>Retorna um <strong>novo array</strong> contendo apenas os elementos para os quais a função retornou <code>true</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">numeros</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">pares</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">numeros</span>.<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">n</span>) =&gt; <span style="color:#a6e22e">n</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// pares = [2, 4, 6]
+</span></span></span></code></pre></div><h4 id="reduce"><code>reduce</code><a class="anchor" href="#reduce">#</a></h4>
+<p>Percorre o array acumulando um único resultado. Recebe uma função com dois parâmetros — o acumulador e o elemento atual — e um valor inicial para o acumulador:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">numeros</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">soma</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">numeros</span>.<span style="color:#a6e22e">reduce</span>((<span style="color:#a6e22e">acumulador</span>, <span style="color:#a6e22e">n</span>) =&gt; <span style="color:#a6e22e">acumulador</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">n</span>, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// soma = 10
+</span></span></span></code></pre></div><p>A cada iteração, o valor retornado pela função se torna o novo acumulador. É o método mais flexível dos quatro, mas também o que exige mais atenção para ser compreendido.</p>
+<blockquote class='book-hint '>
+<p><code>forEach</code> é para efeitos; <code>map</code> é para transformar; <code>filter</code> é para selecionar; <code>reduce</code> é para acumular. Ter essa distinção clara evita muito código desnecessário.</p>
+</blockquote><hr>
+<h2 id="objetos">Objetos<a class="anchor" href="#objetos">#</a></h2>
+<h3 id="o-que-é-um-objeto">O que é um objeto?<a class="anchor" href="#o-que-%c3%a9-um-objeto">#</a></h3>
+<p>Um objeto é uma coleção de propriedades, onde cada propriedade associa um nome a um valor. O nome de uma propriedade é sempre uma string — chamada de chave — e o valor pode ser qualquer coisa: número, string, booleano, array, outro objeto ou até uma função.</p>
+<p>Quando o valor de uma propriedade é uma função, ela passa a ser chamada de <strong>método</strong>. É exatamente assim que os métodos de arrays funcionam: <code>push</code>, <code>map</code>, <code>filter</code> são funções armazenadas como propriedades do objeto array.</p>
+<p>As operações mais comuns sobre objetos são criá-los e definir, consultar, remover, testar e enumerar suas propriedades.</p>
+<h3 id="criando-e-acessando-propriedades">Criando e acessando propriedades<a class="anchor" href="#criando-e-acessando-propriedades">#</a></h3>
+<p>A forma mais comum de criar um objeto é através de um literal, cuja sintaxe é um conjunto de pares chave-valor entre chaves:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">produto</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Teclado&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">preco</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">150</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">emEstoque</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div><p>Para acessar uma propriedade, há duas notações. A <strong>notação de ponto</strong> é a mais comum:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">produto</span>.<span style="color:#a6e22e">nome</span>; <span style="color:#75715e">// &#34;Teclado&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">produto</span>.<span style="color:#a6e22e">preco</span>; <span style="color:#75715e">// 150
+</span></span></span></code></pre></div><p>A <strong>notação de colchetes</strong> recebe a chave como string. É menos usual no dia a dia, mas indispensável em alguns casos:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">produto</span>[<span style="color:#e6db74">&#34;nome&#34;</span>]; <span style="color:#75715e">// &#34;Teclado&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">produto</span>[<span style="color:#e6db74">&#34;preco&#34;</span>]; <span style="color:#75715e">// 150
+</span></span></span></code></pre></div><p>A principal vantagem dos colchetes é que a chave pode ser uma variável, o que não é possível com a notação de ponto:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">campo</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;preco&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">produto</span>[<span style="color:#a6e22e">campo</span>]; <span style="color:#75715e">// 150 — equivale a produto[&#34;preco&#34;]
+</span></span></span></code></pre></div><p>Acessar uma propriedade inexistente não gera erro — retorna <code>undefined</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">produto</span>.<span style="color:#a6e22e">cor</span>; <span style="color:#75715e">// undefined
+</span></span></span></code></pre></div><hr>
+<h3 id="métodos">Métodos<a class="anchor" href="#m%c3%a9todos">#</a></h3>
+<p>Como qualquer valor, uma função pode ser armazenada como propriedade de um objeto. Quando isso acontece, ela é chamada de método.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">produto</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Teclado&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">preco</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">150</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">desconto</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">percentual</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">produto</span>.<span style="color:#a6e22e">preco</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">percentual</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">100</span>);
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">produto</span>.<span style="color:#a6e22e">desconto</span>(<span style="color:#ae81ff">10</span>); <span style="color:#75715e">// 135
+</span></span></span></code></pre></div><p>Dentro de um método, é comum precisar acessar outras propriedades do mesmo objeto. Para isso, usa-se a palavra-chave <code>this</code>, que referencia o próprio objeto:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">produto</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Teclado&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">preco</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">150</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">desconto</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">percentual</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">preco</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">percentual</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">100</span>);
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div><p>O comportamento de <code>this</code> tem nuances que ficarão mais claras no estudo de orientação a objetos. Por ora, vale saber que dentro de um método, <code>this</code> é o objeto ao qual o método pertence.</p>
+<h3 id="adicionando-alterando-e-removendo-propriedades">Adicionando, alterando e removendo propriedades<a class="anchor" href="#adicionando-alterando-e-removendo-propriedades">#</a></h3>
+<p>Objetos em JavaScript são dinâmicos: propriedades podem ser adicionadas, alteradas ou removidas após a criação.</p>
+<p>Para adicionar ou alterar, basta atribuir um valor à chave e, se ela não existir, será criada; se existir, será sobrescrita:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">estudante</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Ana&#34;</span> };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">estudante</span>.<span style="color:#a6e22e">curso</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Informática&#34;</span>; <span style="color:#75715e">// adiciona
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">estudante</span>.<span style="color:#a6e22e">nome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Ana Lima&#34;</span>; <span style="color:#75715e">// altera
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">estudante</span>); <span style="color:#75715e">// { nome: &#34;Ana Lima&#34;, curso: &#34;Informática&#34; }
+</span></span></span></code></pre></div><p>Para remover uma propriedade, usa-se o operador <code>delete</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">delete</span> <span style="color:#a6e22e">estudante</span>.<span style="color:#a6e22e">curso</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">estudante</span>); <span style="color:#75715e">// { nome: &#34;Ana Lima&#34; }
+</span></span></span></code></pre></div><h3 id="iterando-sobre-objetos">Iterando sobre objetos<a class="anchor" href="#iterando-sobre-objetos">#</a></h3>
+<h4 id="forin"><code>for...in</code><a class="anchor" href="#forin">#</a></h4>
+<p>O <code>for...in</code> percorre as chaves de um objeto, uma por vez:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">produto</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Teclado&#34;</span>, <span style="color:#a6e22e">preco</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">150</span>, <span style="color:#a6e22e">emEstoque</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">chave</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">produto</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">chave</span>, <span style="color:#a6e22e">produto</span>[<span style="color:#a6e22e">chave</span>]);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// nome Teclado
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// preco 150
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// emEstoque true
+</span></span></span></code></pre></div><p>Note o uso da notação de colchetes com a variável <code>chave</code> — aqui ela é indispensável, pois a chave só é conhecida em tempo de execução.</p>
+<h4 id="objectkeys-objectvalues-e-objectentries"><code>Object.keys</code>, <code>Object.values</code> e <code>Object.entries</code><a class="anchor" href="#objectkeys-objectvalues-e-objectentries">#</a></h4>
+<p>Esses três métodos retornam arrays, o que permite combiná-los com <code>forEach</code>, <code>map</code>, <code>filter</code> e os demais métodos de ordem superior já vistos.</p>
+<p><code>Object.keys</code> retorna um array com as chaves:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>Object.<span style="color:#a6e22e">keys</span>(<span style="color:#a6e22e">produto</span>); <span style="color:#75715e">// [&#34;nome&#34;, &#34;preco&#34;, &#34;emEstoque&#34;]
+</span></span></span></code></pre></div><p><code>Object.values</code> retorna um array com os valores:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>Object.<span style="color:#a6e22e">values</span>(<span style="color:#a6e22e">produto</span>); <span style="color:#75715e">// [&#34;Teclado&#34;, 150, true]
+</span></span></span></code></pre></div><p><code>Object.entries</code> retorna um array de pares <code>[chave, valor]</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>Object.<span style="color:#a6e22e">entries</span>(<span style="color:#a6e22e">produto</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// [[&#34;nome&#34;, &#34;Teclado&#34;], [&#34;preco&#34;, 150], [&#34;emEstoque&#34;, true]]
+</span></span></span></code></pre></div><p>Um uso comum é iterar com <code>forEach</code> sobre as entradas:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>Object.<span style="color:#a6e22e">entries</span>(<span style="color:#a6e22e">produto</span>).<span style="color:#a6e22e">forEach</span>(([<span style="color:#a6e22e">chave</span>, <span style="color:#a6e22e">valor</span>]) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">chave</span><span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">valor</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// nome: Teclado
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// preco: 150
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// emEstoque: true
+</span></span></span></code></pre></div><p>Use <code>for...in</code> para iterações simples sobre as chaves; use <code>Object.keys</code>, <code>Object.values</code> ou <code>Object.entries</code> quando precisar tratar os dados como array — filtrar, transformar ou reduzir.</p>
+<h2 id="arrays-e-objetos-juntos">Arrays e objetos juntos<a class="anchor" href="#arrays-e-objetos-juntos">#</a></h2>
+<p>Na prática, arrays e objetos raramente aparecem isolados. A combinação dos dois é o que permite representar dados do mundo real com fidelidade.</p>
+<h3 id="arrays-de-objetos">Arrays de objetos<a class="anchor" href="#arrays-de-objetos">#</a></h3>
+<p>Um array de objetos é a estrutura mais comum para representar uma coleção de entidades — uma lista de produtos, um conjunto de estudantes, um catálogo de filmes. Cada elemento do array é um objeto com as mesmas propriedades, mas valores diferentes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">estudantes</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Ana&#34;</span>, <span style="color:#a6e22e">nota</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8.5</span> },
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Bruno&#34;</span>, <span style="color:#a6e22e">nota</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">6.0</span> },
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Carlos&#34;</span>, <span style="color:#a6e22e">nota</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">9.2</span> },
+</span></span><span style="display:flex;"><span>];</span></span></code></pre></div><p>Para acessar um elemento, usa-se o índice; para acessar uma propriedade, usa-se a notação de ponto:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">estudantes</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">nome</span>; <span style="color:#75715e">// &#34;Ana&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">estudantes</span>[<span style="color:#ae81ff">2</span>].<span style="color:#a6e22e">nota</span>; <span style="color:#75715e">// 9.2
+</span></span></span></code></pre></div><p>É aqui que os métodos de ordem superior mostram todo o seu valor. Com <code>map</code>, <code>filter</code> e <code>reduce</code>, é possível trabalhar com coleções de objetos de forma expressiva:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Extrai apenas os nomes dos objetos
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nomes</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">estudantes</span>.<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">e</span>) =&gt; <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">nome</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// [&#34;Ana&#34;, &#34;Bruno&#34;, &#34;Carlos&#34;]
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Filtra apenas quem foi aprovado
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">aprovados</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">estudantes</span>.<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">e</span>) =&gt; <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">nota</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">7</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// [{ nome: &#34;Ana&#34;, nota: 8.5 }, { nome: &#34;Carlos&#34;, nota: 9.2 }]
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Calcula a média da turma
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">media</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">estudantes</span>.<span style="color:#a6e22e">reduce</span>((<span style="color:#a6e22e">acc</span>, <span style="color:#a6e22e">e</span>) =&gt; <span style="color:#a6e22e">acc</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">nota</span>, <span style="color:#ae81ff">0</span>) <span style="color:#f92672">/</span> <span style="color:#a6e22e">estudantes</span>.<span style="color:#a6e22e">length</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 7.9
+</span></span></span></code></pre></div><h3 id="objetos-com-arrays-como-propriedades">Objetos com arrays como propriedades<a class="anchor" href="#objetos-com-arrays-como-propriedades">#</a></h3>
+<p>Um objeto também pode ter arrays como valores de propriedades. Isso é útil quando uma entidade possui uma lista de itens relacionados — os pedidos de um cliente, as matérias de um estudante, as tags de um produto.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">estudante</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Ana&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">matricula</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;2024001&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">materias</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;Algoritmos&#34;</span>, <span style="color:#e6db74">&#34;Banco de Dados&#34;</span>, <span style="color:#e6db74">&#34;Engenharia de Software&#34;</span>],
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div><p>Para acessar e manipular o array, usa-se a notação normal — a propriedade retorna o array, e a partir daí todos os métodos já vistos estão disponíveis:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">estudante</span>.<span style="color:#a6e22e">materias</span>[<span style="color:#ae81ff">0</span>]; <span style="color:#75715e">// &#34;Algoritmos&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">estudante</span>.<span style="color:#a6e22e">materias</span>.<span style="color:#a6e22e">length</span>; <span style="color:#75715e">// 3
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">estudante</span>.<span style="color:#a6e22e">materias</span>.<span style="color:#a6e22e">push</span>(<span style="color:#e6db74">&#34;POO&#34;</span>); <span style="color:#75715e">// adiciona &#34;POO&#34; ao array
+</span></span></span></code></pre></div><p>As duas estruturas também se combinam: um array de objetos onde cada objeto tem arrays como propriedades é perfeitamente válido e muito comum em dados vindos de APIs e bancos de dados.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">turma</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Ana&#34;</span>, <span style="color:#a6e22e">materias</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;Algoritmos&#34;</span>, <span style="color:#e6db74">&#34;BD&#34;</span>] },
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Bruno&#34;</span>, <span style="color:#a6e22e">materias</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;Algoritmos&#34;</span>, <span style="color:#e6db74">&#34;POO&#34;</span>] },
+</span></span><span style="display:flex;"><span>];</span></span></code></pre></div><h2 id="atividades-sugeridas">Atividades sugeridas<a class="anchor" href="#atividades-sugeridas">#</a></h2>
+<p><strong>(Questão 01)</strong> Crie um objeto que represente um livro, com as propriedades <code>titulo</code>, <code>autor</code>, <code>ano</code> e <code>paginas</code>. Em seguida:</p>
+<ol>
+<li>Acesse o título usando notação de ponto.</li>
+<li>Acesse o autor usando notação de colchetes.</li>
+<li>Adicione uma propriedade <code>disponivel</code> com valor <code>true</code>.</li>
+<li>Altere o ano para o ano atual.</li>
+<li>Remova a propriedade <code>paginas</code>.</li>
+</ol>
+<p><strong>(Questão 02)</strong> Crie um objeto <code>contaBancaria</code> com as propriedades <code>titular</code>, <code>saldo</code> e dois métodos: <code>depositar(valor)</code> e <code>sacar(valor)</code>. O método <code>sacar</code> deve verificar se há saldo suficiente antes de realizar a operação e exibir uma mensagem adequada em cada caso.</p>
+<p><strong>(Questão 03)</strong> Dado o objeto abaixo, use <code>for...in</code> para imprimir cada propriedade no formato <code>&quot;chave: valor&quot;</code>. Em seguida, faça o mesmo usando <code>Object.entries</code> e <code>forEach</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">produto</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Monitor&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">marca</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Dell&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">preco</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1200</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">polegadas</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">27</span>,
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div><p><strong>(Questão 04)</strong> Dado o array abaixo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">produtos</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Teclado&#34;</span>, <span style="color:#a6e22e">preco</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">150</span>, <span style="color:#a6e22e">categoria</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Periférico&#34;</span> },
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Monitor&#34;</span>, <span style="color:#a6e22e">preco</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1200</span>, <span style="color:#a6e22e">categoria</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Vídeo&#34;</span> },
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Mouse&#34;</span>, <span style="color:#a6e22e">preco</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">80</span>, <span style="color:#a6e22e">categoria</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Periférico&#34;</span> },
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">nome</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Headset&#34;</span>, <span style="color:#a6e22e">preco</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>, <span style="color:#a6e22e">categoria</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Periférico&#34;</span> },
+</span></span><span style="display:flex;"><span>];</span></span></code></pre></div><p>a. Crie um array com apenas os nomes dos produtos.<br>
+b. Filtre apenas os produtos da categoria <code>&quot;Periférico&quot;</code>.<br>
+c. Calcule o valor total de todos os produtos.<br>
+d. Encontre o produto mais caro.</p>
+<p><strong>(Questão 05)</strong> Crie um objeto <code>playlist</code> com as propriedades <code>nome</code> e <code>musicas</code> (um array de strings). Em seguida:</p>
+<p>a. Adicione uma música ao final da playlist.<br>
+b. Remova a primeira música.<br>
+c. Verifique se uma música específica está na playlist.<br>
+d. Exiba todas as músicas numeradas, começando em 1.</p>
+<p><strong>(Questão 06)</strong> Responda com suas palavras:</p>
+<p>a. Qual a diferença entre acessar uma propriedade com notação de ponto e com notação de colchetes? Em que situação os colchetes são indispensáveis?<br>
+b. O que é um método? Em que sentido ele é diferente de uma função comum?<br>
+c. Por que arrays de objetos são uma estrutura tão comum na programação? Que tipo de dado eles representam bem?</p>
+<p><strong>(Questão 07)</strong> Esta atividade consiste de um mini-projeto para integrar os assuntos já vistos até o momento. Você vai desenvolver um sistema para gerenciamento de tarefas, que permite a realização das operações básicas de cadastro, listagem, edição e remoção.</p>
+<p>a. Na etapa 1, implemente um menu, onde o usuário possa escolher alguma da operações para realizar.</p>
+<p>Este menu deve ser exibido continuamente, enquanto o usuário não escolher a opção 5 - Sair. Seu programa deve mostrar &ldquo;Opção inválida&rdquo;, caso o usuário digite alguma opção diferente de <code>1</code>,<code>2</code>, <code>3</code>, <code>4</code> ou <code>5</code>.</p>
+<p>Uma vez que as ações não estão implementadas, exiba apenas uma mensagem indicando a opção escolhida. Um exemplo de funcionamento do menu é mostrado a seguir.</p>
+<pre tabindex="0"><code>=== LISTA DE TAREFAS ===
+1 - Criar nova tarefa
+2 - Listar tarefas
+3 - Editar tarefa
+4 - Remover tarefa
+5 - Sair
+
+Opção: 1
+------------------------
+=== CRIAR TAREFA     ===
+Criando tarefa...</code></pre><p>b. Na etapa 2, implemente a operação de criar nova tarefa. Cada tarefa tem um prazo e uma descrição. O usuário deve digitar esses dados e o sistema deve criar um novo objeto e guardar em um array.</p>
+<p>c. Na etapa 3, implemente a listagem de tarefas, exibindo-as conforme mostrado a seguir.</p>
+<pre tabindex="0"><code>=== LISTAR TAREFAS   ===
+03/03/2026 - Atividade de POO
+06/03/2026 - Finalizar o livro de português
+11/03/2026 - Aniversário de Antonio</code></pre><p>d. Na etapa 4, implemente a edição de tarefas. Primeiro, é necessário exibi-las com uma numeração para o usuário possa indicar qual tarefa quer editar.</p>
+<pre tabindex="0"><code>=== EDITAR TAREFA   ===
+1 - 03/03/2026 - Atividade de POO
+2 - 06/03/2026 - Finalizar o livro de português
+3 - 11/03/2026 - Aniversário de Antonio
+
+Qual tarefa você quer editar? (Ex.: 1): 1
+---
+Editando tarefa:
+03/03/2026 - Atividade de POO
+
+Digite um novo prazo: 04/03/2026
+Digite uma nova descrição:
+
+Tarefa editada:
+04/03/2026 - Atividade de POO</code></pre><p>e. Na etapa 5, implemente a remoção de tarefas. Primeiro, é necessário exibi-las com uma numeração para o usuário possa indicar qual tarefa quer remover.</p>
+<pre tabindex="0"><code>=== REMOVER TAREFA   ===
+1 - 03/03/2026 - Atividade de POO
+2 - 06/03/2026 - Finalizar o livro de português
+3 - 11/03/2026 - Aniversário de Antonio
+
+Qual tarefa você quer REMOVER? (Ex.: 1): 1
+
+Tarefa removida.</code></pre></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <footer class="book-footer">
+   
+  <a href="/docs/disciplinas/poo-info/revisao-javascript/"> ← Voltar para JavaScript - uma breve introdução à linguagem </a>
+   
+</footer>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#arrays">Arrays</a>
+      <ul>
+        <li><a href="#o-que-é-um-array">O que é um array?</a></li>
+        <li><a href="#criando-e-acessando-elementos">Criando e acessando elementos</a></li>
+        <li><a href="#propriedades-e-métodos-essenciais">Propriedades e métodos essenciais</a></li>
+        <li><a href="#iterando-sobre-arrays">Iterando sobre arrays</a></li>
+        <li><a href="#métodos-de-ordem-superior">Métodos de ordem superior</a></li>
+      </ul>
+    </li>
+    <li><a href="#objetos">Objetos</a>
+      <ul>
+        <li><a href="#o-que-é-um-objeto">O que é um objeto?</a></li>
+        <li><a href="#criando-e-acessando-propriedades">Criando e acessando propriedades</a></li>
+        <li><a href="#métodos">Métodos</a></li>
+        <li><a href="#adicionando-alterando-e-removendo-propriedades">Adicionando, alterando e removendo propriedades</a></li>
+        <li><a href="#iterando-sobre-objetos">Iterando sobre objetos</a></li>
+      </ul>
+    </li>
+    <li><a href="#arrays-e-objetos-juntos">Arrays e objetos juntos</a>
+      <ul>
+        <li><a href="#arrays-de-objetos">Arrays de objetos</a></li>
+        <li><a href="#objetos-com-arrays-como-propriedades">Objetos com arrays como propriedades</a></li>
+      </ul>
+    </li>
+    <li><a href="#atividades-sugeridas">Atividades sugeridas</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

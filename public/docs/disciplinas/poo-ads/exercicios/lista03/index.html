@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lista 03# Objetivo# Praticar os conceitos fundamentais do Git em um cenário realista: você vai criar e versionar um pequeno projeto de software, registrar um histórico significativo, trabalhar com branches e tags, e desfazer mudanças em diferentes situações.
+Pré-requisitos
+Git instalado e configurado (user.name e user.email) Terminal disponível (Git Bash no Windows, terminal nativo no Linux) Parte 1 — Configuração inicial# 1.1 Verifique sua configuração# Antes de começar, confirme que o Git está configurado corretamente:
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista03/">
+  <meta property="og:site_name" content="Antonio Dias">
+  <meta property="og:title" content="Lista 03">
+  <meta property="og:description" content="Lista 03# Objetivo# Praticar os conceitos fundamentais do Git em um cenário realista: você vai criar e versionar um pequeno projeto de software, registrar um histórico significativo, trabalhar com branches e tags, e desfazer mudanças em diferentes situações.
+Pré-requisitos
+Git instalado e configurado (user.name e user.email) Terminal disponível (Git Bash no Windows, terminal nativo no Linux) Parte 1 — Configuração inicial# 1.1 Verifique sua configuração# Antes de começar, confirme que o Git está configurado corretamente:">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="Lista 03">
+  <meta itemprop="description" content="Lista 03# Objetivo# Praticar os conceitos fundamentais do Git em um cenário realista: você vai criar e versionar um pequeno projeto de software, registrar um histórico significativo, trabalhar com branches e tags, e desfazer mudanças em diferentes situações.
+Pré-requisitos
+Git instalado e configurado (user.name e user.email) Terminal disponível (Git Bash no Windows, terminal nativo no Linux) Parte 1 — Configuração inicial# 1.1 Verifique sua configuração# Antes de começar, confirme que o Git está configurado corretamente:">
+  <meta itemprop="wordCount" content="1198">
+
+<title>Lista 03 | Antonio Dias</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista03/">
+<link rel="stylesheet" href="/book.min.a734d0f84f339961c2f38061ac4210305aad75979ab791937815c1ac455d7ec7.css" integrity="sha256-pzTQ&#43;E8zmWHC84BhrEIQMFqtdZeat5GTeBXBrEVdfsc=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.bc34b5319327da457f1934b46fba3f95229393e76fafb741640afdf8c56c48b1.js" integrity="sha256-vDS1MZMn2kV/GTS0b7o/lSKTk&#43;dvr7dBZAr9&#43;MVsSLE=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Antonio Dias</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Buscar"
+    aria-label="Buscar"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="toggle"  />
+    <label for="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="flex">
+      <a href="/docs/posts/" class="">
+        Atualizações</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/posts/primeiro-post/" class="">
+      Primeiro Post</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/" class="">
+      Disciplinas</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0658642cbe0befc355ebbab1ea93df0" class="toggle" checked />
+    <label for="section-e0658642cbe0befc355ebbab1ea93df0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/" class="">
+        POO (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3de58d405969aa3459400420373baf0f" class="toggle" checked />
+    <label for="section-3de58d405969aa3459400420373baf0f" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/" class="">
+        Exercícios</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-23e47a9839d0b7fff7effd5165e44534" class="toggle"  />
+    <label for="section-23e47a9839d0b7fff7effd5165e44534" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista01/" class="">
+        Lista 01</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f252426f7bf9838e8641f64c9ba7f7df" class="toggle"  />
+    <label for="section-f252426f7bf9838e8641f64c9ba7f7df" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista02/" class="">
+        Lista 02</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-472fd952daa9782f8296f0029a22a9c0" class="toggle" checked />
+    <label for="section-472fd952daa9782f8296f0029a22a9c0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista03/" class="active">
+        Lista 03</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9dcdb8fdaeac7c4002bbc97a700158ee" class="toggle"  />
+    <label for="section-9dcdb8fdaeac7c4002bbc97a700158ee" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista04/" class="">
+        Lista 04</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/projeto/" class="">
+      Projeto</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/git/" class="">
+      Git</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ad90f794895ae5dd26ad3b3869e4edf2" class="toggle"  />
+    <label for="section-ad90f794895ae5dd26ad3b3869e4edf2" class="flex">
+      <a href="/docs/disciplinas/poo-info/" class="">
+        POO (Integrado)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-85611c34c3e4fce02fc9163ca37c73a3" class="toggle"  />
+    <label for="section-85611c34c3e4fce02fc9163ca37c73a3" class="flex">
+      <a href="/docs/disciplinas/poo-info/revisao-javascript/" class="">
+        JavaScript - uma breve introdução à linguagem</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/1-fundamentos/" class="">
+      1. Fundamentos essenciais da linguagem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/2-estruturas-controle/" class="">
+      2. Estruturas de controle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/3-funcoes/" class="">
+      3. Funções</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/3-exercicio-funcoes/" class="">
+      3. Funções (Exercício)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/4-arrays-objetos/" class="">
+      4. Arrays e Objetos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/5-strings/" class="">
+      5. Strings</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="toggle"  />
+    <label for="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="flex">
+      <a href="/docs/disciplinas/seginfo-ads/" class="">
+        Seg. da Informação (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Lista 03</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#objetivo">Objetivo</a></li>
+    <li><a href="#parte-1--configuração-inicial">Parte 1 — Configuração inicial</a>
+      <ul>
+        <li><a href="#11-verifique-sua-configuração">1.1 Verifique sua configuração</a></li>
+        <li><a href="#12-verifique-a-versão-instalada">1.2 Verifique a versão instalada</a></li>
+      </ul>
+    </li>
+    <li><a href="#parte-2--repositório-e-commits">Parte 2 — Repositório e commits</a>
+      <ul>
+        <li><a href="#21-crie-o-projeto">2.1 Crie o projeto</a></li>
+        <li><a href="#22-crie-os-arquivos-iniciais">2.2 Crie os arquivos iniciais</a></li>
+        <li><a href="#23-faça-o-primeiro-commit">2.3 Faça o primeiro commit</a></li>
+        <li><a href="#24-adicione-conteúdo-ao-projeto">2.4 Adicione conteúdo ao projeto</a></li>
+        <li><a href="#25-faça-mais-uma-alteração">2.5 Faça mais uma alteração</a></li>
+        <li><a href="#26-pratique-o-uso-da-staging-area">2.6 Pratique o uso da staging area</a></li>
+      </ul>
+    </li>
+    <li><a href="#parte-3--histórico-e-reversão">Parte 3 — Histórico e reversão</a>
+      <ul>
+        <li><a href="#31-inspecione-o-histórico">3.1 Inspecione o histórico</a></li>
+        <li><a href="#32-compare-commits">3.2 Compare commits</a></li>
+        <li><a href="#33-visite-um-estado-anterior">3.3 Visite um estado anterior</a></li>
+        <li><a href="#34-pratique-o-git-restore">3.4 Pratique o <code>git restore</code></a></li>
+        <li><a href="#35-pratique-o-git-restore---staged">3.5 Pratique o <code>git restore --staged</code></a></li>
+        <li><a href="#36-reverta-um-commit-com-git-revert">3.6 Reverta um commit com <code>git revert</code></a></li>
+        <li><a href="#37-corrija-o-último-commit-com---amend">3.7 Corrija o último commit com <code>--amend</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#parte-4--tags-e-branches">Parte 4 — Tags e branches</a>
+      <ul>
+        <li><a href="#41-crie-uma-tag-de-versão">4.1 Crie uma tag de versão</a></li>
+        <li><a href="#42-crie-um-branch-para-nova-funcionalidade">4.2 Crie um branch para nova funcionalidade</a></li>
+        <li><a href="#43-desenvolva-a-funcionalidade-no-branch">4.3 Desenvolva a funcionalidade no branch</a></li>
+        <li><a href="#44-faça-um-commit-no-main-enquanto-o-branch-existe">4.4 Faça um commit no <code>main</code> enquanto o branch existe</a></li>
+        <li><a href="#45-mescle-o-branch-no-main">4.5 Mescle o branch no <code>main</code></a></li>
+        <li><a href="#46-remova-o-branch-após-o-merge">4.6 Remova o branch após o merge</a></li>
+        <li><a href="#47-crie-uma-tag-para-a-versão-final">4.7 Crie uma tag para a versão final</a></li>
+      </ul>
+    </li>
+    <li><a href="#resumo-dos-comandos-utilizados">Resumo dos comandos utilizados</a></li>
+    <li><a href="#desafios-opcionais">Desafios opcionais</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="lista-03">Lista 03<a class="anchor" href="#lista-03">#</a></h1>
+<h2 id="objetivo">Objetivo<a class="anchor" href="#objetivo">#</a></h2>
+<p>Praticar os conceitos fundamentais do Git em um cenário realista: você vai criar e versionar um pequeno projeto de software, registrar um histórico significativo, trabalhar com branches e tags, e desfazer mudanças em diferentes situações.</p>
+<p><strong>Pré-requisitos</strong></p>
+<ul>
+<li>Git instalado e configurado (<code>user.name</code> e <code>user.email</code>)</li>
+<li>Terminal disponível (Git Bash no Windows, terminal nativo no Linux)</li>
+</ul>
+<hr>
+<h2 id="parte-1--configuração-inicial">Parte 1 — Configuração inicial<a class="anchor" href="#parte-1--configura%c3%a7%c3%a3o-inicial">#</a></h2>
+<h3 id="11-verifique-sua-configuração">1.1 Verifique sua configuração<a class="anchor" href="#11-verifique-sua-configura%c3%a7%c3%a3o">#</a></h3>
+<p>Antes de começar, confirme que o Git está configurado corretamente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --list --global</span></span></code></pre></div><p>Verifique se <code>user.name</code> e <code>user.email</code> estão definidos. Caso não estejam, configure agora:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global user.name  <span style="color:#e6db74">&#34;Seu Nome&#34;</span>
+</span></span><span style="display:flex;"><span>git config --global user.email <span style="color:#e6db74">&#34;seu@email.com&#34;</span>
+</span></span><span style="display:flex;"><span>git config --global init.defaultBranch main</span></span></code></pre></div><h3 id="12-verifique-a-versão-instalada">1.2 Verifique a versão instalada<a class="anchor" href="#12-verifique-a-vers%c3%a3o-instalada">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git --version</span></span></code></pre></div><hr>
+<h2 id="parte-2--repositório-e-commits">Parte 2 — Repositório e commits<a class="anchor" href="#parte-2--reposit%c3%b3rio-e-commits">#</a></h2>
+<h3 id="21-crie-o-projeto">2.1 Crie o projeto<a class="anchor" href="#21-crie-o-projeto">#</a></h3>
+<p>Crie um diretório para o projeto e inicialize o repositório:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir biblioteca
+</span></span><span style="display:flex;"><span>cd biblioteca
+</span></span><span style="display:flex;"><span>git init</span></span></code></pre></div><p>Confirme que o repositório foi criado:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -a
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Você deve ver o diretório .git</span></span></span></code></pre></div><h3 id="22-crie-os-arquivos-iniciais">2.2 Crie os arquivos iniciais<a class="anchor" href="#22-crie-os-arquivos-iniciais">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;# Biblioteca&#34;</span> &gt; README.md
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Sistema simples de gerenciamento de livros.&#34;</span> &gt;&gt; README.md
+</span></span><span style="display:flex;"><span>touch livros.txt</span></span></code></pre></div><p>Verifique o estado do repositório:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status</span></span></code></pre></div><blockquote class='book-hint '>
+<p>Os dois arquivos devem aparecer como <strong>Untracked</strong>.</p>
+</blockquote><h3 id="23-faça-o-primeiro-commit">2.3 Faça o primeiro commit<a class="anchor" href="#23-fa%c3%a7a-o-primeiro-commit">#</a></h3>
+<p>Adicione os arquivos à staging area e registre o primeiro commit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add README.md livros.txt
+</span></span><span style="display:flex;"><span>git status
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;docs: inicializa projeto com README e arquivo de livros&#34;</span></span></span></code></pre></div><h3 id="24-adicione-conteúdo-ao-projeto">2.4 Adicione conteúdo ao projeto<a class="anchor" href="#24-adicione-conte%c3%bado-ao-projeto">#</a></h3>
+<p>Adicione alguns livros ao arquivo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;O Senhor dos Anéis - J.R.R. Tolkien&#34;</span> &gt;&gt; livros.txt
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;1984 - George Orwell&#34;</span> &gt;&gt; livros.txt
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Dom Casmurro - Machado de Assis&#34;</span> &gt;&gt; livros.txt</span></span></code></pre></div><p>Verifique o que mudou antes de commitar:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git diff livros.txt</span></span></code></pre></div><p>Registre a mudança:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add livros.txt
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;feat: adiciona três livros ao catálogo&#34;</span></span></span></code></pre></div><h3 id="25-faça-mais-uma-alteração">2.5 Faça mais uma alteração<a class="anchor" href="#25-fa%c3%a7a-mais-uma-altera%c3%a7%c3%a3o">#</a></h3>
+<p>Atualize o README com instruções de uso:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;&#34;</span> &gt;&gt; README.md
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;## Como usar&#34;</span> &gt;&gt; README.md
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Edite o arquivo livros.txt para adicionar ou remover livros.&#34;</span> &gt;&gt; README.md</span></span></code></pre></div><p>Adicione à staging area, mas antes de commitar, verifique o que está staged:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add README.md
+</span></span><span style="display:flex;"><span>git diff --staged</span></span></code></pre></div><p>Registre:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;docs: adiciona seção de instruções ao README&#34;</span></span></span></code></pre></div><h3 id="26-pratique-o-uso-da-staging-area">2.6 Pratique o uso da staging area<a class="anchor" href="#26-pratique-o-uso-da-staging-area">#</a></h3>
+<p>Faça duas alterações em arquivos diferentes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;A Metamorfose - Franz Kafka&#34;</span> &gt;&gt; livros.txt
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Contato: biblioteca@exemplo.com&#34;</span> &gt;&gt; README.md</span></span></code></pre></div><p>Desta vez, commite <strong>apenas</strong> a alteração em <code>livros.txt</code>, deixando o README para depois:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add livros.txt
+</span></span><span style="display:flex;"><span>git status
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;feat: adiciona A Metamorfose ao catálogo&#34;</span></span></span></code></pre></div><p>Agora commite a alteração do README:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add README.md
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;docs: adiciona informações de contato&#34;</span></span></span></code></pre></div><p>Verifique o histórico:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log --oneline</span></span></code></pre></div><blockquote class='book-hint '>
+<p>Você deve ter 5 commits no histórico.</p>
+</blockquote><hr>
+<h2 id="parte-3--histórico-e-reversão">Parte 3 — Histórico e reversão<a class="anchor" href="#parte-3--hist%c3%b3rico-e-revers%c3%a3o">#</a></h2>
+<h3 id="31-inspecione-o-histórico">3.1 Inspecione o histórico<a class="anchor" href="#31-inspecione-o-hist%c3%b3rico">#</a></h3>
+<p>Veja o histórico completo com estatísticas:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log --stat</span></span></code></pre></div><p>Escolha um dos commits da lista e inspecione-o em detalhes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git show &lt;hash-do-commit&gt;</span></span></code></pre></div><h3 id="32-compare-commits">3.2 Compare commits<a class="anchor" href="#32-compare-commits">#</a></h3>
+<p>Compare o estado atual com o primeiro commit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git diff &lt;hash-do-primeiro-commit&gt; HEAD</span></span></code></pre></div><p>Compare os dois últimos commits:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git diff HEAD~1 HEAD</span></span></code></pre></div><h3 id="33-visite-um-estado-anterior">3.3 Visite um estado anterior<a class="anchor" href="#33-visite-um-estado-anterior">#</a></h3>
+<p>Acesse o estado do projeto como estava no segundo commit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout HEAD~3</span></span></code></pre></div><p>Observe que os arquivos mudaram:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat livros.txt</span></span></code></pre></div><p>Volte ao estado atual:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git switch main
+</span></span><span style="display:flex;"><span>cat livros.txt</span></span></code></pre></div><h3 id="34-pratique-o-git-restore">3.4 Pratique o <code>git restore</code><a class="anchor" href="#34-pratique-o-git-restore">#</a></h3>
+<p>Faça uma alteração indesejada em <code>livros.txt</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;isso foi um erro&#34;</span> &gt;&gt; livros.txt
+</span></span><span style="display:flex;"><span>cat livros.txt</span></span></code></pre></div><p>Descarte a mudança sem commitar:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git restore livros.txt
+</span></span><span style="display:flex;"><span>cat livros.txt</span></span></code></pre></div><blockquote class='book-hint '>
+<p>O arquivo deve voltar ao estado do último commit.</p>
+</blockquote><h3 id="35-pratique-o-git-restore---staged">3.5 Pratique o <code>git restore --staged</code><a class="anchor" href="#35-pratique-o-git-restore---staged">#</a></h3>
+<p>Faça uma alteração e adicione à staging area:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Duna - Frank Herbert&#34;</span> &gt;&gt; livros.txt
+</span></span><span style="display:flex;"><span>git add livros.txt
+</span></span><span style="display:flex;"><span>git status</span></span></code></pre></div><p>Remova da staging area sem descartar a mudança:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git restore --staged livros.txt
+</span></span><span style="display:flex;"><span>git status</span></span></code></pre></div><blockquote class='book-hint '>
+<p>O arquivo deve aparecer como <strong>Modified</strong>, não mais como <strong>Staged</strong>.</p>
+</blockquote><p>Agora commite corretamente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add livros.txt
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;feat: adiciona Duna ao catálogo&#34;</span></span></span></code></pre></div><h3 id="36-reverta-um-commit-com-git-revert">3.6 Reverta um commit com <code>git revert</code><a class="anchor" href="#36-reverta-um-commit-com-git-revert">#</a></h3>
+<p>Veja o histórico e escolha o commit que adicionou &ldquo;A Metamorfose&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log --oneline</span></span></code></pre></div><p>Reverta esse commit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git revert &lt;hash-do-commit&gt; --no-edit</span></span></code></pre></div><p>Verifique que o Git criou um novo commit de reversão:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log --oneline
+</span></span><span style="display:flex;"><span>cat livros.txt</span></span></code></pre></div><blockquote class='book-hint '>
+<p>&ldquo;A Metamorfose&rdquo; não deve mais estar no arquivo, mas o commit original ainda aparece no histórico.</p>
+</blockquote><h3 id="37-corrija-o-último-commit-com---amend">3.7 Corrija o último commit com <code>--amend</code><a class="anchor" href="#37-corrija-o-%c3%baltimo-commit-com---amend">#</a></h3>
+<p>Adicione um livro e commite com uma mensagem incompleta propositalmente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Admirável Mundo Novo - Aldous Huxley&#34;</span> &gt;&gt; livros.txt
+</span></span><span style="display:flex;"><span>git add livros.txt
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;feat: adiciona livro&#34;</span></span></span></code></pre></div><p>Corrija a mensagem do último commit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git commit --amend -m <span style="color:#e6db74">&#34;feat: adiciona Admirável Mundo Novo ao catálogo&#34;</span>
+</span></span><span style="display:flex;"><span>git log --oneline</span></span></code></pre></div><hr>
+<h2 id="parte-4--tags-e-branches">Parte 4 — Tags e branches<a class="anchor" href="#parte-4--tags-e-branches">#</a></h2>
+<h3 id="41-crie-uma-tag-de-versão">4.1 Crie uma tag de versão<a class="anchor" href="#41-crie-uma-tag-de-vers%c3%a3o">#</a></h3>
+<p>O catálogo está em um estado estável. Marque este ponto como versão 1.0:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git tag -a v1.0 -m <span style="color:#e6db74">&#34;Versão 1.0 — catálogo inicial&#34;</span></span></span></code></pre></div><p>Inspecione a tag:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git show v1.0</span></span></code></pre></div><p>Liste as tags existentes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git tag</span></span></code></pre></div><h3 id="42-crie-um-branch-para-nova-funcionalidade">4.2 Crie um branch para nova funcionalidade<a class="anchor" href="#42-crie-um-branch-para-nova-funcionalidade">#</a></h3>
+<p>Você vai adicionar uma seção de autores favoritos sem afetar o catálogo principal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git switch -c feature/autores</span></span></code></pre></div><p>Confirme em qual branch você está:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch</span></span></code></pre></div><h3 id="43-desenvolva-a-funcionalidade-no-branch">4.3 Desenvolva a funcionalidade no branch<a class="anchor" href="#43-desenvolva-a-funcionalidade-no-branch">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch autores.txt
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Autores favoritos&#34;</span> &gt; autores.txt
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;J.R.R. Tolkien&#34;</span> &gt;&gt; autores.txt
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;George Orwell&#34;</span> &gt;&gt; autores.txt
+</span></span><span style="display:flex;"><span>git add autores.txt
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;feat: adiciona arquivo de autores favoritos&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Frank Herbert&#34;</span> &gt;&gt; autores.txt
+</span></span><span style="display:flex;"><span>git add autores.txt
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;feat: adiciona Frank Herbert à lista de autores&#34;</span></span></span></code></pre></div><p>Veja o histórico do branch:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log --oneline</span></span></code></pre></div><h3 id="44-faça-um-commit-no-main-enquanto-o-branch-existe">4.4 Faça um commit no <code>main</code> enquanto o branch existe<a class="anchor" href="#44-fa%c3%a7a-um-commit-no-main-enquanto-o-branch-existe">#</a></h3>
+<p>Volte ao <code>main</code> e faça uma alteração independente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git switch main
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Grande Sertão: Veredas - João Guimarães Rosa&#34;</span> &gt;&gt; livros.txt
+</span></span><span style="display:flex;"><span>git add livros.txt
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;feat: adiciona Grande Sertão: Veredas ao catálogo&#34;</span></span></span></code></pre></div><p>Visualize a divergência entre os branches:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log --oneline --graph --all</span></span></code></pre></div><blockquote class='book-hint '>
+<p>Você deve ver os dois branches divergindo a partir de um commit comum.</p>
+</blockquote><h3 id="45-mescle-o-branch-no-main">4.5 Mescle o branch no <code>main</code><a class="anchor" href="#45-mescle-o-branch-no-main">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git merge feature/autores</span></span></code></pre></div><p>Verifique o resultado:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log --oneline --graph --all
+</span></span><span style="display:flex;"><span>ls</span></span></code></pre></div><blockquote class='book-hint '>
+<p>O arquivo <code>autores.txt</code> deve agora estar presente no <code>main</code>.</p>
+</blockquote><h3 id="46-remova-o-branch-após-o-merge">4.6 Remova o branch após o merge<a class="anchor" href="#46-remova-o-branch-ap%c3%b3s-o-merge">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -d feature/autores
+</span></span><span style="display:flex;"><span>git branch</span></span></code></pre></div><h3 id="47-crie-uma-tag-para-a-versão-final">4.7 Crie uma tag para a versão final<a class="anchor" href="#47-crie-uma-tag-para-a-vers%c3%a3o-final">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git tag -a v2.0 -m <span style="color:#e6db74">&#34;Versão 2.0 — adiciona lista de autores&#34;</span>
+</span></span><span style="display:flex;"><span>git tag</span></span></code></pre></div><p>Compare as duas versões usando as tags:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git diff v1.0 v2.0</span></span></code></pre></div><hr>
+<h2 id="resumo-dos-comandos-utilizados">Resumo dos comandos utilizados<a class="anchor" href="#resumo-dos-comandos-utilizados">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Comando</th>
+          <th>O que faz</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>git init</code></td>
+          <td>Inicializa um repositório</td>
+      </tr>
+      <tr>
+          <td><code>git status</code></td>
+          <td>Mostra o estado do working directory e staging area</td>
+      </tr>
+      <tr>
+          <td><code>git add</code></td>
+          <td>Adiciona mudanças à staging area</td>
+      </tr>
+      <tr>
+          <td><code>git commit -m</code></td>
+          <td>Registra um commit com mensagem</td>
+      </tr>
+      <tr>
+          <td><code>git log</code></td>
+          <td>Exibe o histórico de commits</td>
+      </tr>
+      <tr>
+          <td><code>git diff</code></td>
+          <td>Compara mudanças entre estados</td>
+      </tr>
+      <tr>
+          <td><code>git show</code></td>
+          <td>Inspeciona um commit específico</td>
+      </tr>
+      <tr>
+          <td><code>git checkout</code></td>
+          <td>Navega para um commit anterior</td>
+      </tr>
+      <tr>
+          <td><code>git restore</code></td>
+          <td>Descarta mudanças no working directory</td>
+      </tr>
+      <tr>
+          <td><code>git restore --staged</code></td>
+          <td>Remove arquivo da staging area</td>
+      </tr>
+      <tr>
+          <td><code>git revert</code></td>
+          <td>Desfaz um commit criando um novo</td>
+      </tr>
+      <tr>
+          <td><code>git commit --amend</code></td>
+          <td>Corrige o último commit</td>
+      </tr>
+      <tr>
+          <td><code>git tag -a</code></td>
+          <td>Cria uma tag anotada</td>
+      </tr>
+      <tr>
+          <td><code>git switch -c</code></td>
+          <td>Cria e muda para um novo branch</td>
+      </tr>
+      <tr>
+          <td><code>git branch</code></td>
+          <td>Lista e gerencia branches</td>
+      </tr>
+      <tr>
+          <td><code>git merge</code></td>
+          <td>Mescla um branch ao branch atual</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="desafios-opcionais">Desafios opcionais<a class="anchor" href="#desafios-opcionais">#</a></h2>
+<ol>
+<li>
+<p><strong>Conflito intencional</strong> — crie dois branches que modifiquem a mesma linha de <code>livros.txt</code> e resolva o conflito de merge manualmente.</p>
+</li>
+<li>
+<p><strong>Reset</strong> — use <code>git reset --soft HEAD~1</code> para desfazer o último commit mantendo as mudanças staged, reformule a mensagem e recommite.</p>
+</li>
+<li>
+<p><strong>Stash</strong> — faça alterações no working directory, use <code>git stash</code> para guardá-las, faça um commit diferente, e então recupere as alterações com <code>git stash pop</code>.</p>
+</li>
+<li>
+<p><strong>Histórico com filtros</strong> — use <code>git log --author</code>, <code>git log --grep</code> e <code>git log --since</code> para filtrar o histórico por diferentes critérios.</p>
+</li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <footer class="book-footer">
+   
+  <a href="/docs/disciplinas/poo-ads/exercicios/"> ← Voltar para Exercícios </a>
+   
+</footer>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#objetivo">Objetivo</a></li>
+    <li><a href="#parte-1--configuração-inicial">Parte 1 — Configuração inicial</a>
+      <ul>
+        <li><a href="#11-verifique-sua-configuração">1.1 Verifique sua configuração</a></li>
+        <li><a href="#12-verifique-a-versão-instalada">1.2 Verifique a versão instalada</a></li>
+      </ul>
+    </li>
+    <li><a href="#parte-2--repositório-e-commits">Parte 2 — Repositório e commits</a>
+      <ul>
+        <li><a href="#21-crie-o-projeto">2.1 Crie o projeto</a></li>
+        <li><a href="#22-crie-os-arquivos-iniciais">2.2 Crie os arquivos iniciais</a></li>
+        <li><a href="#23-faça-o-primeiro-commit">2.3 Faça o primeiro commit</a></li>
+        <li><a href="#24-adicione-conteúdo-ao-projeto">2.4 Adicione conteúdo ao projeto</a></li>
+        <li><a href="#25-faça-mais-uma-alteração">2.5 Faça mais uma alteração</a></li>
+        <li><a href="#26-pratique-o-uso-da-staging-area">2.6 Pratique o uso da staging area</a></li>
+      </ul>
+    </li>
+    <li><a href="#parte-3--histórico-e-reversão">Parte 3 — Histórico e reversão</a>
+      <ul>
+        <li><a href="#31-inspecione-o-histórico">3.1 Inspecione o histórico</a></li>
+        <li><a href="#32-compare-commits">3.2 Compare commits</a></li>
+        <li><a href="#33-visite-um-estado-anterior">3.3 Visite um estado anterior</a></li>
+        <li><a href="#34-pratique-o-git-restore">3.4 Pratique o <code>git restore</code></a></li>
+        <li><a href="#35-pratique-o-git-restore---staged">3.5 Pratique o <code>git restore --staged</code></a></li>
+        <li><a href="#36-reverta-um-commit-com-git-revert">3.6 Reverta um commit com <code>git revert</code></a></li>
+        <li><a href="#37-corrija-o-último-commit-com---amend">3.7 Corrija o último commit com <code>--amend</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#parte-4--tags-e-branches">Parte 4 — Tags e branches</a>
+      <ul>
+        <li><a href="#41-crie-uma-tag-de-versão">4.1 Crie uma tag de versão</a></li>
+        <li><a href="#42-crie-um-branch-para-nova-funcionalidade">4.2 Crie um branch para nova funcionalidade</a></li>
+        <li><a href="#43-desenvolva-a-funcionalidade-no-branch">4.3 Desenvolva a funcionalidade no branch</a></li>
+        <li><a href="#44-faça-um-commit-no-main-enquanto-o-branch-existe">4.4 Faça um commit no <code>main</code> enquanto o branch existe</a></li>
+        <li><a href="#45-mescle-o-branch-no-main">4.5 Mescle o branch no <code>main</code></a></li>
+        <li><a href="#46-remova-o-branch-após-o-merge">4.6 Remova o branch após o merge</a></li>
+        <li><a href="#47-crie-uma-tag-para-a-versão-final">4.7 Crie uma tag para a versão final</a></li>
+      </ul>
+    </li>
+    <li><a href="#resumo-dos-comandos-utilizados">Resumo dos comandos utilizados</a></li>
+    <li><a href="#desafios-opcionais">Desafios opcionais</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -105,7 +105,7 @@ weight: 1
       <ul>
         <li>Entrada e saída</li>
         <li>Encapsulamento</li>
-        <li>Sobreposição e sobrecarga</li>
+        <li>Sobrecarga</li>
       </ul>
     </td>
     <td>32/160 aulas</td>
@@ -144,6 +144,7 @@ weight: 1
     <td>
       <ul>
         <li>Herança</li>
+        <li>Sobreposição (*Override*)</li>
         <li>Interfaces</li>
         <li>Classes abstratas</li>
       </ul>

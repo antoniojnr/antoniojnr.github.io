@@ -284,4 +284,4 @@ c. O escopo de função é uma forma de encapsulamento? Justifique.
 
 ## Atividades extra
 
-1. [Plataforma de streaming](/content/docs/disciplinas/poo-info/revisao-javascript/3-exercicio-funcoes/)
+1. [Plataforma de streaming](/docs/disciplinas/poo-info/revisao-javascript/3-exercicio-funcoes/)

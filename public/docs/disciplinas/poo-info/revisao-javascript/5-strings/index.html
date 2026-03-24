@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="5. Strings# Frequentemente precisamos manipular dados textuais nos sistemas que escrevemos. Afinal, texto está em todo lugar: o usuário digita texto ao inserir informações em um programa, APIs comunicam-se através de formatos textuais e arquivos são texto (em sua maioria).
+A facilidade em realizar operações sobre dados textuais se dá graças ao tipo string. Os métodos e atributos do tipo string permitem realizar operações como calcular o tamanho, localizar a presença de uma palavra ou remover parte de um texto.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/5-strings/">
+  <meta property="og:site_name" content="Antonio Dias">
+  <meta property="og:title" content="5. Strings">
+  <meta property="og:description" content="5. Strings# Frequentemente precisamos manipular dados textuais nos sistemas que escrevemos. Afinal, texto está em todo lugar: o usuário digita texto ao inserir informações em um programa, APIs comunicam-se através de formatos textuais e arquivos são texto (em sua maioria).
+A facilidade em realizar operações sobre dados textuais se dá graças ao tipo string. Os métodos e atributos do tipo string permitem realizar operações como calcular o tamanho, localizar a presença de uma palavra ou remover parte de um texto.">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="5. Strings">
+  <meta itemprop="description" content="5. Strings# Frequentemente precisamos manipular dados textuais nos sistemas que escrevemos. Afinal, texto está em todo lugar: o usuário digita texto ao inserir informações em um programa, APIs comunicam-se através de formatos textuais e arquivos são texto (em sua maioria).
+A facilidade em realizar operações sobre dados textuais se dá graças ao tipo string. Os métodos e atributos do tipo string permitem realizar operações como calcular o tamanho, localizar a presença de uma palavra ou remover parte de um texto.">
+  <meta itemprop="wordCount" content="1260">
+
+<title>5. Strings | Antonio Dias</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/5-strings/">
+<link rel="stylesheet" href="/book.min.a734d0f84f339961c2f38061ac4210305aad75979ab791937815c1ac455d7ec7.css" integrity="sha256-pzTQ&#43;E8zmWHC84BhrEIQMFqtdZeat5GTeBXBrEVdfsc=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.bc34b5319327da457f1934b46fba3f95229393e76fafb741640afdf8c56c48b1.js" integrity="sha256-vDS1MZMn2kV/GTS0b7o/lSKTk&#43;dvr7dBZAr9&#43;MVsSLE=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Antonio Dias</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Buscar"
+    aria-label="Buscar"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="toggle"  />
+    <label for="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="flex">
+      <a href="/docs/posts/" class="">
+        Atualizações</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/posts/primeiro-post/" class="">
+      Primeiro Post</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/" class="">
+      Disciplinas</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0658642cbe0befc355ebbab1ea93df0" class="toggle"  />
+    <label for="section-e0658642cbe0befc355ebbab1ea93df0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/" class="">
+        POO (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3de58d405969aa3459400420373baf0f" class="toggle"  />
+    <label for="section-3de58d405969aa3459400420373baf0f" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/" class="">
+        Exercícios</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-23e47a9839d0b7fff7effd5165e44534" class="toggle"  />
+    <label for="section-23e47a9839d0b7fff7effd5165e44534" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista01/" class="">
+        Lista 01</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f252426f7bf9838e8641f64c9ba7f7df" class="toggle"  />
+    <label for="section-f252426f7bf9838e8641f64c9ba7f7df" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista02/" class="">
+        Lista 02</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-472fd952daa9782f8296f0029a22a9c0" class="toggle"  />
+    <label for="section-472fd952daa9782f8296f0029a22a9c0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista03/" class="">
+        Lista 03</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9dcdb8fdaeac7c4002bbc97a700158ee" class="toggle"  />
+    <label for="section-9dcdb8fdaeac7c4002bbc97a700158ee" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista04/" class="">
+        Lista 04</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/projeto/" class="">
+      Projeto</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/git/" class="">
+      Git</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ad90f794895ae5dd26ad3b3869e4edf2" class="toggle" checked />
+    <label for="section-ad90f794895ae5dd26ad3b3869e4edf2" class="flex">
+      <a href="/docs/disciplinas/poo-info/" class="">
+        POO (Integrado)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-85611c34c3e4fce02fc9163ca37c73a3" class="toggle" checked />
+    <label for="section-85611c34c3e4fce02fc9163ca37c73a3" class="flex">
+      <a href="/docs/disciplinas/poo-info/revisao-javascript/" class="">
+        JavaScript - uma breve introdução à linguagem</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/1-fundamentos/" class="">
+      1. Fundamentos essenciais da linguagem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/2-estruturas-controle/" class="">
+      2. Estruturas de controle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/3-funcoes/" class="">
+      3. Funções</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/3-exercicio-funcoes/" class="">
+      3. Funções (Exercício)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/4-arrays-objetos/" class="">
+      4. Arrays e Objetos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/5-strings/" class="active">
+      5. Strings</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="toggle"  />
+    <label for="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="flex">
+      <a href="/docs/disciplinas/seginfo-ads/" class="">
+        Seg. da Informação (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>5. Strings</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#o-que-é-uma-string">O que é uma string?</a></li>
+    <li><a href="#acessando-caracteres">Acessando caracteres</a></li>
+    <li><a href="#propriedades-e-métodos-essenciais">Propriedades e métodos essenciais</a>
+      <ul>
+        <li><a href="#length"><code>length</code></a></li>
+        <li><a href="#touppercase-e-tolowercase"><code>toUpperCase</code> e <code>toLowerCase</code></a></li>
+        <li><a href="#trim-trimstart-e-trimend"><code>trim</code>, <code>trimStart</code> e <code>trimEnd</code></a></li>
+        <li><a href="#includes-startswith-e-endswith"><code>includes</code>, <code>startsWith</code> e <code>endsWith</code></a></li>
+        <li><a href="#indexof"><code>indexOf</code></a></li>
+        <li><a href="#slice"><code>slice</code></a></li>
+        <li><a href="#replace-e-replaceall"><code>replace</code> e <code>replaceAll</code></a></li>
+        <li><a href="#split"><code>split</code></a></li>
+        <li><a href="#padstart-e-padend"><code>padStart</code> e <code>padEnd</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#template-literals">Template literals</a></li>
+    <li><a href="#atividades-sugeridas">Atividades sugeridas</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="5-strings">5. Strings<a class="anchor" href="#5-strings">#</a></h1>
+<p>Frequentemente precisamos manipular dados textuais nos sistemas que escrevemos. Afinal, texto está em todo lugar: o usuário digita texto ao inserir informações em um programa, APIs comunicam-se através de formatos textuais e arquivos são texto (em sua maioria).</p>
+<p>A facilidade em realizar operações sobre dados textuais se dá graças ao tipo <code>string</code>. Os métodos e atributos do tipo <code>string</code> permitem realizar operações como calcular o tamanho, localizar a presença de uma palavra ou remover parte de um texto.</p>
+<hr>
+<h2 id="o-que-é-uma-string">O que é uma string?<a class="anchor" href="#o-que-%c3%a9-uma-string">#</a></h2>
+<p>Strings são sequências de caracteres que representam texto. Os caracteres são codificados em Unicode, o padrão universal para representar texto em todas as linguagens. Assim como em arrays, cada caractere pode ser acessado pelo seu índice, que começa em 0.</p>
+<p>Uma característica importante das strings em JavaScript é que elas são <strong>imutáveis</strong>: uma vez criada, uma string não pode ser alterada. Os métodos de string nunca modificam a string original — sempre retornam uma nova. Por isso, é necessário guardar o resultado em uma variável para aproveitá-lo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ana lima&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">nome</span>.<span style="color:#a6e22e">toUpperCase</span>(); <span style="color:#75715e">// &#34;ANA LIMA&#34; — mas nome continua &#34;ana lima&#34;
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nomeFormatado</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nome</span>.<span style="color:#a6e22e">toUpperCase</span>(); <span style="color:#75715e">// agora sim
+</span></span></span></code></pre></div><p>Strings podem ser declaradas com aspas simples, aspas duplas ou <em>backticks</em> (``). As três formas são equivalentes para strings simples — a escolha é geralmente uma questão de convenção:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Olá&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Olá&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">c</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Olá`</span>;</span></span></code></pre></div><p>Os <em>backticks</em> têm um comportamento especial e são usados para criar <em>template literals</em>, que veremos mais adiante.</p>
+<hr>
+<h2 id="acessando-caracteres">Acessando caracteres<a class="anchor" href="#acessando-caracteres">#</a></h2>
+<p>Assim como em arrays, é possível acessar um caractere pelo índice usando colchetes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">palavra</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;texto&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">palavra</span>[<span style="color:#ae81ff">0</span>]; <span style="color:#75715e">// &#34;t&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">palavra</span>[<span style="color:#ae81ff">4</span>]; <span style="color:#75715e">// &#34;o&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">palavra</span>[<span style="color:#ae81ff">9</span>]; <span style="color:#75715e">// undefined — índice inexistente não gera erro
+</span></span></span></code></pre></div><p>Outra forma é usar o método <code>charAt</code>, que se comporta de forma equivalente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">palavra</span>.<span style="color:#a6e22e">charAt</span>(<span style="color:#ae81ff">0</span>); <span style="color:#75715e">// &#34;t&#34;
+</span></span></span></code></pre></div><p>A diferença é que <code>charAt</code> retorna uma string vazia <code>&quot;&quot;</code> para índices inválidos, enquanto a notação de colchetes retorna <code>undefined</code>. Na prática, a notação de colchetes é mais comum por ser mais concisa e consistente com o que já conhecemos de arrays.</p>
+<hr>
+<h2 id="propriedades-e-métodos-essenciais">Propriedades e métodos essenciais<a class="anchor" href="#propriedades-e-m%c3%a9todos-essenciais">#</a></h2>
+<h3 id="length"><code>length</code><a class="anchor" href="#length">#</a></h3>
+<p>Retorna o número de caracteres da string:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">texto</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JavaScript&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">texto</span>.<span style="color:#a6e22e">length</span>; <span style="color:#75715e">// 10
+</span></span></span></code></pre></div><p>Espaços e caracteres especiais contam:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#e6db74">&#34;olá mundo&#34;</span>.<span style="color:#a6e22e">length</span>; <span style="color:#75715e">// 9
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;</span>.<span style="color:#a6e22e">length</span>; <span style="color:#75715e">// 0
+</span></span></span></code></pre></div><hr>
+<h3 id="touppercase-e-tolowercase"><code>toUpperCase</code> e <code>toLowerCase</code><a class="anchor" href="#touppercase-e-tolowercase">#</a></h3>
+<p>Retornam uma nova string com todos os caracteres convertidos para maiúsculas ou minúsculas, respectivamente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Ana Lima&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">nome</span>.<span style="color:#a6e22e">toUpperCase</span>(); <span style="color:#75715e">// &#34;ANA LIMA&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">nome</span>.<span style="color:#a6e22e">toLowerCase</span>(); <span style="color:#75715e">// &#34;ana lima&#34;
+</span></span></span></code></pre></div><p>São úteis para comparações sem distinção entre maiúsculas e minúsculas:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">entrada</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JavaScript&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">entrada</span>.<span style="color:#a6e22e">toLowerCase</span>() <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;javascript&#34;</span>; <span style="color:#75715e">// true
+</span></span></span></code></pre></div><hr>
+<h3 id="trim-trimstart-e-trimend"><code>trim</code>, <code>trimStart</code> e <code>trimEnd</code><a class="anchor" href="#trim-trimstart-e-trimend">#</a></h3>
+<p>Removem espaços em branco das extremidades da string. <code>trim</code> remove dos dois lados; <code>trimStart</code> remove apenas do início; <code>trimEnd</code> remove apenas do fim:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">entrada</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;   olá mundo   &#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">entrada</span>.<span style="color:#a6e22e">trim</span>(); <span style="color:#75715e">// &#34;olá mundo&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">entrada</span>.<span style="color:#a6e22e">trimStart</span>(); <span style="color:#75715e">// &#34;olá mundo   &#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">entrada</span>.<span style="color:#a6e22e">trimEnd</span>(); <span style="color:#75715e">// &#34;   olá mundo&#34;
+</span></span></span></code></pre></div><p>São especialmente úteis para limpar entradas do usuário antes de processá-las.</p>
+<hr>
+<h3 id="includes-startswith-e-endswith"><code>includes</code>, <code>startsWith</code> e <code>endsWith</code><a class="anchor" href="#includes-startswith-e-endswith">#</a></h3>
+<p>Os três verificam a presença de uma substring e retornam <code>true</code> ou <code>false</code>.</p>
+<p><code>includes</code> verifica se a substring aparece em qualquer posição:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">frase</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JavaScript é uma linguagem versátil&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">frase</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#e6db74">&#34;linguagem&#34;</span>); <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">frase</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#e6db74">&#34;Python&#34;</span>); <span style="color:#75715e">// false
+</span></span></span></code></pre></div><p><code>startsWith</code> verifica se a string começa com a substring:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">frase</span>.<span style="color:#a6e22e">startsWith</span>(<span style="color:#e6db74">&#34;JavaScript&#34;</span>); <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">frase</span>.<span style="color:#a6e22e">startsWith</span>(<span style="color:#e6db74">&#34;linguagem&#34;</span>); <span style="color:#75715e">// false
+</span></span></span></code></pre></div><p><code>endsWith</code> verifica se a string termina com a substring:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">frase</span>.<span style="color:#a6e22e">endsWith</span>(<span style="color:#e6db74">&#34;versátil&#34;</span>); <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">frase</span>.<span style="color:#a6e22e">endsWith</span>(<span style="color:#e6db74">&#34;Java&#34;</span>); <span style="color:#75715e">// false
+</span></span></span></code></pre></div><hr>
+<h3 id="indexof"><code>indexOf</code><a class="anchor" href="#indexof">#</a></h3>
+<p>Retorna o índice da primeira ocorrência de uma substring, ou <code>-1</code> se não for encontrada:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">frase</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;um dois um três&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">frase</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;um&#34;</span>); <span style="color:#75715e">// 0  — primeira ocorrência
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">frase</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;dois&#34;</span>); <span style="color:#75715e">// 3
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">frase</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;cinco&#34;</span>); <span style="color:#75715e">// -1
+</span></span></span></code></pre></div><p>O comportamento é idêntico ao <code>indexOf</code> de arrays, mas aplicado a substrings em vez de elementos. Quando apenas a presença importa, <code>includes</code> é mais legível; use <code>indexOf</code> quando precisar saber a posição.</p>
+<hr>
+<h3 id="slice"><code>slice</code><a class="anchor" href="#slice">#</a></h3>
+<p>Retorna um trecho da string entre dois índices. O índice de fim não é incluído:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">texto</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JavaScript&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">texto</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">4</span>); <span style="color:#75715e">// &#34;Java&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">texto</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">4</span>); <span style="color:#75715e">// &#34;Script&#34; — até o fim
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">texto</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">6</span>); <span style="color:#75715e">// &#34;Script&#34; — índices negativos contam do fim
+</span></span></span></code></pre></div><p>Assim como em arrays, <code>slice</code> não altera a string original.</p>
+<hr>
+<h3 id="replace-e-replaceall"><code>replace</code> e <code>replaceAll</code><a class="anchor" href="#replace-e-replaceall">#</a></h3>
+<p><code>replace</code> substitui a primeira ocorrência de uma substring por outra:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">frase</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;um dois um três&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">frase</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#34;um&#34;</span>, <span style="color:#e6db74">&#34;zero&#34;</span>); <span style="color:#75715e">// &#34;zero dois um três&#34; — só a primeira
+</span></span></span></code></pre></div><p><code>replaceAll</code> substitui todas as ocorrências:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">frase</span>.<span style="color:#a6e22e">replaceAll</span>(<span style="color:#e6db74">&#34;um&#34;</span>, <span style="color:#e6db74">&#34;zero&#34;</span>); <span style="color:#75715e">// &#34;zero dois zero três&#34;
+</span></span></span></code></pre></div><p>Lembre que strings são imutáveis — <code>frase</code> não é alterada em nenhum dos casos. O resultado precisa ser guardado em uma variável.</p>
+<hr>
+<h3 id="split"><code>split</code><a class="anchor" href="#split">#</a></h3>
+<p>Divide a string em um array de substrings, usando um separador como critério:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">frase</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;um,dois,três&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">frase</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>); <span style="color:#75715e">// [&#34;um&#34;, &#34;dois&#34;, &#34;três&#34;]
+</span></span></span></code></pre></div><p>Se o separador for uma string vazia, cada caractere vira um elemento:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#e6db74">&#34;abc&#34;</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;&#34;</span>); <span style="color:#75715e">// [&#34;a&#34;, &#34;b&#34;, &#34;c&#34;]
+</span></span></span></code></pre></div><p><code>split</code> é o inverso de <code>join</code> (método de arrays) e a combinação dos dois é muito usada para transformar e remontar strings:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#e6db74">&#34;ana lima&#34;</span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">palavra</span>) =&gt; <span style="color:#a6e22e">palavra</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">toUpperCase</span>() <span style="color:#f92672">+</span> <span style="color:#a6e22e">palavra</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34; &#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &#34;Ana Lima&#34;
+</span></span></span></code></pre></div><hr>
+<h3 id="padstart-e-padend"><code>padStart</code> e <code>padEnd</code><a class="anchor" href="#padstart-e-padend">#</a></h3>
+<p>Preenchem a string com um caractere até atingir um comprimento mínimo. <code>padStart</code> preenche no início; <code>padEnd</code> preenche no fim:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#e6db74">&#34;5&#34;</span>.<span style="color:#a6e22e">padStart</span>(<span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;0&#34;</span>); <span style="color:#75715e">// &#34;005&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;5&#34;</span>.<span style="color:#a6e22e">padEnd</span>(<span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;0&#34;</span>); <span style="color:#75715e">// &#34;500&#34;
+</span></span></span></code></pre></div><p>São úteis para formatar saídas com alinhamento fixo, como exibir horas (<code>&quot;9&quot;.padStart(2, &quot;0&quot;)</code> → <code>&quot;09&quot;</code>) ou gerar códigos com comprimento padronizado.</p>
+<hr>
+<h2 id="template-literals">Template literals<a class="anchor" href="#template-literals">#</a></h2>
+<p>Template literals são uma forma alternativa de declarar strings, usando backticks em vez de aspas. Eles têm duas vantagens principais sobre as strings convencionais.</p>
+<p>A primeira é a <strong>interpolação</strong>: é possível inserir expressões JavaScript diretamente no texto usando <code>${}</code>, sem precisar concatenar com <code>+</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nome</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Ana&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">idade</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">21</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// com concatenação
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;Olá, &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">nome</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;. Você tem &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">idade</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; anos.&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// com template literal
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">`Olá, </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">nome</span><span style="color:#e6db74">}</span><span style="color:#e6db74">. Você tem </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">idade</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> anos.`</span>;</span></span></code></pre></div><p>Qualquer expressão válida pode ir dentro de <code>${}</code> — variáveis, operações, chamadas de função:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">preco</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">150</span>;
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">`Preço com desconto: R$ </span><span style="color:#e6db74">${</span>(<span style="color:#a6e22e">preco</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.9</span>).<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>; <span style="color:#75715e">// &#34;Preço com desconto: R$ 135.00&#34;
+</span></span></span></code></pre></div><p>A segunda vantagem é o suporte a <strong>múltiplas linhas</strong> sem nenhum caractere especial:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mensagem</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Olá, </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">nome</span><span style="color:#e6db74">}</span><span style="color:#e6db74">.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Seu pedido foi confirmado.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Obrigado pela preferência.`</span>;</span></span></code></pre></div><p>Em strings convencionais, quebras de linha exigiriam o uso de <code>\n</code>. Com template literals, o texto pode ser escrito diretamente como aparece.</p>
+<hr>
+<h2 id="atividades-sugeridas">Atividades sugeridas<a class="anchor" href="#atividades-sugeridas">#</a></h2>
+<p><strong>(Questão 01)</strong> Dada a string <code>&quot;JavaScript&quot;</code>:</p>
+<p>a. Acesse o primeiro e o último caractere.<br>
+b. Verifique quantos caracteres ela tem.<br>
+c. Extraia apenas <code>&quot;Script&quot;</code> usando <code>slice</code>.</p>
+<hr>
+<p><strong>(Questão 02)</strong> Escreva uma função <code>normalizar(texto)</code> que receba uma string com possíveis espaços nas bordas e letras em caixa mista, e retorne a string sem espaços nas extremidades e com todas as letras em minúsculas.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">normalizar</span>(<span style="color:#e6db74">&#34;  JavaScript  &#34;</span>); <span style="color:#75715e">// &#34;javascript&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">normalizar</span>(<span style="color:#e6db74">&#34;  ANA LIMA &#34;</span>); <span style="color:#75715e">// &#34;ana lima&#34;
+</span></span></span></code></pre></div><hr>
+<p><strong>(Questão 03)</strong> Escreva uma função <code>validarEmail(email)</code> que retorne <code>true</code> se a string contiver <code>&quot;@&quot;</code> e terminar com <code>&quot;.com&quot;</code>, e <code>false</code> caso contrário.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">validarEmail</span>(<span style="color:#e6db74">&#34;ana@email.com&#34;</span>); <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">validarEmail</span>(<span style="color:#e6db74">&#34;ana@email.org&#34;</span>); <span style="color:#75715e">// false
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">validarEmail</span>(<span style="color:#e6db74">&#34;anaemail.com&#34;</span>); <span style="color:#75715e">// false
+</span></span></span></code></pre></div><hr>
+<p><strong>(Questão 04)</strong> Dado o objeto abaixo, use um template literal para gerar a mensagem indicada:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">pedido</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">cliente</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Bruno&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">produto</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Teclado&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">preco</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">150</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">prazo</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Mensagem esperada:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// &#34;Olá, Bruno! Seu pedido de Teclado (R$ 150.00) chegará em 3 dias úteis.&#34;
+</span></span></span></code></pre></div><hr>
+<p><strong>(Questão 05)</strong> Escreva uma função <code>capitalizar(frase)</code> que receba uma frase em letras minúsculas e retorne a frase com a primeira letra de cada palavra em maiúscula.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">capitalizar</span>(<span style="color:#e6db74">&#34;olá mundo&#34;</span>); <span style="color:#75715e">// &#34;Olá Mundo&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">capitalizar</span>(<span style="color:#e6db74">&#34;javascript é legal&#34;</span>); <span style="color:#75715e">// &#34;Javascript É Legal&#34;
+</span></span></span></code></pre></div><hr>
+<p><strong>(Questão 06)</strong> Responda com suas palavras:</p>
+<p>a. O que significa dizer que strings são imutáveis? Como isso afeta a forma de trabalhar com métodos como <code>replace</code> e <code>toUpperCase</code>?<br>
+b. Qual a diferença entre <code>includes</code> e <code>indexOf</code>? Em que situação você preferiria um ou outro?<br>
+c. Por que <code>split</code> e <code>join</code> são considerados complementares?</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <footer class="book-footer">
+   
+  <a href="/docs/disciplinas/poo-info/revisao-javascript/"> ← Voltar para JavaScript - uma breve introdução à linguagem </a>
+   
+</footer>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#o-que-é-uma-string">O que é uma string?</a></li>
+    <li><a href="#acessando-caracteres">Acessando caracteres</a></li>
+    <li><a href="#propriedades-e-métodos-essenciais">Propriedades e métodos essenciais</a>
+      <ul>
+        <li><a href="#length"><code>length</code></a></li>
+        <li><a href="#touppercase-e-tolowercase"><code>toUpperCase</code> e <code>toLowerCase</code></a></li>
+        <li><a href="#trim-trimstart-e-trimend"><code>trim</code>, <code>trimStart</code> e <code>trimEnd</code></a></li>
+        <li><a href="#includes-startswith-e-endswith"><code>includes</code>, <code>startsWith</code> e <code>endsWith</code></a></li>
+        <li><a href="#indexof"><code>indexOf</code></a></li>
+        <li><a href="#slice"><code>slice</code></a></li>
+        <li><a href="#replace-e-replaceall"><code>replace</code> e <code>replaceAll</code></a></li>
+        <li><a href="#split"><code>split</code></a></li>
+        <li><a href="#padstart-e-padend"><code>padStart</code> e <code>padEnd</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#template-literals">Template literals</a></li>
+    <li><a href="#atividades-sugeridas">Atividades sugeridas</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
