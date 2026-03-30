@@ -26,7 +26,7 @@ A classe `Ingrediente` possui os atributos:
 - `custoUnitario` (double)
 - `unidade` (String) — ex: `"mg"`, `"ml"`, `"g"`
 
-A classe `Formula` **compõe** uma lista de pares `Ingrediente` + quantidade. A classe `Formula` deve ter os seguintes métodos:
+A classe `Formula` é composta de uma lista de pares `Ingrediente` + quantidade. A classe `Formula` deve ter os seguintes métodos:
 
 - `adicionarIngrediente(Ingrediente ing, double quantidade)`
 - `adicionarIngrediente(Ingrediente ing, double quantidade, String observacao)` — sobrecarga com observação de manipulação (ex: `"dissolver antes"`)
