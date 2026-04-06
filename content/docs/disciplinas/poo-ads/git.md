@@ -1,3 +1,9 @@
+---
+title: "Git plan"
+weight: 1
+bookHidden: true
+---
+
 Roadmap
 
 Introduction to version control
