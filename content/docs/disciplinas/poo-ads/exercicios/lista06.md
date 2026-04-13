@@ -12,6 +12,7 @@ bookCollapseSection: true
 - Observe com atenção os requisitos e como os pacotes para cada questão devem ser organizados.
 - Todos os exercícios devem ser feitos em um único projeto do IntelliJ.
 - A correção será feita presencialmente, com o professor executando os casos de teste na sua máquina.
+- Baixe os casos de teste {{< button href="/docs/disciplinas/poo-ads/exercicios/testes-lista06-20261.zip" >}}aqui{{< /button >}}
 
 ## Exercícios
 
