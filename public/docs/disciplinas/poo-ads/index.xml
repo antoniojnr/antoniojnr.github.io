@@ -22,18 +22,18 @@
       <description>&lt;h1 id=&#34;calendário&#34;&gt;Calendário&lt;a class=&#34;anchor&#34; href=&#34;#calend%c3%a1rio&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;informações&#34;&gt;Informações&lt;a class=&#34;anchor&#34; href=&#34;#informa%c3%a7%c3%b5es&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Disciplina:&lt;/strong&gt; Programação Orientada a Objetos&lt;br&gt;&#xA;&lt;strong&gt;Curso:&lt;/strong&gt; Análise e Desenvolvimento de Sistemas&lt;br&gt;&#xA;&lt;strong&gt;Período:&lt;/strong&gt; 2026.1&lt;/p&gt;&#xA;&lt;blockquote class=&#39;book-hint warning&#39;&gt;&#xA;&lt;p&gt;&lt;strong&gt;Frequência&lt;/strong&gt;&lt;br&gt;&#xA;Para ser aprovado na disciplina, o estudante deve ter frequência mínima de 75% da carga horária total.&lt;/p&gt;&#xA;&lt;p&gt;A disciplina de Programação Orientada a Objetos possui 160 horas-aula. Isso significa que o estudante pode ter no máximo 39 faltas (ou 10 dias de aula).&lt;/p&gt;&#xA;&lt;p&gt;Caso o número de faltas seja 40 ou mais, o estudante estará reprovado por falta, independentemente das notas obtidas.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Git plan</title>
+      <link>http://localhost:1313/docs/disciplinas/poo-ads/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/disciplinas/poo-ads/git/</guid>
+      <description>&lt;p&gt;Roadmap&lt;/p&gt;&#xA;&lt;p&gt;Introduction to version control&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What is version control?&lt;/li&gt;&#xA;&lt;li&gt;Why use version control?&lt;/li&gt;&#xA;&lt;li&gt;Introduction to Git&lt;/li&gt;&#xA;&lt;li&gt;How Git works&lt;/li&gt;&#xA;&lt;li&gt;Git workflow example&lt;/li&gt;&#xA;&lt;li&gt;Conclusion and next steps&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Setting up Git&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Installation&lt;/li&gt;&#xA;&lt;li&gt;Command line and terminal&lt;/li&gt;&#xA;&lt;li&gt;The git command&lt;/li&gt;&#xA;&lt;li&gt;Configuring Git credentials&lt;/li&gt;&#xA;&lt;li&gt;Configuring line endings treatment&lt;/li&gt;&#xA;&lt;li&gt;Configuring default branch name&lt;/li&gt;&#xA;&lt;li&gt;Conclusion and next steps&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Putting the project under version control&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Navigating the terminal&lt;/li&gt;&#xA;&lt;li&gt;Initializing a repository&lt;/li&gt;&#xA;&lt;li&gt;Creating work files&lt;/li&gt;&#xA;&lt;li&gt;Recording changes&lt;/li&gt;&#xA;&lt;li&gt;Checking the status of the repository&lt;/li&gt;&#xA;&lt;li&gt;Conclusion and next steps&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Resetting unwanted changes&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Projeto</title>
       <link>http://localhost:1313/docs/disciplinas/poo-ads/projeto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/disciplinas/poo-ads/projeto/</guid>
       <description>&lt;h1 id=&#34;projeto&#34;&gt;Projeto&lt;a class=&#34;anchor&#34; href=&#34;#projeto&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;TODO&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/docs/disciplinas/poo-ads/git/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/disciplinas/poo-ads/git/</guid>
-      <description>&lt;p&gt;Roadmap&lt;/p&gt;&#xA;&lt;p&gt;Introduction to version control&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What is version control?&lt;/li&gt;&#xA;&lt;li&gt;Why use version control?&lt;/li&gt;&#xA;&lt;li&gt;Introduction to Git&lt;/li&gt;&#xA;&lt;li&gt;How Git works&lt;/li&gt;&#xA;&lt;li&gt;Git workflow example&lt;/li&gt;&#xA;&lt;li&gt;Conclusion and next steps&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Setting up Git&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Installation&lt;/li&gt;&#xA;&lt;li&gt;Command line and terminal&lt;/li&gt;&#xA;&lt;li&gt;The git command&lt;/li&gt;&#xA;&lt;li&gt;Configuring Git credentials&lt;/li&gt;&#xA;&lt;li&gt;Configuring line endings treatment&lt;/li&gt;&#xA;&lt;li&gt;Configuring default branch name&lt;/li&gt;&#xA;&lt;li&gt;Conclusion and next steps&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Putting the project under version control&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Navigating the terminal&lt;/li&gt;&#xA;&lt;li&gt;Initializing a repository&lt;/li&gt;&#xA;&lt;li&gt;Creating work files&lt;/li&gt;&#xA;&lt;li&gt;Recording changes&lt;/li&gt;&#xA;&lt;li&gt;Checking the status of the repository&lt;/li&gt;&#xA;&lt;li&gt;Conclusion and next steps&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Resetting unwanted changes&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

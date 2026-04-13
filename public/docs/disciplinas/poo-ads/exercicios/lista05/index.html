@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lista 05# Instruções# Observe com atenção os requisitos e como os pacotes para cada questão devem ser organizados. Todos os exercícios devem ser feitos em um único projeto do IntelliJ. A correção será feita presencialmente, com o professor executando os casos de teste na sua máquina. Baixe os casos de teste aqui Respeite a estrutura de pacotes também no diretório de testes, mas mova para o diretório de testes do seu projeto apenas os casos de testes em que estiver trabalhando. Caso contrário, seu projeto apresentará erro de compilação enquanto não implementar todas as classes e métodos usados nos casos de testes. Exercícios# Questão 01. Uma farmácia de manipulação produz medicamentos sob encomenda. Cada fórmula é composta por ingredientes com quantidades e unidades específicas. O farmacêutico pode calcular o custo da fórmula de formas diferentes conforme as informações disponíveis.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista05/">
+  <meta property="og:site_name" content="Antonio Dias">
+  <meta property="og:title" content="Lista 05">
+  <meta property="og:description" content="Lista 05# Instruções# Observe com atenção os requisitos e como os pacotes para cada questão devem ser organizados. Todos os exercícios devem ser feitos em um único projeto do IntelliJ. A correção será feita presencialmente, com o professor executando os casos de teste na sua máquina. Baixe os casos de teste aqui Respeite a estrutura de pacotes também no diretório de testes, mas mova para o diretório de testes do seu projeto apenas os casos de testes em que estiver trabalhando. Caso contrário, seu projeto apresentará erro de compilação enquanto não implementar todas as classes e métodos usados nos casos de testes. Exercícios# Questão 01. Uma farmácia de manipulação produz medicamentos sob encomenda. Cada fórmula é composta por ingredientes com quantidades e unidades específicas. O farmacêutico pode calcular o custo da fórmula de formas diferentes conforme as informações disponíveis.">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="Lista 05">
+  <meta itemprop="description" content="Lista 05# Instruções# Observe com atenção os requisitos e como os pacotes para cada questão devem ser organizados. Todos os exercícios devem ser feitos em um único projeto do IntelliJ. A correção será feita presencialmente, com o professor executando os casos de teste na sua máquina. Baixe os casos de teste aqui Respeite a estrutura de pacotes também no diretório de testes, mas mova para o diretório de testes do seu projeto apenas os casos de testes em que estiver trabalhando. Caso contrário, seu projeto apresentará erro de compilação enquanto não implementar todas as classes e métodos usados nos casos de testes. Exercícios# Questão 01. Uma farmácia de manipulação produz medicamentos sob encomenda. Cada fórmula é composta por ingredientes com quantidades e unidades específicas. O farmacêutico pode calcular o custo da fórmula de formas diferentes conforme as informações disponíveis.">
+  <meta itemprop="wordCount" content="1233">
+
+<title>Lista 05 | Antonio Dias</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista05/">
+<link rel="stylesheet" href="/book.min.a734d0f84f339961c2f38061ac4210305aad75979ab791937815c1ac455d7ec7.css" integrity="sha256-pzTQ&#43;E8zmWHC84BhrEIQMFqtdZeat5GTeBXBrEVdfsc=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.1c8ef8ceab6d70e74b2a5a301f9c7d1b2cc1e4e32815c457a6b63873a45a9d3a.js" integrity="sha256-HI74zqttcOdLKlowH5x9GyzB5OMoFcRXprY4c6RanTo=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Antonio Dias</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Buscar"
+    aria-label="Buscar"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="toggle"  />
+    <label for="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="flex">
+      <a href="/docs/posts/" class="">
+        Atualizações</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/posts/primeiro-post/" class="">
+      Primeiro Post</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/" class="">
+      Disciplinas</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0658642cbe0befc355ebbab1ea93df0" class="toggle" checked />
+    <label for="section-e0658642cbe0befc355ebbab1ea93df0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/" class="">
+        POO (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3de58d405969aa3459400420373baf0f" class="toggle" checked />
+    <label for="section-3de58d405969aa3459400420373baf0f" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/" class="">
+        Exercícios</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-23e47a9839d0b7fff7effd5165e44534" class="toggle"  />
+    <label for="section-23e47a9839d0b7fff7effd5165e44534" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista01/" class="">
+        Lista 01</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f252426f7bf9838e8641f64c9ba7f7df" class="toggle"  />
+    <label for="section-f252426f7bf9838e8641f64c9ba7f7df" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista02/" class="">
+        Lista 02</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-472fd952daa9782f8296f0029a22a9c0" class="toggle"  />
+    <label for="section-472fd952daa9782f8296f0029a22a9c0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista03/" class="">
+        Lista 03</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9dcdb8fdaeac7c4002bbc97a700158ee" class="toggle"  />
+    <label for="section-9dcdb8fdaeac7c4002bbc97a700158ee" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista04/" class="">
+        Lista 04</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-39d4af4109dd0e916ed4943d1a07a6dc" class="toggle" checked />
+    <label for="section-39d4af4109dd0e916ed4943d1a07a6dc" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista05/" class="active">
+        Lista 05</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-98f612df93582fcc61eaf0da31a61e96" class="toggle"  />
+    <label for="section-98f612df93582fcc61eaf0da31a61e96" class="flex">
+      <a href="/docs/disciplinas/poo-ads/exercicios/lista06/" class="">
+        Lista 06</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/projeto/" class="">
+      Projeto</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ad90f794895ae5dd26ad3b3869e4edf2" class="toggle"  />
+    <label for="section-ad90f794895ae5dd26ad3b3869e4edf2" class="flex">
+      <a href="/docs/disciplinas/poo-info/" class="">
+        POO (Integrado)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-85611c34c3e4fce02fc9163ca37c73a3" class="toggle"  />
+    <label for="section-85611c34c3e4fce02fc9163ca37c73a3" class="flex">
+      <a href="/docs/disciplinas/poo-info/revisao-javascript/" class="">
+        JavaScript - uma breve introdução à linguagem</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/1-fundamentos/" class="">
+      1. Fundamentos essenciais da linguagem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/2-estruturas-controle/" class="">
+      2. Estruturas de controle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/3-funcoes/" class="">
+      3. Funções</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/4-arrays-objetos/" class="">
+      4. Arrays e Objetos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/5-strings/" class="">
+      5. Strings</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="toggle"  />
+    <label for="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="flex">
+      <a href="/docs/disciplinas/seginfo-ads/" class="">
+        Seg. da Informação (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Lista 05</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#instruções">Instruções</a></li>
+    <li><a href="#exercícios">Exercícios</a>
+      <ul>
+        <li><a href="#exemplo-de-uso-esperado">Exemplo de uso esperado</a></li>
+        <li><a href="#exemplo-de-uso-esperado-1">Exemplo de uso esperado</a></li>
+        <li><a href="#o-que-implementar">O que implementar</a></li>
+        <li><a href="#exemplo-de-uso-esperado-2">Exemplo de uso esperado</a></li>
+        <li><a href="#o-que-implementar-1">O que implementar</a></li>
+        <li><a href="#exemplo-de-uso-esperado-3">Exemplo de uso esperado</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="lista-05">Lista 05<a class="anchor" href="#lista-05">#</a></h1>
+<h2 id="instruções">Instruções<a class="anchor" href="#instru%c3%a7%c3%b5es">#</a></h2>
+<ul>
+<li>Observe com atenção os requisitos e como os pacotes para cada questão devem ser organizados.</li>
+<li>Todos os exercícios devem ser feitos em um único projeto do IntelliJ.</li>
+<li>A correção será feita presencialmente, com o professor executando os casos de teste na sua máquina.</li>
+<li>Baixe os casos de teste <a class="book-btn"href="/docs/disciplinas/poo-ads/exercicios/testes-lista05-20261.zip">aqui</a></li>
+<li>Respeite a estrutura de pacotes também no diretório de testes, mas mova para o diretório de testes do seu projeto apenas os casos de testes em que estiver trabalhando. Caso contrário, seu projeto apresentará erro de compilação enquanto não implementar todas as classes e métodos usados nos casos de testes.</li>
+</ul>
+<h2 id="exercícios">Exercícios<a class="anchor" href="#exerc%c3%adcios">#</a></h2>
+<p><strong>Questão 01.</strong> Uma farmácia de manipulação produz medicamentos sob encomenda. Cada fórmula é composta por ingredientes com quantidades e unidades específicas. O farmacêutico pode calcular o custo da fórmula de formas diferentes conforme as informações disponíveis.</p>
+<p>Construa as classes a seguir:
+A classe <code>Ingrediente</code> possui os atributos:</p>
+<ul>
+<li><code>nome</code> (String)</li>
+<li><code>custoUnitario</code> (double)</li>
+<li><code>unidade</code> (String) — ex: <code>&quot;mg&quot;</code>, <code>&quot;ml&quot;</code>, <code>&quot;g&quot;</code></li>
+</ul>
+<p>A classe <code>Formula</code> é composta de uma lista de pares <code>Ingrediente</code> + quantidade. A classe <code>Formula</code> deve ter os seguintes métodos:</p>
+<ul>
+<li><code>adicionarIngrediente(Ingrediente ing, double quantidade)</code></li>
+<li><code>adicionarIngrediente(Ingrediente ing, double quantidade, String observacao)</code> — sobrecarga com observação de manipulação (ex: <code>&quot;dissolver antes&quot;</code>)</li>
+<li><code>calcularCusto()</code> — calcula o custo total somando <code>custoUnitario * quantidade</code> de cada ingrediente</li>
+<li><code>calcularCusto(double margemLucro)</code> — aplica margem percentual sobre o custo total</li>
+<li><code>calcularCusto(double margemLucro, double desconto)</code> — aplica margem e desconto fixo em reais</li>
+<li><code>gerarReceituario()</code> — retorna uma String formatada com todos os ingredientes, quantidades, unidades e observações (se houver). Não há restrições quanto ao formato que deve ser seguido. Verifique os testes no caso de dúvida.</li>
+</ul>
+<p>A classe <code>Pedido</code> é composta de uma <code>Formula</code> e tem atributos <code>nomePaciente</code> (String) e <code>dataEntrega</code> (String). O método <code>resumo()</code> deve chamar <code>gerarReceituario()</code> da fórmula e combinar com os dados do pedido.</p>
+<h3 id="exemplo-de-uso-esperado">Exemplo de uso esperado<a class="anchor" href="#exemplo-de-uso-esperado">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Ingrediente vitamina <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Ingrediente(<span style="color:#e6db74">&#34;Vitamina C&#34;</span>, 0.<span style="color:#a6e22e">05</span>, <span style="color:#e6db74">&#34;mg&#34;</span>);
+</span></span><span style="display:flex;"><span>Ingrediente zinco <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Ingrediente(<span style="color:#e6db74">&#34;Zinco&#34;</span>, 0.<span style="color:#a6e22e">20</span>, <span style="color:#e6db74">&#34;mg&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Formula f <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Formula(<span style="color:#e6db74">&#34;Cápsula Antioxidante&#34;</span>);
+</span></span><span style="display:flex;"><span>f.<span style="color:#a6e22e">adicionarIngrediente</span>(vitamina, 500, <span style="color:#e6db74">&#34;dissolver antes&#34;</span>);
+</span></span><span style="display:flex;"><span>f.<span style="color:#a6e22e">adicionarIngrediente</span>(zinco, 10);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(f.<span style="color:#a6e22e">calcularCusto</span>());             <span style="color:#75715e">// 27.0</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(f.<span style="color:#a6e22e">calcularCusto</span>(0.<span style="color:#a6e22e">30</span>));         <span style="color:#75715e">// 35.10</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(f.<span style="color:#a6e22e">calcularCusto</span>(0.<span style="color:#a6e22e">30</span>, 5.<span style="color:#a6e22e">00</span>));   <span style="color:#75715e">// 30.10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Pedido p <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Pedido(<span style="color:#e6db74">&#34;Maria&#34;</span>, <span style="color:#e6db74">&#34;25/06/2025&#34;</span>, f);
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(p.<span style="color:#a6e22e">resumo</span>());</span></span></code></pre></div><hr>
+<p><strong>Questão 02.</strong> Você vai implementar uma plataforma de vídeos curtos que permite que criadores publiquem conteúdo e acumulem interações do público. Cada publicação tem métricas de engajamento e o perfil do criador influencia como essas métricas são exibidas e interpretadas.</p>
+<p>Crie a classe <code>Criador</code> com os atributos:</p>
+<ul>
+<li><code>nomeUsuario</code> (String)</li>
+<li><code>seguidores</code> (int)</li>
+<li><code>verificado</code> (boolean)</li>
+</ul>
+<p>A classe <code>Midia</code> possui os atributos:</p>
+<ul>
+<li><code>tipo</code> (String) — <code>&quot;video&quot;</code>, <code>&quot;imagem&quot;</code> ou <code>&quot;audio&quot;</code></li>
+<li><code>duracaoSegundos</code> (int) — usado apenas para vídeo e áudio</li>
+<li><code>resolucao</code> (String) — usado apenas para imagem e vídeo (ex: <code>&quot;1080p&quot;</code>)</li>
+</ul>
+<p>A classe <code>Publicacao</code> contém um <code>Criador</code> e uma <code>Midia</code>, com os atributos <code>curtidas</code> (int), <code>comentarios</code> (int) e <code>compartilhamentos</code> (int). A classe <code>Publicacao</code> deve ter:</p>
+<ul>
+<li><code>taxaEngajamento()</code> — <code>(curtidas + comentarios + compartilhamentos) / (double) criador.seguidores * 100</code></li>
+<li><code>taxaEngajamento(int visualizacoes)</code> — sobrecarga: usa visualizações como denominador em vez de seguidores</li>
+<li><code>resumo()</code> — retorna String com dados do criador (chamando <code>Criador.perfil()</code>) e da mídia (chamando <code>Midia.descricao()</code>), mais as métricas</li>
+<li><code>resumo(String idioma)</code> — sobrecarga: se <code>idioma</code> for <code>&quot;en&quot;</code>, os rótulos do resumo saem em inglês; caso contrário, em português. (Rótulos são descrições dos dados, como &ldquo;Likes&rdquo;, &ldquo;Followers&rdquo;, etc.)</li>
+<li><code>ehViral()</code> — retorna <code>true</code> se <code>taxaEngajamento()</code> for <code>&gt;= 10.0</code> <strong>ou</strong> se o criador for verificado e a taxa for <code>&gt;= 5.0</code></li>
+</ul>
+<p>A classe <code>Criador</code> deve ter <code>perfil()</code> retornando ex: <code>&quot;@ana_digital (120000 seguidores) ✓&quot;</code> — ou sem o <code>✓</code> se não verificado. Copie o caractere <code>✓</code> daqui, caso necessite.
+A classe <code>Midia</code> deve ter <code>descricao()</code> retornando ex: <code>&quot;Vídeo 1080p | 45s&quot;</code>, <code>&quot;Imagem 1080p&quot;</code> ou <code>&quot;Áudio | 120s&quot;</code>.</p>
+<h3 id="exemplo-de-uso-esperado-1">Exemplo de uso esperado<a class="anchor" href="#exemplo-de-uso-esperado-1">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Criador c <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Criador(<span style="color:#e6db74">&#34;ana_digital&#34;</span>, 120000, <span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>Midia m <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Midia(<span style="color:#e6db74">&#34;video&#34;</span>, 45, <span style="color:#e6db74">&#34;1080p&#34;</span>);
+</span></span><span style="display:flex;"><span>Publicacao p <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Publicacao(c, m, 8500, 430, 210);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(p.<span style="color:#a6e22e">taxaEngajamento</span>());        <span style="color:#75715e">// ≈ 7.616</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(p.<span style="color:#a6e22e">taxaEngajamento</span>(200000));  <span style="color:#75715e">// ≈ 4.57</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(p.<span style="color:#a6e22e">ehViral</span>());                <span style="color:#75715e">// true (verificada + taxa &gt;= 5)</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(p.<span style="color:#a6e22e">resumo</span>());
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(p.<span style="color:#a6e22e">resumo</span>(<span style="color:#e6db74">&#34;en&#34;</span>));</span></span></code></pre></div><hr>
+<p><strong>Questão 03:</strong> Um aplicativo de delivery registra pedidos feitos por clientes. Cada pedido é composto por itens de um restaurante, e o valor final depende da distância, do tipo de entrega e de eventuais cupons de desconto.</p>
+<h3 id="o-que-implementar">O que implementar<a class="anchor" href="#o-que-implementar">#</a></h3>
+<p>Crie a classe <code>Restaurante</code> com os atributos:</p>
+<ul>
+<li><code>nome</code> (String)</li>
+<li><code>categoria</code> (String) — ex: <code>&quot;Japonês&quot;</code>, <code>&quot;Lanches&quot;</code></li>
+<li><code>notaAvaliacao</code> (double) — de 1.0 a 5.0</li>
+</ul>
+<p>Crie a classe <code>ItemPedido</code> com os atributos:</p>
+<ul>
+<li><code>nomePrato</code> (String)</li>
+<li><code>preco</code> (double)</li>
+<li><code>quantidade</code> (int)</li>
+</ul>
+<p>Crie a classe <code>Pedido</code> é composta de um <code>Restaurante</code> e uma lista de <code>ItemPedido</code>, com os atributos <code>nomeCliente</code> (String) e <code>distanciaKm</code> (double). A classe <code>Pedido</code> deve ter:</p>
+<ul>
+<li><code>adicionarItem(ItemPedido item)</code></li>
+<li><code>adicionarItem(String nomePrato, double preco, int quantidade)</code> — sobrecarga por parâmetros</li>
+<li><code>calcularSubtotal()</code> — soma de <code>preco * quantidade</code> de todos os itens</li>
+<li><code>calcularTotal()</code> — subtotal + taxa de entrega: <code>R$2,00</code> fixos + <code>R$1,50</code> por km</li>
+<li><code>calcularTotal(String tipoEntrega)</code> — sobrecarga: se <code>&quot;expressa&quot;</code>, a taxa de entrega dobra; se <code>&quot;retirada&quot;</code>, taxa é zero</li>
+<li><code>calcularTotal(String tipoEntrega, double cupomDesconto)</code> — sobrecarga: aplica desconto fixo em reais <strong>após</strong> calcular o total com o tipo de entrega, sem deixar o valor ficar negativo (mínimo <code>R$0,00</code>)</li>
+<li><code>resumoPedido()</code> — retorna String com nome do cliente, dados do restaurante (chamando <code>Restaurante.info()</code>) e a lista de itens (chamando <code>ItemPedido.linha()</code> para cada um)</li>
+</ul>
+<p>A classe <code>Restaurante</code> deve ter <code>info()</code> retornando ex: <code>&quot;Sushi Boa Vista | Japonês | ★ 4.8&quot;</code>.<br>
+A classe <code>ItemPedido</code> deve ter <code>linha()</code> retornando ex: <code>&quot;2x Temaki Salmão — R$29,90&quot;</code>.</p>
+<h3 id="exemplo-de-uso-esperado-2">Exemplo de uso esperado<a class="anchor" href="#exemplo-de-uso-esperado-2">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Restaurante r <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Restaurante(<span style="color:#e6db74">&#34;Sushi Boa Vista&#34;</span>, <span style="color:#e6db74">&#34;Japonês&#34;</span>, 4.<span style="color:#a6e22e">8</span>);
+</span></span><span style="display:flex;"><span>Pedido p <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Pedido(<span style="color:#e6db74">&#34;Lucas&#34;</span>, r, 3.<span style="color:#a6e22e">0</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>p.<span style="color:#a6e22e">adicionarItem</span>(<span style="color:#e6db74">&#34;Temaki Salmão&#34;</span>, 14.<span style="color:#a6e22e">95</span>, 2);
+</span></span><span style="display:flex;"><span>p.<span style="color:#a6e22e">adicionarItem</span>(<span style="color:#66d9ef">new</span> ItemPedido(<span style="color:#e6db74">&#34;Missoshiru&#34;</span>, 6.<span style="color:#a6e22e">00</span>, 1));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(p.<span style="color:#a6e22e">calcularSubtotal</span>());               <span style="color:#75715e">// 35.90</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(p.<span style="color:#a6e22e">calcularTotal</span>());                  <span style="color:#75715e">// 35.90 + 2.00 + 4.50 = 42.40</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(p.<span style="color:#a6e22e">calcularTotal</span>(<span style="color:#e6db74">&#34;expressa&#34;</span>));        <span style="color:#75715e">// 35.90 + 13.00 = 48.90</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(p.<span style="color:#a6e22e">calcularTotal</span>(<span style="color:#e6db74">&#34;retirada&#34;</span>, 5.<span style="color:#a6e22e">00</span>));  <span style="color:#75715e">// 35.90 - 5.00 = 30.90</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(p.<span style="color:#a6e22e">resumoPedido</span>());</span></span></code></pre></div><hr>
+<p><strong>Questão 04.</strong> Um aplicativo de saúde registra treinos dos usuários. Cada treino é composto por séries de exercícios, e o sistema avalia se o treino foi suficiente com base no perfil físico do usuário.</p>
+<h3 id="o-que-implementar-1">O que implementar<a class="anchor" href="#o-que-implementar-1">#</a></h3>
+<p>Crie a classe <code>Usuario</code> com os atributos:</p>
+<ul>
+<li><code>nome</code> (String)</li>
+<li><code>pesoKg</code> (double)</li>
+<li><code>alturaM</code> (double)</li>
+<li><code>idadeAnos</code> (int)</li>
+<li><code>sexo</code> (String) — <code>&quot;M&quot;</code> ou <code>&quot;F&quot;</code></li>
+</ul>
+<p>Crie a classe <code>Serie</code> com os atributos:</p>
+<ul>
+<li><code>nomeExercicio</code> (String)</li>
+<li><code>repeticoes</code> (int)</li>
+<li><code>cargaKg</code> (double)</li>
+</ul>
+<p>Crie a classe <code>Treino</code> que é composta de um <code>Usuario</code> e uma lista de <code>Serie</code>. A classe <code>Treino</code> deve ter:</p>
+<ul>
+<li><code>adicionarSerie(Serie s)</code></li>
+<li><code>adicionarSerie(String exercicio, int repeticoes, double cargaKg)</code> — sobrecarga por parâmetros</li>
+<li><code>calcularVolume()</code> — soma de <code>repeticoes * cargaKg</code> de todas as séries (volume total em kg)</li>
+<li><code>calcularVolume(String nomeExercicio)</code> — sobrecarga: retorna o volume <strong>apenas</strong> das séries do exercício informado; retorna <code>0.0</code> se o exercício não existir</li>
+<li><code>fcMaxima()</code> — frequência cardíaca máxima estimada a partir do <code>Usuario</code>: <code>220 - idadeAnos</code> para <code>&quot;M&quot;</code>, <code>226 - idadeAnos</code> para <code>&quot;F&quot;</code></li>
+<li><code>avaliar()</code> — delega para <code>Usuario.calcularIMC()</code> e, com base nisso, retorna:
+<ul>
+<li><code>&quot;Treino adequado&quot;</code> se volume total <code>&gt;= 1000</code> e IMC entre <code>18.5</code> e <code>29.9</code></li>
+<li><code>&quot;Aumentar carga&quot;</code> se volume total <code>&lt; 1000</code> e IMC entre <code>18.5</code> e <code>29.9</code></li>
+<li><code>&quot;Consulte um profissional&quot;</code> nos demais casos (IMC fora da faixa)</li>
+</ul>
+</li>
+<li><code>relatorio()</code> — retorna String com os dados do usuário (chamando <code>Usuario.resumo()</code>), cada série (chamando <code>Serie.linha()</code>) e o volume total</li>
+</ul>
+<p>A classe <code>Usuario</code> deve ter:</p>
+<ul>
+<li><code>resumo()</code> retornando ex: <code>&quot;Carlos | 28 anos | 78kg&quot;</code></li>
+<li><code>calcularIMC()</code> retornando o IMC calculado: <code>pesoKg / (alturaM * alturaM)</code></li>
+</ul>
+<p>A classe <code>Serie</code> deve ter <code>linha()</code> retornando ex: <code>&quot;Supino: 10x 80kg&quot;</code>.</p>
+<h3 id="exemplo-de-uso-esperado-3">Exemplo de uso esperado<a class="anchor" href="#exemplo-de-uso-esperado-3">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Usuario u <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Usuario(<span style="color:#e6db74">&#34;Carlos&#34;</span>, 78.<span style="color:#a6e22e">0</span>, 1.<span style="color:#a6e22e">75</span>, 28, <span style="color:#e6db74">&#34;M&#34;</span>);
+</span></span><span style="display:flex;"><span>Treino t <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Treino(u);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>t.<span style="color:#a6e22e">adicionarSerie</span>(<span style="color:#e6db74">&#34;Supino&#34;</span>, 10, 80.<span style="color:#a6e22e">0</span>);
+</span></span><span style="display:flex;"><span>t.<span style="color:#a6e22e">adicionarSerie</span>(<span style="color:#e6db74">&#34;Supino&#34;</span>, 10, 80.<span style="color:#a6e22e">0</span>);
+</span></span><span style="display:flex;"><span>t.<span style="color:#a6e22e">adicionarSerie</span>(<span style="color:#66d9ef">new</span> Serie(<span style="color:#e6db74">&#34;Agachamento&#34;</span>, 12, 100.<span style="color:#a6e22e">0</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(t.<span style="color:#a6e22e">calcularVolume</span>());             <span style="color:#75715e">// 2800.0</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(t.<span style="color:#a6e22e">calcularVolume</span>(<span style="color:#e6db74">&#34;Supino&#34;</span>));     <span style="color:#75715e">// 1600.0</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(t.<span style="color:#a6e22e">calcularVolume</span>(<span style="color:#e6db74">&#34;Rosca&#34;</span>));      <span style="color:#75715e">// 0.0</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(t.<span style="color:#a6e22e">fcMaxima</span>());                   <span style="color:#75715e">// 192</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(t.<span style="color:#a6e22e">avaliar</span>());                    <span style="color:#75715e">// &#34;Treino adequado&#34;</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(t.<span style="color:#a6e22e">relatorio</span>());</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <footer class="book-footer">
+   
+  <a href="/docs/disciplinas/poo-ads/exercicios/"> ← Voltar para Exercícios </a>
+   
+</footer>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#instruções">Instruções</a></li>
+    <li><a href="#exercícios">Exercícios</a>
+      <ul>
+        <li><a href="#exemplo-de-uso-esperado">Exemplo de uso esperado</a></li>
+        <li><a href="#exemplo-de-uso-esperado-1">Exemplo de uso esperado</a></li>
+        <li><a href="#o-que-implementar">O que implementar</a></li>
+        <li><a href="#exemplo-de-uso-esperado-2">Exemplo de uso esperado</a></li>
+        <li><a href="#o-que-implementar-1">O que implementar</a></li>
+        <li><a href="#exemplo-de-uso-esperado-3">Exemplo de uso esperado</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

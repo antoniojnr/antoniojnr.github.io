@@ -28,6 +28,8 @@
   </url><url>
     <loc>http://localhost:1313/docs/disciplinas/poo-ads/exercicios/</loc>
   </url><url>
+    <loc>http://localhost:1313/docs/disciplinas/poo-ads/git/</loc>
+  </url><url>
     <loc>http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista01/</loc>
@@ -37,6 +39,10 @@
     <loc>http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista03/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista04/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista05/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista06/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/disciplinas/poo-ads/</loc>
   </url><url>
@@ -61,8 +67,6 @@
   </url><url>
     <loc>http://localhost:1313/docs/posts/primeiro-post/</loc>
     <lastmod>2026-02-04T09:48:42-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/docs/disciplinas/poo-ads/git/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/disciplinas/poo-info/revisao-javascript/6-classes/</loc>
   </url><url>
