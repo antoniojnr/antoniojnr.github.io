@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercícios on Antonio Dias</title>
+    <link>http://localhost:1313/docs/disciplinas/seginfo-ads/exercicios/</link>
+    <description>Recent content in Exercícios on Antonio Dias</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <atom:link href="http://localhost:1313/docs/disciplinas/seginfo-ads/exercicios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lista 01</title>
+      <link>http://localhost:1313/docs/disciplinas/seginfo-ads/exercicios/lista01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/disciplinas/seginfo-ads/exercicios/lista01/</guid>
+      <description>&lt;h1 id=&#34;lista-01&#34;&gt;Lista 01&lt;a class=&#34;anchor&#34; href=&#34;#lista-01&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;O malware VPNFilter, descoberto em 2018, comprometeu mais de 500 mil roteadores domésticos e corporativos em mais de 50 países. Pesquise como esse ataque foi realizado, quais fabricantes foram afetados e como o FBI conseguiu neutralizar parte da ameaça. Por que roteadores domésticos representam um vetor de ataque tão difícil de mitigar em larga escala?&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Em 2017, a Equifax sofreu uma das maiores violações de dados da história, expondo informações pessoais de 147 milhões de pessoas. Pesquise a causa técnica do ataque e identifique qual item do checklist de hardening apresentado nos slides, se aplicado, teria evitado ou dificultado significativamente essa violação. Justifique sua resposta.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
