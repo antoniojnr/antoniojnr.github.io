@@ -7,6 +7,10 @@ bookCollapseSection: true
 
 # Lista 01
 
+- Responda os exercícios da lista em dupla.
+- Na sua resposta, aborde com profundidade os tópicos de segurança da informação. Ao mencionar conceitos da disciplina, procure entendê-los de forma que você possa explicá-los aos outros colegas.
+  - Por exemplo ao falar de Cross-Site Request Forgery ou "credential stuffing", procure explicar o conceito e exemplificar como funciona. Também como foi usado para efetuar o ataque.
+
 1. O malware VPNFilter, descoberto em 2018, comprometeu mais de 500 mil roteadores domésticos e corporativos em mais de 50 países. Pesquise como esse ataque foi realizado, quais fabricantes foram afetados e como o FBI conseguiu neutralizar parte da ameaça. Por que roteadores domésticos representam um vetor de ataque tão difícil de mitigar em larga escala?
 
 2. Em 2017, a Equifax sofreu uma das maiores violações de dados da história, expondo informações pessoais de 147 milhões de pessoas. Pesquise a causa técnica do ataque e identifique qual item do checklist de hardening apresentado nos slides, se aplicado, teria evitado ou dificultado significativamente essa violação. Justifique sua resposta.
