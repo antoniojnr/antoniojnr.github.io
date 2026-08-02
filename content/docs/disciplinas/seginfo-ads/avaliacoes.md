@@ -10,7 +10,7 @@ weight: 1
 
 **Disciplina:** Segurança da Informação\
 **Curso:** Análise e Desenvolvimento de Sistemas\
-**Ano:** 2026.1
+**Ano:** 2026.2
 
 ## Resumo sobre avaliações
 

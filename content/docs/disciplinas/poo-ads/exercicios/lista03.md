@@ -2,7 +2,7 @@
 title: "Lista 03"
 weight: 1
 bookCollapseSection: true
-#bookHidden: true
+bookHidden: true
 ---
 
 # Lista 03

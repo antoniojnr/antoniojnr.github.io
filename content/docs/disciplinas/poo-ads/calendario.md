@@ -10,7 +10,7 @@ weight: 1
 
 **Disciplina:** Programação Orientada a Objetos\
 **Curso:** Análise e Desenvolvimento de Sistemas\
-**Período:** 2026.1
+**Período:** 2026.2
 
 > [!WARNING]
 >
@@ -27,382 +27,228 @@ weight: 1
 
 <table>
   <tr>
-    <th colspan="3"><strong>Fevereiro</strong></th>
+    <th colspan="3"><strong>Agosto</strong></th>
   </tr>
   <tr>
-    <td>09 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Apresentação da disciplina</li>
-        <li>Introdução à linguagem Java</li>
-      </ul>
-    </td>
+    <td>03 <em>(seg)</em></td>
+    <td></td>
     <td>5/160 aulas</td>
   </tr>
   <tr>
-    <td>10 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li><b>Exercício:</b> Introdução à linguagem Java</li>
-      </ul>
-    </td>
+    <td>04 <em>(ter)</em></td>
+    <td></td>
     <td>9/160 aulas</td>
   </tr>
   <tr>
-    <td>16 <em>(seg)</em></td>
-    <td><div class="pill red">Feriado: Carnaval</div></td>
-    <td>---</td>
-  </tr>
-  <tr>
-    <td>17 <em>(ter)</em></td>
-    <td><div class="pill red">Feriado: Carnaval</div></td>
-    <td>---</td>
-  </tr>
-  <tr>
-    <td>23 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Tipos primitivos</li>
-        <li>Classes e objetos</li>
-      </ul>
-    </td>
+    <td>10 <em>(seg)</em></td>
+    <td></td>
     <td>14/160 aulas</td>
   </tr>
   <tr>
-    <td>24 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li><b>Exercício:</b> Tipos, classes e objetos</li>
-      </ul>
-    </td>
+    <td>11 <em>(ter)</em></td>
+    <td></td>
     <td>18/160 aulas</td>
   </tr>
-
   <tr>
-    <th colspan="3"><strong>Março</strong></th>
-  </tr>
-  <tr>
-    <td>02 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Introdução ao Git</li>
-      </ul>
-    </td>
+    <td>17 <em>(seg)</em></td>
+    <td></td>
     <td>23/160 aulas</td>
   </tr>
   <tr>
-    <td>03 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li><b>Exercício:</b> Introdução ao Git</li>
-      </ul>
-    </td>
+    <td>18 <em>(ter)</em></td>
+    <td></td>
     <td>27/160 aulas</td>
   </tr>
   <tr>
-    <td>09 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Entrada e saída</li>
-        <li>Encapsulamento</li>
-        <li>Sobrecarga</li>
-      </ul>
-    </td>
+    <td>24 <em>(seg)</em></td>
+    <td></td>
     <td>32/160 aulas</td>
   </tr>
   <tr>
-    <td>10 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li><b>Exercício:</b> Entrada e saída</li>
-        <li><b>Exercício:</b> Encapsulamento, Sobreposição e sobrecarga</li>
-      </ul>
-    </td>
+    <td>25 <em>(ter)</em></td>
+    <td></td>
     <td>36/160 aulas</td>
   </tr>
   <tr>
-    <td>16 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Composição de objetos</li>
-        <li>Troca de mensagens entre objetos</li>
-      </ul>
-    </td>
+    <td>31 <em>(seg)</em></td>
+    <td></td>
     <td>41/160 aulas</td>
   </tr>
+  
   <tr>
-    <td>17 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li><b>Exercício:</b> Composição de objetos e troca de mensagens entre objetos</li>
-      </ul>
-    </td>
+    <th colspan="3"><strong>Setembro</strong></th>
+  </tr>
+  
+  <tr>
+    <td>01 <em>(ter)</em></td>
+    <td></td>
     <td>45/160 aulas</td>
   </tr>
   <tr>
-    <td>23 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Herança</li>
-        <li>Sobreposição (*Override*)</li>
-        <li>Interfaces</li>
-        <li>Classes abstratas</li>
-      </ul>
-    </td>
-    <td>50/160 aulas</td>
+    <td>07 <em>(seg)</em></td>
+    <td><div class="pill red">Feriado: Independência do Brasil</div></td>
+    <td><hr></td>
   </tr>
   <tr>
-    <td>24 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li><b>Exercício:</b> Herança, interfaces e classes abstratas</li>
-      </ul>
-    </td>
+    <td>08 <em>(ter)</em></td>
+    <td></td>
+    <td>49/160 aulas</td>
+  </tr>
+  <tr>
+    <td>14 <em>(seg)</em></td>
+    <td></td>
     <td>54/160 aulas</td>
   </tr>
   <tr>
-    <td>25 <em>(qua)</em></td>
-    <td>
-      <div class="pill blue extra">Aula extra - 4 aulas</div>
-    </td>
+    <td>15 <em>(ter)</em></td>
+    <td></td>
     <td>58/160 aulas</td>
   </tr>
   <tr>
-    <td>30 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Polimorfismo</li>
-      </ul>
-    </td>
+    <td>21 <em>(seg)</em></td>
+    <td></td>
     <td>63/160 aulas</td>
   </tr>
   <tr>
-    <td>31 <em>(ter)</em></td>
-    <td>
-      <div class="avaliacao">Avaliação 1</div>
-      <div>A prova abrange todos os tópicos já ministrados até essa data.</div>
-    </td>
+    <td>22 <em>(ter)</em></td>
+    <td></td>
     <td>67/160 aulas</td>
-  </tr>
-
-  <tr>
-    <th colspan="3"><strong>Abril</strong></th>
-  </tr>
-  <tr>
-    <td>06 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Criação e tratamento de exceções</li>
-      </ul>
-    </td>
-    <td>72/160 aulas</td>
-  </tr>
-  <tr>
-    <td>07 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li><b>Exercício:</b> Criação e tratamento de exceções</li>
-      </ul>
-    </td>
-    <td>76/160 aulas</td>
-  </tr>
-  <tr>
-    <td>13 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Java Collections API</li>
-        <li>Java Streams API</li>
-      </ul>
-    </td>
-    <td>81/160 aulas</td>
-  </tr>
-  <tr>
-    <td>14 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li><b>Exercício:</b> Java Collections API e Java Streams API</li>
-      </ul>
-    </td>
-    <td>85/160 aulas</td>
-  </tr>
-  <tr>
-    <td>21 <em>(ter)</em></td>
-    <td><div class="pill red">Feriado: Dia de Tiradentes</div></td>
-    <td>---</td>
-  </tr>
-  <tr>
-    <td>27 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Interfaces Gráficas (Java Swing)</li>
-      </ul>
-    </td>
-    <td>90/160 aulas</td>
   </tr>
   <tr>
     <td>28 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li><b>Exercício:</b> Interfaces Gráficas (Java Swing)</li>
-      </ul>
-    </td>
-    <td>94/160 aulas</td>
+    <td></td>
+    <td>71/160 aulas</td>
+  </tr>
+  <tr>
+    <td>29 <em>(ter)</em></td>
+    <td></td>
+    <td>75/160 aulas</td>
   </tr>
 
   <tr>
-    <th colspan="3"><strong>Maio</strong></th>
+    <th colspan="3"><strong>Outubro</strong></th>
   </tr>
   <tr>
-    <td>04 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Interfaces Gráficas (Java Swing)</li>
-      </ul>
-    </td>
-    <td>99/160 aulas</td>
+    <td>05 <em>(seg)</em></td>
+    <td></td>
+    <td>80/160 aulas</td>
   </tr>
   <tr>
-    <td>05 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li><b>Exercício:</b> Interfaces Gráficas (Java Swing)</li>
-      </ul>
-    </td>
-    <td>103/160 aulas</td>
+    <td>06 <em>(ter)</em></td>
+    <td></td>
+    <td>84/160 aulas</td>
   </tr>
   <tr>
-    <td>11 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Interfaces Gráficas (JavaFX)</li>
-      </ul>
-    </td>
-    <td>108/160 aulas</td>
+    <td>12 <em>(seg)</em></td>
+    <td><div class="pill red">Feriado: Nossa Senhora Aparecida</div></td>
+    <td><hr></td>
   </tr>
   <tr>
-    <td>12 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li><b>Exercício:</b> Interfaces Gráficas (JavaFX)</li>
-      </ul>
-    </td>
-    <td>112/160 aulas</td>
+    <td>13 <em>(ter)</em></td>
+    <td></td>
+    <td>88/160 aulas</td>
   </tr>
   <tr>
-    <td>18 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Threads e programação assíncrona</li>
-      </ul>
-    </td>
-    <td>117/160 aulas</td>
+    <td>19 <em>(seg)</em></td>
+    <td></td>
+    <td>93/160 aulas</td>
   </tr>
   <tr>
-    <td>19 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li><b>Exercício:</b> Threads e programação assíncrona</li>
-      </ul>
-    </td>
-    <td>121/160 aulas</td>
+    <td>20 <em>(ter)</em></td>
+    <td></td>
+    <td>97/160 aulas</td>
   </tr>
   <tr>
-    <td>20 <em>(qua)</em></td>
-    <td>
-      <div class="pill blue extra">Aula extra - 4 aulas</div>
-    </td>
-    <td>125/160 aulas</td>
+    <td>26 <em>(seg)</em></td>
+    <td></td>
+    <td>102/160 aulas</td>
   </tr>
   <tr>
-    <td>25 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Java 2D</li>
-      </ul>
-    </td>
-    <td>130/160 aulas</td>
-  </tr>
-  <tr>
-    <td>26 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li><b>Exercício:</b> Java 2D</li>
-      </ul>
-    </td>
-    <td>134/160 aulas</td>
+    <td>27 <em>(ter)</em></td>
+    <td></td>
+    <td>106/160 aulas</td>
   </tr>
 
   <tr>
-    <th colspan="3"><strong>Junho</strong></th>
+    <th colspan="3"><strong>Novembro</strong></th>
   </tr>
   <tr>
-    <td>01 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li>Empacotamento</li>
-        <li>Bibliotecas externas</li>
-      </ul>
-    </td>
-    <td>139/160 aulas</td>
+    <td>02 <em>(seg)</em></td>
+    <td><div class="pill red">Feriado: Finados</div></td>
+    <td><hr></td>
   </tr>
   <tr>
-    <td>02 <em>(ter)</em></td>
-    <td>
-      <div class="avaliacao">Avaliação 2</div>
-      <div>A prova abrange todos os tópicos já ministrados até essa data.</div>
-    </td>
-    <td>143/160 aulas</td>
+    <td>03 <em>(ter)</em></td>
+    <td></td>
+    <td>110/160 aulas</td>
   </tr>
   <tr>
-    <td>03 <em>(qua)</em></td>
-    <td>
-      <div class="pill blue extra">Aula extra - 4 aulas</div>
-    </td>
+    <td>09 <em>(seg)</em></td>
+    <td></td>
+    <td>115/160 aulas</td>
+  </tr>
+  <tr>
+    <td>10 <em>(ter)</em></td>
+    <td></td>
+    <td>119/160 aulas</td>
+  </tr>
+  <tr>
+    <td>16 <em>(seg)</em></td>
+    <td></td>
+    <td>124/160 aulas</td>
+  </tr>
+  <tr>
+    <td>17 <em>(ter)</em></td>
+    <td></td>
+    <td>128/160 aulas</td>
+  </tr>
+  <tr>
+    <td>23 <em>(seg)</em></td>
+    <td></td>
+    <td>133/160 aulas</td>
+  </tr>
+  <tr>
+    <td>24 <em>(ter)</em></td>
+    <td></td>
+    <td>137/160 aulas</td>
+  </tr>
+  <tr>
+    <td>30 <em>(seg)</em></td>
+    <td></td>
+    <td>142/160 aulas</td>
+  </tr>
+
+  <tr>
+    <th colspan="3"><strong>Dezembro</strong></th>
+  </tr>
+  <tr>
+    <td>01 <em>(ter)</em></td>
+    <td><div class="pill red">Feriado: Emancipação política de Esperança</div></td>
+    <td><hr></td>
+  </tr>
+  <tr>
+    <td>07 <em>(seg)</em></td>
+    <td></td>
     <td>147/160 aulas</td>
   </tr>
   <tr>
-    <td>08 <em>(seg)</em></td>
-    <td>
-      <div class="avaliacao">Reposição de avaliações</div>
-      <div>É permitido repor uma avaliação sem justificativa. Para repor duas avaliações, é necessário apresentar justificativa. Não há reposição de menor nota.</div>
-    </td>
+    <td>08 <em>(ter)</em></td>
+    <td><div class="pill red">Feriado: Nossa Senhora da Conceição</div></td>
+    <td><hr></td>
+  </tr>
+  <tr>
+    <td>14 <em>(seg)</em></td>
+    <td></td>
     <td>152/160 aulas</td>
   </tr>
   <tr>
-    <td>09 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li>Acompanhamento de projetos</li>
-      </ul>
-    </td>
+    <td>15 <em>(ter)</em></td>
+    <td></td>
     <td>156/160 aulas</td>
   </tr>
   <tr>
-    <td>15 <em>(seg)</em></td>
-    <td>
-      <ul>
-        <li><b>Apresentação de projetos</b></li>
-      </ul>
-    </td>
-    <td>161/160 aulas</td>
-  </tr>
-  <tr>
-    <td>16 <em>(ter)</em></td>
-    <td>
-      <ul>
-        <li><b>Apresentação de projetos</b></li>
-      </ul>
-    </td>
-    <td>165/160 aulas</td>
-  </tr>
-  <tr>
-    <td>18</td>
-    <td><div class="pill blue">Término do semestre</div></td>
-    <td>---</td>
-  </tr>
-  <tr>
-    <td>23</td>
+    <td>21 <em>(seg)</em></td>
     <td><b>Data provável da avaliação final</b></td>
-    <td>---</td>
-  </tr>
+    <td><hr></td>
+  </tr>  
 </table>

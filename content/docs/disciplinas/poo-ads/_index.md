@@ -8,7 +8,7 @@ bookCollapseSection: true
 # Programação Orientada a Objetos
 
 **Curso:** Análise e Desenvolvimento de Sistemas\
-**Período:** 2026.1
+**Período:** 2026.2
 
 ## Informações gerais
 

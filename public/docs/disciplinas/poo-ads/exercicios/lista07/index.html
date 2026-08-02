@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lista 07# Instruções# Cada questão deve ser implementada no pacote indicado (lista07.q1, lista07.q2, etc.). Todos os exercícios devem ser feitos em um único projeto do IntelliJ. Os nomes de classes, métodos e pacotes devem ser exatamente os especificados — os testes automatizados dependem disso. Todos os exercícios serão corrigidos por execução de testes JUnit 4 fornecidos junto com esta lista. Não há casos de teste para esta lista. Exercícios# Questão 01. O código abaixo faz parte de um sistema de automação fiscal. O método processar centraliza o cálculo de imposto e a geração de XML de transmissão para todos os tipos de documento:
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista07/">
+  <meta property="og:site_name" content="Antonio Dias">
+  <meta property="og:title" content="Lista 07">
+  <meta property="og:description" content="Lista 07# Instruções# Cada questão deve ser implementada no pacote indicado (lista07.q1, lista07.q2, etc.). Todos os exercícios devem ser feitos em um único projeto do IntelliJ. Os nomes de classes, métodos e pacotes devem ser exatamente os especificados — os testes automatizados dependem disso. Todos os exercícios serão corrigidos por execução de testes JUnit 4 fornecidos junto com esta lista. Não há casos de teste para esta lista. Exercícios# Questão 01. O código abaixo faz parte de um sistema de automação fiscal. O método processar centraliza o cálculo de imposto e a geração de XML de transmissão para todos os tipos de documento:">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="Lista 07">
+  <meta itemprop="description" content="Lista 07# Instruções# Cada questão deve ser implementada no pacote indicado (lista07.q1, lista07.q2, etc.). Todos os exercícios devem ser feitos em um único projeto do IntelliJ. Os nomes de classes, métodos e pacotes devem ser exatamente os especificados — os testes automatizados dependem disso. Todos os exercícios serão corrigidos por execução de testes JUnit 4 fornecidos junto com esta lista. Não há casos de teste para esta lista. Exercícios# Questão 01. O código abaixo faz parte de um sistema de automação fiscal. O método processar centraliza o cálculo de imposto e a geração de XML de transmissão para todos os tipos de documento:">
+  <meta itemprop="wordCount" content="1202">
+
+<title>Lista 07 | Antonio Dias</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista07/">
+<link rel="stylesheet" href="/book.min.a734d0f84f339961c2f38061ac4210305aad75979ab791937815c1ac455d7ec7.css" integrity="sha256-pzTQ&#43;E8zmWHC84BhrEIQMFqtdZeat5GTeBXBrEVdfsc=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.c13e5a5f8822396850302a37b0c909111c480b20983c9983b56fc4e474e587e1.js" integrity="sha256-wT5aX4giOWhQMCo3sMkJERxICyCYPJmDtW/E5HTlh&#43;E=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Antonio Dias</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Buscar"
+    aria-label="Buscar"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="toggle"  />
+    <label for="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="flex">
+      <a href="/docs/posts/" class="">
+        Atualizações</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/posts/primeiro-post/" class="">
+      Primeiro Post</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/" class="">
+      Disciplinas</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0658642cbe0befc355ebbab1ea93df0" class="toggle" checked />
+    <label for="section-e0658642cbe0befc355ebbab1ea93df0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/" class="">
+        POO (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/projeto/" class="">
+      Projeto</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/qualidade-codigo/" class="">
+      Qualidade de código</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ad90f794895ae5dd26ad3b3869e4edf2" class="toggle"  />
+    <label for="section-ad90f794895ae5dd26ad3b3869e4edf2" class="flex">
+      <a href="/docs/disciplinas/poo-info/" class="">
+        POO (Integrado)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-85611c34c3e4fce02fc9163ca37c73a3" class="toggle"  />
+    <label for="section-85611c34c3e4fce02fc9163ca37c73a3" class="flex">
+      <a href="/docs/disciplinas/poo-info/revisao-javascript/" class="">
+        JavaScript - uma breve introdução à linguagem</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/1-fundamentos/" class="">
+      1. Fundamentos essenciais da linguagem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/2-estruturas-controle/" class="">
+      2. Estruturas de controle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/3-funcoes/" class="">
+      3. Funções</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/4-arrays-objetos/" class="">
+      4. Arrays e Objetos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/5-strings/" class="">
+      5. Strings</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="toggle"  />
+    <label for="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="flex">
+      <a href="/docs/disciplinas/seginfo-ads/" class="">
+        Seg. da Informação (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Lista 07</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#instruções">Instruções</a></li>
+    <li><a href="#exercícios">Exercícios</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="lista-07">Lista 07<a class="anchor" href="#lista-07">#</a></h1>
+<h2 id="instruções">Instruções<a class="anchor" href="#instru%c3%a7%c3%b5es">#</a></h2>
+<ul>
+<li>Cada questão deve ser implementada no pacote indicado (<code>lista07.q1</code>, <code>lista07.q2</code>, etc.).</li>
+<li>Todos os exercícios devem ser feitos em um único projeto do IntelliJ.</li>
+<li>Os nomes de classes, métodos e pacotes devem ser <strong>exatamente</strong> os especificados — os testes automatizados dependem disso.</li>
+<li>Todos os exercícios serão corrigidos por execução de testes JUnit 4 fornecidos junto com esta lista.</li>
+<li>Não há casos de teste para esta lista.</li>
+</ul>
+<h2 id="exercícios">Exercícios<a class="anchor" href="#exerc%c3%adcios">#</a></h2>
+<p><strong>Questão 01.</strong> O código abaixo faz parte de um sistema de automação fiscal. O método <code>processar</code> centraliza o cálculo de imposto e a geração de XML de transmissão para todos os tipos de documento:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ProcessadorFiscal</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">processar</span>(String tipo, <span style="color:#66d9ef">double</span> valor, String identificador) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">double</span> imposto;
+</span></span><span style="display:flex;"><span>        String xml;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">switch</span> (tipo) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;NFE&#34;</span>:
+</span></span><span style="display:flex;"><span>                imposto <span style="color:#f92672">=</span> valor <span style="color:#f92672">*</span> 0.<span style="color:#a6e22e">18</span>;
+</span></span><span style="display:flex;"><span>                xml <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;nfe&gt;&#34;</span> <span style="color:#f92672">+</span> identificador <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&lt;/nfe&gt;&#34;</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;CTE&#34;</span>:
+</span></span><span style="display:flex;"><span>                imposto <span style="color:#f92672">=</span> valor <span style="color:#f92672">*</span> 0.<span style="color:#a6e22e">12</span>;
+</span></span><span style="display:flex;"><span>                xml <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;cte&gt;&#34;</span> <span style="color:#f92672">+</span> identificador <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&lt;/cte&gt;&#34;</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;NFSE&#34;</span>:
+</span></span><span style="display:flex;"><span>                imposto <span style="color:#f92672">=</span> valor <span style="color:#f92672">*</span> 0.<span style="color:#a6e22e">05</span>;
+</span></span><span style="display:flex;"><span>                xml <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;nfse&gt;&#34;</span> <span style="color:#f92672">+</span> identificador <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&lt;/nfse&gt;&#34;</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">default</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> IllegalArgumentException(<span style="color:#e6db74">&#34;Tipo desconhecido: &#34;</span> <span style="color:#f92672">+</span> tipo);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> xml <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;|imposto:&#34;</span> <span style="color:#f92672">+</span> String.<span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#34;%.2f&#34;</span>, imposto);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Você recebeu a demanda de adicionar um quarto tipo de documento (<code>MDF-e</code>, com alíquota de 8% e XML no formato <code>&lt;mdfe&gt;...&lt;/mdfe&gt;</code>). Isso exige modificar o método existente, que já está em produção e testado.</p>
+<p>Sua tarefa é refatorar o sistema para que a adição de novos tipos de documento não exija alteração em nenhuma classe existente. O método <code>processar</code> do <code>ProcessadorFiscal</code> deve funcionar com qualquer tipo de documento, presente ou futuro, recebendo-o como parâmetro. Implemente os quatro tipos de documento (NF-e, CT-e, NFS-e e MDF-e).</p>
+<p><strong>Restrições:</strong></p>
+<ul>
+<li>Crie o código no pacote <code>lista07.q1</code></li>
+<li>O <code>ProcessadorFiscal</code> não pode conhecer os tipos concretos de documento.</li>
+<li>Nenhum <code>switch</code>, <code>if-else</code> por tipo ou <code>instanceof</code> deve existir no código cliente.</li>
+<li>Cada tipo de documento deve saber calcular seu próprio imposto e gerar seu próprio XML.</li>
+</ul>
+<hr>
+<p><strong>Questão 02.</strong> Uma equipe modelou um serviço de armazenamento de arquivos com a seguinte hierarquia:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ArmazenamentoNuvem</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> Map<span style="color:#f92672">&lt;</span>String, <span style="color:#66d9ef">byte</span><span style="color:#f92672">[]&gt;</span> storage <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">gravar</span>(String caminho, <span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> dados) {
+</span></span><span style="display:flex;"><span>        storage.<span style="color:#a6e22e">put</span>(caminho, dados);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> <span style="color:#a6e22e">ler</span>(String caminho) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> storage.<span style="color:#a6e22e">get</span>(caminho);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Para ganhar performance, um desenvolvedor criou uma subclasse que faz cache dos dados localmente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ArmazenamentoComCache</span> <span style="color:#66d9ef">extends</span> ArmazenamentoNuvem {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> Map<span style="color:#f92672">&lt;</span>String, <span style="color:#66d9ef">byte</span><span style="color:#f92672">[]&gt;</span> cache <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">gravar</span>(String caminho, <span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> dados) {
+</span></span><span style="display:flex;"><span>        cache.<span style="color:#a6e22e">put</span>(caminho, dados);
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// não chama super.gravar() — dados ficam apenas no cache</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> <span style="color:#a6e22e">ler</span>(String caminho) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> cache.<span style="color:#a6e22e">getOrDefault</span>(caminho, <span style="color:#66d9ef">null</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Outro módulo do sistema realiza backup copiando arquivos de um armazenamento de origem para um de destino:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">realizarBackup</span>(ArmazenamentoNuvem origem,
+</span></span><span style="display:flex;"><span>                           ArmazenamentoNuvem destino,
+</span></span><span style="display:flex;"><span>                           List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> caminhos) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (String c : caminhos) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> dados <span style="color:#f92672">=</span> origem.<span style="color:#a6e22e">ler</span>(c);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (dados <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>            destino.<span style="color:#a6e22e">gravar</span>(c, dados);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Quando a equipe passou a usar <code>ArmazenamentoComCache</code> como destino do backup, os dados pararam de chegar na nuvem. Quando usaram como origem, dados gravados por outros nós do sistema não eram encontrados.</p>
+<p><strong>Tarefa:</strong></p>
+<ol>
+<li>Explique, em comentários no código ou em um bloco de texto no início do arquivo, qual princípio de orientação a objetos está sendo violado e por quê. Demonstre o cenário de falha com um trecho de código no <code>main</code>.</li>
+<li>Proponha e implemente uma nova modelagem que resolva o problema. O cache deve continuar existindo como funcionalidade, mas a gravação na nuvem não pode ser comprometida. O método <code>realizarBackup</code> deve funcionar corretamente com qualquer combinação de implementações, sem distinção de tipo.</li>
+</ol>
+<p><strong>Restrições:</strong></p>
+<ul>
+<li>Crie o código no pacote <code>lista07.q2</code></li>
+<li>A solução não deve usar herança entre <code>ArmazenamentoComCache</code> e <code>ArmazenamentoNuvem</code> (a relação atual é a causa do problema).</li>
+<li>O método <code>realizarBackup</code> não pode usar <code>instanceof</code> nem condicional por tipo.</li>
+</ul>
+<hr>
+<p><strong>Questão 03.</strong> Um e-commerce precisa de um motor de descontos para o carrinho de compras. A equipe de marketing frequentemente solicita novas regras promocionais, então o sistema precisa ser extensível sem alterar o motor existente.</p>
+<p>O carrinho contém itens (cada um com nome, preço unitário e quantidade) e um valor de frete. O motor recebe o carrinho e uma lista de regras, e deve selecionar e retornar a regra que produz o maior desconto entre as aplicáveis. Se nenhuma regra for aplicável, retorna <code>null</code>.</p>
+<p>Você deve modelar e implementr o sistema completo. Crie as classes para representar o carrinho e seus itens, defina o contrato que toda regra de desconto deve seguir, e implemente o motor e as três regras abaixo:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Regra</th>
+          <th>Condição de ativação</th>
+          <th>Cálculo do desconto</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Desconto por valor mínimo</td>
+          <td>Subtotal do carrinho estritamente maior que R$ 300</td>
+          <td>10% do subtotal</td>
+      </tr>
+      <tr>
+          <td>Desconto segunda unidade</td>
+          <td>2 ou mais itens distintos no carrinho (linhas distintas, independente de quantidade)</td>
+          <td>50% do preço unitário do item mais barato</td>
+      </tr>
+      <tr>
+          <td>Frete grátis</td>
+          <td>Soma das quantidades de todos os itens maior que 5</td>
+          <td>Valor integral do frete</td>
+      </tr>
+  </tbody>
+</table>
+<p>Crie um <code>main</code> que monte um carrinho com pelo menos 4 itens, instancie as 3 regras, execute o motor e imprima a descrição da regra escolhida e o valor do desconto.</p>
+<p><strong>Restrições:</strong></p>
+<ul>
+<li>Crie o código no pacote <code>lista07.q3</code></li>
+<li>O motor de descontos não pode conhecer os tipos concretos de regra — deve tratar todas de forma uniforme.</li>
+<li>Adicionar uma nova regra no futuro não deve exigir alteração em nenhuma classe existente.</li>
+<li>Nenhum <code>instanceof</code> ou <code>switch</code> por tipo deve existir no motor nem no <code>main</code>.</li>
+</ul>
+<hr>
+<p><strong>Questão 04.</strong> O código abaixo implementa um sistema de log com dois formatadores. A intenção é que <code>LogFormatterSeguro</code>, ao ser usado via uma variável do tipo <code>LogFormatter</code>, produza mensagens com o prefixo <code>[SEC]</code>, timestamp em UTC e a marcação <code>[AUDITORIA]</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LogFormatter</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> String prefixo <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[INFO]&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> String <span style="color:#a6e22e">timestamp</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> LocalDateTime.<span style="color:#a6e22e">now</span>()
+</span></span><span style="display:flex;"><span>            .<span style="color:#a6e22e">format</span>(DateTimeFormatter.<span style="color:#a6e22e">ofPattern</span>(<span style="color:#e6db74">&#34;yyyy-MM-dd HH:mm:ss&#34;</span>));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">formatar</span>(String mensagem) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> prefixo <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> timestamp() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> mensagem;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LogFormatterSeguro</span> <span style="color:#66d9ef">extends</span> LogFormatter {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> String prefixo <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[SEC]&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> String <span style="color:#a6e22e">timestamp</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> Instant.<span style="color:#a6e22e">now</span>().<span style="color:#a6e22e">toString</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">formatar</span>(String mensagem) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> prefixo <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> timestamp() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; [AUDITORIA] &#34;</span> <span style="color:#f92672">+</span> mensagem;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>Porém, ao executar o código abaixo, o resultado não é o esperado:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>LogFormatter log <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LogFormatterSeguro();
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(log.<span style="color:#a6e22e">prefixo</span>);                  <span style="color:#75715e">// imprime [INFO], não [SEC]</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(LogFormatter.<span style="color:#a6e22e">timestamp</span>());      <span style="color:#75715e">// imprime timestamp local, não UTC</span>
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(log.<span style="color:#a6e22e">formatar</span>(<span style="color:#e6db74">&#34;Acesso negado&#34;</span>)); <span style="color:#75715e">// formatar() funciona, mas depende</span>
+</span></span><span style="display:flex;"><span>                                                   <span style="color:#75715e">// de como prefixo e timestamp()</span>
+</span></span><span style="display:flex;"><span>                                                   <span style="color:#f92672">//</span> são resolvidos internamente</span></span></code></pre></div><p><strong>Tarefa:</strong></p>
+<ol>
+<li>No início do arquivo, explique em comentários por que <code>log.prefixo</code> imprime <code>[INFO]</code> e por que <code>LogFormatter.timestamp()</code> não invoca a versão da subclasse. Identifique os dois mecanismos de resolução envolvidos (um para atributos, outro para métodos estáticos).</li>
+<li>Reescreva a hierarquia corrigindo os dois problemas, de modo que o polimorfismo funcione corretamente em todos os casos. Adicione uma terceira subclasse <code>LogFormatterErro</code> (prefixo <code>[ERROR]</code>, timestamp padrão herdado, marcação <code>[ERRO CRÍTICO]</code> na mensagem).</li>
+<li>Crie uma classe <code>SistemaLog</code> com um método que receba uma lista de formatadores e uma mensagem, e retorne uma lista com o resultado formatado de cada um — demonstrando que o tipo dinâmico é quem determina o comportamento.</li>
+<li>No <code>main</code>, demonstre o funcionamento criando instâncias dos três formatadores, armazenando-os em uma lista tipada pela superclasse, e imprimindo os resultados via <code>SistemaLog</code>.</li>
+</ol>
+<p><strong>Restrições:</strong></p>
+<ul>
+<li>Nenhum método da hierarquia pode ser <code>static</code>.</li>
+<li>Nenhum atributo de instância público deve ser usado para definir o prefixo — use um método sobrescrevível.</li>
+<li>Todos os métodos sobrescritos devem usar <code>@Override</code>.</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <footer class="book-footer">
+   
+  <a href="/docs/disciplinas/poo-ads/exercicios/"> ← Voltar para Exercícios </a>
+   
+</footer>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#instruções">Instruções</a></li>
+    <li><a href="#exercícios">Exercícios</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

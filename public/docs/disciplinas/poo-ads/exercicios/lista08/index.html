@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lista 08# Questão 1# Tópicos: checked e unchecked exceptions, try/catch/finally, try-with-resources, exceções personalizadas, encadeamento.
+Você está desenvolvendo um programa que lê um arquivo CSV contendo dados de alunos e valida cada registro. O arquivo tem o formato nome;idade;nota (uma linha por aluno). Exemplo de conteúdo:
+Ana;20;8.5 Bruno;abc;7.0 ;25;9.0 Carlos;17;11.5 Diana;22;6.0 Crie uma exceção checked chamada RegistroInvalidoException que:
+Possua um atributo int numeroLinha e um método getNumeroLinha(). Aceite no construtor: mensagem, número da linha e, opcionalmente, uma causa (Throwable) para permitir encadeamento. Crie uma classe ProcessadorDeAlunos com o método:
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista08/">
+  <meta property="og:site_name" content="Antonio Dias">
+  <meta property="og:title" content="Lista 08">
+  <meta property="og:description" content="Lista 08# Questão 1# Tópicos: checked e unchecked exceptions, try/catch/finally, try-with-resources, exceções personalizadas, encadeamento.
+Você está desenvolvendo um programa que lê um arquivo CSV contendo dados de alunos e valida cada registro. O arquivo tem o formato nome;idade;nota (uma linha por aluno). Exemplo de conteúdo:
+Ana;20;8.5 Bruno;abc;7.0 ;25;9.0 Carlos;17;11.5 Diana;22;6.0 Crie uma exceção checked chamada RegistroInvalidoException que:
+Possua um atributo int numeroLinha e um método getNumeroLinha(). Aceite no construtor: mensagem, número da linha e, opcionalmente, uma causa (Throwable) para permitir encadeamento. Crie uma classe ProcessadorDeAlunos com o método:">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="Lista 08">
+  <meta itemprop="description" content="Lista 08# Questão 1# Tópicos: checked e unchecked exceptions, try/catch/finally, try-with-resources, exceções personalizadas, encadeamento.
+Você está desenvolvendo um programa que lê um arquivo CSV contendo dados de alunos e valida cada registro. O arquivo tem o formato nome;idade;nota (uma linha por aluno). Exemplo de conteúdo:
+Ana;20;8.5 Bruno;abc;7.0 ;25;9.0 Carlos;17;11.5 Diana;22;6.0 Crie uma exceção checked chamada RegistroInvalidoException que:
+Possua um atributo int numeroLinha e um método getNumeroLinha(). Aceite no construtor: mensagem, número da linha e, opcionalmente, uma causa (Throwable) para permitir encadeamento. Crie uma classe ProcessadorDeAlunos com o método:">
+  <meta itemprop="wordCount" content="1790">
+
+<title>Lista 08 | Antonio Dias</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/disciplinas/poo-ads/exercicios/lista08/">
+<link rel="stylesheet" href="/book.min.a734d0f84f339961c2f38061ac4210305aad75979ab791937815c1ac455d7ec7.css" integrity="sha256-pzTQ&#43;E8zmWHC84BhrEIQMFqtdZeat5GTeBXBrEVdfsc=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.c13e5a5f8822396850302a37b0c909111c480b20983c9983b56fc4e474e587e1.js" integrity="sha256-wT5aX4giOWhQMCo3sMkJERxICyCYPJmDtW/E5HTlh&#43;E=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Antonio Dias</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Buscar"
+    aria-label="Buscar"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="toggle"  />
+    <label for="section-5c4b3d332d80e8ccfc468dccc93fa4e9" class="flex">
+      <a href="/docs/posts/" class="">
+        Atualizações</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/posts/primeiro-post/" class="">
+      Primeiro Post</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/" class="">
+      Disciplinas</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0658642cbe0befc355ebbab1ea93df0" class="toggle" checked />
+    <label for="section-e0658642cbe0befc355ebbab1ea93df0" class="flex">
+      <a href="/docs/disciplinas/poo-ads/" class="">
+        POO (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/projeto/" class="">
+      Projeto</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-ads/qualidade-codigo/" class="">
+      Qualidade de código</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ad90f794895ae5dd26ad3b3869e4edf2" class="toggle"  />
+    <label for="section-ad90f794895ae5dd26ad3b3869e4edf2" class="flex">
+      <a href="/docs/disciplinas/poo-info/" class="">
+        POO (Integrado)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-85611c34c3e4fce02fc9163ca37c73a3" class="toggle"  />
+    <label for="section-85611c34c3e4fce02fc9163ca37c73a3" class="flex">
+      <a href="/docs/disciplinas/poo-info/revisao-javascript/" class="">
+        JavaScript - uma breve introdução à linguagem</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/1-fundamentos/" class="">
+      1. Fundamentos essenciais da linguagem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/2-estruturas-controle/" class="">
+      2. Estruturas de controle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/3-funcoes/" class="">
+      3. Funções</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/4-arrays-objetos/" class="">
+      4. Arrays e Objetos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/poo-info/revisao-javascript/5-strings/" class="">
+      5. Strings</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="toggle"  />
+    <label for="section-363f2de3c488d4a18d7a4bdc6d4a3784" class="flex">
+      <a href="/docs/disciplinas/seginfo-ads/" class="">
+        Seg. da Informação (ADS)</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/avaliacoes/" class="">
+      Avaliações</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/disciplinas/seginfo-ads/calendario/" class="">
+      Calendário</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Lista 08</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#questão-1">Questão 1</a></li>
+    <li><a href="#questão-2">Questão 2</a></li>
+    <li><a href="#questão-3">Questão 3</a></li>
+    <li><a href="#questão-4">Questão 4</a></li>
+    <li><a href="#questão-5">Questão 5</a></li>
+    <li><a href="#questão-6">Questão 6</a></li>
+    <li><a href="#questão-7">Questão 7</a></li>
+    <li><a href="#questão-8">Questão 8</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="lista-08">Lista 08<a class="anchor" href="#lista-08">#</a></h1>
+<h2 id="questão-1">Questão 1<a class="anchor" href="#quest%c3%a3o-1">#</a></h2>
+<p><strong>Tópicos:</strong> checked e unchecked exceptions, <code>try</code>/<code>catch</code>/<code>finally</code>, <code>try-with-resources</code>, exceções personalizadas, encadeamento.</p>
+<p>Você está desenvolvendo um programa que lê um arquivo CSV contendo dados de alunos e valida cada registro. O arquivo tem o formato <code>nome;idade;nota</code> (uma linha por aluno). Exemplo de conteúdo:</p>
+<pre tabindex="0"><code>Ana;20;8.5
+Bruno;abc;7.0
+;25;9.0
+Carlos;17;11.5
+Diana;22;6.0</code></pre><ol>
+<li>
+<p>Crie uma exceção <strong>checked</strong> chamada <code>RegistroInvalidoException</code> que:</p>
+<ul>
+<li>Possua um atributo <code>int numeroLinha</code> e um método <code>getNumeroLinha()</code>.</li>
+<li>Aceite no construtor: mensagem, número da linha e, opcionalmente, uma causa (<code>Throwable</code>) para permitir encadeamento.</li>
+</ul>
+</li>
+<li>
+<p>Crie uma classe <code>ProcessadorDeAlunos</code> com o método:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">processar</span>(String caminhoArquivo)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">throws</span> RegistroInvalidoException</span></span></code></pre></div><p>Esse método deve:</p>
+<ul>
+<li>Abrir o arquivo com <code>try-with-resources</code> (usando <code>BufferedReader</code>).</li>
+<li>Ler cada linha e separar os campos por <code>&quot;;&quot;</code>.</li>
+<li>Para cada linha, validar:
+<ul>
+<li>Se o nome estiver vazio, lançar <code>RegistroInvalidoException</code> com a mensagem <code>&quot;Nome vazio na linha &lt;n&gt;&quot;</code>.</li>
+<li>Converter a idade com <code>Integer.parseInt()</code>. Se falhar, capturar o <code>NumberFormatException</code> e lançar <code>RegistroInvalidoException</code> com a mensagem <code>&quot;Idade inválida na linha &lt;n&gt;&quot;</code>, <strong>encadeando</strong> o <code>NumberFormatException</code> como causa.</li>
+<li>Converter a nota com <code>Double.parseDouble()</code>. Se o valor estiver fora do intervalo 0–10, lançar <code>RegistroInvalidoException</code> com a mensagem <code>&quot;Nota fora do intervalo na linha &lt;n&gt;&quot;</code>.</li>
+</ul>
+</li>
+<li>Se a linha for válida, exibir: <code>&quot;Aluno registrado: &lt;nome&gt;, idade &lt;idade&gt;, nota &lt;nota&gt;&quot;</code>.</li>
+<li><strong>Importante:</strong> ao encontrar o primeiro registro inválido, o método deve lançar a exceção imediatamente (não continue processando as linhas seguintes).</li>
+</ul>
+</li>
+<li>
+<p>Na classe <code>Main</code>:</p>
+<ul>
+<li>Chame <code>processar</code> dentro de um <code>try</code>/<code>catch</code> que trate <code>RegistroInvalidoException</code>, exibindo:
+<ul>
+<li>A mensagem de erro.</li>
+<li>O número da linha.</li>
+<li>A causa (<code>getCause()</code>), se existir.</li>
+</ul>
+</li>
+<li>Use um bloco <code>finally</code> para exibir <code>&quot;Processamento encerrado.&quot;</code>.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Exemplo de saída esperada (usando o CSV de exemplo acima):</strong></p>
+<pre tabindex="0"><code>Aluno registrado: Ana, idade 20, nota 8.5
+Erro no registro — Idade inválida na linha 2
+  Causa: java.lang.NumberFormatException: For input string: &#34;abc&#34;
+Processamento encerrado.</code></pre><hr>
+<h2 id="questão-2">Questão 2<a class="anchor" href="#quest%c3%a3o-2">#</a></h2>
+<p>Implemente um sistema simplificado de autenticação de usuários.</p>
+<ol>
+<li>
+<p>Crie uma exceção <strong>checked</strong> chamada <code>AutenticacaoException</code> que receba uma mensagem no construtor.</p>
+</li>
+<li>
+<p>Crie uma classe <code>ServicoDeLogin</code> com:</p>
+<ul>
+<li>Um atributo <code>Map&lt;String, String&gt;</code> inicializado diretamente no código com pelo menos 3 pares de login/senha (por exemplo: <code>&quot;admin&quot;/&quot;1234&quot;</code>, <code>&quot;maria&quot;/&quot;abcd&quot;</code>, <code>&quot;joao&quot;/&quot;xyz9&quot;</code>).</li>
+<li>Um método <code>autenticar(String login, String senha) throws AutenticacaoException</code> que:
+<ul>
+<li>Lance <code>AutenticacaoException</code> com a mensagem <code>&quot;Usuário não encontrado&quot;</code> se o login não existir no mapa.</li>
+<li>Lance <code>AutenticacaoException</code> com a mensagem <code>&quot;Senha incorreta&quot;</code> se o login existir mas a senha não corresponder.</li>
+<li>Retorne a mensagem <code>&quot;Bem-vindo, &lt;login&gt;!&quot;</code> se as credenciais estiverem corretas.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Na classe <code>Main</code>:</p>
+<ul>
+<li>Leia login e senha do usuário via <code>Scanner</code>.</li>
+<li>Chame o método <code>autenticar</code> e exiba o retorno em caso de sucesso.</li>
+<li>Trate <code>AutenticacaoException</code> exibindo a mensagem de erro.</li>
+<li>Utilize um bloco <code>finally</code> para fechar o <code>Scanner</code> e exibir <code>&quot;Conexão encerrada.&quot;</code>.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Exemplos de execução:</strong></p>
+<pre tabindex="0"><code>Login: admin
+Senha: 1234
+Bem-vindo, admin!
+Conexão encerrada.</code></pre><pre tabindex="0"><code>Login: admin
+Senha: errada
+Erro: Senha incorreta
+Conexão encerrada.</code></pre><pre tabindex="0"><code>Login: carlos
+Senha: 1234
+Erro: Usuário não encontrado
+Conexão encerrada.</code></pre><hr>
+<h2 id="questão-3">Questão 3<a class="anchor" href="#quest%c3%a3o-3">#</a></h2>
+<p>Você está criando um módulo que recebe notas digitadas como texto (String) e as converte para valores numéricos, aplicando regras de validação.</p>
+<ol>
+<li>
+<p>Crie uma exceção <strong>checked</strong> chamada <code>NotaForaDeIntervaloException</code> que:</p>
+<ul>
+<li>Estenda <code>Exception</code>.</li>
+<li>Possua um atributo <code>double nota</code> com o valor que causou o erro.</li>
+<li>Forneça um método <code>getNota()</code>.</li>
+<li>Receba a nota e uma mensagem no construtor.</li>
+</ul>
+</li>
+<li>
+<p>Crie uma classe <code>ConversorDeNotas</code> com o método:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">double</span> <span style="color:#a6e22e">converter</span>(String entrada)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">throws</span> NotaForaDeIntervaloException</span></span></code></pre></div><p>Esse método deve:</p>
+<ul>
+<li>Converter a String para <code>double</code> usando <code>Double.parseDouble()</code>. Se a entrada não for um número válido, um <code>NumberFormatException</code> (que é <strong>unchecked</strong>) será lançado naturalmente — <strong>não</strong> trate essa exceção aqui; deixe-a propagar.</li>
+<li>Se o valor convertido for menor que 0 ou maior que 10, lance <code>NotaForaDeIntervaloException</code> com a mensagem <code>&quot;Nota fora do intervalo permitido (0 a 10)&quot;</code>.</li>
+<li>Caso contrário, retorne o valor convertido.</li>
+</ul>
+</li>
+<li>
+<p>Na classe <code>Main</code>, leia 5 notas do usuário via <code>Scanner</code> (como Strings) e, para cada uma, chame <code>converter</code> dentro de um bloco <code>try</code>/<code>catch</code> que trate:</p>
+<ul>
+<li><code>NotaForaDeIntervaloException</code> — exibindo a mensagem e o valor da nota inválida.</li>
+<li><code>NumberFormatException</code> — exibindo <code>&quot;Entrada inválida: '&lt;entrada&gt;' não é um número.&quot;</code>.</li>
+</ul>
+<p>Ao final, exiba a média das notas que foram convertidas com sucesso. Se nenhuma nota for válida, exiba <code>&quot;Nenhuma nota válida foi informada.&quot;</code>.</p>
+</li>
+</ol>
+<p><strong>Exemplo de execução:</strong></p>
+<pre tabindex="0"><code>Digite a nota 1: 8.5
+Nota registrada: 8.5
+Digite a nota 2: abc
+Entrada inválida: &#39;abc&#39; não é um número.
+Digite a nota 3: 11
+Nota fora do intervalo permitido (0 a 10). Valor informado: 11.0
+Digite a nota 4: 7
+Nota registrada: 7.0
+Digite a nota 5: -2
+Nota fora do intervalo permitido (0 a 10). Valor informado: -2.0
+Média das notas válidas: 7.75</code></pre><hr>
+<h2 id="questão-4">Questão 4<a class="anchor" href="#quest%c3%a3o-4">#</a></h2>
+<p>Implemente um gerenciador simples de tarefas com controle de prazos.</p>
+<ol>
+<li>
+<p>Crie <strong>duas</strong> exceções personalizadas:</p>
+<ul>
+<li><code>TarefaInvalidaException</code> — <strong>unchecked</strong> (estende <code>RuntimeException</code>). Será usada para erros de dados da tarefa (título nulo/vazio, prazo nulo).</li>
+<li><code>PrazoExpiradoException</code> — <strong>checked</strong> (estende <code>Exception</code>). Será usada quando uma tarefa for marcada como concluída após o prazo. Deve possuir um atributo <code>LocalDate prazo</code> e um método <code>getPrazo()</code>.</li>
+</ul>
+</li>
+<li>
+<p>Crie uma classe <code>Tarefa</code> com:</p>
+<ul>
+<li>Atributos: <code>String titulo</code>, <code>LocalDate prazo</code>, <code>boolean concluida</code>.</li>
+<li>No construtor <code>Tarefa(String titulo, LocalDate prazo)</code>:
+<ul>
+<li>Se <code>titulo</code> for <code>null</code> ou vazio, lance <code>TarefaInvalidaException</code> com a mensagem <code>&quot;O título da tarefa não pode ser nulo ou vazio&quot;</code>.</li>
+<li>Se <code>prazo</code> for <code>null</code>, lance <code>TarefaInvalidaException</code> com a mensagem <code>&quot;O prazo da tarefa não pode ser nulo&quot;</code>.</li>
+</ul>
+</li>
+<li>Um método <code>concluir() throws PrazoExpiradoException</code> que:
+<ul>
+<li>Marca a tarefa como concluída (<code>concluida = true</code>).</li>
+<li>Se <code>LocalDate.now()</code> for posterior ao prazo, lance <code>PrazoExpiradoException</code> com a mensagem <code>&quot;A tarefa '&lt;titulo&gt;' foi concluída após o prazo&quot;</code>, passando o prazo.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Na classe <code>Main</code>:</p>
+<ul>
+<li>Crie 3 tarefas dentro de um bloco <code>try</code>/<code>catch</code>:
+<ul>
+<li>Uma com título válido e prazo futuro.</li>
+<li>Uma com título vazio (para disparar <code>TarefaInvalidaException</code>).</li>
+<li>Uma com título válido e prazo no passado.</li>
+</ul>
+</li>
+<li>Observe que a criação da tarefa com título vazio lança uma exceção <strong>unchecked</strong>, que pode ser tratada no <code>catch</code> mas não é obrigatória.</li>
+<li>Para cada tarefa criada com sucesso, chame <code>concluir()</code> dentro de seu próprio bloco <code>try</code>/<code>catch</code> para tratar <code>PrazoExpiradoException</code>.</li>
+<li>Use um bloco <code>finally</code> ao final de cada tentativa de conclusão para exibir o status da tarefa: <code>&quot;Tarefa '&lt;titulo&gt;' - Concluída: &lt;true/false&gt;&quot;</code>.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Exemplo de saída esperada:</strong></p>
+<pre tabindex="0"><code>Criando tarefa: Estudar exceções... OK
+Criando tarefa com título vazio... Erro: O título da tarefa não pode ser nulo ou vazio
+Criando tarefa: Entregar relatório... OK
+
+Concluindo tarefa: Estudar exceções...
+Tarefa concluída com sucesso.
+Tarefa &#39;Estudar exceções&#39; - Concluída: true
+
+Concluindo tarefa: Entregar relatório...
+Erro: A tarefa &#39;Entregar relatório&#39; foi concluída após o prazo (prazo: 2025-01-15)
+Tarefa &#39;Entregar relatório&#39; - Concluída: true</code></pre><hr>
+<h2 id="questão-5">Questão 5<a class="anchor" href="#quest%c3%a3o-5">#</a></h2>
+<p>Um professor deseja um programa que leia a nota de um aluno pelo teclado (usando <code>Scanner</code>) e exiba o conceito correspondente:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Faixa</th>
+          <th>Conceito</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>9,0 – 10,0</td>
+          <td>A</td>
+      </tr>
+      <tr>
+          <td>7,0 – 8,9</td>
+          <td>B</td>
+      </tr>
+      <tr>
+          <td>5,0 – 6,9</td>
+          <td>C</td>
+      </tr>
+      <tr>
+          <td>&lt; 5,0</td>
+          <td>D</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li>Crie uma classe <code>ConversorDeNotas</code> com um método <code>obterConceito(double nota)</code> que:
+<ul>
+<li>Lance <code>IllegalArgumentException</code> caso a nota seja menor que 0 ou maior que 10.</li>
+<li>Retorne o conceito (<code>String</code>) correspondente à nota.</li>
+</ul>
+</li>
+<li>No método <code>main</code>, use <code>Scanner</code> para ler a nota digitada pelo usuário e chame <code>obterConceito</code>. O código deve conter:
+<ul>
+<li>Um bloco <code>try</code> envolvendo a leitura e a chamada ao método.</li>
+<li>Um bloco <code>catch</code> para <code>InputMismatchException</code> (caso o usuário digite algo que não seja número).</li>
+<li>Um bloco <code>catch</code> para <code>IllegalArgumentException</code> (caso a nota esteja fora da faixa válida).</li>
+<li>Uma mensagem de erro adequada em cada bloco <code>catch</code>, seguida de uma ação útil (por exemplo, solicitar nova entrada ao usuário em vez de apenas imprimir o erro).</li>
+</ul>
+</li>
+<li>Coloque a lógica dentro de um laço que permita ao usuário tentar novamente até fornecer uma entrada válida.</li>
+</ol>
+<hr>
+<h2 id="questão-6">Questão 6<a class="anchor" href="#quest%c3%a3o-6">#</a></h2>
+<p>Um arquivo chamado <code>alunos.csv</code> contém dados de alunos no seguinte formato (um aluno por linha):</p>
+<pre tabindex="0"><code>nome;nota1;nota2;nota3
+Ana;8.5;7.0;9.0
+Bruno;5.0;4.5;6.0
+Carla;10.0;9.5;8.0</code></pre><ol>
+<li>Crie um método <code>gerarRelatorio(String caminhoEntrada, String caminhoSaida)</code> que:
+<ul>
+<li>Leia o arquivo CSV linha a linha.</li>
+<li>Calcule a média das três notas de cada aluno.</li>
+<li>Escreva em um arquivo de saída (<code>relatorio.txt</code>) o nome do aluno e sua média, no formato: <code>Ana - Média: 8.17</code>.</li>
+</ul>
+</li>
+<li>Implemente <strong>duas versões</strong> desse método:
+<ul>
+<li><strong>Versão A — com <code>finally</code>:</strong> abra <code>FileReader</code>/<code>BufferedReader</code> e <code>FileWriter</code>/<code>BufferedWriter</code> antes do <code>try</code>, e feche-os explicitamente no bloco <code>finally</code>.</li>
+<li><strong>Versão B — com <code>try-with-resources</code>:</strong> declare os recursos dentro do <code>try(...)</code>, eliminando a necessidade do <code>finally</code>.</li>
+</ul>
+</li>
+<li>Em ambas as versões, trate <code>FileNotFoundException</code> (arquivo de entrada inexistente) e <code>IOException</code> (erro durante leitura/escrita) com mensagens descritivas.</li>
+<li>No <code>main</code>, chame ambas as versões e observe o comportamento quando o arquivo de entrada não existe.</li>
+</ol>
+<hr>
+<h2 id="questão-7">Questão 7<a class="anchor" href="#quest%c3%a3o-7">#</a></h2>
+<p>Considere um sistema simplificado de agendamento de serviços em uma oficina mecânica. A oficina possui horários disponíveis (por exemplo, <code>&quot;08:00&quot;</code>, <code>&quot;10:00&quot;</code>, <code>&quot;14:00&quot;</code>, <code>&quot;16:00&quot;</code>) e cada horário só pode ser ocupado por um cliente.</p>
+<ol>
+<li>
+<p>Crie duas exceções personalizadas (checked):</p>
+<ul>
+<li><code>HorarioIndisponivelException</code> — lançada quando o cliente tenta agendar um horário que já está ocupado. Deve armazenar o horário solicitado.</li>
+<li><code>AgendamentoInvalidoException</code> — lançada quando o horário informado não existe na lista de horários da oficina. Deve armazenar o horário inválido.</li>
+</ul>
+<p>Ambas devem estender <code>Exception</code> e possuir construtores que recebam uma mensagem descritiva e o horário.</p>
+</li>
+<li>
+<p>Crie uma classe <code>Agenda</code> com:</p>
+<ul>
+<li>Um <code>Map&lt;String, String&gt;</code> que associa horários a nomes de clientes (valor <code>null</code> significa horário livre).</li>
+<li>Um método <code>agendar(String horario, String cliente) throws HorarioIndisponivelException, AgendamentoInvalidoException</code> que:
+<ul>
+<li>Lance <code>AgendamentoInvalidoException</code> se o horário não estiver na lista.</li>
+<li>Lance <code>HorarioIndisponivelException</code> se o horário já estiver ocupado, informando qual cliente já ocupa aquele horário.</li>
+<li>Caso contrário, registre o agendamento.</li>
+</ul>
+</li>
+<li>Um método <code>listarAgendamentos()</code> que exiba todos os horários e seus respectivos clientes.</li>
+</ul>
+</li>
+<li>
+<p>No <code>main</code>, simule as seguintes situações, tratando cada exceção com <code>try/catch</code>:</p>
+<ul>
+<li>Agendar um horário válido e livre.</li>
+<li>Tentar agendar um horário que já está ocupado.</li>
+<li>Tentar agendar um horário que não existe (por exemplo, <code>&quot;12:00&quot;</code>).</li>
+</ul>
+</li>
+<li>
+<p>Crie também um método <code>agendarOuSugerir(String horario, String cliente)</code> que <strong>não</strong> trate as exceções internamente, mas as declare com <code>throws</code>, delegando o tratamento ao código chamador.</p>
+</li>
+</ol>
+<hr>
+<h2 id="questão-8">Questão 8<a class="anchor" href="#quest%c3%a3o-8">#</a></h2>
+<p>Considere um sistema simples de processamento de pagamentos que suporta dois meios: saldo em conta e cartão de crédito.</p>
+<ol>
+<li>
+<p>Crie a seguinte hierarquia de exceções (todas checked):</p>
+<pre tabindex="0"><code>PagamentoException (extends Exception)
+├── SaldoInsuficienteException
+└── CartaoExpiradoException</code></pre><ul>
+<li><code>PagamentoException</code>: exceção base, com construtores que aceitem mensagem e causa (<code>Throwable</code>).</li>
+<li><code>SaldoInsuficienteException</code>: deve armazenar o saldo disponível e o valor solicitado.</li>
+<li><code>CartaoExpiradoException</code>: deve armazenar a data de validade do cartão.</li>
+</ul>
+</li>
+<li>
+<p>Crie uma classe <code>ProcessadorDePagamento</code> com:</p>
+<ul>
+<li>Um método <code>pagarComSaldo(double valor, double saldoDisponivel) throws SaldoInsuficienteException</code>.</li>
+<li>Um método <code>pagarComCartao(double valor, String validadeCartao) throws CartaoExpiradoException</code> (considere que o cartão está expirado se a validade for anterior ao mês/ano atual; use <code>YearMonth</code> para a comparação).</li>
+<li>Um método <code>realizarPagamento(double valor, String meio, double saldo, String validade) throws PagamentoException</code> que:
+<ul>
+<li>Chame o método de pagamento apropriado com base no <code>meio</code> (<code>&quot;saldo&quot;</code> ou <code>&quot;cartao&quot;</code>).</li>
+<li>Caso uma exceção seja lançada pelos métodos internos, <strong>encapsule-a</strong> em uma nova <code>PagamentoException</code> com uma mensagem descritiva e a exceção original como causa (exceção encadeada).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>No <code>main</code>, chame <code>realizarPagamento</code> com cenários que provoquem cada tipo de erro. Ao capturar <code>PagamentoException</code>, use <code>getCause()</code> para identificar e exibir a causa original do problema, incluindo os detalhes específicos (saldo disponível, validade do cartão etc.).</p>
+</li>
+<li>
+<p>Para cada exceção capturada, exiba:</p>
+<ul>
+<li>A mensagem da <code>PagamentoException</code>.</li>
+<li>O tipo da causa original (<code>getCause().getClass().getSimpleName()</code>).</li>
+<li>Os detalhes específicos da causa (fazendo cast para o tipo correto).</li>
+</ul>
+</li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <footer class="book-footer">
+   
+  <a href="/docs/disciplinas/poo-ads/exercicios/"> ← Voltar para Exercícios </a>
+   
+</footer>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#questão-1">Questão 1</a></li>
+    <li><a href="#questão-2">Questão 2</a></li>
+    <li><a href="#questão-3">Questão 3</a></li>
+    <li><a href="#questão-4">Questão 4</a></li>
+    <li><a href="#questão-5">Questão 5</a></li>
+    <li><a href="#questão-6">Questão 6</a></li>
+    <li><a href="#questão-7">Questão 7</a></li>
+    <li><a href="#questão-8">Questão 8</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

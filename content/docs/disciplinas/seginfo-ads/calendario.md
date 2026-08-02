@@ -10,7 +10,7 @@ weight: 1
 
 **Disciplina:** Segurança da Informação\
 **Curso:** Análise e Desenvolvimento de Sistemas\
-**Período:** 2026.1
+**Período:** 2026.2
 
 > [!WARNING]
 >
@@ -27,274 +27,128 @@ weight: 1
 
 <table>
   <tr>
-    <th colspan="3"><strong>Fevereiro</strong></th>
+    <th colspan="3"><strong>Agosto</strong></th>
   </tr>
   <tr>
-    <td>10</td>
-    <td>
-      <ul>
-        <li>Apresentação da disciplina</li>
-        <li>Introdução e conceitos básicos sobre segurança da informação</li>
-      </ul>
-    </td>
+    <td>04 <em>(ter)</em></td>
+    <td></td>
     <td>2/40 aulas</td>
   </tr>
   <tr>
-    <td>17</td>
-    <td>
-      <div class="pill red">Feriado: Carnaval</div>
-    </td>
-    <td>---</td>
-  </tr>
-  <tr>
-    <td>24</td>
-    <td>
-      <ul>
-        <li>Introdução e conceitos básicos sobre segurança da informação (continuação)</li>
-      </ul>
-    </td>
+    <td>11 <em>(ter)</em></td>
+    <td></td>
     <td>4/40 aulas</td>
   </tr>
   <tr>
-    <th colspan="3"><strong>Março</strong></th>
-  </tr>
-  <tr>
-    <td>03</td>
-    <td>
-      <ul>
-        <li>Criptografia simétrica</li>
-      </ul>
-    </td>
+    <td>18 <em>(ter)</em></td>
+    <td></td>
     <td>6/40 aulas</td>
   </tr>
   <tr>
-    <td>10</td>
-    <td>
-      <ul>
-        <li>Criptografia assimétrica</li>
-        <li>Gerência de chaves</li>
-      </ul>
-    </td>
+    <td>25 <em>(ter)</em></td>
+    <td></td>
     <td>8/40 aulas</td>
-
+  </tr>
+  
+  <tr>
+    <th colspan="3"><strong>Setembro</strong></th>
+  </tr>
+  
+  <tr>
+    <td>01 <em>(ter)</em></td>
+    <td></td>
+    <td>10/40 aulas</td>
   </tr>
   <tr>
-    <td>17</td>
-    <td>
-      <ul>
-        <li>Funções hash criptográficas</li>
-      </ul>
-    </td>
-    <td>
-    11/40 aulas 
-    <div class="pill blue extra">Aula extra: 1</div>
-    </td>
+    <td>08 <em>(ter)</em></td>
+    <td></td>
+    <td>12/40 aulas</td>
   </tr>
   <tr>
-    <td>24</td>
-    <td>
-      <li><b>Prática em sala:</b> Criptografia e funções Hash Criptográficas</li>
-      <li><b>Exercício de casa 1:</b> Conceitos básicos, criptografia e funções hash criptográficas</li>
-    </td>
-    <td>
-    14/40 aulas
-    </td>
+    <td>15 <em>(ter)</em></td>
+    <td></td>
+    <td>14/40 aulas</td>
   </tr>
   <tr>
-    <td>31</td>
-    <td>
-      <ul>
-        <li>Segurança de dispositivos</li>
-        <ul>
-          <li>Segurança de dispositivos de rede</li>
-          <li>Segurança de rede local</li>
-          <li>Conceitos e configuração de firewalls</li>
-        </ul>
-      </ul>
-    </td>
+    <td>22 <em>(ter)</em></td>
+    <td></td>
     <td>16/40 aulas</td>
   </tr>
-
   <tr>
-    <th colspan="3"><strong>Abril</strong></th>
-  </tr>
-  <tr>
-    <td>01 <em>(qua)</em></td>
-    <td>
-      <div class="pill blue extra">Aula extra - 2 aulas</div>
-    </td>
+    <td>28 <em>(ter)</em></td>
+    <td></td>
     <td>18/40 aulas</td>
   </tr>
   <tr>
-    <td>07</td>
-    <td>
-      <ul>
-        <li>Soluções de segurança e tecnologias</li>
-        <ul>
-          <li>Sistemas de Prevenção de Intrusão: IPS</li>
-          <li>Acesso remoto seguro: SSH</li>
-          <li>Segurança em correio eletrônico: PGP e S/MIME</li>
-          <li>Segurança em camada de transporte: SSL/TLS</li>
-          <li>Segurança em camada de rede: VPN e IPSe</li>
-        </ul>
-      </ul>
-    </td>
+    <td>29 <em>(ter)</em></td>
+    <td></td>
     <td>20/40 aulas</td>
   </tr>
+
   <tr>
-    <td>14</td>
-    <td>
-      <ul>
-        <li>Soluções de segurança e tecnologias (continuação)</li>
-        <li><b>Exercício de casa 2:</b> Segurança de dispositivos; soluções de segurança e tecnologias</li>
-      </ul>
-    </td>
+    <th colspan="3"><strong>Outubro</strong></th>
+  </tr>
+  <tr>
+    <td>06 <em>(ter)</em></td>
+    <td></td>
     <td>22/40 aulas</td>
   </tr>
   <tr>
-    <td>15 <em>(qua)</em></td>
-    <td>
-      <div class="pill blue extra">Aula extra - 2 aulas</div>
-    </td>
+    <td>13 <em>(ter)</em></td>
+    <td></td>
     <td>24/40 aulas</td>
   </tr>
   <tr>
-    <td>21</td>
-    <td>
-      <div class="pill red">Feriado: Dia de Tiradentes</div>
-    </td>
-    <td>---</td>
-  </tr>
-  <tr>
-    <td>28</td>
-    <td>
-      <div class="avaliacao">Avaliação 1</div>
-      <div>A prova abrange todos os tópicos já ministrados até essa data.</div>
-      <ul>
-        <li>Segurança em redes sem fio</li>
-      </ul>
-    </td>
+    <td>20 <em>(ter)</em></td>
+    <td></td>
     <td>26/40 aulas</td>
   </tr>
+  <tr>
+    <td>27 <em>(ter)</em></td>
+    <td></td>
+    <td>28/40 aulas</td>
+  </tr>
 
   <tr>
-    <th colspan="3"><strong>Maio</strong></th>
+    <th colspan="3"><strong>Novembro</strong></th>
   </tr>
   <tr>
-    <td>05</td>
-    <td>
-      <ul>
-        <li><b>Prática em sala:</b> Segurança em redes sem fio</li>
-        <li><b>Exercício de casa 3:</b> Segurança em redes sem fio</li>
-      </ul>
-    </td>
-    <td>
-    29/40 aulas
-    <div class="pill blue extra">Aula extra: 1</div>
-    </td>
+    <td>03 <em>(ter)</em></td>
+    <td></td>
+    <td>30/40 aulas</td>
   </tr>
   <tr>
-    <td>06 <em>(qua)</em></td>
-    <td>
-      <div class="pill blue extra">Aula extra - 2 aulas</div>
-    </td>
-    <td>31/40 aulas</td>
+    <td>10 <em>(ter)</em></td>
+    <td></td>
+    <td>32/40 aulas</td>
   </tr>
   <tr>
-    <td>12</td>
-    <td>
-      <ul>
-        <li>Vulnerabilidades em aplicações</li>
-        <ul>
-          <li>CSRF - Cross-Site Request Forgery</li>
-          <li>SQL Injection</li>
-          <li>XSS - Cross-Site Scripting</li>
-        </ul>
-      </ul>
-    </td>
-    <td>33/40 aulas</td>
+    <td>17 <em>(ter)</em></td>
+    <td></td>
+    <td>34/40 aulas</td>
   </tr>
   <tr>
-    <td>19</td>
-    <td>
-      <ul>
-        <li><b>Prática em sala:</b> Vulnerabilidades em aplicações</li>
-      </ul>
-    </td>
-    <td>
-    36/40 aulas
-    <div class="pill blue extra">Aula extra: 1</div>
-    </td>
+    <td>24 <em>(ter)</em></td>
+    <td></td>
+    <td>36/40 aulas</td>
+  </tr>
+
+  <tr>
+    <th colspan="3"><strong>Dezembro</strong></th>
   </tr>
   <tr>
-    <td>26</td>
-    <td>
-      <ul>
-        <li>Vulnerabilidades em aplicações</li>
-        <ul>
-          <li>Vulnerabilidades em autenticação</li>
-        </ul>
-      </ul>
-    </td>
+    <td>01 <em>(ter)</em></td>
+    <td><div class="pill red">Feriado: Emancipação política de Esperança</div></td>
+    <td><hr></td>
+  </tr>
+  <tr>
+    <td>08 <em>(ter)</em></td>
+    <td><div class="pill red">Feriado: Nossa Senhora da Conceição</div></td>
+    <td><hr></td>
+  </tr>
+  <tr>
+    <td>15 <em>(ter)</em></td>
+    <td></td>
     <td>38/40 aulas</td>
-  </tr>
-
-  <tr>
-    <th colspan="3"><strong>Junho</strong></th>
-  </tr>
-  <tr>
-    <td>02</td>
-    <td>
-      <ul>
-        <li>Vulnerabilidades em aplicações</li>
-        <ul>
-          <li>Vulnerabilidades em autenticação (continuação)</li>
-        </ul>
-      </ul>
-    </td>
-    <td>
-    41/40 aulas
-    </td>
-  </tr>
-  <tr>
-    <td>03 <em>(qua)</em></td>
-    <td>
-      <div class="pill blue extra">Aula extra - 2 aulas</div>
-    </td>
-    <td>43/40 aulas</td>
-  </tr>
-  <tr>
-    <td>09</td>
-    <td>
-      <ul>
-        <li><b>Prática em sala:</b> Vulnerabilidades em autenticação</li>
-        <li><b>Exercício de casa 4:</b> Vulnerabilidades em aplicações</li>
-      </ul>
-    </td>
-    <td>
-    46/40 aulas
-    </td>
-  </tr>
-  <tr>
-    <td>16</td>
-    <td>
-      <div class="avaliacao">Reposição de avaliações</div>
-      <div>É permitido repor uma avaliação sem justificativa. Para repor duas avaliações, é necessário apresentar justificativa. Não há reposição de menor nota.</div>
-    </td>
-    <td>48/40 aulas</td>
-  </tr>
-  <tr>
-    <td>18</td>
-    <td>
-      <div class="pill blue">Término do semestre</div>
-    </td>
-    <td>---</td>
-  </tr>
-  <tr>
-    <td>23</td>
-    <td>
-      <b>Data provável da avaliação final</b>
-    </td>
-    <td>---</td>
-  </tr>
+  </tr>  
 </table>

@@ -6,7 +6,7 @@ weight: 1
 
 # Projeto
 
-**Período:** 2026.1
+**Período:** 2026.2
 
 ## 1. Resumo
 

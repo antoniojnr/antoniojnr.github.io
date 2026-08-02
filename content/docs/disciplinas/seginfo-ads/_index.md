@@ -5,6 +5,18 @@ bookCollapseSection: true
 #bookHidden: true
 ---
 
+# Segurança da Informação
+
+**Curso:** Análise e Desenvolvimento de Sistemas\
+**Período:** 2026.2
+
+## Informações gerais
+
+Verifique as páginas específicas para informações sobre
+{{< button href="/docs/disciplinas/seginfo-ads/avaliacoes/" >}}Avaliações{{< /button >}}
+e
+{{< button href="/docs/disciplinas/seginfo-ads/calendario/" >}}Calendário{{< /button >}}
+
 ## Metodologia
 
 A disciplina será desenvolvida por meio de aulas expositivas dialogadas, nas quais serão apresentados e discutidos os principais conceitos de segurança da informação, contextualizados em cenários reais e atuais. As aulas priorizarão a compreensão dos conceitos, estimulando a participação ativa dos estudantes por meio de questionamentos e discussões orientadas.

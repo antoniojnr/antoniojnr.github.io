@@ -2,7 +2,7 @@
 title: "Exercícios"
 weight: 1
 bookCollapseSection: true
-#bookHidden: true
+bookHidden: true
 ---
 
 # Exercícios
