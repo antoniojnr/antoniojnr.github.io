@@ -24,6 +24,8 @@ public class Lista01 {
       case 14 -> questao14();
       case 15 -> questao15();
       case 16 -> questao16();
+      case 17 -> questao17();
+      case 18 -> questao18();
       default -> System.out.println("Questão inválida");
     }
   }
@@ -76,5 +78,11 @@ public class Lista01 {
   }
 
   static void questao16() {
+  }
+
+  static void questao17() {
+  }
+
+  static void questao18() {
   }
 }
