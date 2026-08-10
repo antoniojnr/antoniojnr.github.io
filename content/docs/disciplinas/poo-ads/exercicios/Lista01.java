@@ -33,6 +33,11 @@ public class Lista01 {
   // Questões
   // Desenvolva cada questão dentro dos métodos a seguir
   static void questao1() {
+    int num1 = 1;
+    int num2 = 7;
+
+    int resultado = num1 + num2;
+    System.out.println("Soma: " + resultado);
   }
 
   static void questao2() {
