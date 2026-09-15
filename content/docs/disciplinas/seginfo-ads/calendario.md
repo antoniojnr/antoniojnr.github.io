@@ -71,17 +71,17 @@ weight: 1
   </tr>
   <tr>
     <td>22 <em>(ter)</em></td>
-    <td>Segurança de redes locais e firewalls</td>
+    <td>Vulnerabilidades em aplicações: Cross-Site Scripting (XSS) / Prática em sala</td>
     <td>16/40 aulas</td>
   </tr>
   <tr>
     <td>28 <em>(ter)</em></td>
-    <td>Prática em sala: firewall e análise de tráfego</td>
+    <td>Vulnerabilidades em aplicações: introdução e SQL Injection</td>
     <td>18/40 aulas</td>
   </tr>
   <tr>
     <td>29 <em>(ter)</em></td>
-    <td>IPS (Sistema de Prevenção de Intrusão) e SSH (Secure Shell)</td>
+    <td>Segurança de redes locais e firewalls</td>
     <td>20/40 aulas</td>
   </tr>
 
@@ -90,7 +90,7 @@ weight: 1
   </tr>
   <tr>
     <td>06 <em>(ter)</em></td>
-    <td>SSL/TLS (Transport Layer Security), VPN (Rede Privada Virtual), IPsec (Internet Protocol Security), PGP (Pretty Good Privacy) e S/MIME (Secure/Multipurpose Internet Mail Extensions)</td>
+    <td>Prática em sala: firewall e análise de tráfego</td>
     <td>22/40 aulas</td>
   </tr>
   <tr>
@@ -100,12 +100,12 @@ weight: 1
   </tr>
   <tr>
     <td>20 <em>(ter)</em></td>
-    <td>Segurança em redes sem fio / Prática em sala</td>
+    <td>IPS (Sistema de Prevenção de Intrusão) e SSH (Secure Shell)</td>
     <td>26/40 aulas</td>
   </tr>
   <tr>
     <td>27 <em>(ter)</em></td>
-    <td>Vulnerabilidades em aplicações: introdução e SQL Injection / Prática em sala</td>
+    <td>SSL/TLS (Transport Layer Security), VPN (Rede Privada Virtual), IPsec (Internet Protocol Security), PGP (Pretty Good Privacy) e S/MIME (Secure/Multipurpose Internet Mail Extensions)</td>
     <td>28/40 aulas</td>
   </tr>
 
@@ -114,12 +114,12 @@ weight: 1
   </tr>
   <tr>
     <td>03 <em>(ter)</em></td>
-    <td>Vulnerabilidades em aplicações: Cross-Site Scripting (XSS) / Prática em sala</td>
+    <td>Segurança em redes sem fio / Prática em sala</td>
     <td>30/40 aulas</td>
   </tr>
   <tr>
     <td>10 <em>(ter)</em></td>
-    <tdVulnerabilidades em aplicações: Cross-Site Request Forgery (CSRF) / Prática em sala</td>
+    <td>Vulnerabilidades em aplicações: Cross-Site Request Forgery (CSRF) / Prática em sala</td>
     <td>32/40 aulas</td>
   </tr>
   <tr>
