@@ -169,8 +169,8 @@ Todos os itens abaixo devem estar em um repositório do GitHub até a **data de 
 
 ## 4. Prazos
 
-- **Data de entrega:** 10/06/2026
-- **Apresentações:** 15 e 16/06/2026
+- **Data de entrega:** 11/12/2026
+- **Apresentações:** 14 e 15/12/2026
 
 ## 5. Apresentação
 
